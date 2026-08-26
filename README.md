@@ -10,13 +10,13 @@ MVP de clipping executivo sobre recuperação judicial, falência e jurisprudên
 - SQLite com criação automática da tabela e script de seed;
 - busca real por meio da API GNews, encapsulada pela interface `NewsProvider`;
 - classificação por categoria, seção e relevância, sumarização extrativa com limite de 80 palavras e deduplicação por título, empresa e proximidade da data;
-- endpoint protegido e cron configurado para atualização a cada 6 horas.
+- endpoint protegido e cron configurado para atualização diária.
 
 Os textos e links de demonstração são fictícios e existem apenas para visualizar a interface. Quando o banco contém notícias importadas, elas substituem os mocks.
 
 ## Requisitos
 
-- Node.js 20 ou superior;
+- Node.js 22.13 ou superior (necessário para o módulo nativo `node:sqlite`);
 - npm;
 - chave da GNews apenas para coleta real.
 
@@ -46,7 +46,17 @@ Para simular o cron localmente:
 curl -H "Authorization: Bearer $CRON_SECRET" http://localhost:3000/api/cron/update
 ```
 
-O `vercel.json` agenda a chamada a cada seis horas em deploys com suporte a Vercel Cron. Em hospedagem com filesystem efêmero, SQLite não é persistente; para produção, monte um volume persistente ou troque o adaptador de banco.
+O `vercel.json` agenda uma atualização diária, compatível também com o limite de cron do plano Hobby da Vercel. Em hospedagem com filesystem efêmero, SQLite não é persistente; para produção, monte um volume persistente ou troque o adaptador de banco.
+
+## Publicação na Vercel
+
+1. Importe o repositório e mantenha **Root Directory** vazio (`.`).
+2. Selecione o preset **Next.js**; não configure uma Output Directory.
+3. Cadastre `GNEWS_API_KEY` e `CRON_SECRET` em **Settings → Environment Variables**.
+4. Não é necessário cadastrar `DATABASE_PATH`: na Vercel o app usa automaticamente `/tmp/news.db`, único diretório gravável durante a execução.
+5. Faça um novo deploy e abra o endereço marcado como **Production**.
+
+O fallback para `/tmp` permite que o site e os dados de demonstração sejam exibidos, mas as notícias importadas podem desaparecer quando uma função for recriada. Para persistência real na Vercel, substitua SQLite por um banco remoto antes do uso em produção.
 
 ## Como o pipeline trabalha
 

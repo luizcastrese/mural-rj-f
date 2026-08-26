@@ -3,7 +3,10 @@ import fs from "node:fs";
 import path from "node:path";
 import type { NewsItem } from "@/types/news";
 
-const dbPath = path.resolve(process.env.DATABASE_PATH ?? "./data/news.db");
+// Vercel Functions only allow runtime writes in /tmp. This keeps the public
+// preview operational; use a persistent database for production storage.
+const configuredDbPath = process.env.VERCEL ? "/tmp/news.db" : (process.env.DATABASE_PATH ?? "./data/news.db");
+const dbPath = path.resolve(configuredDbPath);
 fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 
 const globalForDb = globalThis as unknown as { newsDb?: DatabaseSync };

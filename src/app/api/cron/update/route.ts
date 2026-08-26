@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { updateNews } from "@/lib/news/update";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export async function GET(request: NextRequest) {
   const secret = process.env.CRON_SECRET;
