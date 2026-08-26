@@ -51,10 +51,12 @@ O `vercel.json` agenda uma atualização diária, compatível também com o limi
 ## Publicação na Vercel
 
 1. Importe o repositório e mantenha **Root Directory** vazio (`.`).
-2. Selecione o preset **Next.js**; não configure uma Output Directory.
+2. Selecione o preset **Next.js**. O `vercel.json` fixa a saída correta em `.next`, evitando que uma configuração antiga aponte para `public`.
 3. Cadastre `GNEWS_API_KEY` e `CRON_SECRET` em **Settings → Environment Variables**.
 4. Não é necessário cadastrar `DATABASE_PATH`: na Vercel o app usa automaticamente `/tmp/news.db`, único diretório gravável durante a execução.
 5. Faça um novo deploy e abra o endereço marcado como **Production**.
+
+Se o painel ainda mostrar `No Output Directory named "public"`, abra **Settings → Build and Deployment**, apague o valor `public` de **Output Directory** (ou restaure o padrão do framework) e faça o redeploy sem usar o cache.
 
 O fallback para `/tmp` permite que o site e os dados de demonstração sejam exibidos, mas as notícias importadas podem desaparecer quando uma função for recriada. Para persistência real na Vercel, substitua SQLite por um banco remoto antes do uso em produção.
 
