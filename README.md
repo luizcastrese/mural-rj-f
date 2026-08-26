@@ -1,12 +1,12 @@
 # Radar de Insolvência
 
-MVP de clipping executivo sobre recuperação judicial, falência e jurisprudência relacionada. A homepage prioriza uma leitura de 3 a 5 minutos, com destaques, seções temáticas, busca e filtros simples.
+MVP de clipping executivo sobre recuperação judicial, falência e jurisprudência relacionada. A homepage prioriza uma leitura de 3 a 5 minutos, com destaques e seções temáticas atualizadas automaticamente.
 
 ## O que funciona
 
 - interface responsiva com dados de demonstração quando o banco está vazio;
-- filtros por hoje, 3 ou 7 dias e pelas categorias Recuperação Judicial, Falência e Jurídico;
-- busca local por título, resumo, empresa ou palavra-chave;
+- exibição direta das notícias dos últimos 7 dias, sem busca ou filtros;
+- organização automática em destaques e seções de Recuperação Judicial, Falência e Jurídico;
 - SQLite com criação automática da tabela e script de seed;
 - busca real por meio da API GNews, encapsulada pela interface `NewsProvider`;
 - classificação por categoria, seção e relevância, sumarização extrativa com limite de 80 palavras e deduplicação por título, empresa e proximidade da data;
