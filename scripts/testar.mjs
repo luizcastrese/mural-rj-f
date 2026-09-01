@@ -828,8 +828,71 @@ test('falha temporária do modelo não queima a retentativa da notícia', async 
 
   // O card sai com o recorte, para o mural não ficar vazio…
   assert.equal(alfa.resumoFonte, 'texto da matéria');
-  // …mas o provedor não é dado por tentado, então volta à fila na próxima.
-  assert.notEqual(alfa.provedorTentado, 'gemini');
+  // …e continua pendente: uma tentativa gasta, ainda abaixo do teto, então
+  // a notícia volta à fila na próxima coleta.
+  assert.equal(alfa.tentativasModelo, 1);
   // E houve insistência antes de desistir.
   assert.ok(chamadas > 1, `esperava mais de uma tentativa, houve ${chamadas}`);
+});
+
+test('insiste com o modelo em coletas seguintes, mas não para sempre', async (t) => {
+  // Servidor de modelo que nunca funciona: mede quantas coletas insistem.
+  let chamadas = 0;
+  const modelo = createServer((req, res) => {
+    chamadas += 1;
+    req.resume();
+    req.on('end', () => {
+      res.writeHead(500, { 'content-type': 'application/json' }).end('{"error":{}}');
+    });
+  });
+  await new Promise((ok) => modelo.listen(0, '127.0.0.1', ok));
+
+  const paginas = createServer((req, res) => {
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }).end(
+      `<html><body><article><p>${'A companhia teve a falência decretada pela 1ª Vara Empresarial nesta terça-feira. '.repeat(5)}</p></article></body></html>`,
+    );
+  });
+  await new Promise((ok) => paginas.listen(0, '127.0.0.1', ok));
+
+  const dir = await mkdtemp(path.join(tmpdir(), 'mural-teto-'));
+  const saida = path.join(dir, 'noticias.json');
+  t.after(async () => {
+    modelo.close();
+    paginas.close();
+    await rm(dir, { recursive: true, force: true });
+  });
+
+  await writeFile(
+    path.join(dir, 'busca.xml'),
+    `<rss><channel><item>
+      <title>Justiça decreta falência da Alfa Alimentos - Portal A</title>
+      <link>http://127.0.0.1:${paginas.address().port}/materia</link>
+      <pubDate>${new Date().toUTCString()}</pubDate>
+    </item></channel></rss>`,
+    'utf-8',
+  );
+
+  const rodar = () =>
+    executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida], {
+      env: {
+        ...process.env,
+        MURAL_ESPACO_MS: '0',
+        MURAL_ESPERAS_MS: '1,1,1',
+        ANTHROPIC_API_KEY: '',
+        GEMINI_API_KEY: 'chave-de-teste',
+        MURAL_GEMINI_URL: `http://127.0.0.1:${modelo.address().port}/models`,
+      },
+    });
+
+  // Cinco coletas seguidas; o modelo nunca responde.
+  for (let volta = 0; volta < 5; volta += 1) await rodar();
+
+  const dados = JSON.parse(await readFile(saida, 'utf-8'));
+  const alfa = dados.noticias[0];
+
+  // A notícia continua no mural, com o recorte do texto da matéria.
+  assert.equal(alfa.resumoFonte, 'texto da matéria');
+  // Insistiu em coletas diferentes, e parou no teto em vez de tentar sempre.
+  assert.equal(alfa.tentativasModelo, 3);
+  assert.ok(chamadas > 3, `esperava insistência entre coletas, houve ${chamadas} chamadas`);
 });

@@ -22,12 +22,7 @@ import {
   pareceMateria,
   textoDaMateria,
 } from './lib/resumo.mjs';
-import {
-  resumirMateria,
-  podeResumirComModelo,
-  provedorDoResumo,
-  FalhaTransitoria,
-} from './lib/resumir.mjs';
+import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/resumir.mjs';
 import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -47,14 +42,24 @@ const TENTATIVAS_POR_GRUPO = 3;
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
 const VERSAO_RESUMO = 5;
 
-// Uma notícia volta para a fila quando a extração mudou de versão, ou quando
-// o provedor de resumo mudou desde a última tentativa — foi assim que o
-// acervo ficou preso no recorte depois de a chave do Gemini ser cadastrada.
-// Guardar o nome do provedor, e não um "já tentei" booleano, faz o retry
-// acontecer uma vez a cada troca, e nunca para quem já foi tentado com ele.
+// Quantas vezes insistir com o modelo numa mesma notícia, em coletas
+// diferentes, antes de aceitar que ela ficará com o recorte.
+const MAX_TENTATIVAS_MODELO = 3;
+
+// Uma notícia volta para a fila quando a extração mudou de versão, quando o
+// provedor de resumo mudou, ou enquanto o resumo não tiver saído do modelo —
+// até o teto acima, que é o que impede a matéria inalcançável de custar
+// requisição para sempre.
+//
+// O contador é o único freio de propósito. Preservar o provedor anterior
+// quando o modelo estava fora do ar parecia mais justo, mas fazia a regra
+// "provedor mudou" disparar em toda coleta, e o teto nunca era alcançado.
 function precisaDeResumo(noticia) {
   if (noticia.versaoResumo !== VERSAO_RESUMO) return true;
-  return noticia.provedorTentado !== provedorDoResumo();
+  if (noticia.provedorTentado !== provedorDoResumo()) return true;
+  if (!podeResumirComModelo()) return false;
+  if (noticia.resumoFonte === 'resumo da matéria') return false;
+  return (noticia.tentativasModelo || 0) < MAX_TENTATIVAS_MODELO;
 }
 
 const args = process.argv.slice(2);
@@ -220,15 +225,15 @@ async function lerAcervo() {
 // falha some no log e o mural volta ao recorte sem explicar por quê.
 const falhasDoModelo = [];
 
-// O que se grava na notícia depois de uma tentativa de resumo.
-//
-// Quando o modelo esteve fora do ar, a tentativa não conclui nada: o provedor
-// anterior é preservado para que a notícia volte à fila na próxima coleta.
-// Sem isso, um 503 passageiro deixaria a matéria no recorte para sempre.
-function marcaDaTentativa(noticia, conclusiva = true) {
+// O que se grava na notícia depois de uma tentativa de resumo. Trocar de
+// provedor zera o contador: o modelo novo merece as suas próprias chances.
+function marcaDaTentativa(noticia, { chamouModelo = false } = {}) {
+  const trocouProvedor = noticia.provedorTentado !== provedorDoResumo();
+  const anteriores = trocouProvedor ? 0 : noticia.tentativasModelo || 0;
   return {
     versaoResumo: VERSAO_RESUMO,
-    provedorTentado: conclusiva ? provedorDoResumo() : (noticia.provedorTentado ?? 'nenhum'),
+    provedorTentado: provedorDoResumo(),
+    tentativasModelo: anteriores + (chamouModelo ? 1 : 0),
   };
 }
 
@@ -256,19 +261,16 @@ async function buscarResumoNaPagina(noticia) {
 
     // Com o texto da matéria em mãos, o resumo é escrito a partir dele.
     // Sem chave da API, cai no recorte de frases da própria matéria.
-    let modeloForaDoAr = false;
-    const escrito = await resumirMateria({
-      titulo: noticia.titulo,
-      texto: textoDaMateria(html, noticia.titulo),
-    }).catch((erro) => {
-      modeloForaDoAr = erro instanceof FalhaTransitoria;
+    const texto = textoDaMateria(html, noticia.titulo);
+    const chamouModelo = podeResumirComModelo() && texto.length >= 200;
+    const escrito = await resumirMateria({ titulo: noticia.titulo, texto }).catch((erro) => {
       if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
       console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
       return null;
     });
 
     const achado = escrito || extrairResumo(html, noticia.titulo);
-    const marca = marcaDaTentativa(noticia, !modeloForaDoAr);
+    const marca = marcaDaTentativa(noticia, { chamouModelo });
 
     if (!achado) return { ...noticia, link, ...marca };
     return {
