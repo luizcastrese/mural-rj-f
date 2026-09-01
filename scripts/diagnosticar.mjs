@@ -3,6 +3,7 @@
 // interessa em cada candidata: ela responde? os links vão direto ao veículo
 // (e não a um redirecionador)? a description já traz resumo de verdade?
 
+import { writeFile } from 'node:fs/promises';
 import { lerFeed } from './lib/rss.mjs';
 import { resumoDeFeedServe, extrairResumo } from './lib/resumo.mjs';
 
@@ -42,12 +43,20 @@ async function pegar(url) {
   }
 }
 
+const relatorio = [
+  `Diagnóstico de fontes — ${new Date().toISOString()}`,
+  '',
+  'fonte                 http  itens  link do veículo             description útil',
+  '-'.repeat(88),
+];
+
 for (const [nome, url] of CANDIDATAS) {
   try {
     const { status, texto } = await pegar(url);
     const itens = lerFeed(texto);
     if (!itens.length) {
       console.log(`${nome.padEnd(20)} HTTP ${status}  0 itens`);
+      relatorio.push(`${nome.padEnd(21)} ${String(status).padEnd(5)} 0`);
       continue;
     }
     const amostra = itens[0];
@@ -65,6 +74,10 @@ for (const [nome, url] of CANDIDATAS) {
     );
     console.log(`  titulo: ${amostra.titulo.slice(0, 70)}`);
     console.log(`  descr : ${(amostra.resumo || '(vazia)').slice(0, 110)}`);
+    relatorio.push(
+      `${nome.padEnd(21)} ${String(status).padEnd(5)} ${String(itens.length).padEnd(6)} ` +
+        `${host.padEnd(27)} ${comResumo}/${itens.length}`,
+    );
 
     // A matéria é alcançável? Dá para montar resumo com o texto dela?
     if (host && host !== '?' && !/news\.google|bing\.com/.test(host)) {
@@ -78,6 +91,12 @@ for (const [nome, url] of CANDIDATAS) {
     }
   } catch (erro) {
     console.log(`${nome.padEnd(20)} ERRO  ${erro.message}`);
+    relatorio.push(`${nome.padEnd(21)} ERRO  ${erro.message.slice(0, 40)}`);
   }
   console.log();
 }
+
+// Grava o relatório no repositório: é mais fácil de consultar do que o log,
+// e mostra de relance qual fonte parou de responder.
+await writeFile('dados/diagnostico-fontes.txt', `${relatorio.join('\n')}\n`, 'utf-8');
+console.log('\nRelatório em dados/diagnostico-fontes.txt');

@@ -46,13 +46,13 @@ jobs:
       - name: Versionar o que mudou
         if: github.event_name != 'push'
         run: |
-          if git diff --quiet -- dados/noticias.json; then
+          if git diff --quiet -- dados/; then
             echo "Nenhuma notícia nova nesta coleta."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dados/noticias.json
+          git add dados/
           git commit -m "Atualiza notícias ($(date -u '+%d/%m/%Y %H:%M UTC'))"
           git push
 
