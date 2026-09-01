@@ -99,21 +99,33 @@ inventar seria completar lacuna, e é isso que a instrução proíbe.
 
 | Provedor | Credencial | Custo | Quando é usado |
 | --- | --- | --- | --- |
-| **GitHub Models** | `GITHUB_TOKEN`, que o workflow já tem | gratuito | padrão — nada a configurar |
+| **Gemini** | segredo `GEMINI_API_KEY` | gratuito | padrão |
 | **Claude** | segredo `ANTHROPIC_API_KEY` | pago | se a chave existir, tem precedência |
 | **Recorte** | nenhuma | gratuito | quando não há credencial alguma |
 
-O padrão não exige cadastro: dentro do Actions, o `GITHUB_TOKEN` já autentica
-no GitHub Models, e a permissão `models: read` está declarada no workflow.
-Para usar o Claude, basta cadastrar `ANTHROPIC_API_KEY` em Settings → Secrets
-and variables → Actions. Para trocar o modelo, defina `MURAL_MODELO`
-(padrão `openai/gpt-4o-mini` no GitHub Models, `claude-opus-5` no Claude); o
-provedor pode ser forçado com `MURAL_PROVEDOR`.
+Para ligar o Gemini: pegue uma chave em
+[aistudio.google.com/apikey](https://aistudio.google.com/apikey) — é gratuita
+e não pede cartão — e cadastre em **Settings → Secrets and variables →
+Actions → New repository secret**, com o nome `GEMINI_API_KEY`. A cota
+gratuita cobre com folga os 10 a 40 resumos por dia que o mural precisa.
+
+O modelo é escolhido sozinho: o coletor tenta `gemini-2.5-flash`,
+`gemini-2.0-flash` e `gemini-flash-latest` nessa ordem, memoriza o que
+funcionou e mantém os outros como reserva — nomes de modelo são aposentados
+de tempos em tempos. Para fixar um, defina `MURAL_MODELO`; para forçar o
+provedor, `MURAL_PROVEDOR`.
 
 Sem nenhuma credencial o coletor avisa no log e cai no **recorte**: escolhe as
 frases da própria matéria que mais informam. O mural continua funcionando,
-com resumo mais cru — é também a rede de segurança se a cota gratuita
-acabar no meio de uma coleta.
+com resumo mais cru — é também a rede de segurança se a cota gratuita acabar
+no meio de uma coleta.
+
+O arquivo `dados/diagnostico-resumo.txt` registra, a cada coleta, qual
+provedor escreveu, de onde veio cada resumo e as falhas que houver.
+
+> O **GitHub Models** foi tentado antes e não serve: entrou em desativação
+> programada e responde `HTTP 410 github_models_retirement_brownout`. O código
+> do provedor continua no arquivo, inerte, só como registro.
 
 ## Colocando no ar## Colocando no ar (uma vez só)
 

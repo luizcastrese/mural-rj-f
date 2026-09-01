@@ -16,8 +16,6 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  # Dá ao workflow acesso ao GitHub Models, que escreve os resumos.
-  models: read
 
 # Uma atualização por vez, sem cancelar a que já está rodando.
 concurrency:
@@ -51,10 +49,11 @@ jobs:
       # gastaria minutos de Actions sem trazer notícia nova.
       - name: Coletar as notícias
         if: github.event_name != 'push'
-        # GITHUB_TOKEN dá acesso ao GitHub Models, sem cadastro nem custo.
-        # ANTHROPIC_API_KEY é opcional: se existir, o Claude é usado no lugar.
+        # GEMINI_API_KEY (Google AI Studio, gratuita) escreve os resumos.
+        # ANTHROPIC_API_KEY é opcional e tem precedência, se existir.
+        # Sem nenhuma das duas, o resumo é recortado da matéria.
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/coletar.mjs
 

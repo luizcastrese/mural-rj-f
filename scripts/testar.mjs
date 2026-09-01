@@ -604,3 +604,90 @@ test('textoDaMateria entrega o texto limpo para quem vai resumir', () => {
   assert.ok(!texto.includes('Foto:'));
   assert.ok(!texto.includes('Leia também'));
 });
+
+test('o provedor padrão é o Gemini quando há chave gratuita', async () => {
+  await semCredenciais(async () => {
+    process.env.GEMINI_API_KEY = 'chave-de-teste';
+    assert.equal(provedorDoResumo(), 'gemini');
+    assert.equal(podeResumirComModelo(), true);
+  });
+});
+
+test('resumirMateria fala o protocolo do Gemini e devolve o texto escrito', async (t) => {
+  const RESUMO =
+    'A 2ª Vara Empresarial deferiu o processamento da recuperação judicial do Grupo Alfa, que declarou dívida de R$ 430 milhões. O juízo concedeu 180 dias de suspensão das execuções.';
+
+  let recebido = null;
+  const servidor = createServer((req, res) => {
+    let corpo = '';
+    req.on('data', (parte) => {
+      corpo += parte;
+    });
+    req.on('end', () => {
+      recebido = { url: req.url, chave: req.headers['x-goog-api-key'], corpo: JSON.parse(corpo) };
+      res.writeHead(200, { 'content-type': 'application/json' }).end(
+        JSON.stringify({ candidates: [{ content: { parts: [{ text: RESUMO }] } }] }),
+      );
+    });
+  });
+  await new Promise((ok) => servidor.listen(0, '127.0.0.1', ok));
+  t.after(() => servidor.close());
+
+  await semCredenciais(async () => {
+    process.env.GEMINI_API_KEY = 'chave-de-teste';
+    process.env.MURAL_GEMINI_URL = `http://127.0.0.1:${servidor.address().port}/models`;
+
+    const saida = await resumirMateria({
+      titulo: 'Justiça defere RJ do Grupo Alfa',
+      texto: 'A 2ª Vara Empresarial deferiu o processamento. '.repeat(12),
+    });
+
+    assert.equal(saida.origem, 'resumo da matéria');
+    assert.equal(saida.texto, RESUMO);
+
+    // A requisição precisa levar a instrução, o texto e a chave no lugar certo.
+    assert.equal(recebido.chave, 'chave-de-teste');
+    assert.ok(recebido.url.includes(':generateContent'));
+    assert.ok(recebido.corpo.systemInstruction.parts[0].text.includes('não infira'));
+    assert.ok(recebido.corpo.contents[0].parts[0].text.includes('Justiça defere RJ do Grupo Alfa'));
+
+    delete process.env.MURAL_GEMINI_URL;
+  });
+});
+
+test('nome de modelo recusado faz o coletor tentar o próximo da lista', async (t) => {
+  const tentados = [];
+  const servidor = createServer((req, res) => {
+    const nome = req.url.split('/').pop().replace(':generateContent', '');
+    tentados.push(nome);
+    req.resume();
+    req.on('end', () => {
+      // O primeiro nome é recusado; o seguinte responde.
+      if (tentados.length === 1) {
+        res.writeHead(404, { 'content-type': 'application/json' }).end(
+          JSON.stringify({ error: { message: 'model not found' } }),
+        );
+        return;
+      }
+      res.writeHead(200, { 'content-type': 'application/json' }).end(
+        JSON.stringify({
+          candidates: [{ content: { parts: [{ text: 'A'.repeat(120) }] } }],
+        }),
+      );
+    });
+  });
+  await new Promise((ok) => servidor.listen(0, '127.0.0.1', ok));
+  t.after(() => servidor.close());
+
+  await semCredenciais(async () => {
+    process.env.GEMINI_API_KEY = 'chave-de-teste';
+    process.env.MURAL_GEMINI_URL = `http://127.0.0.1:${servidor.address().port}/models`;
+
+    const saida = await resumirMateria({ titulo: 'Manchete', texto: 'texto. '.repeat(60) });
+    assert.ok(saida, 'a segunda tentativa deve produzir resumo');
+    assert.equal(tentados.length, 2);
+    assert.notEqual(tentados[0], tentados[1]);
+
+    delete process.env.MURAL_GEMINI_URL;
+  });
+});
