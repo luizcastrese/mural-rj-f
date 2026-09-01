@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-09-01T19:14:14.095Z",
+  "atualizadoEm": "2026-09-01T19:16:56.826Z",
   "total": 4,
   "totalComRepetidas": 229,
   "comResumo": 4,
@@ -153,7 +153,7 @@
       "coletadoEm": "2026-09-01T18:51:58.616Z",
       "grupo": "g0",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -168,10 +168,10 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g1",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -184,10 +184,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g2",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -203,11 +203,9 @@
         "AGC"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g3",
-      "principal": false,
-      "versaoResumo": 4,
-      "provedorTentado": "gemini"
+      "principal": false
     },
     {
       "titulo": "STJ acata recurso de debenturistas e suspende assembleia de credores da Ambipar",
@@ -225,7 +223,7 @@
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g3",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "cobertura": 2,
       "tambemEm": [
         "Metrópoles"
@@ -242,11 +240,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
-      "principal": false,
-      "versaoResumo": 4,
-      "provedorTentado": "gemini"
+      "principal": false
     },
     {
       "titulo": "Refit tem a falência decretada",
@@ -258,11 +254,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
-      "principal": false,
-      "versaoResumo": 4,
-      "provedorTentado": "gemini"
+      "principal": false
     },
     {
       "titulo": "Com 96 lojas no auge, tradicional rede de supermercados tem falência decretada pela Justiça",
@@ -274,10 +268,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g5",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -290,11 +284,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
-      "principal": false,
-      "versaoResumo": 4,
-      "provedorTentado": "gemini"
+      "principal": false
     },
     {
       "titulo": "Refinaria de Petróleos Manguinhos tem falência decretada pela 5ª Vara Empresarial do Rio de Janeiro",
@@ -306,7 +298,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -320,7 +312,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -334,7 +326,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -348,10 +340,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g6",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -364,7 +356,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 25,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -407,7 +399,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -421,7 +413,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -435,7 +427,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -449,7 +441,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g4",
       "principal": false
     },
@@ -480,7 +472,7 @@
         "O TEMPO",
         "Gazeta do Povo"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -495,10 +487,10 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g7",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -511,11 +503,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g8",
-      "principal": false,
-      "versaoResumo": 4,
-      "provedorTentado": "gemini"
+      "principal": false
     },
     {
       "titulo": "Casas Bahia confirma antecipação de efeitos do seu pedido de recuperação judicial",
@@ -527,14 +517,14 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g9",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Valor Econômico"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -547,10 +537,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g9",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -565,10 +555,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g10",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -576,17 +566,17 @@
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeDRQZFVTZTlhN1lOQU5vSl9ES1llS0gzY1NyYnNlMmtUTDBGNnFqS3k3SVgtQTdNMmktMEROY1VObVl2VXROanlUdGVmUFVTOXpkVjZUdXVtLWpNQmtlWHlrb1NVbEFPUVhDX2V1MXBVSFlpTGZfTEQ2TjBwbTBHck5XTEs2Y2VDdmRXWl9jWE40d0xlYksyMGdKQWpMNHp0ZWc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "BandNews",
+      "veiculo": "bandnewstv.uol.com.br",
       "data": "2026-08-29T18:46:36.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -599,14 +589,14 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g12",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Globo Rural"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -621,11 +611,9 @@
         "Stay period"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g8",
-      "principal": false,
-      "versaoResumo": 4,
-      "provedorTentado": "gemini"
+      "principal": false
     },
     {
       "titulo": "Justiça protege Casas Bahia de cobranças por 180 dias durante recuperação judicial",
@@ -645,7 +633,7 @@
         "ADVFN",
         "Acia Araçatuba"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -660,10 +648,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g13",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -676,10 +664,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g14",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -694,10 +682,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -712,7 +700,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g10",
       "principal": true,
       "cobertura": 3,
@@ -720,7 +708,7 @@
         "Cadaminuto",
         "Vero Notícias"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -733,10 +721,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g15",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -752,14 +740,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g16",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -774,7 +762,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -790,7 +778,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -806,7 +794,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -822,7 +810,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -831,19 +819,19 @@
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbmt2M2VpVTVMaVJwTWU3dlgwZWVRak14RUExamtEemUwdDBrcjhBRFhqNjNZdnhkaDBlNDZIb3BVZTd1d1JGMUp5TkZXMU9feHNhQnB2SDBqZldIVGlOV0ljd21idjFhUHNCT0dIcG90ampSY1pRNjdhdVVzbDhnY3FrV2pMQ0VoaG1YbURENFVqVGRBY21DNDdHLUhSOW1icWkyV3ZmRm1ZSGpNT0xj?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Brasil 247",
+      "veiculo": "brasil247.com",
       "data": "2026-08-28T15:49:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": true,
       "cobertura": 15,
       "tambemEm": [
-        "BandNews",
+        "bandnewstv.uol.com.br",
         "Exame",
         "Rádio Metrópole",
         "Times Brasil | CNBC",
@@ -858,7 +846,7 @@
         "UOL Economia",
         "Valor Econômico"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -866,15 +854,15 @@
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUEg2TGx4V0ZiNTBrX0VWRlh1VkVVNkVSYTB3U20zVEJGRTVla2N3SlNGSWd1VjFLYW1hWFVrcU9lUkE1MnJWOVV6TlQ1ajBzWndnemstdjJZZVZhRnh1QnlYVDJZcFVfVlJ0SXU3LXRoUXh5NHFBMWlJalFfVHM1bEZIYld3QlB4WU4zTmxqTHhMOThSYlBSUnA1LV9YaDZKdXRiZnJNTHRYZFE?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "CircuitoMT",
+      "veiculo": "circuitomt.com.br",
       "data": "2026-08-28T15:37:36.000Z",
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 10,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g17",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -889,10 +877,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 22,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g18",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -907,7 +895,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -923,7 +911,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -939,7 +927,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -955,10 +943,10 @@
         "Plano"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g19",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -973,7 +961,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -989,7 +977,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -1005,7 +993,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -1021,7 +1009,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -1037,7 +1025,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g11",
       "principal": false
     },
@@ -1051,10 +1039,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g20",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1069,10 +1057,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g21",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1087,10 +1075,10 @@
         "Plano"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g16",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1103,10 +1091,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1119,10 +1107,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g12",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1135,10 +1123,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1151,10 +1139,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g23",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1170,10 +1158,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g24",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1188,10 +1176,10 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g25",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1207,10 +1195,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g26",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1218,12 +1206,12 @@
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE04RVFIMGdoZWxRelUtXy12X3A3ZDFHZWVDbHpiSmpxbEhXSzFZUThJX3FUcVpkV0ZVaWdLY28xbzFnNjJYS2puN1ZzNnlPd1dHRW55QkZRcUdSdTNCVW5FcUtvblNNR0pvWEo3Q2FLWDF0TTd4cXc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "SpaceMoney",
+      "veiculo": "spacemoney.com.br",
       "data": "2026-08-27T00:04:56.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": true,
       "cobertura": 11,
@@ -1232,13 +1220,13 @@
         "Valor Investe",
         "Forbes Brasil",
         "NeoFeed",
-        "SpaceMoney",
+        "spacemoney.com.br",
         "Jovem Pan",
         "G1",
         "O GLOBO",
         "CNN Brasil"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1253,10 +1241,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g27",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1269,7 +1257,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1283,7 +1271,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1292,12 +1280,12 @@
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54eDI2MmpQOUVXMk14ZVNNc3Z4Mno0ME05Qm8wRXhlaFJHcDNraUJhb2d0VnBRUVVlUDItVEVweTUzcTJwT05pMVFuZnJrNU1JdVNPSXpNWGRvVDZQWTFNR0dKSVVmMURGRFVpMm9tbTNzWTRESENyX3MzcjVEem8?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "SpaceMoney",
+      "veiculo": "spacemoney.com.br",
       "data": "2026-08-26T21:13:18.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1306,19 +1294,19 @@
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWXZnSXVqMWlsc2VaYlNnVHlsTVdZTnRQa0dlNWhhMHY3dmpaSXl4cjMwc0Q0d3ZUOWRIU080TVFBX2o5SnI3b1pXVTVTV3BYYlJ5Z1ppSm1WeFI5ZUhmN1J2LVJRREZpWEVtMng4b1B0eGFwdGRwWFRvZ1hXNURiNjlfZXNfWThDREhwSVNJZHRncEtTSlcwck9TZmFyanhxc1lnREhTS2pWdGFVMk1xdE40LVdOTHpBajNqNWw0UG5jdjZSMldhSTZB?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "douradosnews.com.br",
+      "veiculo": "Dourados News",
       "data": "2026-08-26T21:01:00.000Z",
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g28",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Revista Nossa"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1331,7 +1319,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1345,7 +1333,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1359,7 +1347,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1373,7 +1361,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1387,7 +1375,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g22",
       "principal": false
     },
@@ -1401,10 +1389,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g29",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1417,10 +1405,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g30",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1435,10 +1423,10 @@
         "AGC"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g31",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1451,10 +1439,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g28",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1469,10 +1457,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g10",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1485,14 +1473,14 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g32",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "UOL Economia"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1505,10 +1493,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g33",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1523,10 +1511,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g34",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1541,14 +1529,14 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g35",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Gazeta do Paraná"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1561,10 +1549,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g36",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1577,10 +1565,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g37",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1593,10 +1581,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g38",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1609,10 +1597,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 25,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g39",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1625,10 +1613,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g40",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1641,10 +1629,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g41",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1660,14 +1648,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g42",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1680,10 +1668,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g43",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1698,7 +1686,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": true,
       "cobertura": 28,
@@ -1709,11 +1697,11 @@
         "G1",
         "JOTA Info",
         "Folha de S.Paulo",
-        "agenciadcnews.com.br",
+        "DComercio",
         "Notícias Agrícolas",
         "Forbes Brasil",
         "InvestNews",
-        "Estadão",
+        "estadao.com.br",
         "Movimento Econômico",
         "CartaCapital",
         "NeoFeed",
@@ -1724,7 +1712,7 @@
         "Agência iNFRA",
         "Valor Investe"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1737,10 +1725,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g45",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1755,14 +1743,14 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g46",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "JOTA Info"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1770,15 +1758,15 @@
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcWpGZDYxWU1BbkFweE1MZzdRUlkwM1J2cFNlcGFsM2xFOE9rRTI1dWZ2a044czlISHpwWnEyUlFwSVpBSWJrV1pEQ2VSaVhabmtfV2FGX1B5bXRpaHh3NkNqd0hUaVN5NXlvS3JETVZlZ0ZINTJOQmh0V2M4QkFXYXphTDFVZw?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "bpmoney.com.br",
+      "veiculo": "BPMoney",
       "data": "2026-08-25T19:29:19.000Z",
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g47",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1791,10 +1779,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g48",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1807,10 +1795,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g49",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1818,15 +1806,15 @@
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa0JmNktQQ2ZRUTgzdHdZaE1XSkhkVTBac1M0dkI0dkpaUkhGTFl6aHBTd2N4N3hRZkN3Tk9rblFBbUc0NFF0eEQtd2hFMzJTNnlRLWg2cUk0azRSVnFLajZ1RWZjTDdGNU1mbW56UzIyYXhqS2hYUFh4QktUcmxMZlBqUUpTbVlLcEZkZmlLNTREMHJ6a3JYZGlvNnA1cUU2YXk0?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "agenciadcnews.com.br",
+      "veiculo": "DComercio",
       "data": "2026-08-25T19:01:00.000Z",
       "categoria": "jurisprudencia",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g50",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1842,10 +1830,10 @@
         "Stay period"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g51",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1858,10 +1846,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g52",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1874,10 +1862,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g53",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1885,15 +1873,15 @@
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVEtVaXk0RFY0WnU1SVFjUHlsenVZRGhXZVRYal9Wck53cmFlTERjeUxrN05ZOXVURFZ4T3FESDBvMzl4aEFIME5xOWt1LXdTaDlzeWlhblpJemo2d3dEZ0YwRW5DbzV3c19mbFV1YmlVbklqWVlQSVRvQS1oUWd3eTFqbHBCQXdDaUhpYlhDdGJ1eUVtdjdUcFhDcy1VeWRsbkx5U2JHa084ZGktdUx4c1loMEZDc2t0bWlMQzNzUllCUFXSAcgBQVVfeXFMTXZGQkFpaU0yVm54dzZzd2VjdzRfbVlpV004cExBRDI4dTdSXzlUWS1ydC1JQlotbnF3ZXg1WUdjS1NEcUVrNnk3cW9SODNrdmVLUFd6MFlEcUk5bXgxc2tGM2pGX29FdmdvSVRzV3NTdUhYeUVNU09kYXVHZW11SVlleFV6ZFRTUDBiQlhoMjBVeHpuMkszUkw3Y29JOGVBUkVIRjlhTG51cXpXME1ITGFDOVJtMlU2YWsxalRLR0FoNHJvN1d2eDM?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "estadao.com.br",
       "data": "2026-08-25T18:25:58.000Z",
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g54",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1906,10 +1894,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g55",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1922,14 +1910,14 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g40",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "AJN1"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1942,10 +1930,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 4,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g56",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1958,10 +1946,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g32",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1974,10 +1962,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g57",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -1992,10 +1980,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2011,10 +1999,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g42",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2029,14 +2017,14 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g19",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Forbes Brasil"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2051,10 +2039,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 10,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g58",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2069,10 +2057,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2087,10 +2075,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g59",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2105,7 +2093,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2114,15 +2102,15 @@
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbXZST0wtenBmWnlRUGJkcndWOU9ERkdhU2FocjF0eXJQVVkxTjUzS3Y1SW1yMkFyQ2FxYUwzY2tDemhiTEZzSERHTVZCZ2N6RG9zc2xVS1pBSmR6X1JORmRudG9LNTFQejhNdFlXWmdNMHZGVjZIa1g1cVhITWNwUE15U1A1aFV5dFV0c0lLZV9ia3JmMXRrb2RqOTNrcU5pcXJMLW55OVdiY3JaY3FjcVhqS250eXJLVjBhVVpn?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Portal Tempo Novo",
+      "veiculo": "portaltemponovo.com.br",
       "data": "2026-08-25T01:44:00.000Z",
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g60",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2137,7 +2125,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2153,7 +2141,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2169,7 +2157,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2178,14 +2166,14 @@
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRkFOZzk0U0l1My03UzQ0SS1HOEt3T3FBNEplb1VnSEVIbzNfeXRONS0tVzVkcTYtdnlmaDk0OFNpVjRaZTFQcXNxbmtTb2FkU0k4ZFpTS1puZTZxU1dDVTVuVzUyNzZUOUtpZkdDSGZFdXVkcXJ3NXRrb3E2aFUyaVJBSi1sVVlPQzNNWVo5SjdoT2JZVFEwR0V0NA?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "agenciadcnews.com.br",
+      "veiculo": "DComercio",
       "data": "2026-08-24T21:55:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2202,14 +2190,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g13",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Visno Invest"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2224,7 +2212,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2240,7 +2228,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2256,7 +2244,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2265,14 +2253,14 @@
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOczdleEc0aXUxekhiMWRyb2VtM2N2VTBmTVdRLUdpSVo5OEVBSF9Nd2NBM2RNZms3NTR2N3BLMWhtdEJPRnFjeFpoTXpYeHhERk52Q0ZmYmZ4V2w4OEpHX01lNU94NWhpNEhQRmZJMl9mME5BSEdJOTdTU2p2dGFocWZSdElfVDRGUXVaTTFnekJrei1Hay1vM0pkd2RobUJt0gGmAUFVX3lxTE9hamI4U2h4RWg0bW9rTS1lNkRkRnBKeml5TGdjajQwYkFHanc2VGVnMEUtM01vdVU3a1hFSU8tRzBCa1Itd0VLUmRzeUpMLU5qZnVaMnZ0djFycC1MbTJ6UG1PeldJbWFYQ1k0cEpsNTJoTkFjTXRMLWVWdklPYTdfWUNwUTQ2dkVvbVJWSnhTLUpSc3paRGMzSmtHYlEycE92YWxsUXc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "estadao.com.br",
       "data": "2026-08-24T20:25:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2288,7 +2276,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2304,10 +2292,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g61",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2322,7 +2310,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2338,10 +2326,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g46",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2356,7 +2344,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g62",
       "principal": true,
       "cobertura": 5,
@@ -2364,9 +2352,9 @@
         "revistapegn.globo.com",
         "O GLOBO",
         "Seu Dinheiro",
-        "Estadão"
+        "estadao.com.br"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2381,7 +2369,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2397,7 +2385,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2413,10 +2401,10 @@
         "Plano"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g63",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2431,7 +2419,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2447,10 +2435,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g62",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2465,7 +2453,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2481,7 +2469,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2497,10 +2485,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g62",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2515,7 +2503,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2531,7 +2519,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2547,7 +2535,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2563,7 +2551,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2579,7 +2567,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2595,7 +2583,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2611,7 +2599,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g62",
       "principal": false
     },
@@ -2627,7 +2615,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2643,7 +2631,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2659,7 +2647,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g44",
       "principal": false
     },
@@ -2668,14 +2656,14 @@
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNkR4b3lNcUlnSk1TM1NlcTQzR29zUkxYVzNRYjZ2RExoeEF6TzhoOWJjcFN6S0h4QUoyaTg1MXBNcmNieGNSUEh4TlR1M2NwanQwYTRDcDZHbWhySktfajB6MGxrMkoyVUJ2MFczMl96MXdON3VxZ3FoQmtCWVNtOFhGSElFb2NfU2J0enF6YU5oYXZ00gGaAUFVX3lxTE0td1BiT1huaDdNYzB5QXRTSldjSUNLTTVlY3I4cl9Odmh1U3laeUxJNi1mVk4weDJaY1BBdWQyWTFxMC15SW0yWmN0T20tWndlczlKTVlvUzZEbDJoNjZuYzNUaUxPWk5HdC1xRHlYU0NhdFRSTHg3d1ltOFdQZFc2LWdzTXg1V2MzOV9kRTFsenduMmxwbnJsTGc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "estadao.com.br",
       "data": "2026-08-24T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g62",
       "principal": false
     },
@@ -2691,10 +2679,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g35",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2707,10 +2695,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g64",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2723,10 +2711,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g65",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2741,10 +2729,10 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g66",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2752,21 +2740,21 @@
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOOTR3Zno3dDBhWHpHQmYxZU1ZSmtnV25hMWRPaWtsejZ2ckdPX1FGcTA3c2JmOVRSYVRuV2hlSXRuWHpoeWJpUmRXLXAyak5sajkzSEdXRUtQUkZnSFZuWXl6cGlrQl9WazFFTW9DNEJLanN3RzlkTFR4TXBZUFVRZE02cC01SU9jVEhYUU5HS1VUNFdUNmc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "bpmoney.com.br",
+      "veiculo": "BPMoney",
       "data": "2026-08-20T20:52:27.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g67",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Valor Econômico"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2779,7 +2767,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": true,
       "cobertura": 26,
@@ -2787,24 +2775,24 @@
         "CNN Brasil",
         "Migalhas",
         "Safra",
-        "O GLOBO",
+        "G1",
         "Metrópoles",
         "SBT News",
-        "G1",
         "InfoMoney",
         "tmc.com.br",
-        "itatiaia.com.br",
-        "bandab.com.br",
+        "Rádio Itatiaia",
+        "Banda B",
         "meioemensagem.com.br",
         "JOTA Info",
         "Valor Econômico",
         "Folha de S.Paulo",
+        "O GLOBO",
         "NeoFeed",
         "UOL Economia",
         "VEJA",
         "Jornal do Comércio"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2812,15 +2800,15 @@
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQOE9jbWNPajdUcEZIN1FLeVAyY1ZXd1k4SnRwNm00MldnR3g0REsxRWxzellEN25NR0JMQ21PbU01Nk5PVkVhbGlWTzh6dnFfRkNqTDRWTlBvZ29Kem4xa3BCY04tR2ZPLXNwbER4QWNJZHlrOW5DeG1uOG1tUG80MEdEd0M0MTVucHhoVlZXZTBsSFU5cmQ0OFViYjBLdjJ2YjBqMTRpVVd2aGg3S3FGR0xoX084YWhudGMzNlQxVC1FZnRhUEE3WFpjcXFCVG02RlHSAdcBQVVfeXFMUHNBcC1BMjlrbDVZWWJvYlFwMjNXNzZBUElvTkdGR1JQUGFMWTNyUWU2RFQycHRBRmFOeFpWVXJ2MlhZSTJBcldYNGlyYWszOTNGVzZkZm11Qi0tMHJzVll6S0VyUE5Kb2dGTTU1S1dPam9kb1Z2ZUhlQk41RDRsc3NFamxsZHZTbFg3TlZRZGQzMS1QUURYdTRMeksxQW92N09RZy01bGU4bnhXZnFqMWtLb3dub1RqbFFsZld1bWV5REZwY3ZXZEF6VnpJdDloMTYtT2txTlk?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "estadao.com.br",
       "data": "2026-08-20T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g69",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2828,15 +2816,15 @@
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNlhRejFIMGduNlBpbDkzVUNJRzBEVWFCMHRzdHRrckFyeVdfVzFObnNMOW1WSWlRbm54OTNLaUFMZEpvWjlfTmx6azRIdmN5X01jMHoxUXl6SFdxZ3d2RGpFV2RfYTNxcEw1c0xsVmZ2dXM3QkxXUXo1aFdtTWpnS0VOcmRDbVdxaUF2d3lDYWNFdFFzTU8tRXdUOEF0VFRTMWQ3WGN5YnFZcDV3dWRrNmpHMWUtNzRDOWlDTE5VbGZEYzZZNkFfV2RLVlBtZ9IB0wFBVV95cUxQUDAtSVNXVlJ6ZW5yNUtScUphQW1URS00TmtTYlZ6VVRhZ1QwZlRnc2NJQTRKSUFCMS1YZ01qbThBT2dsNm9zaXVoeU0zMVRDTkxuZnBPVUZOSENUQ2V0aUQyYmtfc1lvSkRyLUJENmRkeEs0Uk1faHVuUWppY005UnExLXp5Z2RBeWhVQy1sZklJNi1obE8ydzJEc3YtRklsZlBOWGQ3RWFzQVNQdkxxLVgxQUNoQ1RpOXNNTkZDR25Zbnd5dHNwYnlHdnJRMkFvREZz?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "estadao.com.br",
       "data": "2026-08-20T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g70",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2851,10 +2839,10 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g67",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2867,10 +2855,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g71",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2885,10 +2873,10 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g72",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2901,10 +2889,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2917,10 +2905,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2935,14 +2923,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g73",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Valor Econômico"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2955,14 +2943,14 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g74",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2975,10 +2963,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g74",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -2991,17 +2979,17 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g75",
       "principal": true,
       "cobertura": 5,
       "tambemEm": [
         "G1",
-        "Estadão",
+        "estadao.com.br",
         "InfoMoney",
         "Valor Econômico"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3014,49 +3002,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
-      "grupo": "g68",
-      "principal": false
-    },
-    {
-      "titulo": "Casas Bahia entra com pedido de recuperação judicial, com dívida de R$ 17,3 bi",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM0RCeDFsN3FHcVBNcG1TWW0tSHo1bjg5OG92RGhVNENUcGh6R0RlSXdvYTJtRlNIZVpLeHRkM0lyVFVPWjI5amM2TzlDc3JGTVBDenV0YUNscGRMcmR4Z3huT283YXhyX3gyUVlGeEZnWVJHU2tpNE43LWQ4bHlBLWZibloxLXVoQS1sZmlNNUlZLTBwakZUYkVsYzVZT3FVZG55ekpLVnYxMHd1YmZsTTVIWUUtOTR2Y1VkdU0xY1ZNSElpWWfSAdQBQVVfeXFMUGFNZnNBX0VJc1ZJM0NhbXNmY2Z5eHd3akY4Rzhaa2FSTjFIdnp2MndHQzZGUERadWtRclZONGdrd2dRdVhFczRseGp1eDZqLURkbjdOTGN6aHNCVEZQVjNneHgyazFUekV3NE5qVEdDcTFVQUEtbm9DQ1hUUlBJNW9WLWtfY1pSM2J4eHJWa1FycHhfOF80UjFfV19jTUplcTNqRHAwV2ZBUHg4Rmd1R0J3TmgwUGgxOG9HY21BM01tRTd2SmJpOXMteEtzUWFkTzJIVnA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "O GLOBO",
-      "data": "2026-08-17T07:00:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
-      "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
-      "grupo": "g68",
-      "principal": false
-    },
-    {
-      "titulo": "Com dívidas de R$ 17,3 bilhões, Casas Bahia pede recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSld4eFJhRVlld2ZjX1RwVE9xdEtzajFKSkItQ1d0N2otaGlyMFFpZXBHdW94RTdwLXhmclFGc2c0UGRFV2hWa3R4aE13MktBbC1QM3MzQ3FRZGVSY04tbk9IMW9Cdi1vRzE4Y2dvY0JtSWppalRRTUZXZmtyVmViSUdQajJ5QjZFZlJQT2RlWmp2c1JkazUxNkt4SQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Metrópoles",
-      "data": "2026-08-17T07:00:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
-      "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
-      "grupo": "g68",
-      "principal": false
-    },
-    {
-      "titulo": "Casas Bahia entra com pedido de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOTIzWVhPLXpuR2FfRzcyWTlYSUp0dXVFTTBYSC1hSXRZRG5qbi1NbjQ1LWhvS05McEcwc3JhMVhtMUtrcGJTZVFrOHhFV0dtVWMwYW5MNGFpLXJfc3Y3YkcwaTgtbFdqM3NpbFhBSzdVYXFtQXpvUG1pYlUwbTR4eFJCM2ZXYlRyWlR4TG5YUE82U1htZUwxV2VB?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "SBT News",
-      "data": "2026-08-17T07:00:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
-      "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3070,21 +3016,35 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
     {
-      "titulo": "Casas Bahia entra com pedido de recuperação judicial com dívidas de R$ 17,3 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUkdpYUtqcWEwbC1NeVBSdndLNUI1M0pXQlZEcUxCeHV6Rm95akFZYkl5YlRnOG96STJpTHE0YWNNRUpoWmItOEp1RHc5MmhXNUZSbjlVcS1LMkhQZ0d4dlRCYWNnMlN6aXdSS2F1TDhMb2ZTU2otdm5HUXEtQ0xpQVZaaVdzUkZ3bkdOdXpZOGotU3JWRTJGVG9nZWZlbTlBUDY1WHBRb192WmVNXzhESUlXZU9aOEJ30gG-AUFVX3lxTE9MQkg3ZlVOSVdTaG9idldFekx6dUt3YXVTRkZZeHpQVjBEbTROUFEyblNtSVVnYTR3WHFKbkdTZE40LVo0alYyaDdRbXU2SHZXckY0MEFDNm04VThLa1VYV083bWlDTU9ZTzFIU1BZSVh4c3d2UmRPU28zSFp2NVNKaEFIdjFTY2lDeDRGT0ZTNS1lU1hlQVVfUGhaRHNwN2lzVm9mZXI4UjdPUUxqcG44bXNhekpiaTF6OFU3bWc?oc=5",
+      "titulo": "Com dívidas de R$ 17,3 bilhões, Casas Bahia pede recuperação judicial",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSld4eFJhRVlld2ZjX1RwVE9xdEtzajFKSkItQ1d0N2otaGlyMFFpZXBHdW94RTdwLXhmclFGc2c0UGRFV2hWa3R4aE13MktBbC1QM3MzQ3FRZGVSY04tbk9IMW9Cdi1vRzE4Y2dvY0JtSWppalRRTUZXZmtyVmViSUdQajJ5QjZFZlJQT2RlWmp2c1JkazUxNkt4SQ?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "InfoMoney",
+      "veiculo": "Metrópoles",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
+      "grupo": "g68",
+      "principal": false
+    },
+    {
+      "titulo": "Casas Bahia entra com pedido de recuperação judicial",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOTIzWVhPLXpuR2FfRzcyWTlYSUp0dXVFTTBYSC1hSXRZRG5qbi1NbjQ1LWhvS05McEcwc3JhMVhtMUtrcGJTZVFrOHhFV0dtVWMwYW5MNGFpLXJfc3Y3YkcwaTgtbFdqM3NpbFhBSzdVYXFtQXpvUG1pYlUwbTR4eFJCM2ZXYlRyWlR4TG5YUE82U1htZUwxV2VB?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "SBT News",
+      "data": "2026-08-17T07:00:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3098,11 +3058,25 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g75",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
+    },
+    {
+      "titulo": "Casas Bahia entra com pedido de recuperação judicial com dívidas de R$ 17,3 bilhões",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUkdpYUtqcWEwbC1NeVBSdndLNUI1M0pXQlZEcUxCeHV6Rm95akFZYkl5YlRnOG96STJpTHE0YWNNRUpoWmItOEp1RHc5MmhXNUZSbjlVcS1LMkhQZ0d4dlRCYWNnMlN6aXdSS2F1TDhMb2ZTU2otdm5HUXEtQ0xpQVZaaVdzUkZ3bkdOdXpZOGotU3JWRTJGVG9nZWZlbTlBUDY1WHBRb192WmVNXzhESUlXZU9aOEJ30gG-AUFVX3lxTE9MQkg3ZlVOSVdTaG9idldFekx6dUt3YXVTRkZZeHpQVjBEbTROUFEyblNtSVVnYTR3WHFKbkdTZE40LVo0alYyaDdRbXU2SHZXckY0MEFDNm04VThLa1VYV083bWlDTU9ZTzFIU1BZSVh4c3d2UmRPU28zSFp2NVNKaEFIdjFTY2lDeDRGT0ZTNS1lU1hlQVVfUGhaRHNwN2lzVm9mZXI4UjdPUUxqcG44bXNhekpiaTF6OFU3bWc?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "InfoMoney",
+      "data": "2026-08-17T07:00:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
+      "grupo": "g68",
+      "principal": false
     },
     {
       "titulo": "Casas Bahia entra com pedido de recuperação judicial em São Paulo",
@@ -3114,7 +3088,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3123,12 +3097,12 @@
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbm1Wd0x2VXF0V010VEhHSTdrQ1dXR21lS3BLay1sU1ZCdVM5c2FKbUt0YldKSktjZWcyaUpsRDdIcUhQVHpIdS1YQWFJbEtCNERlS3l0X0pjNm9DcU1ycFZfMTdLMFE4MENMclJiSFY5dEJ6R2JpRFhTRXJXemFhTi1uUWdYWnNwcjJqRnc1YnF4MzhKel9XN3N5dlQzZHd1Q29Xb3VZTWFZRGdaSG5V?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "itatiaia.com.br",
+      "veiculo": "Rádio Itatiaia",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3137,12 +3111,12 @@
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYXl5eklpQUdneldNUWR1OGxXdTdwaDk0V0JWUTN4UXNvVUJBOWN0UzVMcnpqN1RydFZ5TU4ydjZsYjUxVmZTMHdYTVkta194SUpLX21HZjI5ZlozMWloLVVwTzdDRWppNTUzLV9mUEFtYnhLRWp3OTBHN1lDcGN1ZmRlbzh4c0paVzMyYUpZT1YtNUxQX183VS15ZHNGM01XYlNGRS1YXzlUQnI4N2JqNy1qMWVoUdIBuwFBVV95cUxNWVRNQXNLVE50MUxnT2wxbmF0bER4UUJLVkZsS1VhOVFKYlVKYUtBelhwa0tLbG4xc0xDeVdxN1haeVBZU0NKa1EzZzlNeUFQVnJFQXRNbzZWV3FxcU04TTE0Y2x4X2RGa3NhY2c0Q3RMRWZqU25CYURrSlBkUHZCU2VDV0t3U21sS2UtZk9vLTFFVHR4MmV3bHYwenBJVVZ0Nkt1aGxpVjhtaUlGdWRQc2U3dnd0cnhGWmQ0?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "bandab.com.br",
+      "veiculo": "Banda B",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3156,7 +3130,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3170,7 +3144,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3184,7 +3158,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3198,7 +3172,21 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
+      "grupo": "g68",
+      "principal": false
+    },
+    {
+      "titulo": "Casas Bahia entra com pedido de recuperação judicial, com dívida de R$ 17,3 bi",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM0RCeDFsN3FHcVBNcG1TWW0tSHo1bjg5OG92RGhVNENUcGh6R0RlSXdvYTJtRlNIZVpLeHRkM0lyVFVPWjI5amM2TzlDc3JGTVBDenV0YUNscGRMcmR4Z3huT283YXhyX3gyUVlGeEZnWVJHU2tpNE43LWQ4bHlBLWZibloxLXVoQS1sZmlNNUlZLTBwakZUYkVsYzVZT3FVZG55ekpLVnYxMHd1YmZsTTVIWUUtOTR2Y1VkdU0xY1ZNSElpWWfSAdQBQVVfeXFMUGFNZnNBX0VJc1ZJM0NhbXNmY2Z5eHd3akY4Rzhaa2FSTjFIdnp2MndHQzZGUERadWtRclZONGdrd2dRdVhFczRseGp1eDZqLURkbjdOTGN6aHNCVEZQVjNneHgyazFUekV3NE5qVEdDcTFVQUEtbm9DQ1hUUlBJNW9WLWtfY1pSM2J4eHJWa1FycHhfOF80UjFfV19jTUplcTNqRHAwV2ZBUHg4Rmd1R0J3TmgwUGgxOG9HY21BM01tRTd2SmJpOXMteEtzUWFkTzJIVnA?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "O GLOBO",
+      "data": "2026-08-17T07:00:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3212,7 +3200,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3226,7 +3214,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3240,7 +3228,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3254,7 +3242,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3268,7 +3256,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3282,7 +3270,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3296,7 +3284,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3310,7 +3298,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3324,7 +3312,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3338,7 +3326,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g68",
       "principal": false
     },
@@ -3347,15 +3335,15 @@
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbUx2UTk4WFRfWHF3Vzd6VWV1ZHA5ajl3d1llR1VuRjc2LXlYR0JzYTNrRXFqOWl0VW5mRDQxNU5jRVF4ajF2Uy01d2tEXzNCeVRJOENfaWpmbU5Qd2phMW1DYTBTZENiSmVhYVo4aW5QN3o0MURNd0p1czVUTzd0dXg1MVZOTXZETU05WllSZkJ2YTdtVzB2VlVmWjM4X25EVjB6aXhMb1FzNVc0WEp0TTdKcWl3TG5uV0HSAb8BQVVfeXFMUGVIVjFUVFlfOTAyeHlMVk9qOVJzN3JBTHd5aEI5V05wY25jX24yZnEtOWMxWXpmMzRmYW9zLUlJUkwtVFQ4d3lXdEMzam55U0dwRnRJMDdNSFdRcE41bXBtOW9lRUx6TE1YckpQazlXZ0d6UEVmNTdWalpYcHhiZUVuNy0zRnN1dUdEeF9DZVNOTmlZNmhEOG1kQl92MDV6UGtNUENvaXNUQXFtdWdnekpwajdob3JYR1VkaG12TVE?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "estadao.com.br",
       "data": "2026-08-16T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g75",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3368,7 +3356,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g75",
       "principal": false
     },
@@ -3382,7 +3370,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g75",
       "principal": false
     },
@@ -3396,10 +3384,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g76",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3414,10 +3402,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g73",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3430,10 +3418,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g77",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3441,15 +3429,15 @@
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMlkwazU2Ui1fZXVPM3RlTHBiWW9CajZFeWp3dVFVbURhMXBlMWE5OHBFMGhKWHZwellFbWRwZnloMzNNY292UzBic3lscmwzamhvbk9fd0hCYjQtanFBLUhzeXFYOVFUajZtQjdnYW5VX0Vta2dZZzVaYmczSEdjR0VHeEZEU2NQRzk1SG5OQ2xKWktucDhRNFMxUi1rUVpNU2JVNHJiYzJ4NjM3LWtYWE5UdThHcDV4TDZxdW9NaTJTRXpMZmF5ay1xb3k?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Diário do Nordeste",
+      "veiculo": "diariodonordeste.verdesmares.com.br",
       "data": "2026-08-09T07:00:00.000Z",
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g78",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3465,10 +3453,10 @@
         "Plano"
       ],
       "pontuacao": 18,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g79",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3483,10 +3471,10 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g80",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3502,14 +3490,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g81",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "NeoFeed"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3524,10 +3512,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g81",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3540,10 +3528,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g82",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3558,14 +3546,14 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g83",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
-        "PB Esportes"
+        "pbesportes.net"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3573,17 +3561,17 @@
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa1MtNVFtU3k2WDVVSEVqbUlSNzM5T1ZSZHpHWTh0dEdGbUM5cDBYT3lBR0FKblV1Y1M4dmFUa2YySlFVY241ZVhrYlF5S3ZOcUhIMGd1MEd1TEZqNFVma0ZWUHcwTmFrTDMxd3dUdVYtTjM1NUljRDR6NERmX2NJRmVPQVl0NmZMdk43aHJaTExDblZUWnFIR2U1YTIyZXZucE1ucHdZeUExZWhycy1JX3ZKUmc3bno3N0V2SFJvZlRwdw?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "PB Esportes",
+      "veiculo": "pbesportes.net",
       "data": "2026-07-30T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g83",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3596,7 +3584,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g84",
       "principal": true,
       "cobertura": 4,
@@ -3605,7 +3593,7 @@
         "Metrópoles",
         "Terra"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3618,10 +3606,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g84",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3634,10 +3622,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g84",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3650,10 +3638,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g85",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3666,10 +3654,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g86",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3682,10 +3670,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g87",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3698,7 +3686,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g84",
       "principal": false
     },
@@ -3712,10 +3700,10 @@
       "categoria": "legislacao",
       "etiquetas": [],
       "pontuacao": 10,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g88",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3728,10 +3716,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g89",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3744,7 +3732,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g90",
       "principal": true,
       "cobertura": 4,
@@ -3753,7 +3741,7 @@
         "financenews.com.br",
         "Times Brasil | CNBC"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3766,10 +3754,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g91",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3782,10 +3770,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g90",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3798,14 +3786,14 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g92",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Money Times"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3820,10 +3808,10 @@
         "Plano"
       ],
       "pontuacao": 22,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g93",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3836,10 +3824,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g90",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3852,10 +3840,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g92",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3868,7 +3856,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g90",
       "principal": false
     },
@@ -3884,10 +3872,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g94",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3902,10 +3890,10 @@
         "Agronegócio"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g95",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3913,17 +3901,17 @@
       "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOLUpNNnViUFpTWlN1d1hOSlJubFBrNW93OWJzU183elI0Vks1STVfbjhWYkd2TFZtMFdUVmppVWVCWXNaaEs4RU0zcEw0bXZtZU0tWFJPeHVmMm8wVkx2V1piSGFiMWZ1WFJtSG9ENWMxMER3LXN1ZHpWRGtQT1lEVGVjeVA2MGQzNUhjVWVhZGpIQnpIejZXUjFkSHl6ZFdTNE9pYXhTUXBFS01tU0NKTmt3eU1wTXNQb1lKU0xvdkU0ckYzcGREYnBlQVFQZ2dFYVpzMzk2djJnTnfSAeABQVVfeXFMTXRaSVJIZ2ROMm50bDB3VkpKT2lDU0NRQmZXaHhNTkJMMjNjX3FsUVZVby1rYnpEWDFlRWZnRmQ3b2p4SUpRMzZNOUN3eU5ockZBUmlrbnlNaFg3bE4xcVkyUW8wcDdaNllrVkpxSlJCUkpIZE1OX09OMkQ2V0s4XzFDQlFzOWJkWWt2WEVYQUlqNHAwS1RFTzF5VFNyVERLTUphM0FSUWpvRzBSbDZpWXliaktwVFdDdjA4dlFraFp1aWlNSEk1X05BZnMycjlJZUtKcGxHandnVzlnYzNZRlg?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "estadao.com.br",
       "data": "2026-07-10T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Plano"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g96",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3931,17 +3919,17 @@
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM0FUcUJsem5ZcXFqdml3YlBpb0lScF9FSC1FOG9XUFQyRXY4RkJQaDgtWUd1V3dCRjRKdldOLU42WlVLRnVsS2hBUTZYOExBc3JvN0Q0MEtaRlJUYVdUdHkxWGg1MkFGcldxbW43RWlmOTM3OFpBVjZhV3VYcjIyaVRNUGNJOHhs?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "ND Mais",
+      "veiculo": "ndmais.com.br",
       "data": "2026-07-10T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g97",
       "principal": false,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3956,14 +3944,14 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g97",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
-        "ND Mais"
+        "ndmais.com.br"
       ],
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3976,10 +3964,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g98",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -3994,10 +3982,10 @@
         "Plano"
       ],
       "pontuacao": 16,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g99",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -4010,10 +3998,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g100",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -4026,10 +4014,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g101",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -4037,15 +4025,15 @@
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQ1hCNlZyTXFCbURmc3E3eEdWVllaODVJejNESE92UHU2a3Nvbnk4cFZGcGpLemlIUGJFdUtRRWp0TVpDTzk3cmxESVI5bVdBQl9qTXIzdXY0ZmJxWEROVE9DVG85eUxlRk5uTkxsSVZmYjNBUlV3NUg1UGxBUlhJN3IwdDdTT1dqSDVlX2g2R0t1OHZWbGNBZ2RxalRmdlpQVXowWFR4T21tazluMmVNNWtvNzIwRkxDaldrM3hlSFTSAcMBQVVfeXFMTUMyMWk1eWJpVjZBZ0ZiSERDWHJCX1Y4MUV0emxlUmdwcDg4SGtMSjEwV2xpUTc1Tzl6Tk1xUzBGQjN0eV9SbFdqVWlUNFNCY243YXN4R3NyYXFnSkZ2eVZ4T2tpZGZkcGlFd2YxYUppSW9MakJwSUlzX1AwWHM5Q3FxQkpLS3lKTVlBd0hlYkUyX05qNEpHQzV3S2FfZGRkNHBuNlpKRFRtaS1zaDdWTVIyaThFVmQwcm9wdi1WeWRtamhR?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "SuperVasco",
+      "veiculo": "supervasco.com",
       "data": "2026-07-04T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g102",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     },
     {
@@ -4058,10 +4046,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T19:14:08.660Z",
+      "coletadoEm": "2026-09-01T19:16:12.983Z",
       "grupo": "g103",
       "principal": true,
-      "versaoResumo": 4,
+      "versaoResumo": 5,
       "provedorTentado": "gemini"
     }
   ]

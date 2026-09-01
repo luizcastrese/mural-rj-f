@@ -1,6 +1,11 @@
-Resumos — 2026-09-01T19:14:14.095Z
+Resumos — 2026-09-01T19:16:56.826Z
 provedor: gemini (habilitado: true)
 modelo: (padrão do provedor)
 cards: 4
 origem: {"texto da matéria":2,"primeiro parágrafo":1,"og:description":1}
-falhas do modelo: nenhuma
+falhas do modelo:
+  Gemini HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+  This operation was aborted
