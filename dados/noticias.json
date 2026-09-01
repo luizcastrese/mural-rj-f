@@ -1,7 +1,7 @@
 {
-  "atualizadoEm": "2026-09-01T18:52:03.772Z",
+  "atualizadoEm": "2026-09-01T18:53:52.070Z",
   "total": 4,
-  "totalComRepetidas": 231,
+  "totalComRepetidas": 230,
   "comResumo": 4,
   "categorias": [
     {
@@ -153,39 +153,22 @@
       "coletadoEm": "2026-09-01T18:51:58.616Z",
       "grupo": "g0",
       "principal": true,
-      "versaoResumo": 3
-    },
-    {
-      "titulo": "Aditamento ao plano de recuperação judicial não produz efeitos retroativos",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVlB1RFFTdVJITDh5eUh4RjhXN2JEaTVWQjJ0Y19IbF9RZ1FzUUY4ajFQQ1ZCQWhqSFBEcTBIVHJwMlJCTkhoelZhWDE5TmRuU0xMeVJyZF9NbDR1cE5nb2VDUEthcGNXSldpVnVzNnBHZm9xZ21sVUczOEdBb2FNc213cDdfUlUyQ3B6clZHQUNBNGs3VjBwTnZoenQzVlNLZkdrdFlyZklOWWMwdC1RWmZtdjJ2cjZuS1RHS0F5TQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Coluna Política",
-      "data": "2026-09-01T18:05:22.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g1",
-      "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Grupo que opera grandes redes de comida árabe pede recuperação judicial com dívida de R$ 265 milhões",
       "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNVFRheGN4dHlOVGdialNOUmllZGdtbjlPbU1PTWFUd3JiWl9IS1FMZzBKSUtRUXRJRTFuNEhtWi12NTBZZENIa0hTRVQtODJlSW55YUdaSTA3cVRfa1hVTEd1YVhfV2hYX1VIakFPVEw2S2VwLS1zN3ZWaXBlSWhyZGtyUkpiU1NQd0YwNEdQMUhvaWQxeVpyUzRTSGpjVVozTWdoZ01tVy1kN0Z1R2VoWjRSR1dzb19TNU01cnRZVXFpQVhuVllxWnQ2VXhzdG9RNkJRVEhDenBHNUhnWm1qSnlBUTVwOFo1MWx2V0RldlRGYlRjQkpwbDJOWlJUTzlUTTJMVDNCazhGZGk0?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "O POVO",
+      "veiculo": "opovo.com.br",
       "data": "2026-09-01T18:05:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g2",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g1",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "TNG diz que superou crise e pede fim da recuperação judicial após 5 anos",
@@ -197,10 +180,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g2",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Número de empresas com pedido de recuperação judicial bate recorde em 2025, segundo Serasa",
@@ -212,10 +195,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g3",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "STJ suspende assembleia geral de credores da Ambipar",
@@ -230,10 +213,9 @@
         "AGC"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g5",
-      "principal": false,
-      "versaoResumo": 3
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g4",
+      "principal": false
     },
     {
       "titulo": "STJ acata recurso de debenturistas e suspende assembleia de credores da Ambipar",
@@ -249,9 +231,9 @@
       ],
       "pontuacao": 35,
       "coletadoEm": "2026-09-01T15:13:30.918Z",
-      "grupo": "g5",
+      "grupo": "g4",
       "principal": true,
-      "versaoResumo": 3,
+      "versaoResumo": 4,
       "cobertura": 2,
       "tambemEm": [
         "Metrópoles"
@@ -267,10 +249,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
-      "principal": false,
-      "versaoResumo": 3
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
+      "principal": false
     },
     {
       "titulo": "Refit tem a falência decretada",
@@ -282,10 +263,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
-      "principal": false,
-      "versaoResumo": 3
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
+      "principal": false
     },
     {
       "titulo": "Com 96 lojas no auge, tradicional rede de supermercados tem falência decretada pela Justiça",
@@ -297,10 +277,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g7",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g6",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Grupo Refit tem falência decretada pela Justiça do Rio",
@@ -312,10 +292,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
-      "principal": false,
-      "versaoResumo": 3
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
+      "principal": false
     },
     {
       "titulo": "Refinaria de Petróleos Manguinhos tem falência decretada pela 5ª Vara Empresarial do Rio de Janeiro",
@@ -327,8 +306,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
@@ -341,8 +320,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
@@ -355,8 +334,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
@@ -364,15 +343,15 @@
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbVZVZEpabGZtTlFuMkFMNW1QNFk0clJQZDQyRUVGU2xIN2oyLTJldkh1em5URUxuNzFjekdnTG4wSjMwQ1hVcWdCNjdTMVNOUXhTQzhWVlJrcV9KSFBOZE5wRkFSMmY3Q2lUOXR3LXprUV84YWlINmI4cGdkZGQxZ1FGNFppMUVYeUpOYUJwdHdNUlBzclBXX21SWHgtLTJ4SVEwUVFPNXlNazhoTGxaMHFneEZxQzVEcW8yU1hrS1dVMURXWXB6NGRIUWjSAdIBQVVfeXFMTWZRV2tmRHVqcG5xLW1sNU9YRnRrdHkzcmdDVWNLNk5xdXFnbmRCUm9XTUtrMUplSTJSTldXLU16MGlSVFFrZjM3bC1VdUg5dEpoZ1ZZTVJmRzh6OTBWeVExUWNJYjNqNkNyUkNlQ293X0wwVllFSDJJWDBvdzlULUVITW54U2dpT1ZHQWNDQUtoMk9ONjhnbGFvWUR1cERrVU04UU1VYUt0b3pYbXl2RnRvTWNNTFlmSEZGOENienFhSDJDY0NreGZrcG9QTHE1T1hn?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Mercado&Consumo",
+      "veiculo": "mercadoeconsumo.com.br",
       "data": "2026-08-31T19:59:47.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g7",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Grupo Refit tem falência decretada pela Justiça do Rio de Janeiro. Recuperação judicial iniciada em 2015 chega ao fim",
@@ -384,8 +363,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 25,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
@@ -399,7 +378,7 @@
       "etiquetas": [],
       "pontuacao": 4,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g6",
+      "grupo": "g5",
       "principal": false,
       "cobertura": 14,
       "tambemEm": [
@@ -427,8 +406,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
@@ -441,8 +420,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
@@ -455,8 +434,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
@@ -469,14 +448,14 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g5",
       "principal": false
     },
     {
       "titulo": "Refit: Justiça decreta falência das empresas do grupo no RJ",
       "link": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/08/31/refit-justica-decreta-falencia-das-empresas-do-grupo-no-rj.ghtml",
-      "resumo": "A Justiça do Rio de Janeiro decretou nesta segunda-feira (31) a falência das empresas que compõem o Grupo Refit , dono da antiga Refinaria de Manguinhos, na Zona Norte do Rio. O grupo é considerado um dos maiores devedores de impostos do país.",
+      "resumo": "A Justiça do Rio de Janeiro decretou nesta segunda-feira (31) a falência das empresas que compõem o Grupo Refit , dono da antiga Refinaria de Manguinhos, na Zona Norte do Rio.",
       "resumoFonte": "texto da matéria",
       "veiculo": "G1 Economia",
       "data": "2026-08-31T17:30:31.000Z",
@@ -484,7 +463,7 @@
       "etiquetas": [],
       "pontuacao": 18,
       "coletadoEm": "2026-09-01T15:30:43.593Z",
-      "grupo": "g6",
+      "grupo": "g5",
       "principal": true,
       "cobertura": 13,
       "tambemEm": [
@@ -500,7 +479,7 @@
         "O TEMPO",
         "Gazeta do Povo"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Tese do STJ exigirá distinção para equilibrar sucumbência em RJ e falência",
@@ -514,10 +493,10 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g9",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g8",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Casas Bahia consegue proteção de 180 dias em recuperação judicial, e ações despencam",
@@ -529,10 +508,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g10",
-      "principal": false,
-      "versaoResumo": 3
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g9",
+      "principal": false
     },
     {
       "titulo": "Casas Bahia confirma antecipação de efeitos do seu pedido de recuperação judicial",
@@ -544,14 +522,14 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g11",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g10",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Valor Econômico"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Grupo Casas Bahia confirma antecipação de efeitos do seu pedido de recuperação judicial",
@@ -563,10 +541,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g11",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g10",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Recuperação extrajudicial da Braskem preocupa vítimas: ‘Direitos não podem entrar nessa negociação’",
@@ -580,67 +558,46 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g11",
       "principal": false,
-      "versaoResumo": 3
-    },
-    {
-      "titulo": "STF valida proibição de devedor contumaz pedir recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQldBaEtuelpBSFdKY0RaNFVVT0JKNGhWeHpIemdpZVItV1Y4bjNMU01MdEpyN21zOTVyNHdESUpqRzJEZ3Z5Ql9qaE0wbkhpQWNrSkstaDFaczJ0N3dVTTlsNXJZY3diUEVSZDdRYWFHeEFVRThQLVJxVm42R1ZKaHplWEZ3RDdJQjN3UVNZZVVrS1dzVTdldzZ0MnFWTmo2V29kS1EtZGpYUnlNMndieGZ3?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Blog Edison Silva",
-      "data": "2026-08-30T12:53:07.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STF"
-      ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g13",
-      "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "stf noticias"
-      ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Justiça de São Paulo aceita recuperação extrajudicial da Braskem",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeDRQZFVTZTlhN1lOQU5vSl9ES1llS0gzY1NyYnNlMmtUTDBGNnFqS3k3SVgtQTdNMmktMEROY1VObVl2VXROanlUdGVmUFVTOXpkVjZUdXVtLWpNQmtlWHlrb1NVbEFPUVhDX2V1MXBVSFlpTGZfTEQ2TjBwbTBHck5XTEs2Y2VDdmRXWl9jWE40d0xlYksyMGdKQWpMNHp0ZWc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "BandNews",
+      "veiculo": "bandnewstv.uol.com.br",
       "data": "2026-08-29T18:46:36.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Grupo Sefert entra em recuperação judicial com dívidas de R$ 240 milhões",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdnlXcFFuWFprNE9aZ2VaOGNKOVVGaUVRQU13QllZZUhBQTh2QjhzU3N3ODE4aWRNdmdfRUFiNXhxdUh2dzg1VHh4ejJlRmZaSUtHa0tsUjFUSUFtWjNqRjFGNTZvVDJsa2R0ZUxyQTZNcEdLTk0xdzJVN2piNFFadm9kdmJzNWZYOTVKcm9ZbnpqSVN2OWFsRU10QWdTbkZRakV3RUVVem8?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-08-29T16:24:16.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g15",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g13",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Globo Rural"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Casas Bahia recuperação judicial: blindagem contra credores",
@@ -654,10 +611,9 @@
         "Stay period"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g10",
-      "principal": false,
-      "versaoResumo": 3
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g9",
+      "principal": false
     },
     {
       "titulo": "Justiça protege Casas Bahia de cobranças por 180 dias durante recuperação judicial",
@@ -670,14 +626,14 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T15:30:43.593Z",
-      "grupo": "g10",
+      "grupo": "g9",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
         "ADVFN",
         "Acia Araçatuba"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "BRKM5 protocola recuperação extrajudicial e YDUQ3 capta R$ 1,2 bi",
@@ -691,10 +647,25 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g16",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g14",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
+    },
+    {
+      "titulo": "Comprei em uma empresa que pediu recuperação judicial. Vou receber meu produto?",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcmdIQTRRRXJZOW5lT1hMazVRbkNZQjFUVUluZ2lnajBXb2l3aHlRUFlEQVBIeWZyOUNEMWhQeWNzcUtRSTVtZmwyZVQzbW9CYUVveHZfQzhpMWh0VFhpOE91S2VoaThFNVNSUC1rcktCTlB1TUt2dFRMallKSVFwaEFVUlc?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Consumidor Moderno",
+      "data": "2026-08-29T02:31:08.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g15",
+      "principal": true,
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem recebe aval da Justiça para recuperação extrajudicial de dívida de US$ 10,9 bi",
@@ -708,10 +679,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem vai usar recuperação extrajudicial para negociar dívida de US$ 10 bilhões",
@@ -725,15 +696,15 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g11",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
         "Cadaminuto",
         "Vero Notícias"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi (OIBR3) entra com pedido de recuperação judicial nos EUA",
@@ -745,10 +716,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g17",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g16",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Ministério Público contesta plano de recuperação Extrajudicial do Grupo Pão de Açúcar",
@@ -763,14 +734,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g17",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Justiça aprova processamento da recuperação extrajudicial da Braskem",
@@ -784,8 +755,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -800,8 +771,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -816,8 +787,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -832,8 +803,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -848,8 +819,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -857,19 +828,19 @@
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbmt2M2VpVTVMaVJwTWU3dlgwZWVRak14RUExamtEemUwdDBrcjhBRFhqNjNZdnhkaDBlNDZIb3BVZTd1d1JGMUp5TkZXMU9feHNhQnB2SDBqZldIVGlOV0ljd21idjFhUHNCT0dIcG90ampSY1pRNjdhdVVzbDhnY3FrV2pMQ0VoaG1YbURENFVqVGRBY21DNDdHLUhSOW1icWkyV3ZmRm1ZSGpNT0xj?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Brasil 247",
+      "veiculo": "brasil247.com",
       "data": "2026-08-28T15:49:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": true,
       "cobertura": 16,
       "tambemEm": [
-        "BandNews",
+        "bandnewstv.uol.com.br",
         "Exame",
         "Rádio Metrópole",
         "Times Brasil | CNBC",
@@ -878,29 +849,29 @@
         "ADVFN",
         "Folha de S.Paulo",
         "Gazeta do Povo",
-        "cnnbrasil.com.br",
+        "CNN Brasil",
         "Jovem Pan",
         "Money Times",
         "InfoMoney",
         "UOL Economia",
         "Valor Econômico"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Recuperação judicial com dívida de mais de R$ 600 milhões é aprovada por credores",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUEg2TGx4V0ZiNTBrX0VWRlh1VkVVNkVSYTB3U20zVEJGRTVla2N3SlNGSWd1VjFLYW1hWFVrcU9lUkE1MnJWOVV6TlQ1ajBzWndnemstdjJZZVZhRnh1QnlYVDJZcFVfVlJ0SXU3LXRoUXh5NHFBMWlJalFfVHM1bEZIYld3QlB4WU4zTmxqTHhMOThSYlBSUnA1LV9YaDZKdXRiZnJNTHRYZFE?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "CircuitoMT",
+      "veiculo": "circuitomt.com.br",
       "data": "2026-08-28T15:37:36.000Z",
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 10,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g19",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g18",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Justiça de SP defere processamento da recuperação extrajudicial da Braskem",
@@ -914,10 +885,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 22,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g20",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g19",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem diz que Justiça aprovou processamento da recuperação extrajudicial - 28/08/2026 - Economia",
@@ -931,8 +902,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -947,8 +918,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -956,15 +927,15 @@
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQnY0UmhZcFB3c1NNR2NxYTF4QV9ZaFpRQ1plaDdiTzRSLXhnLWJnLUpEc2pKZk1YZjhtcUh2REUyc1BxYVlLUFNyTFp2T3UtQ1FxYzUtTEliQk00WFlocVI4cWdyV0FNbHlkbF9CN1lnR3cwN2F2WlAybG5YZlJjNm1IUjJLYVBhU09QSVo0RmdXU3pocWRFZmZ6ZmNBeEU2Y2RVcjlPR0RlM3ZvdGdiRzBHUEViVm1sZ0NoalFQNk0xZHp6ZHNR?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-08-28T14:24:29.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -979,10 +950,10 @@
         "Plano"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g21",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g20",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem obtém aval da Justiça para iniciar recuperação extrajudicial",
@@ -996,8 +967,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -1012,8 +983,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -1028,8 +999,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -1044,8 +1015,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -1060,8 +1031,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -1074,10 +1045,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g22",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g21",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "MP de SP rejeita recuperação extrajudicial do GPA",
@@ -1091,10 +1062,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g23",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g22",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Ministério Público contesta plano de recuperação do Pão de Açúcar e aponta risco a credores minoritários",
@@ -1108,25 +1079,25 @@
         "Plano"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g17",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Habib’s pede recuperação judicial em meio à disparada de 65% nos pedidos de socorro financeiro por empresas",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQMi1USTZTQ0tzR1ZlWkVKQ2ZQVTdyNXB4MExiU2FpNERXaVBvMFZNOUZVS3JLTy13RG83LTA0Y1NjS0IzR2tHUlJLSVBwV29qR1Q1eDJhRVkzemdBMmVRYThiNUlCQjkxM2hEM1EyX2I2YU1aUWRMVDhqSEdyS3dWcTlR?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "istoedinheiro.com.br",
+      "veiculo": "ISTOÉ DINHEIRO",
       "data": "2026-08-27T21:35:34.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Empresa de insumos Sefert entra em recuperação judicial com dívida de R$ 240 milhões",
@@ -1138,10 +1109,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g15",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g13",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Com dívida de R$ 265 milhões, Habib’s tem pedido de recuperação judicial aceito pela Justiça",
@@ -1153,10 +1124,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "OSX pede que Justiça do Rio conceda sua recuperação judicial",
@@ -1168,10 +1139,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g25",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g24",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oncoclínicas atualiza plano de recuperação extrajudicial e mantém negociação com credores",
@@ -1186,10 +1157,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g26",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g25",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "STJ evita que sucumbência vire entrave a credores de recuperação e falência",
@@ -1203,10 +1174,10 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g27",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g26",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oncoclínicas submete minuta atualizada do plano de recuperação extrajudicial à Justiça em SP",
@@ -1221,37 +1192,37 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g28",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g27",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Dono do Habib's entra em recuperação judicial com R$ 265 mi",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE04RVFIMGdoZWxRelUtXy12X3A3ZDFHZWVDbHpiSmpxbEhXSzFZUThJX3FUcVpkV0ZVaWdLY28xbzFnNjJYS2puN1ZzNnlPd1dHRW55QkZRcUdSdTNCVW5FcUtvblNNR0pvWEo3Q2FLWDF0TTd4cXc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "SpaceMoney",
+      "veiculo": "spacemoney.com.br",
       "data": "2026-08-27T00:04:56.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": true,
       "cobertura": 10,
       "tambemEm": [
-        "istoedinheiro.com.br",
+        "ISTOÉ DINHEIRO",
         "Valor Investe",
         "Forbes Brasil",
         "NeoFeed",
-        "SpaceMoney",
+        "spacemoney.com.br",
         "Jovem Pan",
         "O GLOBO",
-        "g1.globo.com",
-        "cnnbrasil.com.br"
+        "G1",
+        "CNN Brasil"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Recuperação extrajudicial: veja por que empresas estão recorrendo à modalidade",
@@ -1265,10 +1236,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g29",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g28",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Dona do Habib’s Entra em Recuperação Judicial com Dívida de R$ 265,2 Milhões",
@@ -1280,8 +1251,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false
     },
     {
@@ -1294,8 +1265,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false
     },
     {
@@ -1303,13 +1274,13 @@
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54eDI2MmpQOUVXMk14ZVNNc3Z4Mno0ME05Qm8wRXhlaFJHcDNraUJhb2d0VnBRUVVlUDItVEVweTUzcTJwT05pMVFuZnJrNU1JdVNPSXpNWGRvVDZQWTFNR0dKSVVmMURGRFVpMm9tbTNzWTRESENyX3MzcjVEem8?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "SpaceMoney",
+      "veiculo": "spacemoney.com.br",
       "data": "2026-08-26T21:13:18.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false
     },
     {
@@ -1317,19 +1288,19 @@
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWXZnSXVqMWlsc2VaYlNnVHlsTVdZTnRQa0dlNWhhMHY3dmpaSXl4cjMwc0Q0d3ZUOWRIU080TVFBX2o5SnI3b1pXVTVTV3BYYlJ5Z1ppSm1WeFI5ZUhmN1J2LVJRREZpWEVtMng4b1B0eGFwdGRwWFRvZ1hXNURiNjlfZXNfWThDREhwSVNJZHRncEtTSlcwck9TZmFyanhxc1lnREhTS2pWdGFVMk1xdE40LVdOTHpBajNqNWw0UG5jdjZSMldhSTZB?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "douradosnews.com.br",
+      "veiculo": "Dourados News",
       "data": "2026-08-26T21:01:00.000Z",
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g30",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g29",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Revista Nossa"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Dona do Habib’s entra com pedido de recuperação judicial com dívida de R$ 265 milhões",
@@ -1341,8 +1312,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false
     },
     {
@@ -1355,8 +1326,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false
     },
     {
@@ -1364,13 +1335,13 @@
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUkNZMWFnYUtMeXlUMWRvTVlpU0tjOVpqLWlUTE8takg5cnQ3bGlJYlhkdnc2elFaYTBKRHZnM0E0UzdyVnpBYmJDRl8zc2FPRG5WVlJ3TGFBMGNfUFpkU0cyb1lUN0pCbFM3WmlKT28wMkVFd3p2WGFfQ3ZJSnRVX1NjX0Y5cWUzRHfSAZgBQVVfeXFMTl8zZkRaV3lDb2pkVUNsbUd4dVVib3ZmWFdNcGJrYWpJcTdORU9QSnJKMWhCdV94cjB5Ukx6U044OG54czc5N2UtUXNKNFVoWmYzXzM5Nnh6ZHJLWXJUdVJ3Qm9ma0tXdnZUQ21QNE9wOGpFRm9meUdFbjAtZEwwTnZ2OGZkTWpiMVJneko2VjRUOFdJaEZJNTM?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-26T19:49:03.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false
     },
     {
@@ -1378,13 +1349,13 @@
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT2RZWUZOR1lmSWN2Rk1lcUVXVEJMMmU0clFvQjJQM2Z4dHJrRVBJNTNheTl2VU9udHYtWlpLeENqUV9yRTZvQzMxNWVXQ0J2cFhPQXpXR0Z5ajI2RjJQMVdfbFIzWnBPQVE3VVJwSHlnR3hieWVqZDBMRGdjSUNEOXdEZFpOcEpaSVZzam8xNXlCOFk5?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-08-26T19:44:38.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g23",
       "principal": false
     },
     {
@@ -1397,25 +1368,25 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g31",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g30",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Em fato relevante, Oi confirma falência decretada pela Justiça do Rio",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaGN5eGNNaEVSS2R4SXJKQmpjQ3lZNHVncnd1VGN3cWZPUEJqTVR1WWRtSWFxaHc3bE9DS2JxNjBGNTQyOXRyekdRblJBWHNzQ21XOHdXLU04bUtWMW1DVjAxLVQ1LVY3LXNicVQ1Vl9nTG5US2Q3R1dFcnRZLVlOZEhoNklIaWQ2b2l1Q0JFZDJtVEFOSTVYRUN2SUpoWWUzQjMySUVjVdIBrAFBVV95cUxOYmpxck5PYWJmU2NHb1R0UTFqQ2ZMaHpRXzlQLTJqV0U2czg1R0lTZGVrRDJSR2VsRE5ZSGExZS0zTklZUjNGQjJYeDFrOWplTEpQLVhSanpSTlhTX3QtRllTLThhem1aZ2hlMXNMTWVJWG1yaDVvUjJUUng2a09XUV9FcUJNR243R1BuWE81QXdFLXdXWmctdHJadTFxM2x6OF9VR3l0X2huQnRl?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Mercado&Consumo",
+      "veiculo": "mercadoeconsumo.com.br",
       "data": "2026-08-26T12:54:52.000Z",
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g32",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g31",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Ambipar terá nova assembleia de credores, após falta de quórum na recuperação judicial",
@@ -1429,10 +1400,10 @@
         "AGC"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g33",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g32",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Uma das maiores empresas do país tem falência decretada",
@@ -1444,10 +1415,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g30",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g29",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem inicia recuperação extrajudicial de dívida de US$ 11 bilhões",
@@ -1461,10 +1432,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g11",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada novamente pela Justiça",
@@ -1476,14 +1447,14 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g34",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g33",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "UOL Economia"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Operadora de telefonia Oi tem falência decretada pela Justiça",
@@ -1495,10 +1466,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g35",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g34",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "STF confirma que devedor contumaz não pode pedir recuperação judicial; entenda a regra",
@@ -1512,31 +1483,31 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g36",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g35",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "STF confirma restrição a devedores contumazes na recuperação judicial",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOR19pYUtLVnR3TF9LT2l2LVV6RzA0WWJORVh3dGhhRGxuVUxaU1N4WFdoWWZaQmpJVF9CdmRHZWc4N2w3RE5xb1l2SHd1WVhNREw2TUhTTlNkZWhvRHNTSVdFTXBYeS1aRDF5dUlfdnppRElXQ2VKRmpDb3VKNkxyUWp0SEhUTl9YalFlZlhzWWFlWGNzYmUyQWpVemlYZl9tb0ZJelFXUjRSSWNKZ1hna0h30gGyAUFVX3lxTFAteWNBMVpHcDE0eVoyenl3c3JyaXBPOXJMV3VpR2Rvd21veGlLLS1XT3lYR29NYmpFc3JtWngtWXEtOEIta2lZUU82NVphMkNsZmZzdHpJaWFXR2RQTXBtaFFuYk5FTDFwdk05UjJVUzh6cGVLeXVlS3IwSWtXQ2F2aFJ2VnZYTThFT0Q1aVRyNjRKWXFNNjB1NHZGTEg1ZmxxNmVRZ0RZNFloY0d2OUxHWEE?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "campograndenews.com.br",
+      "veiculo": "Campo Grande News",
       "data": "2026-08-26T03:12:00.000Z",
       "categoria": "jurisprudencia",
       "etiquetas": [
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g37",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g36",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Gazeta do Paraná"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Tribunal de Justiça do Rio decreta falência da Oi",
@@ -1548,10 +1519,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g38",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g37",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Com credores em Laguna, operadora Oi tem falência decretada novamente pela Justiça do Rio",
@@ -1563,10 +1534,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g39",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g38",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi perde batalha judicial e tem falência decretada pela segunda vez",
@@ -1578,10 +1549,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g40",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g39",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada após Justiça do Rio de Janeiro suspender recuperação judicial",
@@ -1593,10 +1564,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 25,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g41",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g40",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Justiça volta a decretar falência da Oi",
@@ -1608,10 +1579,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g42",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g41",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi Tem Falência Decretada Após Ficar Sem Dinheiro; Dívida Supera R$ 44 Bilhões",
@@ -1623,10 +1594,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g43",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g42",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Lupatech (LUPA3) Obtém Apoio de Credores e Avança no Plano de Recuperação Extrajudicial",
@@ -1641,14 +1612,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g44",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g43",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça pela segunda vez",
@@ -1660,10 +1631,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g45",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g44",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Crises em série levam Braskem a pedido de recuperação extrajudicial",
@@ -1677,18 +1648,18 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": true,
       "cobertura": 28,
       "tambemEm": [
         "Alma Preta Jornalismo",
         "Migalhas",
         "Valor Econômico",
-        "g1.globo.com",
+        "G1",
         "JOTA Info",
         "Folha de S.Paulo",
-        "agenciadcnews.com.br",
+        "DComercio",
         "Notícias Agrícolas",
         "Forbes Brasil",
         "InvestNews",
@@ -1699,11 +1670,11 @@
         "Brazil Journal",
         "UOL Economia",
         "InfoMoney",
-        "cnnbrasil.com.br",
+        "CNN Brasil",
         "Agência iNFRA",
         "Valor Investe"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi confirma falência decretada pela Justiça do RJ",
@@ -1715,10 +1686,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g47",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g46",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "STF valida regra que impede devedor contumaz de pedir recuperação judicial",
@@ -1732,10 +1703,14 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g13",
-      "principal": false,
-      "versaoResumo": 3
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g47",
+      "principal": true,
+      "cobertura": 2,
+      "tambemEm": [
+        "JOTA Info"
+      ],
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada: entenda a queda da antiga supertele",
@@ -1747,10 +1722,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g48",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Arrastando-se há uma década, Oi tem falência decretada",
@@ -1762,10 +1737,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g49",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "De novo: Oi (OIBR3) tem falência decretada pela Justiça pela segunda vez",
@@ -1777,32 +1752,32 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g50",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Falência da Oi é confirmada pelo Tribunal de Justiça do Rio",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa0JmNktQQ2ZRUTgzdHdZaE1XSkhkVTBac1M0dkI0dkpaUkhGTFl6aHBTd2N4N3hRZkN3Tk9rblFBbUc0NFF0eEQtd2hFMzJTNnlRLWg2cUk0azRSVnFLajZ1RWZjTDdGNU1mbW56UzIyYXhqS2hYUFh4QktUcmxMZlBqUUpTbVlLcEZkZmlLNTREMHJ6a3JYZGlvNnA1cUU2YXk0?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "agenciadcnews.com.br",
+      "veiculo": "DComercio",
       "data": "2026-08-25T19:01:00.000Z",
       "categoria": "jurisprudencia",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g51",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "STF valida blindagem fiscal e barra devedor contumaz da recuperação judicial",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdjBETVVWQ1hNUHV4dGNQeG1TTGhVeG9xdnNKcHpnQ1RzWkZPSmdIQjlBa3hnUm5MbWUxd2VkbkFKbFJqTXJpblFkYzVSelZfTUVjWGJPMHZHT01IMGxWOVpHZy1wd05IdzhCVVpGUnNsUDNEZWlYbmdjMDNtdkt2RWV3?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "istoedinheiro.com.br",
+      "veiculo": "ISTOÉ DINHEIRO",
       "data": "2026-08-25T18:59:40.000Z",
       "categoria": "jurisprudencia",
       "etiquetas": [
@@ -1810,10 +1785,10 @@
         "Stay period"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g52",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada e acumula dívida superior a R$ 44 bilhões",
@@ -1825,10 +1800,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g53",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça do Rio em meio a dívida de R$ 44 bilhões",
@@ -1840,10 +1815,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g54",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça e B3 suspende negociação de ações da empresa",
@@ -1855,10 +1830,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g55",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada pela justiça do Rio; veja o que deve ocorrer agora",
@@ -1870,10 +1845,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g56",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi volta à falência decretada pelo Rio de Janeiro",
@@ -1885,14 +1860,14 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g42",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g41",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "AJN1"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Justiça do Rio confirma falência da Oi após rejeitar recursos de bancos",
@@ -1904,10 +1879,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 4,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g57",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça novamente",
@@ -1919,10 +1894,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g34",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g33",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça",
@@ -1934,10 +1909,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g58",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial; empresa tem acordo de R$ 1,2 bilhão por desastre em Maceió",
@@ -1951,10 +1926,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Lupatech consegue aval de credores para plano de recuperação extrajudicial",
@@ -1969,10 +1944,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g44",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g43",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Maioria dos credores da OSX Brasil aprovam plano de recuperação judicial",
@@ -1986,14 +1961,14 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g21",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g20",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Forbes Brasil"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Lupatech consegue adesão de credores representativos de mais de 50% da dívida em recuperação extrajudicial",
@@ -2007,10 +1982,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 10,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g59",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem busca recuperação extrajudicial; veja a íntegra do pedido",
@@ -2024,10 +1999,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "STF valida legislação que impede pedido de recuperação judicial por devedor contumaz",
@@ -2041,10 +2016,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g60",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial e ganha tempo",
@@ -2058,8 +2033,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2074,10 +2049,10 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g61",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Fabricante de móveis tem falência decretada após abandonar fábrica e acumular dívida de R$ 133 milhões",
@@ -2089,25 +2064,25 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g62",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Recuperação extrajudicial: Braskem tem 90 dias para negociar dívida de R$ 56 bilhões",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPbDNLV1RCaGVOU3g0ZnlXUDBTZjR3Mk5mNUxfbXpDWjdLdlI5QzlMbm4wd1M2VmdpUXEySjJTNkR6RGhHd2hGRUVMRjBycWJscm9uWVo0c3VhTTZqejliNHo1SFBLbTFibmtQZnNkbmxZMGlsWmNDZGVwenRpdHZUcmJlQkh5aERyLUx4SF9PX01qQURlRGRjSFU5encwaW9tc1NmWGRoalhzSXBhWlpITktWY2FJSlJEMjcyWlpxSmc0NGxESTFuRFlVNVlUNzJGNzlaam1yb3JoNjZ40gHrAUFVX3lxTE5vVlF1aHYzYU9GMUNGQ1U5dFdEbGR0RDFiSkpOYWRabmZRenF0WXpLNmhRZTRqOHRlMWdtYk1qZHBhaFpKcVEzYjZmMHBsNlVNb0lZNXM0T2R2NUV0WUZvRmFjT3AyLUN4Y0Q0a3Nkd1czSDJwRGdaNkx0T3lhTUlxY05aOU5GamFNcUNGQVRMcTdJN250OXhEYUtIZnhNdkhSX3hmcTRIV0VWUDEzS25ZWXo3ZWNZbHdaemNpaExiU2EwNW42LXM5d0FIU0cxNW4zQTBiRzk1S0xtMzBTcWMyX1hjcHpWbnQtYmM?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-24T23:44:17.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2122,8 +2097,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2138,8 +2113,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2147,15 +2122,15 @@
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRkFOZzk0U0l1My03UzQ0SS1HOEt3T3FBNEplb1VnSEVIbzNfeXRONS0tVzVkcTYtdnlmaDk0OFNpVjRaZTFQcXNxbmtTb2FkU0k4ZFpTS1puZTZxU1dDVTVuVzUyNzZUOUtpZkdDSGZFdXVkcXJ3NXRrb3E2aFUyaVJBSi1sVVlPQzNNWVo5SjdoT2JZVFEwR0V0NA?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "agenciadcnews.com.br",
+      "veiculo": "DComercio",
       "data": "2026-08-24T21:55:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2171,14 +2146,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g16",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g14",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Visno Invest"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem faz pedido de recuperação extrajudicial",
@@ -2192,8 +2167,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2208,8 +2183,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2224,8 +2199,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2240,8 +2215,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2256,8 +2231,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2272,10 +2247,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g63",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "B3 vai excluir Braskem dos seus índices após acordo de pedido de recuperação extrajudicial",
@@ -2289,9 +2264,26 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
+    },
+    {
+      "titulo": "STF valida proibição de devedor contumaz pedir recuperação judicial",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbklwUWRmY0I4YVRjY19oeENVdjNiQzEyNzRZVGFyUTQ2cTVhS2U4UVhvSzFSc2hjcEw2eWdKTVZmMHdZaUlHUnlySXNLZWFkZWFUcFZmX2R2RGlOQ2QydzRNQXZvWU5aT0RPcmZDOEJfNHZDY3B6aW5OaWwydnF4TVQ0TV9MZDRSSjBlWXp0dVF4VUlsazBGVVVEOFdPZTBHVVFqdWcyRQ?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "JOTA Info",
+      "data": "2026-08-24T17:36:54.000Z",
+      "categoria": "jurisprudencia",
+      "etiquetas": [
+        "STF"
+      ],
+      "pontuacao": 12,
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g47",
+      "principal": false,
+      "versaoResumo": 4
     },
     {
       "titulo": "Conselho aprova pedido de recuperação extrajudicial da Braskem",
@@ -2305,16 +2297,17 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g64",
       "principal": true,
-      "cobertura": 4,
+      "cobertura": 5,
       "tambemEm": [
+        "revistapegn.globo.com",
         "O GLOBO",
         "Seu Dinheiro",
         "Estadão"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial para negociar dívida de US$ 10,9 bilhões",
@@ -2328,8 +2321,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2344,8 +2337,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2360,10 +2353,10 @@
         "Plano"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g65",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Ações da Braskem cedem 3% após companhia confirmar que pretende entrar com pedido de recuperação extrajudicial",
@@ -2377,9 +2370,26 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
+    },
+    {
+      "titulo": "Braskem: Conselho de Administração aprova pedido de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOY2lCa01zQU5kdHFBNTl5RGNydmpxV0ZtSzJwaG9US3RLRGZvd0xGNGhqWEJLYm84QWZTbllOazlHdWdkNDUybEdHb3VLMERXc00zZEJNaUhuX2Q5bXZOZkNXUmRoSzFuak9MMUpndWtLbDhsTllXVFB4NktzdlpCc3EwdXlLN0o4RTQxMjNnVmtrOGRxSVVfTVI2NWlOaU1YRU0xVFdOOGNQRjdrV2RsQ2hGUFZIc0stY3pMd00yeVhJaEUwYllOdVc0U2hNVGpBUG5F0gHiAUFVX3lxTE1wV1VUN2Y2Z0VRdkozNWRuQlc4czlkUTNzM1A2TWZKbUVZVkxIYWpQRlNhZnBFeUFrQXhQMTVuQ0JrSXRVckVmYXpMalVpaDBMQjJwdVZ2VDg3b3gtbl9valNLRjd1YWlIZ3NZQ3UzT2NKdFJ5MTVCTldqUnlnTTFicFpBSUVJcGNCY0xFY0ozN0NKMHg4dmV4R2RVVXN1ZlM3S2NUT0RLZ1QycmZlM1ByUlk0ZklqTlY1aVhCeExIeTd3M01ka2lRMXFvVENoTlRQNHhVZDF2VjJGekgyLXNhZUE?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "revistapegn.globo.com",
+      "data": "2026-08-24T13:18:24.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g64",
+      "principal": false,
+      "versaoResumo": 4
     },
     {
       "titulo": "O impasse de US$ 10,9 bilhões: Braskem recorre à recuperação extrajudicial",
@@ -2393,8 +2403,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2409,8 +2419,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2425,10 +2435,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g64",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "BREAKING: Braskem entra em recuperação extrajudicial e ganha 90 dias contra uma RJ",
@@ -2442,8 +2452,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2458,8 +2468,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2474,8 +2484,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2490,8 +2500,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2506,8 +2516,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2515,15 +2525,15 @@
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPR25qSUV5WnliVl9Cc3Z6RV9fTVRMZFNSb084SnJwSWwxbkVaWkFiOTB1ODMtSWh1WXZCbWhoTk42QXBxbUppTzFjQ0N5ckJOYzBkUjBJVmNhWlNiLVgyZFpyVkFYRmlxY3NFOXJKQjhVSnVLc0RFT0lvQ2I0MzhCclBDOHJEajBwczJnMGxfWmQ2Mmc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-08-24T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2538,10 +2548,9 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g64",
-      "principal": false,
-      "versaoResumo": 3
+      "principal": false
     },
     {
       "titulo": "Braskem entrará com pedido de recuperação extrajudicial",
@@ -2555,8 +2564,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2564,15 +2573,15 @@
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc2pXVnNPTGJ2Nk5zbDBiWXF1czZQNGs3ZG9EOXRqUzdEY0JyUXM0bThNQjl5NzRIM21BdXBYenEtNlh0SlVYM0REYXNpOGl0OWNvRllCd2F2WS1HTnNUcEpidnM0STJwVUk2ZnhuT3JHWlpHTjFEVk8tZjl6czE5eDhRN0lpd0t1RXVVa0lPVXRMQ3ZwX3FLeEdoMzdqRW_SAa4BQVVfeXFMUHp4M3dCUzVLU3QwMExIR3hPQXFpN1drTWRIR21zQU44NjdGRDdtRHY2eXlZVGxGam44UzV4cnlZUDcxWC1SRlg4MWlySkdXWGt6c2lLaGVNT1U0WHNZRG84TUx5RjBoYUtNSWNlMFVFdnFhWHdDcGg4aEFod29ySGdVN3pRMGRobldjY2l0VDNtdUVrYXA0QUoyUjFCZzJjNHVqMllkTWZiUkVZeGxB?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-24T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2587,8 +2596,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2603,7 +2612,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g64",
       "principal": false
     },
@@ -2619,10 +2628,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g37",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g36",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Supremo restringe acesso do devedor contumaz à recuperação judicial",
@@ -2634,10 +2643,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g66",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Ambipar reconhece como credora empresa criada após pedido de recuperação judicial",
@@ -2649,10 +2658,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g67",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Estrela apresenta plano de recuperação judicial com deságio de 90% e diversificação de receitas",
@@ -2666,10 +2675,10 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g68",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Estrela (ESTR3; ESTR4) protocola plano de recuperação judicial",
@@ -2683,14 +2692,14 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g69",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Valor Econômico"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Entenda o pedido de recuperação judicial das Casas Bahia",
@@ -2702,22 +2711,21 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": true,
-      "cobertura": 26,
+      "cobertura": 25,
       "tambemEm": [
-        "cnnbrasil.com.br",
+        "CNN Brasil",
         "Migalhas",
         "Safra",
         "O GLOBO",
         "Metrópoles",
         "SBT News",
-        "g1.globo.com",
+        "G1",
         "InfoMoney",
         "tmc.com.br",
         "Rádio Itatiaia",
-        "bandab.com.br",
         "Meio e Mensagem",
         "JOTA Info",
         "Valor Econômico",
@@ -2727,7 +2735,7 @@
         "VEJA",
         "Jornal do Comércio"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "É difícil sair de recuperação judicial feita no ‘salve-se quem puder’, diz analista da ESPM",
@@ -2739,10 +2747,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g71",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Empresa de energia pede recuperação judicial dois meses após dizer que faturaria R$ 1 bi este ano",
@@ -2754,10 +2762,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g72",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Grupo Estrela protocola plano de recuperação judicial",
@@ -2771,10 +2779,10 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g69",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Ambipar: credores pedem suspensão de assembleia sobre recuperação judicial e questionam falta de informações",
@@ -2786,10 +2794,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g73",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Nem sempre cabe sucumbência em casos de crédito em RJ e falências, afirma STJ",
@@ -2803,42 +2811,25 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g74",
       "principal": true,
-      "versaoResumo": 3
-    },
-    {
-      "titulo": "STJ limita pagamento de honorários em processos de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSVFPVGF0QWRWa2huYjVZRU5hOWhWeHEwc2NvSll2T0x1SWhid0FMQWR2TXlYT1MxN19hSVVVM3dBanVXbkc3SHpUWE1WRXlrRHFiYkQ2QUhaRDQwRlZfWVBYZlVVSmR0cWxRX0xIZFg0RlliRGotMnJhQ2pFTTBxLW92MmUzTWpGbHlnclpMQmNqVXdsZmdYd1FVNGtkSGFvOS1v?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "JOTA Info",
-      "data": "2026-08-19T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STJ"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g75",
-      "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Casas Bahia pedem recuperação judicial: Entenda como funciona processo",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcFJtbUQzV255OU45MndLaEpsUGo2WXBlVEVjS3N4WHlpLXlFdDNfYld5Mm1JbEZYR3BBMFJnWngxc1JVN2t1ZjM3U0tnZzJBT0kyRW8xQl9sREFvZzBSTmx5NmN1Y2kxOTAzSlJTQngzR1JidlloZHc5M3VhbzMzWEh4UWIwRVVZR0hYeWlxaHZHUzdtUTN0OVIya0pDVXY3UE9hcDNVemUwRUY4eUtMODhTOVlaYV9jbjh2Y3U3czY?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-08-18T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Após prejuízo de R$ 10,1 bi, Casas Bahia pede recuperação judicial",
@@ -2850,10 +2841,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem prepara pedido de recuperação extrajudicial",
@@ -2867,14 +2858,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g76",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g75",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Valor Econômico"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Mexicana Braskem Idesa entra com pedido de recuperação judicial nos EUA para reestruturar dívida",
@@ -2886,14 +2877,14 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g77",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g76",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Joint venture da Braskem no México entra com pedido de recuperação judicial nos EUA",
@@ -2905,10 +2896,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g77",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g76",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Marabraz pede recuperação judicial com dívidas de R$ 140 milhões",
@@ -2920,17 +2911,17 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g78",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g77",
       "principal": true,
       "cobertura": 5,
       "tambemEm": [
-        "g1.globo.com",
+        "G1",
         "Estadão",
         "InfoMoney",
         "Valor Econômico"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Casas Bahia pede recuperação judicial após prejuízo bilionário",
@@ -2942,7 +2933,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -2956,7 +2947,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -2970,7 +2961,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -2984,7 +2975,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -2993,12 +2984,12 @@
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNGkwbVcxYTQ0dHlTRmVxcFJqWHhSRkdNNE5kd2tkWEZwMUVDMVZQMFR5enBOTW5Ebnl0OXhLVXhjVlNNVTBlMTYyaHhhM2hHaTZnRHBYZGY4WE1DMEtscnFWTzBVX2U4a2dya29MVkVYNmlpa0xaTDNYZzl1UEZ0T2g4N244cGdjVUtVV1ZHcGlNVk1GOUtqZ3pTOTQzZ0FYWEpmVVZubzdqelHSAboBQVVfeXFMTndFTWpGeHJ1OTBWNDFfdU1DSjZDeEpNdDNzMV80UnVwNi11QVA2ZEp3QkJSTkJzeExkalljV0l0UDhwRjBVVlE5bHFmRlgzNFlSRlVWYm1fX3ByQ2x5SjZoMkhoNklQTmw3ZnlUMFl5aGRkaVZ2RGFMeEVRSFpHZ3BGdXlTb0pVNnpDREdWTm9fRHRfNXpUb2ZRczFRWHNUZUQ2NXZLTnlQRFljM3R1QzhyWXQ5M2Z1Mzln?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3012,7 +3003,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3021,15 +3012,15 @@
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMWtqZVA0eWRvOWhrQjV1TVpsbGp4ejVleG8xMUlZVlpiUHBpbV9KTDFHb0pCaWdNLWF3Z1oySEZxajFnYUJCN1F5UFJSZXZtbmpNNi1tbmFxT1lMbmtxRXpLaUFxR2hGdmNCb3R6WDBjdk11MS1aQm1IUDl4dDJ5ekNwT2w1QURrSDJoRNIBmwFBVV95cUxNUEpYQ1l0Y0N4ZnVGMWxoMUppWUkzbWdocGd4WmJNMzBPYWNmU2NaNXUwZjZhbGpsb2RmMjd5S2dVTEl6VmI1Nm8zMXQyNDc5UEt1dElsUW1xZ2Qzd3dLMHV2VTdvMU1PMVotOVdxQktKMU14R0hJNXFrWS1kWVJNTFpiOTZQMVdjdGY2em5jRFlBUmFuSXRCM2ZBMA?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g78",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g77",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Casas Bahia entra com pedido de recuperação judicial em São Paulo",
@@ -3041,7 +3032,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3055,21 +3046,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g70",
-      "principal": false
-    },
-    {
-      "titulo": "Casas Bahia pede recuperação judicial após prejuízo de bilhões e coloca lotes de eletrodomésticos em leilão",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYXl5eklpQUdneldNUWR1OGxXdTdwaDk0V0JWUTN4UXNvVUJBOWN0UzVMcnpqN1RydFZ5TU4ydjZsYjUxVmZTMHdYTVkta194SUpLX21HZjI5ZlozMWloLVVwTzdDRWppNTUzLV9mUEFtYnhLRWp3OTBHN1lDcGN1ZmRlbzh4c0paVzMyYUpZT1YtNUxQX183VS15ZHNGM01XYlNGRS1YXzlUQnI4N2JqNy1qMWVoUdIBuwFBVV95cUxNWVRNQXNLVE50MUxnT2wxbmF0bER4UUJLVkZsS1VhOVFKYlVKYUtBelhwa0tLbG4xc0xDeVdxN1haeVBZU0NKa1EzZzlNeUFQVnJFQXRNbzZWV3FxcU04TTE0Y2x4X2RGa3NhY2c0Q3RMRWZqU25CYURrSlBkUHZCU2VDV0t3U21sS2UtZk9vLTFFVHR4MmV3bHYwenBJVVZ0Nkt1aGxpVjhtaUlGdWRQc2U3dnd0cnhGWmQ0?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "bandab.com.br",
-      "data": "2026-08-17T07:00:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
-      "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3083,7 +3060,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3097,7 +3074,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3111,7 +3088,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3125,7 +3102,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3139,7 +3116,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3153,7 +3130,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3162,12 +3139,12 @@
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZnVIbC1nd1NtbTBvLXBBQ2N4ZGtlOEdGTWltUzVhdk1qOWZSeTFPTEVFOGVWcTc1UktHVjBjYW1QN1Y1TzR0dnBXSjRla3BId0NQZmJWbTNKT2NDbjdFRXRjX0lSVXVscUxrdmNhTWVxdlRuZjNPcGVXd296Z2swVGhueDdLd3dhUDNqZHRKdWo5ZjBEUDRNMXNfbVk2LVR5a2YwOFhtdm5XWnRmMEtIVlNkRUUzaU1jSkZfYzY2QW5Xa3Q4a0JKU0lsdUPSAdsBQVVfeXFMTkFWYnRIRkRlR2lrOG5OQzF6Qm5WaU5tWUo1VEd4eHlOaXdGNHcxc1Flam5zXzFLVGpwbFA0bFhjNU1ZYVl6Sl9xZ2VDdDFOaDFNN3RJaktTa25NYjZsY1VwVTAtWF9xT3FhYnEyNHc0M21CLUl5WVZmQnhtVG1uMWZIUkt6VVlDWlprZjh1WVc3MUkzZ1lYWlY0WFQ4TTljX2F5bVFIYldCMDY2MVB4TXpIQVlra3hlQjNxa3pwQzVhTU0wNUFKcXJ0RGVpRU5aaTJDOTJNam5Md1Rn?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3181,7 +3158,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3195,7 +3172,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3204,12 +3181,12 @@
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVXFWTkpjOHFnMmFGWkxIWEotMEtxOUlnRVNCWHdZa2N1d2xXejIxU3ZKaFhVd1oxb21qMzFkc2ZJUDF0OUJNRTA5X1oxRElhc2RwMEJZTE1iQ0FBQ0sxN2lpSk01NnE2LVcxQTRFUm56VksxMlg2d2dDdFd5MDZNVDg1dDZkZHVQdXZmUzgyMDFPc2NFUHBvRWZrVkV2QThHaVBtWlM5enlTc1F6blhmV0Q0VnZxelZpd25zTW9yX2lyVEpoT2x3?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3218,12 +3195,12 @@
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQemxual9URWg1YTVKRUlIbmJlazVYeVBXY2wyeWhpaXIwWE1CVEo0Y1NGamc4QXlDQlFGU0JYOTREbmh2WUJVOVdMdTZaUldqaklRVjYzLWhfNVBxMmotYVp0M1NqaVFycS1SUGxPYk5RRG1teldjeVpGaU5tV2o3eFRia2NGMXNXamfSAZgBQVVfeXFMTzBjckgyQ29jWHFmTmx0WFMwNkFJODFKTEhiSWpzV1EwVUJ5WDBhV1U0UXBxRkNLU01iWDJyTkllV2gtOTVsX3NfZlhvSExVSnl4TFowNUppNklhRnRWR2JtLTdHRkh2Z2QwNFVmdVhtWk9aZUFtQlBOZE8yMDlGY0p3YlU0c3hqTFZuM3VTVUVaWXY2Sk1PeUs?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3237,7 +3214,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3251,7 +3228,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3265,7 +3242,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
       "grupo": "g70",
       "principal": false
     },
@@ -3279,10 +3256,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g78",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g77",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Marabraz pede recuperação judicial com dívida de R$ 140 mi",
@@ -3294,8 +3271,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g78",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g77",
       "principal": false
     },
     {
@@ -3308,8 +3285,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g78",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g77",
       "principal": false
     },
     {
@@ -3322,10 +3299,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g79",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g78",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Braskem planeja usar recuperação extrajudicial para detalhar plano com credores, dizem fontes",
@@ -3339,10 +3316,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g76",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g75",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Empresa de móveis de SC tem falência decretada após 55 anos de história e dívida de R$ 133 milhões",
@@ -3354,10 +3331,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g80",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g79",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Empresa responsável por Megashop Moda Nordeste tem falência decretada",
@@ -3369,10 +3346,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g81",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g80",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Plano de recuperação judicial não pode afastar honorários, decide STJ",
@@ -3387,10 +3364,10 @@
         "Plano"
       ],
       "pontuacao": 18,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g82",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g81",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Falência não restitui bem vendido em fraude à execução, diz STJ",
@@ -3404,17 +3381,17 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g83",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g82",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Alliança Saúde protocola plano de recuperação extrajudicial para renegociar R$ 1,1 bilhão em dívidas",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMS03aDBPTXM5TlpkVDBNVTRUaTc5WXBGd0ZUUDlBN0p0MlgwbFRDck9xZHlZbkNWZWFWSTJxMmhRd3NleW1oLU5kREtveHc1ZkJFR2xpS3VLaWhtQV9kR2pUZTRmQVZrRTZ0b3I3b2JVMzlIWlcxY05BNlhYWWxrNHYxUGZHV2NDaWhEcDVLVlE1QXhXa1RiUGZCRdIBqgFBVV95cUxOTWxVU1I5bWVlbkhPYm1wOGgxYVhZTElNR1dybW9uUTZQNjZYbXFQdEZLdHpKZ25SN2ppRHBkcTM0b0J1ZlNfNnNJZ2ZuUHdZejBuMTFyUklQNzhYeHU2X2FMTnFoOVFWV0RIU0U1WS1UMDMyWlB3RTRoYnoxX1VPSHk5d2xHRF9fNl9iT1NCVjhFWWc0Z3BleGUzb2o2dHdrWEVwYzVMa05vUQ?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "g1.globo.com",
+      "veiculo": "G1",
       "data": "2026-08-05T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
@@ -3422,14 +3399,14 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g84",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g83",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "NeoFeed"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Alliança Saúde engrossa a lista de empresas que recorrem à recuperação extrajudicial",
@@ -3443,10 +3420,10 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g84",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g83",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Exclusivo: Farmaervas tem a falência decretada",
@@ -3458,10 +3435,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g85",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g84",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Treze formaliza acordo com credores e tem plano de recuperação judicial aprovado",
@@ -3475,31 +3452,31 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g86",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g85",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
-        "PB Esportes"
+        "pbesportes.net"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Plano de Recuperação Judicial do Treze é aprovado em assembleia realizada com os credores",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa1MtNVFtU3k2WDVVSEVqbUlSNzM5T1ZSZHpHWTh0dEdGbUM5cDBYT3lBR0FKblV1Y1M4dmFUa2YySlFVY241ZVhrYlF5S3ZOcUhIMGd1MEd1TEZqNFVma0ZWUHcwTmFrTDMxd3dUdVYtTjM1NUljRDR6NERmX2NJRmVPQVl0NmZMdk43aHJaTExDblZUWnFIR2U1YTIyZXZucE1ucHdZeUExZWhycy1JX3ZKUmc3bno3N0V2SFJvZlRwdw?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "PB Esportes",
+      "veiculo": "pbesportes.net",
       "data": "2026-07-30T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g86",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g85",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Ex-clube de Pirlo, Baggio e Guardiola tem falência decretada na Itália",
@@ -3511,8 +3488,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g87",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g86",
       "principal": true,
       "cobertura": 4,
       "tambemEm": [
@@ -3520,7 +3497,7 @@
         "Metrópoles",
         "Terra"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Clube que revelou Pirlo e Tonali tem falência decretada após 114 anos",
@@ -3532,10 +3509,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g87",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g86",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Clube que revelou Pirlo e Tonali, Brescia tem falência decretada",
@@ -3547,10 +3524,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g87",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g86",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Clube tradicional tem falência decretada por não pagar dívida de R$ 136 milhões",
@@ -3562,10 +3539,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g88",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g87",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Tradicional clube italiano tem falência decretada e é extinto",
@@ -3577,10 +3554,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g89",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g88",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "TJMT mantém decretação de falência do Grupo Libra Bioenegia",
@@ -3592,10 +3569,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g90",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g89",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Tradicional clube italiano de Baggio e Guardiola tem falência decretada após 114 anos",
@@ -3607,8 +3584,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g87",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g86",
       "principal": false
     },
     {
@@ -3616,15 +3593,15 @@
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOamJhc2VRSUxDSC0tSHJraHRJZ0FIcnFyaWRVNTkyVnI0T09rN1N2dVh0VmZKdkV0VE1UMUI4eFZfU1gzdlZDSVVROGJtYS1rLWljNW9MbTNWalpuRHJybXQtblZta0NQRGtrejdfOHBjVGdjN2hTM1oxTkdlS1BJSEZodHJPMVVreG5jRDdBX0xLVUJqV1BOQ25iWmNkeXZGX3h6RG04eTI0Y3o5anc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Portal da Câmara dos Deputados",
+      "veiculo": "camara.leg.br",
       "data": "2026-07-26T18:32:23.000Z",
       "categoria": "legislacao",
       "etiquetas": [],
-      "pontuacao": 16,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g91",
+      "pontuacao": 10,
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g90",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Trabalhadores da Ditália Móveis reagem à decretação de falência",
@@ -3636,10 +3613,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g92",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g91",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Light pede à Justiça encerramento da recuperação judicial iniciada em 2023",
@@ -3651,8 +3628,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g93",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g92",
       "principal": true,
       "cobertura": 4,
       "tambemEm": [
@@ -3660,22 +3637,22 @@
         "financenews.com.br",
         "Times Brasil | CNBC"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Fictor avança em recuperação judicial e prevê assembleia em agosto",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdFRaVGdBdUlYTGtkYnUtejZnVi1SbkJFVG9hcmRTSnRUczROZWNtUFdCQTFEYlRTQktndjZZUzV1cWVwWEF5dGRZek13SWJCX1Q2Z0k3b0c3U2dnS1VqUnpqb1FUc2hWSHpKMjdFLXNKYlN6ZmZWVXk0UjhDSm9ZNzd4d2dON1JiQm56dlhwYTBtdzZBWWhuUFJ0Q1NJbVptYVln?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-07-17T07:00:00.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g94",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g93",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Após três anos, Light pede para sair da recuperação judicial",
@@ -3687,29 +3664,29 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g93",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g92",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Light pede fim da recuperação judicial e anuncia aumento de capital",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2xBMEVoVm5qbFE0X185d3ZwYVUxR2l0XzJTNTRHdFpSUDNJQUtMSmxOV0M4cEhCLWJlSU16UWFIazR6LWVEYXVEZERkUGZJc0s1UF9DbldQS01OaV9EbWZFRVl6clpBaUF5RUtNWm9fWUlEXzRfUnpld1hCeTRVTEhxTHk0VEFkYTVJMXh5ZTU0OU9PU3djcGdzWTlpcGItU3F6TUlB?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "cnnbrasil.com.br",
+      "veiculo": "CNN Brasil",
       "data": "2026-07-16T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g95",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g94",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Money Times"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Decretada falência de fabricante de móveis da Serra após plano de recuperação judicial ser rejeitado",
@@ -3723,10 +3700,10 @@
         "Plano"
       ],
       "pontuacao": 22,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g96",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g95",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Light protocola pedido de encerramento da recuperação judicial",
@@ -3738,10 +3715,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g93",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g92",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Light (LIGT3) homologa aumento de capital de R$ 1,5 bilhão e pede fim da recuperação judicial",
@@ -3753,10 +3730,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g95",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g94",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Light dá passo final para encerrar recuperação judicial após aumento de capital",
@@ -3768,8 +3745,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g93",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g92",
       "principal": false
     },
     {
@@ -3784,10 +3761,10 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g97",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g96",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Produtor rural tem falência decretada após apresentar plano de RJ fora do prazo",
@@ -3801,10 +3778,10 @@
         "Agronegócio"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g98",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g97",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Americanas (AMER3) nega atraso a credores e diz cumprir plano de recuperação; ação sobe",
@@ -3818,27 +3795,27 @@
         "Plano"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g99",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g98",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Metropolitano: aprovado plano de recuperação judicial",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM0FUcUJsem5ZcXFqdml3YlBpb0lScF9FSC1FOG9XUFQyRXY4RkJQaDgtWUd1V3dCRjRKdldOLU42WlVLRnVsS2hBUTZYOExBc3JvN0Q0MEtaRlJUYVdUdHkxWGg1MkFGcldxbW43RWlmOTM3OFpBVjZhV3VYcjIyaVRNUGNJOHhs?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "ND Mais",
+      "veiculo": "ndmais.com.br",
       "data": "2026-07-10T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g100",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g99",
       "principal": false,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Metropolitano tem plano de recuperação judicial aprovado por credores",
@@ -3852,14 +3829,14 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g100",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g99",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
-        "ND Mais"
+        "ndmais.com.br"
       ],
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Lavoro prepara pedido de recuperação judicial",
@@ -3871,10 +3848,10 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g101",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g100",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Votação do plano de recuperação judicial de dona da Backer é adiada; veja detalhamento da dívida",
@@ -3888,10 +3865,10 @@
         "Plano"
       ],
       "pontuacao": 16,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g102",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g101",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Grupo Prime inicia recuperação judicial com passivo de R$ 790,2 milhões e mantém operações enquanto negocia com credores",
@@ -3903,10 +3880,10 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g103",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g102",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Credores contestam saída da Americanas da recuperação judicial",
@@ -3918,25 +3895,25 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g104",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g103",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "SAF: Administração Judicial apresenta novo relatório da recuperação judicial",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQ1hCNlZyTXFCbURmc3E3eEdWVllaODVJejNESE92UHU2a3Nvbnk4cFZGcGpLemlIUGJFdUtRRWp0TVpDTzk3cmxESVI5bVdBQl9qTXIzdXY0ZmJxWEROVE9DVG85eUxlRk5uTkxsSVZmYjNBUlV3NUg1UGxBUlhJN3IwdDdTT1dqSDVlX2g2R0t1OHZWbGNBZ2RxalRmdlpQVXowWFR4T21tazluMmVNNWtvNzIwRkxDaldrM3hlSFTSAcMBQVVfeXFMTUMyMWk1eWJpVjZBZ0ZiSERDWHJCX1Y4MUV0emxlUmdwcDg4SGtMSjEwV2xpUTc1Tzl6Tk1xUzBGQjN0eV9SbFdqVWlUNFNCY243YXN4R3NyYXFnSkZ2eVZ4T2tpZGZkcGlFd2YxYUppSW9MakJwSUlzX1AwWHM5Q3FxQkpLS3lKTVlBd0hlYkUyX05qNEpHQzV3S2FfZGRkNHBuNlpKRFRtaS1zaDdWTVIyaThFVmQwcm9wdi1WeWRtamhR?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "SuperVasco",
+      "veiculo": "supervasco.com",
       "data": "2026-07-04T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g105",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g104",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     },
     {
       "titulo": "Metalúrgica do Vale do Sinos pede suspensão da falência decretada pela Justiça",
@@ -3948,10 +3925,10 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g106",
+      "coletadoEm": "2026-09-01T18:53:44.615Z",
+      "grupo": "g105",
       "principal": true,
-      "versaoResumo": 3
+      "versaoResumo": 4
     }
   ]
 }

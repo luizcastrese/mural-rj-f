@@ -1,0 +1,10 @@
+Resumos — 2026-09-01T18:53:52.070Z
+provedor: github (habilitado: true)
+modelo: (padrão do provedor)
+cards: 4
+origem: {"texto da matéria":2,"primeiro parágrafo":1,"og:description":1}
+falhas do modelo:
+  GitHub Models HTTP 410: {"error":{"code":"github_models_retirement_brownout","message":"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout."}}
+
+  GitHub Models HTTP 410: {"error":{"code":"github_models_retirement_brownout","message":"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout."}}
+
