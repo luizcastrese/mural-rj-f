@@ -197,9 +197,14 @@ async function viaGemini(titulo, corpo, cortada) {
       } catch (erro) {
         ultimoErro = erro;
         // Fila cheia do outro lado: espera e insiste com o mesmo modelo.
-        if (erro instanceof FalhaTransitoria && volta < ESPERAS_MS.length) {
-          await dormir(erro.esperaMs || ESPERAS_MS[volta]);
-          continue;
+        if (erro instanceof FalhaTransitoria) {
+          if (volta < ESPERAS_MS.length) {
+            await dormir(erro.esperaMs || ESPERAS_MS[volta]);
+            continue;
+          }
+          // Esgotadas as esperas, um modelo irmão pode estar menos
+          // congestionado — vale mais tentar o próximo do que desistir.
+          break;
         }
         // Nome de modelo inválido: vale tentar o próximo da lista. Qualquer
         // outra falha (cota, chave, rede) é do pedido, não do nome.
