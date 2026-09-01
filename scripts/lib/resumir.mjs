@@ -27,7 +27,9 @@ const MAX_CARACTERES_RESUMO = 420;
 const TEMPO_LIMITE_MS = 30000;
 // 503 e 429 são fila cheia do outro lado, não erro do pedido: espera e tenta
 // de novo antes de desistir e cair no recorte.
-const ESPERAS_MS = [5000, 15000, 30000];
+const ESPERAS_MS = (process.env.MURAL_ESPERAS_MS || '5000,15000,30000')
+  .split(',')
+  .map(Number);
 // A cota gratuita conta chamadas por minuto. O coletor busca vários grupos em
 // paralelo, então as chamadas ao modelo passam por uma fila de um de cada vez,
 // espaçadas — sem isso, seis pedidos simultâneos estouram o limite na hora.
