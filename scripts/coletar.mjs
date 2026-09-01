@@ -248,7 +248,10 @@ async function enriquecerResumos(noticias) {
 
   const filas = [];
   for (const itens of grupos.values()) {
-    if (itens.some((n) => n.resumo)) continue;
+    // Mesmo com resumo vindo do feed vale abrir a matéria: a description de
+    // alguns portais começa com legenda de foto ("Reprodução/TV Globo") ou
+    // com chamada de outra reportagem. A página traz o texto limpo, e o
+    // resumo do feed fica como reserva se a busca não der em nada.
     // O representante primeiro; os outros veículos como reserva.
     const ordenados = [...itens].sort((a, b) => Number(b.principal) - Number(a.principal));
     const fila = ordenados
