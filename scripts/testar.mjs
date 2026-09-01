@@ -18,6 +18,7 @@ import {
   resumoDeFeedServe,
   linkDoVeiculo,
   urlEmbutidaDoGoogle,
+  resumoDoCorpo,
 } from './lib/resumo.mjs';
 import { agrupar, empresas } from './lib/agrupar.mjs';
 
@@ -184,7 +185,7 @@ test('extrairResumo cai para a meta description quando não há og', () => {
   assert.equal(r.origem, 'meta description');
 });
 
-test('extrairResumo descarta entulho de paywall e usa o parágrafo real', () => {
+test('extrairResumo descarta entulho de paywall e monta com o texto da matéria', () => {
   const html = `<html><head>
     <meta property="og:description" content="Assine o jornal para ler esta e outras reportagens exclusivas do nosso time.">
   </head><body>
@@ -192,8 +193,30 @@ test('extrairResumo descarta entulho de paywall e usa o parágrafo real', () => 
     <p>O juízo da 1ª Vara de Falências decretou a quebra da companhia após a rejeição do plano pelos credores em assembleia realizada na terça-feira.</p>
   </body></html>`;
   const r = extrairResumo(html, 'Empresa tem falência decretada');
-  assert.equal(r.origem, 'primeiro parágrafo');
+  assert.equal(r.origem, 'texto da matéria');
   assert.ok(r.texto.includes('1ª Vara de Falências'));
+});
+
+test('resumoDoCorpo monta com as frases da matéria e ignora o que não é texto', () => {
+  const html = `<html><body><article>
+    <figcaption>Foto: divulgação</figcaption>
+    <p>Leia também: outra reportagem sobre o mesmo assunto do nosso arquivo</p>
+    <p>A 2ª Vara Empresarial deferiu o processamento da recuperação judicial do Grupo Alfa nesta segunda-feira.</p>
+    <p>A companhia declarou dívida de R$ 430 milhões e obteve a suspensão das execuções por 180 dias.</p>
+    <p>O administrador judicial terá 15 dias para o primeiro relatório.</p>
+  </article></body></html>`;
+
+  const r = resumoDoCorpo(html, 'Justiça defere RJ do Grupo Alfa');
+  assert.equal(r.origem, 'texto da matéria');
+  // Começa pela primeira frase da notícia, não pela legenda nem pela chamada.
+  assert.ok(r.texto.startsWith('A 2ª Vara Empresarial deferiu'));
+  assert.ok(r.texto.includes('R$ 430 milhões'));
+  assert.ok(!r.texto.includes('Leia também'));
+  assert.ok(!r.texto.includes('Foto:'));
+});
+
+test('resumoDoCorpo devolve null quando não há texto de matéria', () => {
+  assert.equal(resumoDoCorpo('<html><body><p>Curto.</p></body></html>', 'Manchete'), null);
 });
 
 test('extrairResumo devolve null quando a fonte não publicou resumo', () => {
