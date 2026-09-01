@@ -2,8 +2,12 @@ name: Atualizar mural
 
 on:
   schedule:
-    # Segunda-feira, 7h de Brasília (UTC-3). Uma coleta por semana.
-    - cron: '0 10 * * 1'
+    # Todo dia às 7h de Brasília (UTC-3). Diário e não semanal porque metade
+    # dos feeds expõe só os 10 últimos itens — poucas horas de notícia —, e
+    # uma coleta por semana enxergaria o último dia e perderia os outros seis.
+    # Cada execução leva cerca de 40 segundos, e Actions em repositório
+    # público não é cobrado.
+    - cron: '0 10 * * *'
   workflow_dispatch:
   push:
     branches: [main]

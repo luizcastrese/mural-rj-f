@@ -515,3 +515,22 @@ test('notícia sem resumo não entra no mural, mas fica no acervo', async (t) =>
   assert.ok(beta, 'a notícia sem resumo permanece no acervo');
   assert.equal(beta.resumo, '');
 });
+
+test('resumoDoCorpo prefere a frase que informa, não a que vem antes', () => {
+  const html = `<article>
+    <p>A Justiça do Rio decretou a falência do Grupo Refit nesta segunda-feira.</p>
+    <p>A empresa foi procurada pela reportagem e não quis se manifestar sobre o caso até o fechamento.</p>
+    <p>Fundada há décadas, a companhia já passou por diferentes controladores ao longo de sua história.</p>
+    <p>A decisão da 5ª Vara Empresarial atende a pedido do estado, que alega calote de R$ 14 bilhões em tributos.</p>
+  </article>`;
+
+  const { texto } = resumoDoCorpo(html, 'Refit tem falência decretada');
+
+  // A frase decisiva está no quarto parágrafo e precisa entrar.
+  assert.ok(texto.includes('5ª Vara Empresarial'), 'a vara competente deve sobreviver ao recorte');
+  assert.ok(texto.includes('R$ 14 bilhões'), 'o valor deve sobreviver ao recorte');
+  // E o "não quis se manifestar", que nada informa, deve ficar de fora.
+  assert.ok(!texto.includes('não quis se manifestar'));
+  // As frases saem na ordem do texto original.
+  assert.ok(texto.indexOf('falência do Grupo Refit') < texto.indexOf('5ª Vara'));
+});

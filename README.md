@@ -86,9 +86,17 @@ um na última verificação fica em `dados/diagnostico-fontes.txt`.
 
 O resumo é **montado com frases da própria matéria**. O coletor abre a página
 e usa, nesta ordem: a linha fina que o veículo publica na `og:description`;
-se ela não disser nada, as primeiras frases do texto da notícia, recortadas
-no ponto final; e só então as descrições curtas. Cada palavra do resumo saiu
-da notícia — nada é parafraseado, interpretado ou completado.
+se ela não disser nada, frases do texto da notícia; e só então as descrições
+curtas. Cada palavra do resumo saiu da notícia — nada é parafraseado,
+interpretado ou completado.
+
+A escolha das frases não é "as primeiras que couberem". A primeira entra
+sempre, porque dá o contexto; as demais entram por **quanto acrescentam** —
+valor da dívida, vara competente, prazo de blindagem, teor da decisão, classe
+de credores. Uma frase como *"procurada, a empresa não quis se manifestar"*
+fica de fora mesmo com espaço sobrando: resumo curto e cheio de fato serve
+mais do que resumo longo e diluído. As frases escolhidas saem na ordem em que
+aparecem no texto, literalmente como foram escritas.
 
 Nada nesta base é redigido, condensado ou interpretado por inteligência
 artificial. A regra está em `scripts/lib/resumo.mjs` e vale sem exceção:
@@ -130,11 +138,16 @@ texto saiu (`og:description`, `meta description`, `primeiro parágrafo` ou
 Pronto: o endereço aparece ao fim do workflow, no formato
 `https://<seu-usuario>.github.io/mural-rj-f/`.
 
-Depois disso a coleta roda sozinha **toda segunda-feira, às 7h de Brasília**.
-Uma vez por semana basta: o acervo se acumula, e rodar mais vezes só gastaria
-minutos de Actions sem trazer notícia nova. Commits no repositório apenas
-republicam o site, sem coletar de novo. Para mudar o horário, edite o `cron`
-em `.github/workflows/atualizar-mural.yml` — lembrando que o GitHub usa UTC.
+Depois disso a coleta roda sozinha **todo dia às 7h de Brasília**. Diária, e
+não semanal, por uma razão prática: metade dos feeds expõe só os dez últimos
+itens — poucas horas de notícia —, então uma coleta por semana enxergaria o
+último dia e perderia os outros seis. O custo é desprezível: cada execução
+leva cerca de 40 segundos, e Actions em repositório público não é cobrado.
+Você continua lendo o mural quando quiser; o acervo se acumula.
+
+Commits no repositório apenas republicam o site, sem coletar de novo. Para
+mudar o horário, edite o `cron` em `.github/workflows/atualizar-mural.yml` —
+lembrando que o GitHub usa UTC.
 
 ## Rodando na sua máquina
 

@@ -11,8 +11,8 @@ import { limparTexto } from './rss.mjs';
 
 const MIN_CARACTERES = 60;
 const MAX_CARACTERES = 320;
-// Alvo do resumo montado com frases da matéria: o bastante para dizer o que
-// aconteceu, sem virar leitura longa.
+// Abaixo disto, a linha fina do veículo não está resumindo nada e vale mais
+// montar o resumo com o texto da matéria.
 const MIN_RESUMO_MONTADO = 200;
 
 // Texto que aparece no lugar da linha fina e não descreve a matéria.
@@ -62,9 +62,69 @@ function corpoDaMateria(html) {
 // Chamadas e rótulos que aparecem no meio do texto e não são a notícia.
 const NAO_E_TEXTO = /^(leia|veja|assista|siga|compartilhe|confira|foto|imagem|publicidade|continua|com informa|por |atualizado em|fonte:)/i;
 
+// O que dá valor à notícia para quem atua na área. Frase que traz isto vale
+// mais espaço no resumo do que a frase seguinte da matéria.
+const CARREGA_FATO = [
+  /r\$\s?[\d.,]+\s*(?:mil|milh|bilh)?/i,
+  /us\$\s?[\d.,]+/i,
+  /\b\d{1,3}\s*(?:dias|meses)\b/i,
+  /\b\d+\s*ª?\s*vara\b|tribunal|\bstj\b|\bstf\b|desembargad|ju[íi]z|ju[íi]za|ministr|relator/i,
+  /deferi|decret|homolog|aprov|rejeit|convol|suspend|autoriz|determin|nome(?:ou|ia)/i,
+  /credor|plano de recupera|assembleia|administrador judicial|blindagem|des[áa]gio/i,
+  /d[íi]vida|d[ée]bito|passivo|cr[ée]dito/i,
+];
+
+// Divide em frases sem quebrar em abreviação comum ("R$ 1,2 bi.", "art. 47").
+function emFrases(texto) {
+  return texto
+    .split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ0-9"“])/)
+    .map((frase) => frase.trim())
+    .filter((frase) => frase.length >= 40);
+}
+
+function quantoInforma(frase) {
+  return CARREGA_FATO.reduce((total, padrao) => total + (padrao.test(frase) ? 1 : 0), 0);
+}
+
 /**
- * Monta o resumo com as primeiras frases da matéria, reproduzidas como
- * estão. É o texto do veículo, apenas recortado no ponto final.
+ * Escolhe as frases da matéria que mais informam, dentro do espaço do card.
+ * A primeira entra sempre, porque dá o contexto; as demais entram por quanto
+ * acrescentam — valor da dívida, vara, prazo, decisão. Saem na ordem em que
+ * aparecem no texto, e literalmente como foram escritas.
+ */
+function melhoresFrases(paragrafos) {
+  const frases = emFrases(paragrafos.join(' '));
+  if (!frases.length) return '';
+
+  const escolhidas = new Set([0]);
+  let tamanho = frases[0].length;
+
+  const candidatas = frases
+    .map((frase, posicao) => ({ posicao, pontos: quantoInforma(frase), tamanho: frase.length }))
+    .slice(1)
+    .filter((c) => c.pontos > 0)
+    .sort((a, b) => b.pontos - a.pontos || a.posicao - b.posicao);
+
+  for (const candidata of candidatas) {
+    if (tamanho + 1 + candidata.tamanho > MAX_CARACTERES) continue;
+    escolhidas.add(candidata.posicao);
+    tamanho += 1 + candidata.tamanho;
+  }
+
+  // Não se completa o espaço restante com a frase seguinte só para encher: a
+  // frase que nada informa ("procurada, a empresa não quis se manifestar")
+  // custaria a linha que o leitor tem no card. Resumo curto e cheio de fato é
+  // melhor do que resumo longo e diluído.
+
+  return [...escolhidas]
+    .sort((a, b) => a - b)
+    .map((posicao) => frases[posicao])
+    .join(' ');
+}
+
+/**
+ * Monta o resumo com as frases da matéria que mais informam, reproduzidas
+ * como estão. É o texto do veículo, apenas selecionado e recortado.
  * @returns {{texto:string, origem:string}|null}
  */
 export function resumoDoCorpo(html = '', titulo = '') {
@@ -81,13 +141,7 @@ export function resumoDoCorpo(html = '', titulo = '') {
 
   if (!paragrafos.length) return null;
 
-  // Junta parágrafos até dar corpo ao resumo, sem passar do teto.
-  let texto = '';
-  for (const paragrafo of paragrafos) {
-    texto = texto ? `${texto} ${paragrafo}` : paragrafo;
-    if (texto.length >= MIN_RESUMO_MONTADO) break;
-  }
-
+  const texto = melhoresFrases(paragrafos);
   return texto.length >= MIN_CARACTERES ? { texto: aparar(texto), origem: 'texto da matéria' } : null;
 }
 
