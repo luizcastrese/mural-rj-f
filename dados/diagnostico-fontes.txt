@@ -1,4 +1,4 @@
-Diagnóstico de fontes — 2026-09-01T18:53:18.205Z
+Diagnóstico de fontes — 2026-09-01T19:09:54.974Z
 
 fonte                 http  itens  link do veículo             description útil
 ----------------------------------------------------------------------------------------
