@@ -45,7 +45,7 @@ const TENTATIVAS_POR_GRUPO = 3;
 // Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
 // com qual lógica congelava o acervo: itens tentados por uma versão quebrada
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
-const VERSAO_RESUMO = 4;
+const VERSAO_RESUMO = 5;
 
 // Uma notícia volta para a fila quando a extração mudou de versão, ou quando
 // o provedor de resumo mudou desde a última tentativa — foi assim que o
