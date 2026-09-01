@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-09-01T15:30:50.790Z",
+  "atualizadoEm": "2026-09-01T15:32:26.690Z",
   "total": 3,
   "totalComRepetidas": 230,
   "comResumo": 3,
@@ -143,8 +143,8 @@
     {
       "titulo": "STJ acata recurso de debenturistas e suspende assembleia de credores da Ambipar",
       "link": "https://valor.globo.com/empresas/noticia/2026/09/01/stj-acata-recurso-de-debenturistas-e-suspende-assembleia-de-credores-da-ambipar.ghtml",
-      "resumo": "O Superior Tribunal de Justiça (STJ) suspendeu a assembleia geral de credores da Ambipar marcada para a tarde desta terça-feira. A decisão atende a um pedido de tutela de urgência de debenturistas da companhia, que está em recuperação judicial. A decisão do ministro Raul Lemos, relator do caso, atende a um pedido atribuição de efeito suspensivo ao recurso especial interposto contra decisão do Trib",
-      "resumoFonte": "feed",
+      "resumo": "O Superior Tribunal de Justiça (STJ) suspendeu a assembleia geral de credores da Ambipar marcada para a tarde desta terça-feira. A decisão atende a um pedido de tutela de urgência de debenturistas da companhia, que está em recuperação judicial.",
+      "resumoFonte": "primeiro parágrafo",
       "veiculo": "Valor Econômico",
       "data": "2026-09-01T15:08:40.000Z",
       "categoria": "jurisprudencia",
@@ -155,7 +155,8 @@
       "pontuacao": 35,
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g0",
-      "principal": true
+      "principal": true,
+      "versaoResumo": 3
     },
     {
       "titulo": "Justiça do Rio decreta falência de Manguinhos, atual Refit",
@@ -167,7 +168,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -181,7 +182,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -195,7 +196,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g2",
       "principal": true,
       "versaoResumo": 3
@@ -210,7 +211,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -224,7 +225,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -238,7 +239,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -252,7 +253,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -266,7 +267,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g3",
       "principal": true,
       "versaoResumo": 3
@@ -281,7 +282,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 25,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -324,7 +325,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -338,7 +339,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -352,7 +353,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
@@ -366,15 +367,15 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g1",
       "principal": false
     },
     {
       "titulo": "Refit: Justiça decreta falência das empresas do grupo no RJ",
       "link": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/08/31/refit-justica-decreta-falencia-das-empresas-do-grupo-no-rj.ghtml",
-      "resumo": "Refit Reprodução/TV Globo A Justiça do Rio de Janeiro decretou nesta segunda-feira (31) a falência das empresas que compõem o Grupo Refit, dono da antiga Refinaria de Manguinhos, na Zona Norte do Rio. O grupo é considerado um dos maiores devedores de impostos do país. A decisão é do juiz Arthur Ferreira, da 5ª Vara Empresarial, que converteu em falência a recuperação judicial de quatro empresas: G",
-      "resumoFonte": "feed",
+      "resumo": "A Justiça do Rio de Janeiro decretou nesta segunda-feira (31) a falência das empresas que compõem o Grupo Refit , dono da antiga Refinaria de Manguinhos, na Zona Norte do Rio. O grupo é considerado um dos maiores devedores de impostos do país.",
+      "resumoFonte": "texto da matéria",
       "veiculo": "G1 Economia",
       "data": "2026-08-31T17:30:31.000Z",
       "categoria": "falencias",
@@ -396,7 +397,8 @@
         "Agência iNFRA",
         "O TEMPO",
         "Gazeta do Povo"
-      ]
+      ],
+      "versaoResumo": 3
     },
     {
       "titulo": "Tese do STJ exigirá distinção para equilibrar sucumbência em RJ e falência",
@@ -410,7 +412,7 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g4",
       "principal": true,
       "versaoResumo": 3
@@ -425,7 +427,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g5",
       "principal": false
     },
@@ -439,7 +441,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g6",
       "principal": true,
       "cobertura": 3,
@@ -459,7 +461,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g6",
       "principal": false,
       "versaoResumo": 3
@@ -476,7 +478,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g7",
       "principal": false,
       "versaoResumo": 3
@@ -493,7 +495,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false,
       "versaoResumo": 3
@@ -508,7 +510,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g9",
       "principal": true,
       "cobertura": 2,
@@ -529,15 +531,15 @@
         "Stay period"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g5",
       "principal": false
     },
     {
       "titulo": "Justiça protege Casas Bahia de cobranças por 180 dias durante recuperação judicial",
       "link": "https://g1.globo.com/economia/noticia/2026/08/29/justica-protege-casas-bahia-de-cobrancas-por-180-dias-durante-recuperacao-judicial.ghtml",
-      "resumo": "Recuperação judicial: entenda o instrumento usado pelo Grupo Casas Bahia A Justiça de São Paulo decidiu, na sexta-feira (28), antecipar os efeitos da recuperação judicial do Grupo Casas Bahia e suspender, por 180 dias, as ações de cobrança e execuções contra a empresa. A medida busca evitar que credores retirem recursos da companhia enquanto ela tenta reorganizar suas finanças. 🗒️Tem alguma suges",
-      "resumoFonte": "feed",
+      "resumo": "Medida busca evitar uma corrida de credores enquanto a empresa tenta renegociar R$ 17,3 bilhões em dívidas e reorganizar sua situação financeira.",
+      "resumoFonte": "og:description",
       "veiculo": "G1 Economia",
       "data": "2026-08-29T11:34:33.000Z",
       "categoria": "mercado",
@@ -550,7 +552,8 @@
       "tambemEm": [
         "ADVFN",
         "Acia Araçatuba"
-      ]
+      ],
+      "versaoResumo": 3
     },
     {
       "titulo": "BRKM5 protocola recuperação extrajudicial e YDUQ3 capta R$ 1,2 bi",
@@ -564,7 +567,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g10",
       "principal": false,
       "versaoResumo": 3
@@ -581,7 +584,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false,
       "versaoResumo": 3
@@ -598,7 +601,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g7",
       "principal": true,
       "cobertura": 3,
@@ -618,7 +621,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g11",
       "principal": true,
       "versaoResumo": 3
@@ -636,7 +639,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g12",
       "principal": true,
       "cobertura": 2,
@@ -657,7 +660,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -673,7 +676,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": true,
       "cobertura": 19,
@@ -711,7 +714,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -727,7 +730,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -743,7 +746,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -759,7 +762,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -775,7 +778,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -791,7 +794,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -807,7 +810,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -821,7 +824,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 10,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g13",
       "principal": true,
       "versaoResumo": 3
@@ -838,7 +841,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 22,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g14",
       "principal": true,
       "versaoResumo": 3
@@ -855,7 +858,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -871,7 +874,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -887,7 +890,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -903,7 +906,7 @@
         "Plano"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g15",
       "principal": false,
       "versaoResumo": 3
@@ -920,7 +923,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -936,7 +939,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -952,7 +955,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -968,7 +971,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -982,7 +985,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g16",
       "principal": true,
       "versaoResumo": 3
@@ -999,7 +1002,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g17",
       "principal": true,
       "versaoResumo": 3
@@ -1016,7 +1019,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g8",
       "principal": false
     },
@@ -1032,7 +1035,7 @@
         "Plano"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g12",
       "principal": false,
       "versaoResumo": 3
@@ -1047,7 +1050,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false,
       "versaoResumo": 3
@@ -1062,7 +1065,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g6",
       "principal": false,
       "versaoResumo": 3
@@ -1077,7 +1080,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g9",
       "principal": false,
       "versaoResumo": 3
@@ -1092,7 +1095,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false,
       "versaoResumo": 3
@@ -1107,7 +1110,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g19",
       "principal": true,
       "versaoResumo": 3
@@ -1125,7 +1128,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g20",
       "principal": true,
       "versaoResumo": 3
@@ -1142,7 +1145,7 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g21",
       "principal": true,
       "versaoResumo": 3
@@ -1160,7 +1163,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g22",
       "principal": true,
       "versaoResumo": 3
@@ -1175,7 +1178,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": true,
       "cobertura": 11,
@@ -1204,7 +1207,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g23",
       "principal": true,
       "versaoResumo": 3
@@ -1219,7 +1222,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1233,7 +1236,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1247,7 +1250,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1261,7 +1264,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g24",
       "principal": true,
       "cobertura": 2,
@@ -1280,7 +1283,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1294,7 +1297,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1308,7 +1311,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1322,7 +1325,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1336,7 +1339,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1350,7 +1353,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g25",
       "principal": true,
       "versaoResumo": 3
@@ -1365,7 +1368,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g26",
       "principal": true,
       "versaoResumo": 3
@@ -1380,7 +1383,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g27",
       "principal": true,
       "versaoResumo": 3
@@ -1395,7 +1398,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g24",
       "principal": false,
       "versaoResumo": 3
@@ -1412,7 +1415,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g7",
       "principal": false,
       "versaoResumo": 3
@@ -1427,7 +1430,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g28",
       "principal": true,
       "cobertura": 2,
@@ -1446,7 +1449,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g29",
       "principal": true,
       "versaoResumo": 3
@@ -1463,7 +1466,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g30",
       "principal": true,
       "versaoResumo": 3
@@ -1480,7 +1483,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g31",
       "principal": true,
       "cobertura": 2,
@@ -1499,7 +1502,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g32",
       "principal": true,
       "versaoResumo": 3
@@ -1514,7 +1517,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g33",
       "principal": true,
       "versaoResumo": 3
@@ -1529,7 +1532,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g34",
       "principal": true,
       "versaoResumo": 3
@@ -1544,7 +1547,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 25,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g35",
       "principal": true,
       "versaoResumo": 3
@@ -1559,7 +1562,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g36",
       "principal": false,
       "versaoResumo": 3
@@ -1574,7 +1577,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g37",
       "principal": true,
       "versaoResumo": 3
@@ -1592,7 +1595,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g38",
       "principal": true,
       "cobertura": 2,
@@ -1611,7 +1614,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g39",
       "principal": true,
       "versaoResumo": 3
@@ -1628,7 +1631,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": true,
       "cobertura": 30,
@@ -1668,7 +1671,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g41",
       "principal": true,
       "versaoResumo": 3
@@ -1685,7 +1688,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g42",
       "principal": true,
       "cobertura": 2,
@@ -1704,7 +1707,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g43",
       "principal": true,
       "versaoResumo": 3
@@ -1719,7 +1722,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g44",
       "principal": true,
       "versaoResumo": 3
@@ -1734,7 +1737,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g45",
       "principal": true,
       "versaoResumo": 3
@@ -1749,7 +1752,7 @@
       "categoria": "jurisprudencia",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g46",
       "principal": true,
       "versaoResumo": 3
@@ -1767,7 +1770,7 @@
         "Stay period"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g47",
       "principal": true,
       "versaoResumo": 3
@@ -1782,7 +1785,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g48",
       "principal": true,
       "versaoResumo": 3
@@ -1797,7 +1800,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g49",
       "principal": true,
       "versaoResumo": 3
@@ -1812,7 +1815,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g50",
       "principal": true,
       "versaoResumo": 3
@@ -1827,7 +1830,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g51",
       "principal": true,
       "versaoResumo": 3
@@ -1842,7 +1845,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g36",
       "principal": true,
       "cobertura": 2,
@@ -1861,7 +1864,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g52",
       "principal": true,
       "versaoResumo": 3
@@ -1876,7 +1879,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 4,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g53",
       "principal": true,
       "versaoResumo": 3
@@ -1891,7 +1894,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g28",
       "principal": false,
       "versaoResumo": 3
@@ -1906,7 +1909,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g54",
       "principal": true,
       "versaoResumo": 3
@@ -1923,7 +1926,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false,
       "versaoResumo": 3
@@ -1941,7 +1944,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g38",
       "principal": false,
       "versaoResumo": 3
@@ -1958,7 +1961,7 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g15",
       "principal": true,
       "cobertura": 2,
@@ -1979,7 +1982,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false,
       "versaoResumo": 3
@@ -1996,7 +1999,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 10,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g55",
       "principal": true,
       "versaoResumo": 3
@@ -2013,7 +2016,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2029,7 +2032,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g56",
       "principal": true,
       "versaoResumo": 3
@@ -2046,7 +2049,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2062,7 +2065,7 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g57",
       "principal": true,
       "versaoResumo": 3
@@ -2077,7 +2080,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g58",
       "principal": true,
       "versaoResumo": 3
@@ -2094,7 +2097,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2110,7 +2113,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2126,7 +2129,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2142,7 +2145,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2159,7 +2162,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g10",
       "principal": true,
       "cobertura": 2,
@@ -2180,7 +2183,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2196,7 +2199,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2212,7 +2215,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2228,7 +2231,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2244,7 +2247,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2260,7 +2263,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2276,7 +2279,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g59",
       "principal": true,
       "versaoResumo": 3
@@ -2293,7 +2296,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2309,7 +2312,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g42",
       "principal": false,
       "versaoResumo": 3
@@ -2326,7 +2329,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g60",
       "principal": true,
       "cobertura": 5,
@@ -2350,7 +2353,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2366,7 +2369,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2382,7 +2385,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2398,7 +2401,7 @@
         "Plano"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g61",
       "principal": true,
       "versaoResumo": 3
@@ -2415,7 +2418,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2431,7 +2434,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g60",
       "principal": false,
       "versaoResumo": 3
@@ -2448,7 +2451,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2464,7 +2467,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2480,7 +2483,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g60",
       "principal": false,
       "versaoResumo": 3
@@ -2497,7 +2500,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2513,7 +2516,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2529,7 +2532,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2545,7 +2548,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2561,7 +2564,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2577,7 +2580,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g60",
       "principal": false
     },
@@ -2593,7 +2596,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2609,7 +2612,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2625,7 +2628,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g40",
       "principal": false
     },
@@ -2641,7 +2644,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g60",
       "principal": false
     },
@@ -2657,7 +2660,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g31",
       "principal": false,
       "versaoResumo": 3
@@ -2672,7 +2675,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g62",
       "principal": true,
       "versaoResumo": 3
@@ -2687,7 +2690,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g63",
       "principal": true,
       "versaoResumo": 3
@@ -2704,7 +2707,7 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g64",
       "principal": true,
       "versaoResumo": 3
@@ -2721,7 +2724,7 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g65",
       "principal": true,
       "cobertura": 2,
@@ -2740,7 +2743,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": true,
       "cobertura": 26,
@@ -2777,7 +2780,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g67",
       "principal": true,
       "versaoResumo": 3
@@ -2792,7 +2795,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g68",
       "principal": true,
       "versaoResumo": 3
@@ -2809,7 +2812,7 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g65",
       "principal": false,
       "versaoResumo": 3
@@ -2826,7 +2829,7 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g69",
       "principal": true,
       "versaoResumo": 3
@@ -2843,7 +2846,7 @@
         "STJ"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g70",
       "principal": true,
       "versaoResumo": 3
@@ -2858,7 +2861,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false,
       "versaoResumo": 3
@@ -2873,7 +2876,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false,
       "versaoResumo": 3
@@ -2890,7 +2893,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g71",
       "principal": true,
       "cobertura": 2,
@@ -2909,7 +2912,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g72",
       "principal": true,
       "cobertura": 2,
@@ -2928,7 +2931,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g72",
       "principal": false,
       "versaoResumo": 3
@@ -2943,7 +2946,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g73",
       "principal": true,
       "cobertura": 5,
@@ -2965,7 +2968,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -2979,7 +2982,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -2993,7 +2996,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3007,7 +3010,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3021,7 +3024,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3035,7 +3038,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3049,7 +3052,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g73",
       "principal": false,
       "versaoResumo": 3
@@ -3064,7 +3067,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3078,7 +3081,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3092,7 +3095,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3106,7 +3109,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3120,7 +3123,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3134,7 +3137,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3148,7 +3151,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3162,7 +3165,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3176,7 +3179,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3190,7 +3193,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3204,7 +3207,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3218,7 +3221,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3232,7 +3235,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3246,7 +3249,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3260,7 +3263,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3274,7 +3277,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3288,7 +3291,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g66",
       "principal": false
     },
@@ -3302,7 +3305,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g73",
       "principal": false,
       "versaoResumo": 3
@@ -3317,7 +3320,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g73",
       "principal": false
     },
@@ -3331,7 +3334,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g73",
       "principal": false
     },
@@ -3345,7 +3348,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g74",
       "principal": true,
       "versaoResumo": 3
@@ -3362,7 +3365,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g71",
       "principal": false,
       "versaoResumo": 3
@@ -3377,7 +3380,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g75",
       "principal": true,
       "versaoResumo": 3
@@ -3392,7 +3395,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g76",
       "principal": true,
       "versaoResumo": 3
@@ -3410,7 +3413,7 @@
         "Plano"
       ],
       "pontuacao": 18,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g77",
       "principal": true,
       "versaoResumo": 3
@@ -3427,7 +3430,7 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g78",
       "principal": true,
       "versaoResumo": 3
@@ -3442,7 +3445,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g79",
       "principal": true,
       "versaoResumo": 3
@@ -3459,7 +3462,7 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g80",
       "principal": true,
       "cobertura": 2,
@@ -3480,7 +3483,7 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g80",
       "principal": false,
       "versaoResumo": 3
@@ -3495,7 +3498,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g81",
       "principal": true,
       "cobertura": 4,
@@ -3516,7 +3519,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g81",
       "principal": false,
       "versaoResumo": 3
@@ -3531,7 +3534,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g81",
       "principal": false,
       "versaoResumo": 3
@@ -3546,7 +3549,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g82",
       "principal": true,
       "versaoResumo": 3
@@ -3561,7 +3564,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g83",
       "principal": true,
       "versaoResumo": 3
@@ -3576,7 +3579,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g84",
       "principal": true,
       "versaoResumo": 3
@@ -3591,7 +3594,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g81",
       "principal": false
     },
@@ -3605,7 +3608,7 @@
       "categoria": "legislacao",
       "etiquetas": [],
       "pontuacao": 16,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g85",
       "principal": true,
       "versaoResumo": 3
@@ -3620,7 +3623,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g86",
       "principal": true,
       "versaoResumo": 3
@@ -3635,7 +3638,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g87",
       "principal": true,
       "cobertura": 4,
@@ -3656,7 +3659,7 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 7,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g88",
       "principal": true,
       "versaoResumo": 3
@@ -3671,7 +3674,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g87",
       "principal": false,
       "versaoResumo": 3
@@ -3686,7 +3689,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g89",
       "principal": true,
       "cobertura": 2,
@@ -3707,7 +3710,7 @@
         "Plano"
       ],
       "pontuacao": 22,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g90",
       "principal": true,
       "versaoResumo": 3
@@ -3722,7 +3725,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g87",
       "principal": false,
       "versaoResumo": 3
@@ -3737,7 +3740,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g89",
       "principal": false,
       "versaoResumo": 3
@@ -3752,7 +3755,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g87",
       "principal": false
     },
@@ -3768,7 +3771,7 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g91",
       "principal": true,
       "versaoResumo": 3
@@ -3785,7 +3788,7 @@
         "Agronegócio"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g92",
       "principal": true,
       "versaoResumo": 3
@@ -3802,7 +3805,7 @@
         "Plano"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g93",
       "principal": true,
       "versaoResumo": 3
@@ -3819,7 +3822,7 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g94",
       "principal": false,
       "versaoResumo": 3
@@ -3836,7 +3839,7 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g94",
       "principal": true,
       "cobertura": 2,
@@ -3857,7 +3860,7 @@
         "Plano"
       ],
       "pontuacao": 16,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g95",
       "principal": true,
       "versaoResumo": 3
@@ -3872,7 +3875,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g96",
       "principal": true,
       "versaoResumo": 3
@@ -3887,7 +3890,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g97",
       "principal": true,
       "versaoResumo": 3
@@ -3902,7 +3905,7 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g98",
       "principal": true,
       "versaoResumo": 3
@@ -3917,7 +3920,7 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-09-01T15:30:43.593Z",
+      "coletadoEm": "2026-09-01T15:32:19.302Z",
       "grupo": "g99",
       "principal": true,
       "versaoResumo": 3

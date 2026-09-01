@@ -1,4 +1,4 @@
-Diagnóstico de fontes — 2026-09-01T15:30:24.458Z
+Diagnóstico de fontes — 2026-09-01T15:32:02.044Z
 
 fonte                 http  itens  link do veículo             description útil
 ----------------------------------------------------------------------------------------
@@ -10,7 +10,7 @@ JOTA                  200   25     www.jota.info               24/25
 Migalhas c            404   0
 Migalhas d            200   0
 STJ c                 403   0
-G1 Economia           200   100    g1.globo.com                96/100
+G1 Economia           200   100    g1.globo.com                95/100
 Folha Mercado         200   100    redir.folha.com.br          99/100
 UOL Economia          200   15     economia.uol.com.br         14/15
 Agência Brasil        200   10     agenciabrasil.ebc.com.br    10/10
