@@ -40,7 +40,7 @@ const TENTATIVAS_POR_GRUPO = 3;
 // Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
 // com qual lógica congelava o acervo: itens tentados por uma versão quebrada
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
-const VERSAO_RESUMO = 3;
+const VERSAO_RESUMO = 4;
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
@@ -201,6 +201,10 @@ async function lerAcervo() {
 
 // Abre a página da matéria e copia a linha fina publicada pelo veículo.
 // Nada é redigido aqui: ou o texto é do veículo, ou o item fica sem resumo.
+// Primeiro erro do modelo em cada coleta, gravado no diagnóstico: sem isso a
+// falha some no log e o mural volta ao recorte sem explicar por quê.
+const falhasDoModelo = [];
+
 async function buscarResumoNaPagina(noticia) {
   try {
     // Primeira via: a URL da matéria costuma estar embutida no próprio link
@@ -228,6 +232,7 @@ async function buscarResumoNaPagina(noticia) {
     const achado =
       (await resumirMateria({ titulo: noticia.titulo, texto: textoDaMateria(html, noticia.titulo) }).catch(
         (erro) => {
+          if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
           console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
           return null;
         },
@@ -396,6 +401,23 @@ async function principal() {
   };
 
   await writeFile(SAIDA, `${JSON.stringify(saida, null, 2)}\n`, 'utf-8');
+
+  // Relatório de quem escreveu os resumos, e do que falhou ao tentar.
+  const porOrigem = {};
+  for (const card of cards) porOrigem[card.resumoFonte] = (porOrigem[card.resumoFonte] || 0) + 1;
+  const relatorio = [
+    `Resumos — ${saida.atualizadoEm}`,
+    `provedor: ${provedorDoResumo()} (habilitado: ${podeResumirComModelo()})`,
+    `modelo: ${process.env.MURAL_MODELO || '(padrão do provedor)'}`,
+    `cards: ${cards.length}`,
+    `origem: ${JSON.stringify(porOrigem)}`,
+    falhasDoModelo.length ? `falhas do modelo:\n  ${falhasDoModelo.join('\n  ')}` : 'falhas do modelo: nenhuma',
+  ];
+  await writeFile(
+    path.join(path.dirname(SAIDA), 'diagnostico-resumo.txt'),
+    `${relatorio.join('\n')}\n`,
+    'utf-8',
+  );
 
   console.log(
     `\n${brutos.length} itens brutos → ${novasEntradas} novas · ${acervo.length} no acervo → ${publicadas.length} publicadas`,
