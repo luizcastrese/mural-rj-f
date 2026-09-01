@@ -6,7 +6,7 @@
 // só, e o número de veículos que a cobriram passa a ser informação útil:
 // notícia em dez lugares é notícia grande.
 
-import { normalizar } from './classificar.mjs';
+import { normalizar, evento } from './classificar.mjs';
 
 // Palavras que aparecem em quase toda manchete do tema e por isso não
 // distinguem uma notícia da outra. Os VERBOS ficam de fora desta lista de
@@ -48,29 +48,6 @@ export function empresas(titulo = '') {
     .map((palavra) => normalizar(palavra))
     .filter((palavra) => palavra.length >= 3 && !NAO_E_EMPRESA.has(palavra));
   return new Set(encontradas);
-}
-
-// Que fato a manchete narra. É isto que separa "Braskem protocola pedido" de
-// "Justiça aprova o pedido da Braskem": os dois falam da mesma empresa, mas
-// são etapas diferentes, e cada uma é notícia por si.
-const EVENTOS = [
-  ['falencia-convolada', /convol|convert\w*\s+(?:\w+\s+)?em\s+falencia/],
-  ['falencia', /falencia\s+decretada|decret\w*\s+(?:\w+\s+)?falencia|decretacao\s+(?:\w+\s+)?falencia|quebra\s+d/],
-  ['extra-aprovada', /extrajudicial/, /aprov|aceit|autoriz|homolog|aval\b|deferi|avanc|valida/],
-  ['extra-pedido', /extrajudicial/, /protocol|pede|pediu|pedido|entra|apresent|recorre|vai usar|negociar|usar/],
-  ['rj-deferida', /deferi\w*\s+(?:\w+\s+)?(?:o\s+)?processamento|processamento\s+(?:\w+\s+)?recuperacao|defer\w+\s+(?:\w+\s+)?recuperacao|aceit\w*\s+(?:\w+\s+)?pedido\s+de\s+recuperacao/],
-  ['rj-pedido', /pede|pediu|pedido|entra\w*\s+em\s+recuperacao|entrou\s+em\s+recuperacao|protocol|ajuiz|requer|solicit/],
-  ['plano', /plano/, /aprov|homolog|rejeit|vota/],
-];
-
-export function evento(titulo = '', categoria = '') {
-  const texto = normalizar(titulo);
-  for (const [nome, padrao, exigeTambem] of EVENTOS) {
-    if (!padrao.test(texto)) continue;
-    if (exigeTambem && !exigeTambem.test(texto)) continue;
-    return nome;
-  }
-  return `outros:${categoria}`;
 }
 
 const JANELA_MS = 5 * 24 * 60 * 60 * 1000;

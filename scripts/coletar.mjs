@@ -32,6 +32,8 @@ const TEMPO_LIMITE_MS = 20000;
 const TEMPO_LIMITE_PAGINA_MS = 12000;
 const RESUMOS_EM_PARALELO = 6;
 const MAX_RESUMOS_POR_COLETA = 250;
+// Quantos veículos do mesmo grupo tentar antes de desistir do resumo.
+const TENTATIVAS_POR_GRUPO = 3;
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
@@ -226,28 +228,59 @@ async function buscarResumoNaPagina(noticia) {
   }
 }
 
-// Processa em lotes para não disparar dezenas de requisições de uma vez.
+// Busca o resumo por grupo, não por item: uma notícia dada por dez veículos
+// dá dez chances de encontrar quem publicou linha fina. Basta um acerto para
+// o card ficar informativo, e o reagrupamento promove justamente esse veículo.
 async function enriquecerResumos(noticias) {
-  const pendentes = noticias.filter((n) => !n.resumo && !n.resumoTentado && n.link);
-  const alvo = pendentes.slice(0, MAX_RESUMOS_POR_COLETA);
-  if (!alvo.length) return { noticias, buscados: 0, obtidos: 0 };
-
-  console.log(`\nBuscando resumo de ${alvo.length} matéria(s) na fonte…`);
-  // Indexado pelo título: o link pode mudar quando o salto até o veículo
-  // resolve o redirecionamento do Google.
-  const porTitulo = new Map();
-
-  for (let i = 0; i < alvo.length; i += RESUMOS_EM_PARALELO) {
-    const lote = alvo.slice(i, i + RESUMOS_EM_PARALELO);
-    const prontos = await Promise.all(lote.map(buscarResumoNaPagina));
-    for (const item of prontos) porTitulo.set(item.titulo, item);
+  const grupos = new Map();
+  for (const noticia of noticias) {
+    if (!grupos.has(noticia.grupo)) grupos.set(noticia.grupo, []);
+    grupos.get(noticia.grupo).push(noticia);
   }
 
-  const obtidos = [...porTitulo.values()].filter((n) => n.resumo).length;
+  const filas = [];
+  for (const itens of grupos.values()) {
+    if (itens.some((n) => n.resumo)) continue;
+    // O representante primeiro; os outros veículos como reserva.
+    const ordenados = [...itens].sort((a, b) => Number(b.principal) - Number(a.principal));
+    const fila = ordenados.filter((n) => n.link && !n.resumoTentado).slice(0, TENTATIVAS_POR_GRUPO);
+    if (fila.length) filas.push(fila);
+  }
+
+  if (!filas.length) return { noticias, gruposTentados: 0, gruposComResumo: 0 };
+
+  console.log(`\nBuscando resumo para ${filas.length} notícia(s) na fonte...`);
+  const resolvidos = new Map();
+  let requisicoes = 0;
+  let gruposComResumo = 0;
+
+  for (let i = 0; i < filas.length; i += RESUMOS_EM_PARALELO) {
+    if (requisicoes >= MAX_RESUMOS_POR_COLETA) break;
+    const lote = filas.slice(i, i + RESUMOS_EM_PARALELO);
+
+    const prontos = await Promise.all(
+      lote.map(async (fila) => {
+        const tentados = [];
+        for (const candidato of fila) {
+          const item = await buscarResumoNaPagina(candidato);
+          tentados.push(item);
+          if (item.resumo) return { tentados, achou: true };
+        }
+        return { tentados, achou: false };
+      }),
+    );
+
+    for (const { tentados, achou } of prontos) {
+      requisicoes += tentados.length;
+      if (achou) gruposComResumo += 1;
+      for (const item of tentados) resolvidos.set(item.titulo, item);
+    }
+  }
+
   return {
-    noticias: noticias.map((n) => porTitulo.get(n.titulo) || n),
-    buscados: alvo.length,
-    obtidos,
+    noticias: noticias.map((n) => resolvidos.get(n.titulo) || n),
+    gruposTentados: filas.length,
+    gruposComResumo,
   };
 }
 
@@ -304,11 +337,12 @@ async function principal() {
     .sort((a, b) => new Date(b.data || b.coletadoEm || 0) - new Date(a.data || a.coletadoEm || 0))
     .slice(0, LIMITE_ITENS);
 
+  // Agrupa primeiro para saber quais notícias são a mesma; busca um resumo por
+  // grupo; reagrupa, e aí o representante já é o veículo que tinha resumo.
+  const preliminar = agrupar(noticias);
   const enriquecido = semResumos
-    ? { noticias, buscados: 0, obtidos: 0 }
-    : await enriquecerResumos(noticias);
-  // Agrupa depois dos resumos, para que o representante escolhido já seja
-  // o card com resumo quando houver um no grupo.
+    ? { noticias: preliminar, gruposTentados: 0, gruposComResumo: 0 }
+    : await enriquecerResumos(preliminar);
   const publicadas = agrupar(enriquecido.noticias);
   const cards = publicadas.filter((n) => n.principal);
 
@@ -332,8 +366,10 @@ async function principal() {
   console.log(
     `\n${brutos.length} itens brutos → ${novasEntradas} novas · ${acervo.length} no acervo → ${publicadas.length} publicadas`,
   );
-  if (enriquecido.buscados) {
-    console.log(`resumo obtido na fonte em ${enriquecido.obtidos}/${enriquecido.buscados} matéria(s)`);
+  if (enriquecido.gruposTentados) {
+    console.log(
+      `resumo encontrado em ${enriquecido.gruposComResumo}/${enriquecido.gruposTentados} noticia(s)`,
+    );
   }
   console.log(`com resumo: ${saida.comResumo}/${cards.length}`);
   console.log(`agrupamento: ${publicadas.length} notícias → ${cards.length} cards`);

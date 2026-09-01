@@ -69,6 +69,7 @@ const NUCLEO_FORTE = compilar({
   'recuperanda': 1, 'lei 11.101': 1, 'lei 14.112': 1, 'administrador judicial': 1,
   'plano de recuperacao': 1, 'massa falida': 1, 'falencia decretada': 1,
   'pedido de falencia': 1, 'insolvencia empresarial': 1, 'juizo universal': 1,
+  'decreta * falencia': 1, 'decretou * falencia': 1, 'convolacao * falencia': 1,
 });
 
 export const CATEGORIAS = [
@@ -225,6 +226,76 @@ export const CATEGORIAS = [
   },
 ];
 
+// Que fato a manchete narra. É isto que separa "Braskem protocola pedido" de
+// "Justiça aprova o pedido da Braskem": os dois falam da mesma empresa, mas
+// são etapas diferentes, e cada uma é notícia por si.
+const EVENTOS = [
+  ['falencia-convolada', /convol|convert\w*\s+(?:\w+\s+)?em\s+falencia/],
+  [
+    'falencia',
+    /falencia\s+decretada|decret\w*\s+(?:\w+\s+)?falencia|decretacao\s+(?:\w+\s+)?falencia|determin\w*\s+(?:\w+\s+)?falencia|declar\w*\s+(?:\w+\s+)?falencia|quebra\s+d/,
+  ],
+  ['extra-aprovada', /extrajudicial/, /aprov|aceit|autoriz|homolog|aval\b|deferi|avanc|valida/],
+  ['extra-pedido', /extrajudicial/, /protocol|pede|pediu|pedido|entra|inicia|iniciou|apresent|submet|recorre|vai usar|negociar|usar/],
+  [
+    'rj-deferida',
+    /deferi\w*\s+(?:\w+\s+)?(?:o\s+)?processamento|processamento\s+(?:\w+\s+)?recuperacao|defer\w+\s+(?:\w+\s+)?recuperacao|aceit\w*\s+(?:\w+\s+)?pedido\s+de\s+recuperacao/,
+  ],
+  // Concessão do período de blindagem: prazo que o profissional precisa saber.
+  ['stay', /\b\d{2,3}\s+dias\b|blindagem|suspensao\s+d\w+\s+execuc|prote\w+\s+(?:\w+\s+)?(?:de\s+)?cobranc/],
+  ['plano', /plano|recuperacao/, /aprovad\w*\s+p\w*\s*credores|homolog|rejeit|trava|contest|impugn|objec/],
+  ['plano', /plano|recuperacao/, /aprov|vota|assembleia|adita|aditamento|apresent|submet/],
+  // Encerrar a recuperação é fato tão noticiável quanto abri-la.
+  ['encerramento', /encerr\w*\s+(?:\w+\s+)?recuperacao|sai\w*\s+d\w+\s+recuperacao|extin\w*\s+(?:\w+\s+)?recuperacao|conclui\w*\s+(?:\w+\s+)?recuperacao/],
+  ['rj-pedido', /pede|pediu|pedido|entra\w*\s+em\s+recuperacao|entrou\s+em\s+recuperacao|protocol|ajuiz|requer|solicit/],
+];
+
+// Quem age e o que faz. Junto, isso é um fato processual sendo noticiado —
+// "Juiz determina falência", "Justiça protege de cobranças", "MP contesta o
+// plano" — e não comentário sobre o caso.
+const AGENTE = /justic|juiz|juiza|tribunal|\bstj\b|\bstf\b|supremo|superior tribunal|\bvara\b|desembargad|ministro|relator|ministerio publico|\bmps?p?\b|credores|assembleia|administrador judicial|\bcnj\b/;
+const ATO = /determin|autoriz|nega|negou|concede|concedeu|mantem|manteve|suspend|proteg|manda|obrig|homolog|rejeit|defer|indefer|declar|contest|impugn|habilit|arremat|leilo|prorrog|afast|confirm|restring|limit|valid|veda|admit|reconhec|apresent|submet|convoc|ades|extin/;
+
+export function evento(titulo = '', categoria = '') {
+  const texto = normalizar(titulo);
+  for (const [nome, padrao, exigeTambem] of EVENTOS) {
+    if (!padrao.test(texto)) continue;
+    if (exigeTambem && !exigeTambem.test(texto)) continue;
+    return nome;
+  }
+  // Rede final: alguém do processo praticou um ato. Também é fato.
+  if (AGENTE.test(texto) && ATO.test(texto)) return 'decisao-processual';
+  return `outros:${categoria}`;
+}
+
+// Peças que citam insolvência sem noticiar nada: divulgação de curso ou
+// evento, e manchete-isca que só promete explicar.
+const RUIDO_EDITORIAL = [
+  /\b(webinar|congresso|semin[áa]rio|simp[óo]sio|palestra|workshop|curso|p[óo]s-?gradua[çc][ãa]o|mba|inscri[çc][õo]es|matr[íi]culas)\b/i,
+  /\b(entenda|saiba|confira|veja) (o que|como|por que|quem|tudo)/i,
+  /\bo que (isso )?significa\b|\bo que muda\b|\btudo (o que se )?sabe\b/i,
+  /\b\d+ (pontos|coisas|perguntas|d[úu]vidas) (para|sobre)\b/i,
+];
+
+// Sinais de que a matéria traz decisão judicial de conteúdo, e não apenas
+// menção a tribunal.
+const DECISAO_JUDICIAL = compilar({
+  stj: 1, stf: 1, 'superior tribunal de justica': 1, 'supremo tribunal federal': 1,
+  'recurso repetitivo': 1, 'tema repetitivo': 1, sumula: 1, acordao: 1, tese: 1,
+  precedente: 1, jurisprudencia: 1, 'decidiu que': 1, 'entendeu que': 1,
+  'fixa tese': 1, 'firmou entendimento': 1, 'conflito de competencia': 1,
+  'camara de direito empresarial': 1, 'camara reservada': 1,
+});
+
+// Sinais de mudança normativa em curso, não de mera citação da lei.
+const MUDANCA_NORMATIVA = compilar({
+  'projeto de lei': 1, 'projetos de lei': 1, 'medida provisoria': 1,
+  'reforma da lei': 1, sancionada: 1, sancionou: 1, 'entra em vigor': 1,
+  'nova lei': 1, tramita: 1, tramitacao: 1, 'camara aprovou': 1,
+  'camara aprova': 1, 'senado aprova': 1, 'senado aprovou': 1,
+  regulamentacao: 1, 'marco legal': 1, 'audiencia publica': 1,
+});
+
 // Marcadores temáticos exibidos como etiquetas no card.
 const ETIQUETAS = [
   ['STJ', ['stj', 'superior tribunal de justica']],
@@ -263,13 +334,27 @@ export function classificar(item) {
   const nucleo = somar(texto, NUCLEO);
   const forte = NUCLEO_FORTE.some(({ re }) => re.test(texto));
   const ruido = FALSOS_POSITIVOS.some((re) => re.test(texto));
-  const relevante = nucleo > 0 && !(ruido && !forte);
+  const doTema = nucleo > 0 && !(ruido && !forte);
 
   let melhor = { id: 'mercado', pontos: 0 };
   for (const categoria of CATEGORIAS) {
     const pontos = somar(texto, categoria.termos);
     if (pontos > melhor.pontos) melhor = { id: categoria.id, pontos };
   }
+
+  // Ser do tema não basta para ocupar espaço no mural. Entra o que noticia um
+  // fato: uma etapa do processo, uma decisão com conteúdo, ou uma mudança na
+  // lei. Fica de fora o comentário de mercado, a coluna de opinião e a
+  // divulgação de curso — que citam insolvência sem informar nada novo.
+  const oQueNarra = evento(item.titulo || '', melhor.id);
+  const narraFato = !oQueNarra.startsWith('outros:');
+  const decideAlgo = melhor.id === 'jurisprudencia' && somar(texto, DECISAO_JUDICIAL) > 0;
+  const mudaALei = melhor.id === 'legislacao' && somar(texto, MUDANCA_NORMATIVA) > 0;
+  const isca = RUIDO_EDITORIAL.some((padrao) => padrao.test(item.titulo || ''));
+
+  // A isca só derruba quando não há fato: "Oi tem falência decretada; veja o
+  // que ocorre agora" noticia a quebra, ainda que embale como explicativo.
+  const relevante = doTema && (narraFato || ((decideAlgo || mudaALei) && !isca));
 
   const etiquetas = ETIQUETAS
     .filter(({ res }) => res.some((re) => re.test(texto)))
@@ -279,6 +364,7 @@ export function classificar(item) {
   return {
     relevante,
     categoria: melhor.id,
+    evento: oQueNarra,
     pontuacao: nucleo + melhor.pontos,
     etiquetas,
   };

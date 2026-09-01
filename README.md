@@ -24,6 +24,25 @@ Na página dá para buscar por texto livre (empresa, tribunal, tema), filtrar po
 eixo e por período (24 h, 7 ou 30 dias) e salvar manchetes com a estrela — as
 salvas ficam guardadas no próprio navegador, sem cadastro.
 
+## O que entra no mural
+
+Ser do tema não basta para ocupar espaço. Entra o que **noticia um fato**:
+
+- uma etapa do processo — pedido, deferimento, quebra decretada, blindagem
+  concedida, plano apresentado, aprovado ou contestado, encerramento;
+- uma **decisão com conteúdo** — tese do STJ, repetitivo, súmula, acórdão;
+- uma **mudança na lei** — projeto, reforma, sanção, entrada em vigor.
+
+Fica de fora o que cita insolvência sem informar nada novo: "entenda a
+diferença entre recuperação judicial e falência", coluna de opinião,
+comentário de analista, divulgação de curso e manchete-isca. Sobre a coleta
+real, a barra descartou 20% das notícias, e o balde genérico "Mercado & Casos"
+caiu de 55% para 30% do mural.
+
+A regra está em `classificar()`, em `scripts/lib/classificar.mjs`: a lista
+`EVENTOS` define os fatos reconhecidos e `RUIDO_EDITORIAL`, o que é isca. Se
+algum assunto seu estiver ficando de fora, é ali que se acrescenta.
+
 ## Uma notícia, um card
 
 Um deferimento relevante sai em dez portais no mesmo dia, cada um com a
@@ -59,6 +78,11 @@ artificial. A regra está em `scripts/lib/resumo.mjs` e vale sem exceção:
 - Se não publica, ou se a página está atrás de paywall, **o card diz "o veículo
   não publicou resumo — abra a matéria"**, e fica assim.
 
+A busca é feita **por notícia, não por matéria**: como a mesma quebra sai em
+dez veículos, o coletor tenta até três deles até achar um que tenha publicado
+linha fina — e o card passa a ser o desse veículo. Basta um acerto para a
+notícia ficar informativa.
+
 Chegar até a matéria exige um desvio: o link do feed do Google Notícias aponta
 para a página de redirecionamento dele, não para o veículo. O coletor tenta,
 nesta ordem, decodificar a URL embutida no próprio link (sai de graça), depois
@@ -89,9 +113,11 @@ texto saiu (`og:description`, `meta description`, `primeiro parágrafo` ou
 Pronto: o endereço aparece ao fim do workflow, no formato
 `https://<seu-usuario>.github.io/mural-rj-f/`.
 
-Depois disso a coleta roda sozinha às **7h, 12h e 17h (horário de Brasília),
-em dias úteis**. Para mudar o horário, edite o `cron` em
-`.github/workflows/atualizar-mural.yml` — lembrando que o GitHub usa UTC.
+Depois disso a coleta roda sozinha **toda segunda-feira, às 7h de Brasília**.
+Uma vez por semana basta: o acervo se acumula, e rodar mais vezes só gastaria
+minutos de Actions sem trazer notícia nova. Commits no repositório apenas
+republicam o site, sem coletar de novo. Para mudar o horário, edite o `cron`
+em `.github/workflows/atualizar-mural.yml` — lembrando que o GitHub usa UTC.
 
 ## Rodando na sua máquina
 

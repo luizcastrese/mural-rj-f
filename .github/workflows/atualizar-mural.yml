@@ -2,8 +2,8 @@ name: Atualizar mural
 
 on:
   schedule:
-    # 07h, 12h e 17h de Brasília (UTC-3), em dias úteis.
-    - cron: '0 10,15,20 * * 1-5'
+    # Segunda-feira, 7h de Brasília (UTC-3). Uma coleta por semana.
+    - cron: '0 10 * * 1'
   workflow_dispatch:
   push:
     branches: [main]
@@ -31,10 +31,14 @@ jobs:
       - name: Rodar os testes
         run: node --test scripts/testar.mjs
 
+      # Push só reconstrói e republica o site: coletar de novo a cada commit
+      # gastaria minutos de Actions sem trazer notícia nova.
       - name: Coletar as notícias
+        if: github.event_name != 'push'
         run: node scripts/coletar.mjs
 
       - name: Versionar o que mudou
+        if: github.event_name != 'push'
         run: |
           if git diff --quiet -- dados/noticias.json; then
             echo "Nenhuma notícia nova nesta coleta."
@@ -60,6 +64,9 @@ jobs:
 
   publicar:
     needs: coletar
+    # Só a branch padrão vai ao ar; execuções em outras branches servem para
+    # conferir a coleta sem mexer no site publicado.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

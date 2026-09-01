@@ -97,11 +97,14 @@ test('classificar rejeita "falência" fora do sentido empresarial', () => {
 });
 
 test('classificar mantém falência empresarial mesmo perto de termo ambíguo', () => {
+  // "falência do estado" está na lista de falsos positivos, mas aqui a
+  // manchete noticia uma quebra de verdade e precisa passar.
   const r = classificar({
-    titulo: 'Massa falida discute falência do estado de conservação dos ativos',
+    titulo: 'Justiça decreta falência da Alfa; defesa alegava falência do estado de conservação dos ativos',
     resumo: '',
   });
   assert.equal(r.relevante, true);
+  assert.equal(r.categoria, 'falencias');
 });
 
 test('classificar extrai etiquetas temáticas', () => {
@@ -393,4 +396,60 @@ test('urlEmbutidaDoGoogle recupera a matéria codificada no link', () => {
   );
   assert.equal(urlEmbutidaDoGoogle('https://valor.globo.com/materia'), null);
   assert.equal(urlEmbutidaDoGoogle('https://news.google.com/rss/articles/abc'), null);
+});
+
+test('quando um veículo não tem resumo, a coleta tenta outro do mesmo grupo', async (t) => {
+  const LINHA_FINA =
+    'A 1ª Vara de Falências decretou a quebra da companhia após a rejeição do plano pelos credores, e nomeou administrador judicial.';
+
+  const paginas = {
+    '/sem-resumo': '<html><head><title>x</title></head><body><p>Leia mais.</p></body></html>',
+    '/com-og': `<html><head><meta property="og:description" content="${LINHA_FINA}"></head></html>`,
+  };
+
+  const servidor = createServer((req, res) => {
+    const corpo = paginas[req.url];
+    if (!corpo) {
+      res.writeHead(404).end('nao encontrado');
+      return;
+    }
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }).end(corpo);
+  });
+  await new Promise((ok) => servidor.listen(0, '127.0.0.1', ok));
+  const porta = servidor.address().port;
+
+  const dir = await mkdtemp(path.join(tmpdir(), 'mural-grupo-'));
+  t.after(async () => {
+    servidor.close();
+    await rm(dir, { recursive: true, force: true });
+  });
+
+  // A mesma quebra, contada por dois veículos: só o segundo publica linha fina.
+  await writeFile(
+    path.join(dir, 'busca.xml'),
+    `<rss><channel>
+      <item>
+        <title>Justiça decreta falência da Alfa Alimentos - Portal A</title>
+        <link>http://127.0.0.1:${porta}/sem-resumo</link>
+        <pubDate>${new Date().toUTCString()}</pubDate>
+      </item>
+      <item>
+        <title>Alfa Alimentos tem falência decretada pela Justiça - Portal B</title>
+        <link>http://127.0.0.1:${porta}/com-og</link>
+        <pubDate>${new Date().toUTCString()}</pubDate>
+      </item>
+    </channel></rss>`,
+    'utf-8',
+  );
+
+  const saida = path.join(dir, 'noticias.json');
+  await executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida]);
+  const dados = JSON.parse(await readFile(saida, 'utf-8'));
+
+  // Um card só, e com o resumo que existia em apenas um dos dois veículos.
+  assert.equal(dados.total, 1);
+  const card = dados.noticias.find((n) => n.principal);
+  assert.equal(card.cobertura, 2);
+  assert.equal(card.resumo, LINHA_FINA);
+  assert.equal(card.veiculo, 'Portal B');
 });
