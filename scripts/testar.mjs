@@ -19,7 +19,9 @@ import {
   linkDoVeiculo,
   urlEmbutidaDoGoogle,
   resumoDoCorpo,
+  textoDaMateria,
 } from './lib/resumo.mjs';
+import { resumirMateria, podeResumirComModelo } from './lib/resumir.mjs';
 import { agrupar, empresas } from './lib/agrupar.mjs';
 
 const executar = promisify(execFile);
@@ -533,4 +535,41 @@ test('resumoDoCorpo prefere a frase que informa, não a que vem antes', () => {
   assert.ok(!texto.includes('não quis se manifestar'));
   // As frases saem na ordem do texto original.
   assert.ok(texto.indexOf('falência do Grupo Refit') < texto.indexOf('5ª Vara'));
+});
+
+test('sem chave da API, o coletor recorta a matéria em vez de chamar o modelo', async () => {
+  const chaveOriginal = process.env.ANTHROPIC_API_KEY;
+  delete process.env.ANTHROPIC_API_KEY;
+  try {
+    assert.equal(podeResumirComModelo(), false);
+    // Não chega a fazer requisição: devolve null e o coletor usa o recorte.
+    assert.equal(await resumirMateria({ titulo: 'x', texto: 'y'.repeat(500) }), null);
+  } finally {
+    if (chaveOriginal !== undefined) process.env.ANTHROPIC_API_KEY = chaveOriginal;
+  }
+});
+
+test('resumirMateria não chama o modelo para texto curto demais', async () => {
+  process.env.ANTHROPIC_API_KEY = 'sk-ant-teste-nao-usada';
+  try {
+    // Abaixo do mínimo, nem tenta — não há matéria para resumir.
+    assert.equal(await resumirMateria({ titulo: 'Manchete', texto: 'Curto.' }), null);
+  } finally {
+    delete process.env.ANTHROPIC_API_KEY;
+  }
+});
+
+test('textoDaMateria entrega o texto limpo para quem vai resumir', () => {
+  const html = `<article>
+    <figcaption>Foto: divulgação</figcaption>
+    <p>Leia também: outra reportagem qualquer sobre assunto diferente do nosso arquivo</p>
+    <p>A 2ª Vara Empresarial deferiu o processamento da recuperação judicial do Grupo Alfa.</p>
+    <p>A companhia declarou dívida de R$ 430 milhões e obteve suspensão das execuções por 180 dias.</p>
+  </article>`;
+
+  const texto = textoDaMateria(html, 'Justiça defere RJ do Grupo Alfa');
+  assert.ok(texto.includes('2ª Vara Empresarial'));
+  assert.ok(texto.includes('R$ 430 milhões'));
+  assert.ok(!texto.includes('Foto:'));
+  assert.ok(!texto.includes('Leia também'));
 });

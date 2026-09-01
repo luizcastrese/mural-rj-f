@@ -31,6 +31,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
 
       - name: Rodar os testes
         run: node --test scripts/testar.mjs
@@ -45,6 +49,9 @@ jobs:
       # gastaria minutos de Actions sem trazer notícia nova.
       - name: Coletar as notícias
         if: github.event_name != 'push'
+        # Sem este segredo o resumo é recortado da matéria em vez de escrito.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/coletar.mjs
 
       - name: Versionar o que mudou

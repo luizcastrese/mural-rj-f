@@ -20,7 +20,9 @@ import {
   linkDoVeiculo,
   urlEmbutidaDoGoogle,
   pareceMateria,
+  textoDaMateria,
 } from './lib/resumo.mjs';
+import { resumirMateria, podeResumirComModelo } from './lib/resumir.mjs';
 import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -221,7 +223,16 @@ async function buscarResumoNaPagina(noticia) {
       link = urlFinal;
     }
 
-    const achado = extrairResumo(html, noticia.titulo);
+    // Com o texto da matéria em mãos, o resumo é escrito a partir dele.
+    // Sem chave da API, cai no recorte de frases da própria matéria.
+    const achado =
+      (await resumirMateria({ titulo: noticia.titulo, texto: textoDaMateria(html, noticia.titulo) }).catch(
+        (erro) => {
+          console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
+          return null;
+        },
+      )) || extrairResumo(html, noticia.titulo);
+
     if (!achado) return { ...noticia, link, versaoResumo: VERSAO_RESUMO };
     return {
       ...noticia,
@@ -300,6 +311,11 @@ async function enriquecerResumos(noticias) {
 async function principal() {
   const config = JSON.parse(await readFile(path.join(RAIZ, 'fontes.json'), 'utf-8'));
   console.log(usarFixtures ? 'Lendo fixtures locais…' : 'Coletando feeds…');
+  if (!semResumos && !podeResumirComModelo()) {
+    console.warn(
+      'ANTHROPIC_API_KEY ausente: o resumo será recortado da matéria em vez de escrito.',
+    );
+  }
 
   const { itens: brutos, status } = usarFixtures
     ? await coletarFixtures()

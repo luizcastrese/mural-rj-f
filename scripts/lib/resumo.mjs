@@ -87,6 +87,26 @@ function quantoInforma(frase) {
 }
 
 /**
+ * O texto da matéria, limpo: sem script, estilo, legenda, caixa lateral,
+ * chamada de outra reportagem nem entulho de paywall. É o que se dá a ler a
+ * quem vai escrever o resumo.
+ * @returns {string}
+ */
+export function textoDaMateria(html = '', titulo = '') {
+  const tituloNormalizado = limparTexto(titulo).toLowerCase();
+  return [...corpoDaMateria(html).matchAll(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/gi)]
+    .map((achado) => limparTexto(achado[1]))
+    .filter(
+      (texto) =>
+        texto.length >= 40 &&
+        !ehEntulho(texto) &&
+        !NAO_E_TEXTO.test(texto) &&
+        texto.toLowerCase() !== tituloNormalizado,
+    )
+    .join('\n\n');
+}
+
+/**
  * Escolhe as frases da matéria que mais informam, dentro do espaço do card.
  * A primeira entra sempre, porque dá o contexto; as demais entram por quanto
  * acrescentam — valor da dívida, vara, prazo, decisão. Saem na ordem em que

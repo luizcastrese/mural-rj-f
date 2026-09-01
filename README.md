@@ -84,48 +84,27 @@ um na última verificação fica em `dados/diagnostico-fontes.txt`.
 
 ## De onde vem o resumo
 
-O resumo é **montado com frases da própria matéria**. O coletor abre a página
-e usa, nesta ordem: a linha fina que o veículo publica na `og:description`;
-se ela não disser nada, frases do texto da notícia; e só então as descrições
-curtas. Cada palavra do resumo saiu da notícia — nada é parafraseado,
-interpretado ou completado.
+O resumo é **escrito a partir do texto da matéria**. O coletor abre a página,
+extrai o texto que o veículo publicou e entrega esse texto ao modelo, que lê
+e escreve o resumo — duas ou três frases, priorizando empresa, etapa do
+processo, juízo, valores, prazos e o que foi decidido.
 
-A escolha das frases não é "as primeiras que couberem". A primeira entra
-sempre, porque dá o contexto; as demais entram por **quanto acrescentam** —
-valor da dívida, vara competente, prazo de blindagem, teor da decisão, classe
-de credores. Uma frase como *"procurada, a empresa não quis se manifestar"*
-fica de fora mesmo com espaço sobrando: resumo curto e cheio de fato serve
-mais do que resumo longo e diluído. As frases escolhidas saem na ordem em que
-aparecem no texto, literalmente como foram escritas.
+A instrução do modelo (em `scripts/lib/resumir.mjs`) é restritiva de
+propósito: usar apenas o que está no texto, não inferir, não concluir, não
+explicar institutos jurídicos, e **omitir o dado que não estiver lá em vez de
+preenchê-lo**. Resumir uma matéria cujo texto se tem em mãos não é inventar;
+inventar seria completar lacuna, e é isso que a instrução proíbe.
 
-Nada nesta base é redigido, condensado ou interpretado por inteligência
-artificial. A regra está em `scripts/lib/resumo.mjs` e vale sem exceção:
+**Isso exige uma chave da API da Anthropic**, guardada como segredo do
+repositório em `ANTHROPIC_API_KEY` (Settings → Secrets and variables →
+Actions → New repository secret). Sem ela o coletor não chama nada, avisa no
+log e cai no recorte: escolhe as frases da própria matéria que mais informam.
+O mural continua funcionando, com resumo mais cru.
 
-- Se o veículo publica resumo, ele entra como está.
-- Se não publica, ou se a página está atrás de paywall, **o card diz "o veículo
-  não publicou resumo — abra a matéria"**, e fica assim.
+Para trocar o modelo, defina a variável `MURAL_MODELO` (o padrão é
+`claude-opus-5`).
 
-A busca é feita **por notícia, não por matéria**: como a mesma quebra sai em
-dez veículos, o coletor tenta até três deles até achar um que tenha publicado
-linha fina — e o card passa a ser o desse veículo. Basta um acerto para a
-notícia ficar informativa.
-
-A busca abre a matéria mesmo quando o feed já trouxe uma description: a de
-alguns portais começa com legenda de foto ("Reprodução/TV Globo") ou com
-chamada de outra reportagem. A do feed fica como reserva.
-
-Fica de fora, por lista explícita, o texto institucional do Google
-(*"Comprehensive up-to-date news coverage…"*), que não fala da notícia e
-encheu o mural na primeira coleta, além de avisos de paywall e de cookie.
-
-O motivo é simples: um resumo gerado sobre deferimento de RJ, prazo de stay
-period ou tese do STJ pode errar um detalhe que muda a conclusão, e quem lê não
-tem como saber que errou. Resumo nenhum é um problema menor do que resumo
-plausível e errado. O campo `resumoFonte`, em cada notícia, registra de onde o
-texto saiu (`og:description`, `meta description`, `primeiro parágrafo` ou
-`feed`), e o card mostra isso ao passar o mouse.
-
-## Colocando no ar (uma vez só)
+## Colocando no ar## Colocando no ar (uma vez só)
 
 1. Suba este repositório para o GitHub.
 2. Em **Settings → Pages**, no campo *Source*, escolha **GitHub Actions**.
@@ -152,13 +131,14 @@ lembrando que o GitHub usa UTC.
 ## Rodando na sua máquina
 
 ```bash
+npm ci               # instala o SDK da Anthropic
 npm run coletar      # busca as notícias e atualiza dados/noticias.json
 npm run servir       # abre em http://localhost:8000
 npm test             # roda a suíte de testes
 ```
 
-Não há dependências para instalar: usa só o Node 20+ e o `python3` do sistema
-para servir os arquivos.
+A única dependência é o SDK da Anthropic, usado para escrever os resumos
+(`npm ci`). Para servir a página basta o `python3` do sistema.
 
 > A página precisa ser servida por HTTP. Abrir o `index.html` com dois cliques
 > (`file://`) faz o navegador bloquear a leitura do JSON — por isso o
