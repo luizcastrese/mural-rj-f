@@ -1,0 +1,40 @@
+{
+  "atualizadoEm": null,
+  "total": 0,
+  "categorias": [
+    {
+      "id": "novas-rjs",
+      "nome": "Novas RJs",
+      "descricao": "Pedidos ajuizados e processamentos deferidos"
+    },
+    {
+      "id": "falencias",
+      "nome": "Falências",
+      "descricao": "Quebras decretadas, convolações e massas falidas"
+    },
+    {
+      "id": "jurisprudencia",
+      "nome": "Jurisprudência",
+      "descricao": "O que os tribunais vêm decidindo"
+    },
+    {
+      "id": "legislacao",
+      "nome": "Legislação",
+      "descricao": "Projetos, reformas e regulamentação"
+    },
+    {
+      "id": "mercado",
+      "nome": "Mercado & Casos",
+      "descricao": "Andamento de casos, credores e reestruturações"
+    }
+  ],
+  "porCategoria": {
+    "novas-rjs": 0,
+    "falencias": 0,
+    "jurisprudencia": 0,
+    "legislacao": 0,
+    "mercado": 0
+  },
+  "fontes": [],
+  "noticias": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "mural-rj-f",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mural de notícias de recuperação judicial e falência",
+  "scripts": {
+    "coletar": "node scripts/coletar.mjs",
+    "coletar:fixtures": "node scripts/coletar.mjs --fixtures --dias 999999",
+    "test": "node --test scripts/testar.mjs",
+    "servir": "python3 -m http.server 8000"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,69 @@
+name: Atualizar mural
+
+on:
+  schedule:
+    # 07h, 12h e 17h de Brasília (UTC-3), em dias úteis.
+    - cron: '0 10,15,20 * * 1-5'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Uma atualização por vez, sem cancelar a que já está rodando.
+concurrency:
+  group: mural
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Rodar os testes
+        run: node --test scripts/testar.mjs
+
+      - name: Coletar as notícias
+        run: node scripts/coletar.mjs
+
+      - name: Versionar o que mudou
+        run: |
+          if git diff --quiet -- dados/noticias.json; then
+            echo "Nenhuma notícia nova nesta coleta."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/noticias.json
+          git commit -m "Atualiza notícias ($(date -u '+%d/%m/%Y %H:%M UTC'))"
+          git push
+
+      - name: Montar o site
+        run: |
+          mkdir -p _site/assets _site/dados
+          cp index.html _site/
+          cp assets/* _site/assets/
+          cp dados/noticias.json _site/dados/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publicar:
+    needs: coletar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
