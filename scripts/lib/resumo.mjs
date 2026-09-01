@@ -1,15 +1,19 @@
 // Extrai o resumo que o próprio veículo publicou sobre a matéria.
 //
-// Regra da casa: resumo é SEMPRE texto literal da fonte — a linha fina que
-// o veículo põe na og:description da página. Nada aqui escreve, condensa ou
-// parafraseia notícia. Quando não há resumo publicado, o item fica sem
-// resumo e a página diz isso, porque um resumo inventado sobre deferimento
-// de RJ ou tese do STJ é pior do que resumo nenhum.
+// Regra da casa: o resumo é montado com frases da própria matéria. Ou é a
+// linha fina que o veículo publicou, ou são as primeiras frases do texto,
+// reproduzidas como estão. Nada aqui parafraseia, interpreta ou completa
+// lacuna: cada palavra do resumo saiu da notícia. Quando a matéria não é
+// alcançável, o item fica sem resumo e a página diz isso — um resumo
+// inventado sobre deferimento de RJ ou tese do STJ é pior do que nenhum.
 
 import { limparTexto } from './rss.mjs';
 
 const MIN_CARACTERES = 60;
 const MAX_CARACTERES = 320;
+// Alvo do resumo montado com frases da matéria: o bastante para dizer o que
+// aconteceu, sem virar leitura longa.
+const MIN_RESUMO_MONTADO = 200;
 
 // Texto que aparece no lugar da linha fina e não descreve a matéria.
 const ENTULHO = [
@@ -42,6 +46,51 @@ function conteudoDaMeta(html, atributo, valor) {
   return '';
 }
 
+// Isola o corpo da matéria antes de ler os parágrafos: sem script, estilo,
+// legenda de foto e caixa lateral, que não fazem parte do texto.
+function corpoDaMateria(html) {
+  const artigo = html.match(/<article(?:\s[^>]*)?>([\s\S]*?)<\/article>/i);
+  return (artigo ? artigo[1] : html)
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<figure[\s\S]*?<\/figure>/gi, ' ')
+    .replace(/<figcaption[\s\S]*?<\/figcaption>/gi, ' ')
+    .replace(/<aside[\s\S]*?<\/aside>/gi, ' ')
+    .replace(/<nav[\s\S]*?<\/nav>/gi, ' ');
+}
+
+// Chamadas e rótulos que aparecem no meio do texto e não são a notícia.
+const NAO_E_TEXTO = /^(leia|veja|assista|siga|compartilhe|confira|foto|imagem|publicidade|continua|com informa|por |atualizado em|fonte:)/i;
+
+/**
+ * Monta o resumo com as primeiras frases da matéria, reproduzidas como
+ * estão. É o texto do veículo, apenas recortado no ponto final.
+ * @returns {{texto:string, origem:string}|null}
+ */
+export function resumoDoCorpo(html = '', titulo = '') {
+  const tituloNormalizado = limparTexto(titulo).toLowerCase();
+  const paragrafos = [...corpoDaMateria(html).matchAll(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/gi)]
+    .map((achado) => limparTexto(achado[1]))
+    .filter(
+      (texto) =>
+        texto.length >= 40 &&
+        !ehEntulho(texto) &&
+        !NAO_E_TEXTO.test(texto) &&
+        texto.toLowerCase() !== tituloNormalizado,
+    );
+
+  if (!paragrafos.length) return null;
+
+  // Junta parágrafos até dar corpo ao resumo, sem passar do teto.
+  let texto = '';
+  for (const paragrafo of paragrafos) {
+    texto = texto ? `${texto} ${paragrafo}` : paragrafo;
+    if (texto.length >= MIN_RESUMO_MONTADO) break;
+  }
+
+  return texto.length >= MIN_CARACTERES ? { texto: aparar(texto), origem: 'texto da matéria' } : null;
+}
+
 function primeiroParagrafo(html) {
   // Fora de script/style, e só parágrafos com corpo de texto de verdade.
   const corpo = html
@@ -71,21 +120,27 @@ function aparar(texto) {
  * @returns {{texto:string, origem:string}|null} null quando não há resumo real.
  */
 export function extrairResumo(html = '', titulo = '') {
-  const candidatos = [
-    ['og:description', conteudoDaMeta(html, 'property', 'og:description')],
+  const tituloNormalizado = limparTexto(titulo).toLowerCase();
+
+  const serve = (texto, minimo = MIN_CARACTERES) =>
+    // Repetir a manchete não é resumo: não acrescenta nada a quem já a leu.
+    texto && texto.length >= minimo && !ehEntulho(texto) && texto.toLowerCase() !== tituloNormalizado;
+
+  const og = conteudoDaMeta(html, 'property', 'og:description');
+  // A linha fina do veículo vem primeiro, desde que diga alguma coisa.
+  if (serve(og, MIN_RESUMO_MONTADO)) return { texto: aparar(og), origem: 'og:description' };
+
+  // Senão, monta-se o resumo com as primeiras frases da própria matéria.
+  const doCorpo = resumoDoCorpo(html, titulo);
+  if (doCorpo) return doCorpo;
+
+  for (const [origem, texto] of [
+    ['og:description', og],
     ['twitter:description', conteudoDaMeta(html, 'name', 'twitter:description')],
     ['meta description', conteudoDaMeta(html, 'name', 'description')],
     ['primeiro parágrafo', primeiroParagrafo(html)],
-  ];
-
-  const tituloNormalizado = limparTexto(titulo).toLowerCase();
-
-  for (const [origem, texto] of candidatos) {
-    if (!texto || texto.length < MIN_CARACTERES) continue;
-    if (ehEntulho(texto)) continue;
-    // Repetir a manchete não é resumo: não acrescenta nada a quem já a leu.
-    if (texto.toLowerCase() === tituloNormalizado) continue;
-    return { texto: aparar(texto), origem };
+  ]) {
+    if (serve(texto)) return { texto: aparar(texto), origem };
   }
 
   return null;
