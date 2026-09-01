@@ -477,3 +477,41 @@ test('quando um veículo não tem resumo, a coleta tenta outro do mesmo grupo', 
   assert.equal(card.resumo, LINHA_FINA);
   assert.equal(card.veiculo, 'Portal B');
 });
+
+test('notícia sem resumo não entra no mural, mas fica no acervo', async (t) => {
+  const dir = await mkdtemp(path.join(tmpdir(), 'mural-politica-'));
+  const saida = path.join(dir, 'noticias.json');
+  t.after(() => rm(dir, { recursive: true, force: true }));
+
+  // Duas quebras distintas: só uma traz description aproveitável no feed.
+  await writeFile(
+    path.join(dir, 'busca.xml'),
+    `<rss><channel>
+      <item>
+        <title>Justiça decreta falência da Alfa Alimentos - Portal A</title>
+        <link>http://127.0.0.1:9/alfa</link>
+        <description>O juízo da 1ª Vara de Falências decretou a quebra da companhia após a rejeição do plano pelos credores, e nomeou administrador judicial nesta terça-feira.</description>
+        <pubDate>${new Date().toUTCString()}</pubDate>
+      </item>
+      <item>
+        <title>Justiça decreta falência da Beta Varejo - Portal B</title>
+        <link>http://127.0.0.1:9/beta</link>
+        <description>Curto.</description>
+        <pubDate>${new Date().toUTCString()}</pubDate>
+      </item>
+    </channel></rss>`,
+    'utf-8',
+  );
+
+  // Porta 9 não responde: a busca do resumo falha e só resta o do feed.
+  await executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida]);
+  const dados = JSON.parse(await readFile(saida, 'utf-8'));
+
+  assert.equal(dados.total, 1, 'só a notícia com resumo vira card');
+  assert.ok(dados.noticias.find((n) => /Alfa/.test(n.titulo)).resumo);
+
+  // A outra continua no acervo, para ser tentada de novo na próxima coleta.
+  const beta = dados.noticias.find((n) => /Beta/.test(n.titulo));
+  assert.ok(beta, 'a notícia sem resumo permanece no acervo');
+  assert.equal(beta.resumo, '');
+});

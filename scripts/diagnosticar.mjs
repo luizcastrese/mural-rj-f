@@ -10,20 +10,26 @@ const UA = 'Mozilla/5.0 (compatible; MuralRJ/1.0; +https://github.com)';
 const CONSULTA = '"recuperação judicial"';
 
 const CANDIDATAS = [
-  ['Bing News (busca)', `https://www.bing.com/news/search?q=${encodeURIComponent(CONSULTA)}&format=RSS&cc=BR`],
+  ['Valor', 'https://pox.globo.com/rss/valor'],
+  ['InfoMoney', 'https://www.infomoney.com.br/feed/'],
+  ['Poder360', 'https://www.poder360.com.br/feed/'],
   ['Conjur', 'https://www.conjur.com.br/rss.xml'],
   ['JOTA', 'https://www.jota.info/feed'],
-  ['Migalhas (a)', 'https://www.migalhas.com.br/arquivorss/migalhasquentes'],
-  ['Migalhas (b)', 'https://www.migalhas.com.br/rss/migalhas-quentes'],
-  ['STJ (a)', 'https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/rss.aspx'],
-  ['STJ (b)', 'https://www.stj.jus.br/sites/portalp/Feed/Noticias'],
-  ['InfoMoney', 'https://www.infomoney.com.br/feed/'],
-  ['Valor (Globo)', 'https://pox.globo.com/rss/valor'],
-  ['Exame Negócios', 'https://exame.com/negocios/feed/'],
-  ['Estadão Economia', 'https://www.estadao.com.br/arc/outboundfeeds/feeds/sitemap-news/?outputType=xml'],
-  ['Poder360', 'https://www.poder360.com.br/feed/'],
-  ['Monitor Mercantil', 'https://monitormercantil.com.br/feed/'],
+  ['Migalhas c', 'https://www.migalhas.com.br/RSS/MigalhasQuentes'],
+  ['Migalhas d', 'https://www.migalhas.com.br/coluna/rss'],
+  ['STJ c', 'https://www.stj.jus.br/sites/portalp/Feed'],
+  ['G1 Economia', 'https://g1.globo.com/rss/g1/economia/'],
+  ['Folha Mercado', 'https://feeds.folha.uol.com.br/mercado/rss091.xml'],
+  ['UOL Economia', 'https://rss.uol.com.br/feed/economia.xml'],
+  ['Agência Brasil', 'https://agenciabrasil.ebc.com.br/rss/economia/feed.xml'],
+  ['CNN Economia', 'https://www.cnnbrasil.com.br/economia/feed/'],
+  ['Brazil Journal', 'https://braziljournal.com/feed/'],
+  ['NeoFeed', 'https://neofeed.com.br/feed/'],
+  ['Money Times', 'https://www.moneytimes.com.br/feed/'],
+  ['Exame', 'https://exame.com/feed/'],
+  ['Estadão Econ', 'https://www.estadao.com.br/rss/economia.xml'],
 ];
+
 
 async function pegar(url) {
   const controle = new AbortController();

@@ -354,7 +354,10 @@ async function principal() {
     ? { noticias: preliminar, gruposTentados: 0, gruposComResumo: 0 }
     : await enriquecerResumos(preliminar);
   const publicadas = agrupar(enriquecido.noticias);
-  const cards = publicadas.filter((n) => n.principal);
+  // Só entra no mural a notícia que tem resumo: o propósito da página é
+  // informar sem obrigar a abrir a matéria. As demais ficam no acervo e
+  // voltam a ser tentadas na coleta seguinte.
+  const cards = publicadas.filter((n) => n.principal && n.resumo);
 
   const porCategoria = Object.fromEntries(
     CATEGORIAS.map((c) => [c.id, cards.filter((n) => n.categoria === c.id).length]),
@@ -382,7 +385,9 @@ async function principal() {
     );
   }
   console.log(`com resumo: ${saida.comResumo}/${cards.length}`);
+  const semResumoAinda = publicadas.filter((n) => n.principal && !n.resumo).length;
   console.log(`agrupamento: ${publicadas.length} notícias → ${cards.length} cards`);
+  console.log(`retidas por falta de resumo: ${semResumoAinda}`);
   for (const [id, qtd] of Object.entries(porCategoria)) console.log(`  ${id.padEnd(15)} ${qtd}`);
   const falhas = status.filter((s) => !s.ok);
   if (falhas.length) console.log(`\n${falhas.length} fonte(s) indisponível(is): ${falhas.map((f) => f.nome).join(', ')}`);
