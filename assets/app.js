@@ -252,7 +252,17 @@ function criarCard(noticia) {
     const resumo = document.createElement('p');
     resumo.className = 'card-resumo';
     resumo.textContent = noticia.resumo;
+    // Deixa explícito que o texto é do veículo, não desta página.
+    if (noticia.resumoFonte) {
+      resumo.title = `Resumo publicado pelo veículo (${noticia.resumoFonte}), reproduzido sem alteração.`;
+    }
     card.append(resumo);
+  } else {
+    // Melhor dizer que não há do que preencher com qualquer coisa.
+    const ausente = document.createElement('p');
+    ausente.className = 'card-sem-resumo';
+    ausente.textContent = 'O veículo não publicou resumo — abra a matéria.';
+    card.append(ausente);
   }
 
   if (noticia.etiquetas && noticia.etiquetas.length) {

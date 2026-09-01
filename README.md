@@ -24,6 +24,28 @@ Na página dá para buscar por texto livre (empresa, tribunal, tema), filtrar po
 eixo e por período (24 h, 7 ou 30 dias) e salvar manchetes com a estrela — as
 salvas ficam guardadas no próprio navegador, sem cadastro.
 
+## De onde vem o resumo
+
+Cada card traz o resumo da matéria para que dê para decidir se vale abrir, sem
+gastar tempo. **Esse resumo é sempre texto literal do veículo**: o coletor abre
+a página da matéria e copia a linha fina que o próprio jornal publica na
+`og:description` — a mesma que aparece quando alguém compartilha o link no
+WhatsApp. Ele é reproduzido sem alteração.
+
+Nada nesta base é redigido, condensado ou interpretado por inteligência
+artificial. A regra está em `scripts/lib/resumo.mjs` e vale sem exceção:
+
+- Se o veículo publica resumo, ele entra como está.
+- Se não publica, ou se a página está atrás de paywall, **o card diz "o veículo
+  não publicou resumo — abra a matéria"**, e fica assim.
+
+O motivo é simples: um resumo gerado sobre deferimento de RJ, prazo de stay
+period ou tese do STJ pode errar um detalhe que muda a conclusão, e quem lê não
+tem como saber que errou. Resumo nenhum é um problema menor do que resumo
+plausível e errado. O campo `resumoFonte`, em cada notícia, registra de onde o
+texto saiu (`og:description`, `meta description`, `primeiro parágrafo` ou
+`feed`), e o card mostra isso ao passar o mouse.
+
 ## Colocando no ar (uma vez só)
 
 1. Suba este repositório para o GitHub.
@@ -86,6 +108,11 @@ filtro de relevância, deduplica manchetes repetidas (a mesma notícia chega por
 várias buscas — fica a versão de maior pontuação) e grava tudo em
 `dados/noticias.json`, o único arquivo que a página lê.
 
+Depois disso, abre a página de cada matéria nova para copiar o resumo do
+veículo (no máximo 80 por rodada, 6 em paralelo, 12 s de limite cada). Matéria
+que já foi tentada não é buscada de novo, e falha na busca do resumo nunca
+derruba a notícia — ela entra sem resumo.
+
 Cada coleta **soma ao que já existe** em vez de substituir. Isso importa por
 dois motivos: feeds só mostram os últimos itens, então sem isso a notícia de
 anteontem sumiria do mural; e uma coleta em que todas as fontes falhem deixa a
@@ -96,9 +123,15 @@ página intacta, em vez de zerá-la. O acervo é podado pela janela de retençã
 node scripts/coletar.mjs --dias 90       # retenção maior
 node scripts/coletar.mjs --reconstruir   # descarta o acervo e recomeça
 node scripts/coletar.mjs --fixtures      # lê fixtures/, sem rede
+node scripts/coletar.mjs --sem-resumos   # não abre as páginas das matérias
 ```
 
 ## Limites que vale conhecer
+
+Nem toda matéria vem com resumo. Veículos atrás de paywall costumam bloquear a
+leitura da página, e alguns não publicam linha fina — nesses casos o card
+aparece sem resumo, com a manchete e o link. Pela regra acima, isso é
+deliberado.
 
 Isto é um agregador de imprensa, não uma fonte oficial. A coleta enxerga o
 que os veículos publicam — uma RJ deferida que não virou notícia não aparece

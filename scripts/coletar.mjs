@@ -3,25 +3,40 @@
 // grava dados/noticias.json — o único arquivo que a página lê.
 //
 //   node scripts/coletar.mjs                 coleta de verdade
-//   node scripts/coletar.mjs --fixtures      lê os XMLs de fixtures/ (offline)
+//   node scripts/coletar.mjs --fixtures [dir]  lê XMLs de fixtures/ (offline)
 //   node scripts/coletar.mjs --dias 45       janela de retenção
 //   node scripts/coletar.mjs --saida /tmp/x.json  grava em outro arquivo
 //   node scripts/coletar.mjs --reconstruir  descarta o acervo e recomeça
+//   node scripts/coletar.mjs --sem-resumos  não abre as páginas das matérias
 
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { lerFeed } from './lib/rss.mjs';
 import { classificar, normalizar, CATEGORIAS } from './lib/classificar.mjs';
+import { extrairResumo, resumoDeFeedServe } from './lib/resumo.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LIMITE_ITENS = 300;
 const TEMPO_LIMITE_MS = 20000;
+// Busca do resumo na página da matéria: uma requisição por item novo.
+const TEMPO_LIMITE_PAGINA_MS = 12000;
+const RESUMOS_EM_PARALELO = 6;
+const MAX_RESUMOS_POR_COLETA = 80;
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
+// --fixtures aceita um diretório próprio, o que deixa a coleta inteira
+// testável contra um servidor local.
+const dirFixtures = (() => {
+  const seguinte = args[args.indexOf('--fixtures') + 1];
+  return usarFixtures && seguinte && !seguinte.startsWith('--')
+    ? path.resolve(seguinte)
+    : null;
+})();
 const diasRetencao = Number(args[args.indexOf('--dias') + 1]) || 60;
 const reconstruir = args.includes('--reconstruir');
+const semResumos = args.includes('--sem-resumos');
 const SAIDA = args.includes('--saida')
   ? path.resolve(args[args.indexOf('--saida') + 1])
   : path.join(RAIZ, 'dados', 'noticias.json');
@@ -36,9 +51,9 @@ function urlGoogleNews(consulta) {
   return `https://news.google.com/rss/search?${params}`;
 }
 
-async function baixar(url) {
+async function baixar(url, tempoLimite = TEMPO_LIMITE_MS) {
   const controle = new AbortController();
-  const relogio = setTimeout(() => controle.abort(), TEMPO_LIMITE_MS);
+  const relogio = setTimeout(() => controle.abort(), tempoLimite);
   try {
     const resposta = await fetch(url, {
       signal: controle.signal,
@@ -81,7 +96,7 @@ async function coletarFonte({ nome, url }) {
 }
 
 async function coletarFixtures() {
-  const dir = path.join(RAIZ, 'fixtures');
+  const dir = dirFixtures || path.join(RAIZ, 'fixtures');
   const arquivos = (await readdir(dir)).filter((f) => f.endsWith('.xml'));
   const lotes = await Promise.all(
     arquivos.map(async (arquivo) => {
@@ -135,6 +150,48 @@ async function lerAcervo() {
   }
 }
 
+// Abre a página da matéria e copia a linha fina publicada pelo veículo.
+// Nada é redigido aqui: ou o texto é do veículo, ou o item fica sem resumo.
+async function buscarResumoNaPagina(noticia) {
+  try {
+    const html = await baixar(noticia.link, TEMPO_LIMITE_PAGINA_MS);
+    const achado = extrairResumo(html, noticia.titulo);
+    if (!achado) return { ...noticia, resumoTentado: true };
+    return {
+      ...noticia,
+      resumo: achado.texto,
+      resumoFonte: achado.origem,
+      resumoTentado: true,
+    };
+  } catch {
+    // Paywall, timeout, 403: segue sem resumo, e não sem a notícia.
+    return { ...noticia, resumoTentado: true };
+  }
+}
+
+// Processa em lotes para não disparar dezenas de requisições de uma vez.
+async function enriquecerResumos(noticias) {
+  const pendentes = noticias.filter((n) => !n.resumo && !n.resumoTentado && n.link);
+  const alvo = pendentes.slice(0, MAX_RESUMOS_POR_COLETA);
+  if (!alvo.length) return { noticias, buscados: 0, obtidos: 0 };
+
+  console.log(`\nBuscando resumo de ${alvo.length} matéria(s) na fonte…`);
+  const porLink = new Map();
+
+  for (let i = 0; i < alvo.length; i += RESUMOS_EM_PARALELO) {
+    const lote = alvo.slice(i, i + RESUMOS_EM_PARALELO);
+    const prontos = await Promise.all(lote.map(buscarResumoNaPagina));
+    for (const item of prontos) porLink.set(item.link, item);
+  }
+
+  const obtidos = [...porLink.values()].filter((n) => n.resumo).length;
+  return {
+    noticias: noticias.map((n) => porLink.get(n.link) || n),
+    buscados: alvo.length,
+    obtidos,
+  };
+}
+
 async function principal() {
   const config = JSON.parse(await readFile(path.join(RAIZ, 'fontes.json'), 'utf-8'));
   console.log(usarFixtures ? 'Lendo fixtures locais…' : 'Coletando feeds…');
@@ -170,7 +227,9 @@ async function principal() {
     vistos.set(chave, {
       titulo,
       link: bruto.link,
-      resumo: bruto.resumo === titulo ? '' : bruto.resumo,
+      // Só entra resumo que descreve a matéria; o resto é lixo de feed.
+      resumo: resumoDeFeedServe(bruto.resumo, titulo) ? bruto.resumo : '',
+      resumoFonte: resumoDeFeedServe(bruto.resumo, titulo) ? 'feed' : null,
       veiculo: veiculo || bruto.origem,
       data: bruto.data,
       categoria: analise.categoria,
@@ -186,24 +245,34 @@ async function principal() {
     .sort((a, b) => new Date(b.data || b.coletadoEm || 0) - new Date(a.data || a.coletadoEm || 0))
     .slice(0, LIMITE_ITENS);
 
+  const enriquecido = semResumos
+    ? { noticias, buscados: 0, obtidos: 0 }
+    : await enriquecerResumos(noticias);
+  const publicadas = enriquecido.noticias;
+
   const porCategoria = Object.fromEntries(
-    CATEGORIAS.map((c) => [c.id, noticias.filter((n) => n.categoria === c.id).length]),
+    CATEGORIAS.map((c) => [c.id, publicadas.filter((n) => n.categoria === c.id).length]),
   );
 
   const saida = {
     atualizadoEm: new Date().toISOString(),
-    total: noticias.length,
+    total: publicadas.length,
+    comResumo: publicadas.filter((n) => n.resumo).length,
     categorias: CATEGORIAS.map(({ id, nome, descricao }) => ({ id, nome, descricao })),
     porCategoria,
     fontes: status,
-    noticias,
+    noticias: publicadas,
   };
 
   await writeFile(SAIDA, `${JSON.stringify(saida, null, 2)}\n`, 'utf-8');
 
   console.log(
-    `\n${brutos.length} itens brutos → ${novasEntradas} novas · ${acervo.length} no acervo → ${noticias.length} publicadas`,
+    `\n${brutos.length} itens brutos → ${novasEntradas} novas · ${acervo.length} no acervo → ${publicadas.length} publicadas`,
   );
+  if (enriquecido.buscados) {
+    console.log(`resumo obtido na fonte em ${enriquecido.obtidos}/${enriquecido.buscados} matéria(s)`);
+  }
+  console.log(`com resumo: ${saida.comResumo}/${publicadas.length}`);
   for (const [id, qtd] of Object.entries(porCategoria)) console.log(`  ${id.padEnd(15)} ${qtd}`);
   const falhas = status.filter((s) => !s.ok);
   if (falhas.length) console.log(`\n${falhas.length} fonte(s) indisponível(is): ${falhas.map((f) => f.nome).join(', ')}`);

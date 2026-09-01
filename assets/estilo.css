@@ -434,9 +434,16 @@ main { padding-block: 22px 40px; }
   font-size: 0.87rem;
   line-height: 1.45;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.card-sem-resumo {
+  margin: 0;
+  color: var(--tinta-tenue);
+  font-size: 0.82rem;
+  font-style: italic;
 }
 
 .card-meta {

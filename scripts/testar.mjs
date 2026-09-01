@@ -5,13 +5,15 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { readFile, mkdtemp, rm } from 'node:fs/promises';
+import { readFile, writeFile, mkdtemp, rm } from 'node:fs/promises';
+import { createServer } from 'node:http';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { lerFeed, limparTexto } from './lib/rss.mjs';
 import { classificar } from './lib/classificar.mjs';
+import { extrairResumo, resumoDeFeedServe } from './lib/resumo.mjs';
 
 const executar = promisify(execFile);
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -149,4 +151,125 @@ test('a janela de retenção descarta o que envelheceu', async (t) => {
   const dados = JSON.parse(await readFile(saida, 'utf-8'));
   assert.equal(dados.total, 0);
   assert.ok(Array.isArray(dados.categorias) && dados.categorias.length > 0);
+});
+
+// ---------- resumo: só texto literal da fonte ----------
+
+test('extrairResumo prefere a linha fina que o veículo publica', () => {
+  const html = `<html><head>
+    <meta property="og:description" content="A 2ª Vara Empresarial deferiu o processamento e nomeou administrador judicial para o grupo, que declarou dívida de R$ 430 milhões.">
+    <meta name="description" content="Outra coisa qualquer que não deveria ser escolhida primeiro.">
+  </head><body><p>Corpo da matéria.</p></body></html>`;
+
+  const r = extrairResumo(html, 'Justiça defere RJ do Grupo Alfa');
+  assert.equal(r.origem, 'og:description');
+  assert.ok(r.texto.startsWith('A 2ª Vara Empresarial deferiu'));
+  assert.ok(r.texto.includes('R$ 430 milhões'));
+});
+
+test('extrairResumo cai para a meta description quando não há og', () => {
+  const html = `<html><head>
+    <meta name="description" content="O Superior Tribunal de Justiça fixou tese sobre o alcance do stay period nas execuções fiscais movidas contra empresas em recuperação.">
+  </head><body></body></html>`;
+  const r = extrairResumo(html, 'STJ fixa tese');
+  assert.equal(r.origem, 'meta description');
+});
+
+test('extrairResumo descarta entulho de paywall e usa o parágrafo real', () => {
+  const html = `<html><head>
+    <meta property="og:description" content="Assine o jornal para ler esta e outras reportagens exclusivas do nosso time.">
+  </head><body>
+    <p>Curto.</p>
+    <p>O juízo da 1ª Vara de Falências decretou a quebra da companhia após a rejeição do plano pelos credores em assembleia realizada na terça-feira.</p>
+  </body></html>`;
+  const r = extrairResumo(html, 'Empresa tem falência decretada');
+  assert.equal(r.origem, 'primeiro parágrafo');
+  assert.ok(r.texto.includes('1ª Vara de Falências'));
+});
+
+test('extrairResumo devolve null quando a fonte não publicou resumo', () => {
+  const html = '<html><head><title>Notícia</title></head><body><p>Leia mais.</p></body></html>';
+  assert.equal(extrairResumo(html, 'Alguma manchete'), null);
+});
+
+test('extrairResumo não aceita a própria manchete como resumo', () => {
+  const titulo = 'Justiça defere o processamento da recuperação judicial do Grupo Alfa Alimentos';
+  const html = `<html><head><meta property="og:description" content="${titulo}"></head></html>`;
+  assert.equal(extrairResumo(html, titulo), null);
+});
+
+test('resumoDeFeedServe rejeita a lista de links do Google Notícias', () => {
+  const lixo = 'Justiça defere RJ do Grupo Alfa Valor Econômico Empresa entra em recuperação InfoMoney View Full Coverage on Google News';
+  assert.equal(resumoDeFeedServe(lixo, 'Justiça defere RJ do Grupo Alfa'), false);
+  assert.equal(resumoDeFeedServe('Alfa Alimentos', 'Alfa Alimentos'), false);
+  assert.equal(
+    resumoDeFeedServe(
+      'A 2ª Vara Empresarial deferiu o processamento e nomeou o administrador judicial da companhia nesta segunda-feira.',
+      'Justiça defere RJ do Grupo Alfa',
+    ),
+    true,
+  );
+});
+
+test('a coleta busca o resumo na página da matéria, literalmente', async (t) => {
+  const LINHA_FINA =
+    'A 2ª Vara Empresarial de São Paulo deferiu o processamento e nomeou administrador judicial; a companhia declarou dívida de R$ 430 milhões.';
+
+  const paginas = {
+    '/com-og': `<html><head><meta property="og:description" content="${LINHA_FINA}"></head><body></body></html>`,
+    '/sem-resumo': '<html><head><title>Nada aqui</title></head><body><p>Leia mais.</p></body></html>',
+  };
+
+  const servidor = createServer((req, res) => {
+    const corpo = paginas[req.url];
+    if (!corpo) {
+      res.writeHead(404).end('nao encontrado');
+      return;
+    }
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }).end(corpo);
+  });
+  await new Promise((ok) => servidor.listen(0, '127.0.0.1', ok));
+  const porta = servidor.address().port;
+
+  const dir = await mkdtemp(path.join(tmpdir(), 'mural-resumo-'));
+  t.after(async () => {
+    servidor.close();
+    await rm(dir, { recursive: true, force: true });
+  });
+
+  // Feed no formato do Google Notícias: description é lista de links, não resumo.
+  await writeFile(
+    path.join(dir, 'busca.xml'),
+    `<rss><channel>
+      <item>
+        <title>Justiça defere o processamento da recuperação judicial do Grupo Alfa - Valor</title>
+        <link>http://127.0.0.1:${porta}/com-og</link>
+        <description>&lt;ol&gt;&lt;li&gt;&lt;a href="http://x"&gt;Justiça defere RJ&lt;/a&gt;&lt;font&gt;Valor&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;</description>
+        <pubDate>${new Date().toUTCString()}</pubDate>
+      </item>
+      <item>
+        <title>Beta Varejo tem falência decretada após convolação - Folha</title>
+        <link>http://127.0.0.1:${porta}/sem-resumo</link>
+        <description>&lt;ol&gt;&lt;li&gt;&lt;a href="http://y"&gt;Falência decretada&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</description>
+        <pubDate>${new Date().toUTCString()}</pubDate>
+      </item>
+    </channel></rss>`,
+    'utf-8',
+  );
+
+  const saida = path.join(dir, 'noticias.json');
+  await executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida]);
+  const dados = JSON.parse(await readFile(saida, 'utf-8'));
+
+  const alfa = dados.noticias.find((n) => n.titulo.includes('Alfa'));
+  const beta = dados.noticias.find((n) => n.titulo.includes('Beta'));
+
+  // O resumo é o texto do veículo, caractere por caractere.
+  assert.equal(alfa.resumo, LINHA_FINA);
+  assert.equal(alfa.resumoFonte, 'og:description');
+
+  // Sem resumo publicado, o item fica sem resumo — nada é inventado.
+  assert.equal(beta.resumo, '');
+  assert.equal(beta.resumoTentado, true);
+  assert.equal(dados.comResumo, 1);
 });
