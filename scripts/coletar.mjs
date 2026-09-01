@@ -22,7 +22,12 @@ import {
   pareceMateria,
   textoDaMateria,
 } from './lib/resumo.mjs';
-import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/resumir.mjs';
+import {
+  resumirMateria,
+  podeResumirComModelo,
+  provedorDoResumo,
+  FalhaTransitoria,
+} from './lib/resumir.mjs';
 import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -40,10 +45,11 @@ const TENTATIVAS_POR_GRUPO = 3;
 // Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
 // com qual lógica congelava o acervo: itens tentados por uma versão quebrada
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
-const VERSAO_RESUMO = 5;
+const VERSAO_RESUMO = 6;
 
 // Quantas vezes insistir com o modelo numa mesma notícia, em coletas
-// diferentes, antes de aceitar que ela ficará com o recorte.
+// diferentes, antes de aceitar que ela ficará com o recorte. Só conta a
+// tentativa em que o modelo se pronunciou: congestionamento não gasta cota.
 const MAX_TENTATIVAS_MODELO = 3;
 
 // Uma notícia volta para a fila quando a extração mudou de versão, quando o
@@ -262,15 +268,18 @@ async function buscarResumoNaPagina(noticia) {
     // Com o texto da matéria em mãos, o resumo é escrito a partir dele.
     // Sem chave da API, cai no recorte de frases da própria matéria.
     const texto = textoDaMateria(html, noticia.titulo);
-    const chamouModelo = podeResumirComModelo() && texto.length >= 200;
+    let modeloRespondeu = podeResumirComModelo() && texto.length >= 200;
     const escrito = await resumirMateria({ titulo: noticia.titulo, texto }).catch((erro) => {
+      // Congestionamento não gasta a cota de tentativas: o modelo não chegou
+      // a se pronunciar sobre esta matéria, e amanhã pode estar livre.
+      if (erro instanceof FalhaTransitoria) modeloRespondeu = false;
       if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
       console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
       return null;
     });
 
     const achado = escrito || extrairResumo(html, noticia.titulo);
-    const marca = marcaDaTentativa(noticia, { chamouModelo });
+    const marca = marcaDaTentativa(noticia, { chamouModelo: modeloRespondeu });
 
     if (!achado) return { ...noticia, link, ...marca };
     return {

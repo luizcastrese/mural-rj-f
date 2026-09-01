@@ -828,21 +828,22 @@ test('falha temporária do modelo não queima a retentativa da notícia', async 
 
   // O card sai com o recorte, para o mural não ficar vazio…
   assert.equal(alfa.resumoFonte, 'texto da matéria');
-  // …e continua pendente: uma tentativa gasta, ainda abaixo do teto, então
-  // a notícia volta à fila na próxima coleta.
-  assert.equal(alfa.tentativasModelo, 1);
+  // …e continua pendente sem gastar cota: o modelo não se pronunciou sobre
+  // esta matéria, então amanhã ela é tentada de novo com o teto intacto.
+  assert.equal(alfa.tentativasModelo, 0);
   // E houve insistência antes de desistir.
   assert.ok(chamadas > 1, `esperava mais de uma tentativa, houve ${chamadas}`);
 });
 
 test('insiste com o modelo em coletas seguintes, mas não para sempre', async (t) => {
-  // Servidor de modelo que nunca funciona: mede quantas coletas insistem.
+  // O modelo responde, e recusa: erro definitivo, que gasta cota. (Fosse
+  // congestionamento, a notícia voltaria à fila indefinidamente, de propósito.)
   let chamadas = 0;
   const modelo = createServer((req, res) => {
     chamadas += 1;
     req.resume();
     req.on('end', () => {
-      res.writeHead(500, { 'content-type': 'application/json' }).end('{"error":{}}');
+      res.writeHead(403, { 'content-type': 'application/json' }).end('{"error":{"code":403}}');
     });
   });
   await new Promise((ok) => modelo.listen(0, '127.0.0.1', ok));
@@ -892,7 +893,8 @@ test('insiste com o modelo em coletas seguintes, mas não para sempre', async (t
 
   // A notícia continua no mural, com o recorte do texto da matéria.
   assert.equal(alfa.resumoFonte, 'texto da matéria');
-  // Insistiu em coletas diferentes, e parou no teto em vez de tentar sempre.
+  // Uma chamada por coleta nas três primeiras, e nenhuma nas duas seguintes:
+  // insistiu entre coletas e parou no teto, em vez de tentar para sempre.
   assert.equal(alfa.tentativasModelo, 3);
-  assert.ok(chamadas > 3, `esperava insistência entre coletas, houve ${chamadas} chamadas`);
+  assert.equal(chamadas, 3, `esperava três chamadas em cinco coletas, houve ${chamadas}`);
 });
