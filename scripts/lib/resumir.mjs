@@ -48,7 +48,9 @@ export function provedorDoResumo() {
   if (escolhido) return escolhido;
   if (process.env.ANTHROPIC_API_KEY) return 'anthropic';
   if (chaveGemini()) return 'gemini';
-  if (process.env.GITHUB_TOKEN) return 'github';
+  // GitHub Models não entra por descoberta: está em desativação e responde
+  // HTTP 410. Auto-selecioná-lo fazia o coletor se declarar capaz de escrever
+  // resumo sem conseguir escrever nenhum. Só por MURAL_PROVEDOR=github.
   return 'nenhum';
 }
 

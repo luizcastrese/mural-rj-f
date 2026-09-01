@@ -123,9 +123,18 @@ no meio de uma coleta.
 O arquivo `dados/diagnostico-resumo.txt` registra, a cada coleta, qual
 provedor escreveu, de onde veio cada resumo e as falhas que houver.
 
+Quando o provedor muda — uma chave nova é cadastrada, ou a anterior sai — as
+notícias já resumidas pelo provedor antigo voltam à fila **uma vez**, para
+serem reescritas pelo novo. Cada notícia guarda em `provedorTentado` com qual
+provedor foi tentada; é isso que evita tanto o acervo congelado no recorte
+quanto o desperdício de rechamar o modelo a cada coleta.
+
 > O **GitHub Models** foi tentado antes e não serve: entrou em desativação
 > programada e responde `HTTP 410 github_models_retirement_brownout`. O código
-> do provedor continua no arquivo, inerte, só como registro.
+> do provedor continua no arquivo, mas ele **não é mais escolhido
+> automaticamente** — só com `MURAL_PROVEDOR=github`. Auto-selecioná-lo fazia
+> o coletor se declarar capaz de escrever resumo sem conseguir escrever
+> nenhum, e marcar as notícias como já tentadas.
 
 ## Colocando no ar## Colocando no ar (uma vez só)
 

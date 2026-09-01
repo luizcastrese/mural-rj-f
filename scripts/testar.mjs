@@ -566,11 +566,13 @@ test('sem credencial nenhuma, o coletor recorta a matéria em vez de chamar o mo
   });
 });
 
-test('o GITHUB_TOKEN do workflow basta para escrever os resumos', async () => {
+test('GITHUB_TOKEN sozinho não habilita resumo: o serviço foi desativado', async () => {
   await semCredenciais(async () => {
     process.env.GITHUB_TOKEN = 'token-de-teste';
-    assert.equal(provedorDoResumo(), 'github');
-    assert.equal(podeResumirComModelo(), true);
+    // Auto-selecionar o GitHub Models fazia o coletor se dizer capaz de
+    // escrever resumo e gravar "já tentei" sem escrever nada.
+    assert.equal(provedorDoResumo(), 'nenhum');
+    assert.equal(podeResumirComModelo(), false);
   });
 });
 
@@ -690,4 +692,77 @@ test('nome de modelo recusado faz o coletor tentar o próximo da lista', async (
 
     delete process.env.MURAL_GEMINI_URL;
   });
+});
+
+test('notícia resumida por recorte é retentada quando o modelo aparece', async (t) => {
+  const RESUMO_DO_MODELO =
+    'A 1ª Vara de Falências decretou a quebra da companhia após a rejeição do plano, e nomeou administrador judicial.';
+
+  // Página com texto suficiente para resumir.
+  const paginas = createServer((req, res) => {
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }).end(
+      `<html><body><article><p>${'A companhia teve a falência decretada pela 1ª Vara. '.repeat(8)}</p></article></body></html>`,
+    );
+  });
+  await new Promise((ok) => paginas.listen(0, '127.0.0.1', ok));
+
+  // Servidor que finge ser o Gemini.
+  let chamadas = 0;
+  const modelo = createServer((req, res) => {
+    chamadas += 1;
+    req.resume();
+    req.on('end', () => {
+      res.writeHead(200, { 'content-type': 'application/json' }).end(
+        JSON.stringify({ candidates: [{ content: { parts: [{ text: RESUMO_DO_MODELO }] } }] }),
+      );
+    });
+  });
+  await new Promise((ok) => modelo.listen(0, '127.0.0.1', ok));
+
+  const dir = await mkdtemp(path.join(tmpdir(), 'mural-retry-'));
+  const saida = path.join(dir, 'noticias.json');
+  t.after(async () => {
+    paginas.close();
+    modelo.close();
+    await rm(dir, { recursive: true, force: true });
+  });
+
+  await writeFile(
+    path.join(dir, 'busca.xml'),
+    `<rss><channel><item>
+      <title>Justiça decreta falência da Alfa Alimentos - Portal A</title>
+      <link>http://127.0.0.1:${paginas.address().port}/materia</link>
+      <pubDate>${new Date().toUTCString()}</pubDate>
+    </item></channel></rss>`,
+    'utf-8',
+  );
+
+  const rodar = (env) =>
+    executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida], {
+      env: { ...process.env, GEMINI_API_KEY: '', ANTHROPIC_API_KEY: '', ...env },
+    });
+
+  // Primeira coleta, sem modelo: o resumo vem do recorte.
+  await rodar({});
+  const semModelo = JSON.parse(await readFile(saida, 'utf-8'));
+  assert.equal(semModelo.total, 1);
+  assert.notEqual(semModelo.noticias[0].resumoFonte, 'resumo da matéria');
+  assert.equal(chamadas, 0);
+
+  // Segunda coleta, agora com modelo: a notícia volta para a fila.
+  await rodar({
+    GEMINI_API_KEY: 'chave-de-teste',
+    MURAL_GEMINI_URL: `http://127.0.0.1:${modelo.address().port}/models`,
+  });
+  const comModelo = JSON.parse(await readFile(saida, 'utf-8'));
+  assert.equal(comModelo.noticias[0].resumoFonte, 'resumo da matéria');
+  assert.equal(comModelo.noticias[0].resumo, RESUMO_DO_MODELO);
+  assert.equal(chamadas, 1);
+
+  // Terceira coleta: já resumida pelo modelo, não se gasta requisição de novo.
+  await rodar({
+    GEMINI_API_KEY: 'chave-de-teste',
+    MURAL_GEMINI_URL: `http://127.0.0.1:${modelo.address().port}/models`,
+  });
+  assert.equal(chamadas, 1, 'não deve rechamar o modelo para notícia já resumida');
 });
