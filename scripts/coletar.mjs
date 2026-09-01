@@ -19,6 +19,7 @@ import {
   resumoDeFeedServe,
   linkDoVeiculo,
   urlEmbutidaDoGoogle,
+  pareceMateria,
 } from './lib/resumo.mjs';
 import { agrupar } from './lib/agrupar.mjs';
 
@@ -37,7 +38,7 @@ const TENTATIVAS_POR_GRUPO = 3;
 // Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
 // com qual lógica congelava o acervo: itens tentados por uma versão quebrada
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
-const VERSAO_RESUMO = 2;
+const VERSAO_RESUMO = 3;
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
@@ -188,7 +189,9 @@ async function coletarRede(config) {
 async function lerAcervo() {
   try {
     const conteudo = JSON.parse(await readFile(SAIDA, 'utf-8'));
-    return Array.isArray(conteudo.noticias) ? conteudo.noticias : [];
+    if (!Array.isArray(conteudo.noticias)) return [];
+    // Descarta o que ficou com link inservível; o feed traz a notícia de volta.
+    return conteudo.noticias.filter((n) => pareceMateria(n.link));
   } catch {
     return [];
   }
@@ -212,8 +215,9 @@ async function buscarResumoNaPagina(noticia) {
       if (!doVeiculo) return { ...noticia, versaoResumo: VERSAO_RESUMO };
       const segunda = await baixarPagina(doVeiculo);
       html = segunda.html;
-      link = segunda.urlFinal;
-    } else {
+      // Só adota o novo endereço se ele levar a uma matéria.
+      if (pareceMateria(segunda.urlFinal)) link = segunda.urlFinal;
+    } else if (pareceMateria(urlFinal)) {
       link = urlFinal;
     }
 

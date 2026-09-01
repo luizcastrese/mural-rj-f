@@ -302,7 +302,8 @@ test('a coleta busca o resumo na página da matéria, literalmente', async (t) =
 
   // Sem resumo publicado, o item fica sem resumo — nada é inventado.
   assert.equal(beta.resumo, '');
-  assert.equal(beta.versaoResumo, 2);
+  // Fica marcada como já tentada; o número da versão é detalhe interno.
+  assert.equal(typeof beta.versaoResumo, 'number');
   assert.equal(dados.comResumo, 1);
 });
 

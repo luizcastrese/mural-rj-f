@@ -178,19 +178,42 @@ export function urlEmbutidaDoGoogle(link = '') {
  * que o resumo do veículo pode ser lido.
  * @returns {string|null}
  */
+// Hospedeiros do próprio Google. googleusercontent entra aqui porque é onde
+// ficam as miniaturas: sem essa linha, a URL de uma imagem era tomada como
+// "link do veículo" e substituía o link da matéria.
+const HOSPEDEIRO_GOOGLE =
+  /(^|\.)(google|googleusercontent|gstatic|googleapis|ggpht|youtube|blogger|doubleclick)\.[a-z.]+$/i;
+
+// Endereço de arquivo, não de matéria.
+const ARQUIVO = /\.(jpg|jpeg|png|gif|webp|svg|ico|css|js|mp4|mp3|pdf)(\?|$)/i;
+
 export function linkDoVeiculo(html = '') {
   for (const achado of html.matchAll(/href=["'](https?:\/\/[^"']+)["']/gi)) {
     const url = achado[1];
     try {
       const { hostname } = new URL(url);
-      if (/(^|\.)(google|gstatic|googleapis|youtube|blogger)\.[a-z.]+$/i.test(hostname)) continue;
+      if (HOSPEDEIRO_GOOGLE.test(hostname)) continue;
       if (/(^|\.)policies\./i.test(hostname)) continue;
+      if (ARQUIVO.test(url)) continue;
       return url;
     } catch {
       /* href malformado: segue procurando */
     }
   }
   return null;
+}
+
+/**
+ * O endereço aponta para uma matéria? Serve para não guardar no acervo link
+ * de imagem ou de recurso, que não leva o leitor a lugar nenhum.
+ */
+export function pareceMateria(url = '') {
+  try {
+    const { hostname } = new URL(url);
+    return !HOSPEDEIRO_GOOGLE.test(hostname) && !ARQUIVO.test(url);
+  } catch {
+    return false;
+  }
 }
 
 /**
