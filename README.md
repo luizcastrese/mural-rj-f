@@ -63,13 +63,32 @@ Braskem" continuam sendo dois cards: são fatos distintos, e cada um é notícia
 por si. Na coleta real isso reduziu 289 notícias a 161 cards, 44% a menos para
 ler.
 
+## Sem resumo, não entra
+
+O mural existe para informar sem obrigar a abrir a matéria. Por isso a regra
+é dura: **notícia sem resumo não vira card**. Ela não é perdida — fica no
+acervo e é tentada de novo a cada coleta —, mas não ocupa espaço na página
+enquanto não tiver o que dizer.
+
+Isso tem uma consequência que vale entender. Pelas buscas do Google Notícias
+**não se alcança o texto da matéria**: o link para numa página de
+redirecionamento que não contém link algum para o veículo, e o identificador
+está em formato criptografado. Medido no runner, com 99 notícias buscadas: 0
+resumos. Elas continuam sendo coletadas porque medem a repercussão de um fato
+(o "+N veículos" do card) e porque o agrupamento pode encontrar a mesma
+notícia publicada por um feed direto — aí o card passa a ser o desse veículo.
+
+Quem sustenta o mural são os 13 **feeds diretos**, que entregam link do
+próprio veículo e texto legível. Estão em `fontes.json`, e o estado de cada
+um na última verificação fica em `dados/diagnostico-fontes.txt`.
+
 ## De onde vem o resumo
 
-Cada card traz o resumo da matéria para que dê para decidir se vale abrir, sem
-gastar tempo. **Esse resumo é sempre texto literal do veículo**: o coletor abre
-a página da matéria e copia a linha fina que o próprio jornal publica na
-`og:description` — a mesma que aparece quando alguém compartilha o link no
-WhatsApp. Ele é reproduzido sem alteração.
+O resumo é **montado com frases da própria matéria**. O coletor abre a página
+e usa, nesta ordem: a linha fina que o veículo publica na `og:description`;
+se ela não disser nada, as primeiras frases do texto da notícia, recortadas
+no ponto final; e só então as descrições curtas. Cada palavra do resumo saiu
+da notícia — nada é parafraseado, interpretado ou completado.
 
 Nada nesta base é redigido, condensado ou interpretado por inteligência
 artificial. A regra está em `scripts/lib/resumo.mjs` e vale sem exceção:
@@ -83,15 +102,13 @@ dez veículos, o coletor tenta até três deles até achar um que tenha publicad
 linha fina — e o card passa a ser o desse veículo. Basta um acerto para a
 notícia ficar informativa.
 
-Chegar até a matéria exige um desvio: o link do feed do Google Notícias aponta
-para a página de redirecionamento dele, não para o veículo. O coletor tenta,
-nesta ordem, decodificar a URL embutida no próprio link (sai de graça), depois
-seguir o primeiro link externo da página de redirecionamento. Só então lê o
-resumo. Sem isso, o que se copia é o texto institucional do Google
-(*"Comprehensive up-to-date news coverage…"*), que não fala da notícia — ele
-está na lista de entulho justamente por ter enchido o mural na primeira coleta.
-Quando o desvio falha, o card fica sem resumo, e o link continua levando à
-matéria pelo Google.
+A busca abre a matéria mesmo quando o feed já trouxe uma description: a de
+alguns portais começa com legenda de foto ("Reprodução/TV Globo") ou com
+chamada de outra reportagem. A do feed fica como reserva.
+
+Fica de fora, por lista explícita, o texto institucional do Google
+(*"Comprehensive up-to-date news coverage…"*), que não fala da notícia e
+encheu o mural na primeira coleta, além de avisos de paywall e de cookie.
 
 O motivo é simples: um resumo gerado sobre deferimento de RJ, prazo de stay
 period ou tese do STJ pode errar um detalhe que muda a conclusão, e quem lê não
