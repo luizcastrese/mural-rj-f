@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mural RJ &amp; Falências</title>
+<meta name="description" content="As notícias de recuperação judicial e falência do dia, filtradas e organizadas para quem atua na área.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+
+<a class="pular" href="#lista">Pular para as notícias</a>
+
+<header class="cabecalho">
+  <div class="faixa">
+    <div class="marca">
+      <span class="marca-selo" aria-hidden="true">RJ</span>
+      <div>
+        <h1>Mural RJ &amp; Falências</h1>
+        <p class="marca-sub">Recuperação judicial, falência e insolvência — o que saiu hoje</p>
+      </div>
+    </div>
+
+    <div class="cabecalho-acoes">
+      <p class="atualizacao" id="atualizacao" aria-live="polite">Carregando…</p>
+      <button type="button" class="botao-tema" id="botao-tema" aria-label="Alternar tema claro e escuro">
+        <span aria-hidden="true" id="icone-tema">◐</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="controles">
+    <div class="busca">
+      <span class="busca-icone" aria-hidden="true">⌕</span>
+      <input type="search" id="busca" placeholder="Buscar por empresa, tribunal, tema…" autocomplete="off"
+             aria-label="Buscar notícias">
+      <kbd class="atalho" aria-hidden="true">/</kbd>
+    </div>
+
+    <div class="filtros-linha">
+      <label class="campo">
+        <span class="campo-rotulo">Período</span>
+        <select id="periodo" aria-label="Filtrar por período">
+          <option value="1">24 horas</option>
+          <option value="7" selected>7 dias</option>
+          <option value="30">30 dias</option>
+          <option value="0">Tudo</option>
+        </select>
+      </label>
+
+      <button type="button" class="alternador" id="so-salvas" aria-pressed="false">
+        <span aria-hidden="true">★</span> Salvas <span class="contador-salvas" id="contador-salvas">0</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="categorias" id="categorias" aria-label="Filtrar por categoria"></nav>
+</header>
+
+<main>
+  <p class="resultado" id="resultado" role="status"></p>
+  <div class="lista" id="lista"></div>
+  <div class="vazio" id="vazio" hidden></div>
+</main>
+
+<footer class="rodape">
+  <details class="fontes">
+    <summary>Fontes desta coleta</summary>
+    <ul id="fontes"></ul>
+  </details>
+  <p class="aviso">
+    <strong>De onde vem o resumo.</strong> Cada resumo é o texto que o próprio veículo publica
+    sobre a matéria, reproduzido sem alteração. Nada nesta página é redigido, condensado ou
+    interpretado por inteligência artificial — quando o veículo não publica resumo, o card diz
+    isso em vez de preencher a lacuna.
+  </p>
+  <p class="aviso">
+    Mural informativo montado por leitura automática de feeds públicos de imprensa e de tribunais.
+    As manchetes levam ao veículo original e <strong>não substituem a consulta aos autos, ao Diário
+    Oficial ou ao inteiro teor das decisões</strong>.
+  </p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

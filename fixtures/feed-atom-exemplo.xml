@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Portal jurídico de teste</title>
+  <entry>
+    <title>Produtor rural obtém recuperação judicial e discute crédito trabalhista no TJSP</title>
+    <link rel="alternate" href="https://exemplo.test/agro"/>
+    <summary>Câmara Reservada de Direito Empresarial analisou o agravo de instrumento.</summary>
+    <published>2026-08-30T10:00:00Z</published>
+  </entry>
+  <entry>
+    <title>Empresa de energia pede recuperação judicial com dívida de R$ 1,2 bilhão</title>
+    <link rel="alternate" href="https://exemplo.test/energia"/>
+    <summary>Pedido foi protocolado na comarca da capital.</summary>
+    <published>2026-08-31T07:45:00Z</published>
+  </entry>
+  <entry>
+    <title>Bolsa fecha em alta com exportações recordes de soja</title>
+    <link rel="alternate" href="https://exemplo.test/bolsa"/>
+    <summary>Ibovespa subiu 1,3%.</summary>
+    <published>2026-08-31T20:00:00Z</published>
+  </entry>
+</feed>

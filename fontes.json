@@ -1,0 +1,39 @@
+{
+  "_comentario": "Fontes consultadas pelo coletor. Adicione ou remova à vontade: fontes que falharem são ignoradas e o erro aparece no rodapé da página.",
+  "buscasGoogleNews": [
+    {
+      "nome": "Novas RJs e pedidos",
+      "consulta": "\"recuperação judicial\" (deferida OR deferimento OR ajuizou OR protocolou)"
+    },
+    {
+      "nome": "Pedidos de recuperação",
+      "consulta": "\"pedido de recuperação judicial\""
+    },
+    {
+      "nome": "Falências decretadas",
+      "consulta": "\"falência decretada\" OR \"decretação de falência\" OR \"convolação em falência\""
+    },
+    {
+      "nome": "Planos e assembleias",
+      "consulta": "\"plano de recuperação judicial\" (aprovado OR homologado OR rejeitado OR assembleia)"
+    },
+    {
+      "nome": "Jurisprudência",
+      "consulta": "(\"recuperação judicial\" OR falência) (STJ OR STF OR \"Tribunal de Justiça\" OR acórdão OR jurisprudência)"
+    },
+    {
+      "nome": "Legislação e regulação",
+      "consulta": "\"Lei 11.101\" OR \"Lei 14.112\" OR \"lei de falências\" OR \"lei de recuperação judicial\""
+    },
+    {
+      "nome": "Recuperação extrajudicial",
+      "consulta": "\"recuperação extrajudicial\" OR \"insolvência empresarial\""
+    }
+  ],
+  "feedsDiretos": [
+    { "nome": "Conjur", "url": "https://www.conjur.com.br/rss.xml" },
+    { "nome": "JOTA", "url": "https://www.jota.info/feed" },
+    { "nome": "Migalhas", "url": "https://www.migalhas.com.br/rss" },
+    { "nome": "STJ", "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/rss.xml" }
+  ]
+}

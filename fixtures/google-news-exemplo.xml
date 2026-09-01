@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>Notícias de teste</title>
+<item>
+  <title>Justiça de SP defere o processamento da recuperação judicial do Grupo Alfa Alimentos - Valor Econômico</title>
+  <link>https://exemplo.test/alfa</link>
+  <description>&lt;p&gt;A 2&ordf; Vara Empresarial deferiu o processamento e nomeou administrador judicial.&lt;/p&gt;</description>
+  <pubDate>Mon, 24 Aug 2026 12:00:00 GMT</pubDate>
+  <source url="https://valor.test">Valor Econômico</source>
+</item>
+<item>
+  <title>Beta Varejo tem falência decretada após convolação da recuperação judicial - Folha</title>
+  <link>https://exemplo.test/beta</link>
+  <description>Massa falida terá administrador nomeado nesta semana.</description>
+  <pubDate>Tue, 25 Aug 2026 08:30:00 GMT</pubDate>
+  <source url="https://folha.test">Folha</source>
+</item>
+<item>
+  <title>STJ fixa em recurso repetitivo o alcance do stay period na recuperação judicial - Conjur</title>
+  <link>https://exemplo.test/stj-stay</link>
+  <description>Terceira Turma definiu tese sobre a suspensão das execuções.</description>
+  <pubDate>Wed, 26 Aug 2026 09:15:00 GMT</pubDate>
+  <source url="https://conjur.test">Conjur</source>
+</item>
+<item>
+  <title>Câmara aprova projeto de lei que altera a Lei 11.101 e cria a insolvência transfronteiriça - JOTA</title>
+  <link>https://exemplo.test/pl</link>
+  <description>Texto segue para o Senado.</description>
+  <pubDate>Thu, 27 Aug 2026 18:00:00 GMT</pubDate>
+  <source url="https://jota.test">JOTA</source>
+</item>
+<item>
+  <title>Credores aprovam plano de recuperação judicial da Gama com venda de unidade produtiva isolada - Estadão</title>
+  <link>https://exemplo.test/gama</link>
+  <description>Assembleia geral de credores aprovou o plano com deságio.</description>
+  <pubDate>Fri, 28 Aug 2026 14:20:00 GMT</pubDate>
+  <source url="https://estadao.test">Estadão</source>
+</item>
+<item>
+  <title>Paciente morre de falência múltipla de órgãos em hospital do interior - G1</title>
+  <link>https://exemplo.test/ruido1</link>
+  <description>Caso é investigado pela polícia.</description>
+  <pubDate>Fri, 28 Aug 2026 15:00:00 GMT</pubDate>
+  <source url="https://g1.test">G1</source>
+</item>
+<item>
+  <title>Técnico lamenta a falência moral do futebol brasileiro - ESPN</title>
+  <link>https://exemplo.test/ruido2</link>
+  <description>Declaração após a derrota.</description>
+  <pubDate>Sat, 29 Aug 2026 11:00:00 GMT</pubDate>
+  <source url="https://espn.test">ESPN</source>
+</item>
+<item>
+  <title>Justiça de SP defere o processamento da recuperação judicial do Grupo Alfa Alimentos - InfoMoney</title>
+  <link>https://exemplo.test/alfa-duplicado</link>
+  <description>Mesma manchete vinda de outra busca, para testar a deduplicação.</description>
+  <pubDate>Mon, 24 Aug 2026 13:00:00 GMT</pubDate>
+  <source url="https://infomoney.test">InfoMoney</source>
+</item>
+</channel></rss>
