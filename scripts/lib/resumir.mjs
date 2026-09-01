@@ -170,10 +170,22 @@ async function chamarGemini(nomeDoModelo, titulo, corpo, cortada) {
     }
 
     const dados = await resposta.json();
-    return (dados?.candidates?.[0]?.content?.parts || [])
+    const escrito = (dados?.candidates?.[0]?.content?.parts || [])
       .map((parte) => parte.text || '')
       .join(' ')
       .trim();
+
+    // Resposta sem texto é comum quando o filtro de conteúdo barra o pedido.
+    // Sem dizer o motivo, a falha some e o mural volta ao recorte sem
+    // explicação — foi o que aconteceu na primeira coleta com chave.
+    if (!escrito) {
+      const motivo =
+        dados?.candidates?.[0]?.finishReason ||
+        dados?.promptFeedback?.blockReason ||
+        'resposta sem texto';
+      throw new Error(`Gemini respondeu sem resumo (${motivo})`);
+    }
+    return escrito;
   } finally {
     clearTimeout(relogio);
   }
