@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-09-01T15:13:31.967Z",
+  "atualizadoEm": "2026-09-01T15:14:47.382Z",
   "total": 106,
   "totalComRepetidas": 254,
   "comResumo": 2,
@@ -172,7 +172,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g2",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Grupo Refit tem falência decretada pela Justiça do Rio",
@@ -257,7 +258,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g3",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Grupo Refit tem falência decretada pela Justiça do Rio de Janeiro. Recuperação judicial iniciada em 2015 chega ao fim",
@@ -388,7 +390,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g4",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Casas Bahia consegue proteção de 180 dias em recuperação judicial, e ações despencam",
@@ -407,7 +410,8 @@
       "tambemEm": [
         "G1"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Casas Bahia confirma antecipação de efeitos do seu pedido de recuperação judicial",
@@ -427,7 +431,8 @@
         "Valor Econômico",
         "Diário da Guanabara"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Grupo Casas Bahia confirma antecipação de efeitos do seu pedido de recuperação judicial",
@@ -442,7 +447,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g6",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Recuperação extrajudicial da Braskem preocupa vítimas: ‘Direitos não podem entrar nessa negociação’",
@@ -459,7 +465,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g7",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Justiça de São Paulo aceita recuperação extrajudicial da Braskem",
@@ -476,7 +483,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g8",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Grupo Sefert entra em recuperação judicial com dívidas de R$ 240 milhões",
@@ -495,7 +503,8 @@
       "tambemEm": [
         "Globo Rural"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Casas Bahia recuperação judicial: blindagem contra credores",
@@ -517,7 +526,8 @@
         "ADVFN",
         "G1"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Justiça protege Casas Bahia de cobranças por 180 dias durante recuperação judicial",
@@ -532,7 +542,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g5",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "BRKM5 protocola recuperação extrajudicial e YDUQ3 capta R$ 1,2 bi",
@@ -549,7 +560,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g10",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Comprei em uma empresa que pediu recuperação judicial. Vou receber meu produto?",
@@ -564,7 +576,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g11",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Após pedir recuperação judicial, Casas Bahia aprova garantia de mais de R$ 50 mi ao Banco Digio",
@@ -579,7 +592,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g12",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem recebe aval da Justiça para recuperação extrajudicial de dívida de US$ 10,9 bi",
@@ -596,7 +610,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g8",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem vai usar recuperação extrajudicial para negociar dívida de US$ 10 bilhões",
@@ -619,7 +634,8 @@
         "Jornal Exclusivo",
         "Vero Notícias"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi (OIBR3) entra com pedido de recuperação judicial nos EUA",
@@ -634,7 +650,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g13",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Ministério Público contesta plano de recuperação Extrajudicial do Grupo Pão de Açúcar",
@@ -656,7 +673,8 @@
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Justiça aprova processamento da recuperação extrajudicial da Braskem",
@@ -813,7 +831,8 @@
         "Valor Econômico",
         "BDM - Bom Dia Mercado"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Recuperação judicial com dívida de mais de R$ 600 milhões é aprovada por credores",
@@ -828,7 +847,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g15",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Justiça de SP defere processamento da recuperação extrajudicial da Braskem",
@@ -845,7 +865,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g16",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem diz que Justiça aprovou processamento da recuperação extrajudicial - 28/08/2026 - Economia",
@@ -912,7 +933,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g17",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem obtém aval da Justiça para iniciar recuperação extrajudicial",
@@ -1007,7 +1029,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g18",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "MP de SP rejeita recuperação extrajudicial do GPA",
@@ -1024,7 +1047,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g19",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem volta a cair, mesmo após Justiça aprovar processamento de recuperação extrajudicial",
@@ -1057,7 +1081,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g14",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Habib’s pede recuperação judicial em meio à disparada de 65% nos pedidos de socorro financeiro por empresas",
@@ -1072,7 +1097,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g20",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Pedido de recuperação judicial das Casas Bahia expõe transformação do varejo brasileiro",
@@ -1087,7 +1113,8 @@
       "coletadoEm": "2026-09-01T15:03:52.827Z",
       "grupo": "g6",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Empresa de insumos Sefert entra em recuperação judicial com dívida de R$ 240 milhões",
@@ -1102,7 +1129,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g9",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Com dívida de R$ 265 milhões, Habib’s tem pedido de recuperação judicial aceito pela Justiça",
@@ -1117,7 +1145,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g20",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Em pedido de recuperação judicial, dono do Habib’s atribui crise financeira a efeitos da pandemia, mudança no consumo e alta dos juros",
@@ -1147,7 +1176,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g21",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oncoclínicas atualiza plano de recuperação extrajudicial e mantém negociação com credores",
@@ -1165,7 +1195,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g22",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "STJ evita que sucumbência vire entrave a credores de recuperação e falência",
@@ -1182,7 +1213,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g23",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oncoclínicas submete minuta atualizada do plano de recuperação extrajudicial à Justiça em SP",
@@ -1200,7 +1232,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g24",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Dono do Habib's entra em recuperação judicial com R$ 265 mi",
@@ -1228,7 +1261,8 @@
         "O GLOBO",
         "CNN Brasil"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Recuperação extrajudicial: veja por que empresas estão recorrendo à modalidade",
@@ -1245,7 +1279,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g25",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Dona do Habib’s Entra em Recuperação Judicial com Dívida de R$ 265,2 Milhões",
@@ -1309,7 +1344,8 @@
       "tambemEm": [
         "Revista Nossa"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Dona do Habib’s entra com pedido de recuperação judicial com dívida de R$ 265 milhões",
@@ -1401,7 +1437,8 @@
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g7",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Justiça decreta falência da Oi em decisão do Tribunal de Justiça do Rio de Janeiro",
@@ -1416,7 +1453,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g27",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Pedidos de recuperação extrajudicial disparam 90,7% em dois anos no Brasil",
@@ -1433,7 +1471,8 @@
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g28",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça; entenda os impactos",
@@ -1448,7 +1487,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g29",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Em fato relevante, Oi confirma falência decretada pela Justiça do Rio",
@@ -1463,7 +1503,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g30",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Ambipar terá nova assembleia de credores, após falta de quórum na recuperação judicial",
@@ -1480,7 +1521,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g31",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Uma das maiores empresas do país tem falência decretada",
@@ -1495,7 +1537,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g26",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem inicia recuperação extrajudicial de dívida de US$ 11 bilhões",
@@ -1531,7 +1574,8 @@
       "tambemEm": [
         "UOL Economia"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Operadora de telefonia Oi tem falência decretada pela Justiça",
@@ -1546,7 +1590,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g33",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "STF confirma que devedor contumaz não pode pedir recuperação judicial; entenda a regra",
@@ -1563,7 +1608,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g34",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "STF confirma restrição a devedores contumazes na recuperação judicial",
@@ -1584,7 +1630,8 @@
       "tambemEm": [
         "Gazeta do Paraná"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Tribunal de Justiça do Rio decreta falência da Oi",
@@ -1599,7 +1646,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g36",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Com credores em Laguna, operadora Oi tem falência decretada novamente pela Justiça do Rio",
@@ -1614,7 +1662,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g37",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi perde batalha judicial e tem falência decretada pela segunda vez",
@@ -1629,7 +1678,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g38",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada após Justiça do Rio de Janeiro suspender recuperação judicial",
@@ -1644,7 +1694,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g39",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Justiça volta a decretar falência da Oi",
@@ -1659,7 +1710,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g40",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi Tem Falência Decretada Após Ficar Sem Dinheiro; Dívida Supera R$ 44 Bilhões",
@@ -1674,7 +1726,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g41",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Lupatech (LUPA3) Obtém Apoio de Credores e Avança no Plano de Recuperação Extrajudicial",
@@ -1696,7 +1749,8 @@
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça pela segunda vez",
@@ -1711,7 +1765,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g43",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Crises em série levam Braskem a pedido de recuperação extrajudicial",
@@ -1757,7 +1812,8 @@
         "Agência iNFRA",
         "Valor Investe"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi confirma falência decretada pela Justiça do RJ",
@@ -1772,7 +1828,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g45",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "STF valida regra que impede devedor contumaz de pedir recuperação judicial",
@@ -1793,7 +1850,8 @@
       "tambemEm": [
         "jota.info"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada: entenda a queda da antiga supertele",
@@ -1808,7 +1866,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g47",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Arrastando-se há uma década, Oi tem falência decretada",
@@ -1823,7 +1882,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g48",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "De novo: Oi (OIBR3) tem falência decretada pela Justiça pela segunda vez",
@@ -1838,7 +1898,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g49",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Falência da Oi é confirmada pelo Tribunal de Justiça do Rio",
@@ -1853,7 +1914,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g50",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "STF valida blindagem fiscal e barra devedor contumaz da recuperação judicial",
@@ -1871,7 +1933,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g51",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada e acumula dívida superior a R$ 44 bilhões",
@@ -1886,7 +1949,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g52",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça do Rio em meio a dívida de R$ 44 bilhões",
@@ -1901,7 +1965,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g53",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem abre pedido de recuperação extrajudicial para reestruturar dívida de U$ 10,9 bi",
@@ -1918,7 +1983,8 @@
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g44",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça e B3 suspende negociação de ações da empresa",
@@ -1933,7 +1999,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g54",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada pela justiça do Rio; veja o que deve ocorrer agora",
@@ -1948,7 +2015,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g55",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi volta à falência decretada pelo Rio de Janeiro",
@@ -1967,7 +2035,8 @@
       "tambemEm": [
         "AJN1"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada com dívidas acima de R$ 44 bilhões",
@@ -1982,7 +2051,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g56",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Justiça do Rio confirma falência da Oi após rejeitar recursos de bancos",
@@ -1997,7 +2067,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g57",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça novamente",
@@ -2012,7 +2083,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g32",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Oi tem falência decretada pela Justiça",
@@ -2027,7 +2099,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g58",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial; empresa tem acordo de R$ 1,2 bilhão por desastre em Maceió",
@@ -2044,7 +2117,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g44",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Lupatech consegue aval de credores para plano de recuperação extrajudicial",
@@ -2062,7 +2136,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g42",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Maioria dos credores da OSX Brasil aprovam plano de recuperação judicial",
@@ -2083,7 +2158,8 @@
       "tambemEm": [
         "Forbes Brasil"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial para reestruturar US$ 10,9 bilhões em dívidas",
@@ -2117,7 +2193,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g59",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem busca recuperação extrajudicial; veja a íntegra do pedido",
@@ -2151,7 +2228,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g60",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial e ganha tempo",
@@ -2183,7 +2261,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g61",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Entenda pedido de recuperação extrajudicial da Braskem",
@@ -2217,7 +2296,8 @@
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g62",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Fabricante de móveis tem falência decretada após abandonar fábrica e acumular dívida de R$ 133 milhões",
@@ -2232,7 +2312,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g63",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Recuperação extrajudicial: Braskem tem 90 dias para negociar dívida de R$ 56 bilhões",
@@ -2322,7 +2403,8 @@
       "tambemEm": [
         "Visno Invest"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem faz pedido de recuperação extrajudicial",
@@ -2452,7 +2534,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g64",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "B3 exclui Braskem de índices após pedido de recuperação extrajudicial",
@@ -2501,7 +2584,8 @@
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g65",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "STF valida proibição de devedor contumaz pedir recuperação judicial",
@@ -2518,7 +2602,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g46",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Conselho aprova pedido de recuperação extrajudicial da Braskem",
@@ -2545,7 +2630,8 @@
         "Seu Dinheiro",
         "estadao.com.br"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Com reparação em andamento por colapso em Maceió, Braskem aprova pedido de recuperação extrajudicial",
@@ -2562,7 +2648,8 @@
       "coletadoEm": "2026-09-01T15:13:30.918Z",
       "grupo": "g65",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial para renegociar dívida de R$ 54 bi",
@@ -2660,7 +2747,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g66",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Ações da Braskem cedem 3% após companhia confirmar que pretende entrar com pedido de recuperação extrajudicial",
@@ -2985,7 +3073,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g35",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Supremo restringe acesso do devedor contumaz à recuperação judicial",
@@ -3000,7 +3089,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g67",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Estrela apresenta plano de recuperação judicial com deságio de 90% e diversificação de receitas",
@@ -3017,7 +3107,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g68",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Ambipar reconhece como credora empresa criada após pedido de recuperação judicial",
@@ -3032,7 +3123,8 @@
       "coletadoEm": "2026-09-01T15:03:52.827Z",
       "grupo": "g69",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Estrela (ESTR3; ESTR4) protocola plano de recuperação judicial",
@@ -3053,7 +3145,8 @@
       "tambemEm": [
         "Valor Econômico"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Entenda o pedido de recuperação judicial das Casas Bahia",
@@ -3090,7 +3183,8 @@
         "InfoMoney",
         "VEJA"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "É difícil sair de recuperação judicial feita no ‘salve-se quem puder’, diz analista da ESPM",
@@ -3105,7 +3199,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g72",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Ambipar: credores pedem suspensão de assembleia sobre recuperação judicial e questionam falta de informações",
@@ -3120,7 +3215,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g73",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Grupo Estrela protocola plano de recuperação judicial",
@@ -3137,7 +3233,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g70",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Nem sempre cabe sucumbência em casos de crédito em RJ e falências, afirma STJ",
@@ -3154,7 +3251,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g74",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "STJ limita pagamento de honorários em processos de recuperação judicial",
@@ -3171,7 +3269,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g75",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Casas Bahia pedem recuperação judicial: Entenda como funciona processo",
@@ -3186,7 +3285,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g71",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Após prejuízo de R$ 10,1 bi, Casas Bahia pede recuperação judicial",
@@ -3201,7 +3301,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g71",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Mexicana Braskem Idesa entra com pedido de recuperação judicial nos EUA para reestruturar dívida",
@@ -3220,7 +3321,8 @@
       "tambemEm": [
         "Folha de S.Paulo"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Joint venture da Braskem no México entra com pedido de recuperação judicial nos EUA",
@@ -3235,7 +3337,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g76",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Braskem prepara pedido de recuperação extrajudicial",
@@ -3256,7 +3359,8 @@
       "tambemEm": [
         "Valor Econômico"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Marabraz pede recuperação judicial com dívidas de R$ 140 milhões",
@@ -3279,7 +3383,8 @@
         "Exame",
         "Valor Econômico"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Casas Bahia pede recuperação judicial após prejuízo bilionário",
@@ -3384,7 +3489,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g78",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Casas Bahia entra com pedido de recuperação judicial em São Paulo",
@@ -3640,7 +3746,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g78",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Marabraz pede recuperação judicial com dívida de R$ 140 mi",
@@ -3702,7 +3809,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g77",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Tradicional fabricante de móveis tem falência decretada após acumular dívida de R$ 133 milhões e abandonar fábrica",
@@ -3717,7 +3825,8 @@
       "coletadoEm": "2026-09-01T15:03:52.827Z",
       "grupo": "g79",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Empresa de móveis de SC tem falência decretada após 55 anos de história e dívida de R$ 133 milhões",
@@ -3732,7 +3841,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g80",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Empresa responsável por Megashop Moda Nordeste tem falência decretada",
@@ -3747,7 +3857,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g81",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Plano de recuperação judicial não pode afastar honorários, decide STJ",
@@ -3765,7 +3876,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g82",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Falência não restitui bem vendido em fraude à execução, diz STJ",
@@ -3782,7 +3894,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g83",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Exclusivo: Farmaervas tem a falência decretada",
@@ -3797,7 +3910,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g84",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Treze formaliza acordo com credores e tem plano de recuperação judicial aprovado",
@@ -3818,7 +3932,8 @@
       "tambemEm": [
         "PB Esportes"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Plano de Recuperação Judicial do Treze é aprovado em assembleia realizada com os credores",
@@ -3835,7 +3950,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g85",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Ex-clube de Pirlo, Baggio e Guardiola tem falência decretada na Itália",
@@ -3857,7 +3973,8 @@
         "Juruá Online",
         "Terra"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Clube que revelou Pirlo e Tonali tem falência decretada após 114 anos",
@@ -3872,7 +3989,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g86",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Clube que revelou Pirlo e Tonali, Brescia tem falência decretada",
@@ -3887,7 +4005,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g86",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Clube tradicional tem falência decretada por não pagar dívida de R$ 136 milhões",
@@ -3902,7 +4021,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g87",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Tradicional clube italiano tem falência decretada e é extinto",
@@ -3917,7 +4037,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g88",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Tradicional Brescia Calcio, clube que revelou Pirlo e Tonali, tem falência decretada na Itália",
@@ -3947,7 +4068,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g89",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Tradicional clube italiano de Baggio e Guardiola tem falência decretada após 114 anos",
@@ -3977,7 +4099,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g90",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Trabalhadores da Ditália Móveis reagem à decretação de falência",
@@ -3992,7 +4115,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g91",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Light pede à Justiça encerramento da recuperação judicial iniciada em 2023",
@@ -4013,7 +4137,8 @@
         "financenews.com.br",
         "Times Brasil | CNBC"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Fictor avança em recuperação judicial e prevê assembleia em agosto",
@@ -4028,7 +4153,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g93",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Após três anos, Light pede para sair da recuperação judicial",
@@ -4043,7 +4169,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g92",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Light pede fim da recuperação judicial e anuncia aumento de capital",
@@ -4062,7 +4189,8 @@
       "tambemEm": [
         "Money Times"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Decretada falência de fabricante de móveis da Serra após plano de recuperação judicial ser rejeitado",
@@ -4079,7 +4207,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g95",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Light protocola pedido de encerramento da recuperação judicial",
@@ -4094,7 +4223,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g92",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Light (LIGT3) homologa aumento de capital de R$ 1,5 bilhão e pede fim da recuperação judicial",
@@ -4109,7 +4239,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g94",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Light dá passo final para encerrar recuperação judicial após aumento de capital",
@@ -4141,7 +4272,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g96",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Americanas (AMER3) nega atraso a credores e diz cumprir plano de recuperação; ação sobe",
@@ -4158,7 +4290,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g97",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Metropolitano: aprovado plano de recuperação judicial",
@@ -4175,7 +4308,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g98",
       "principal": false,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Produtor rural tem falência decretada após apresentar plano de RJ fora do prazo",
@@ -4192,7 +4326,8 @@
       "coletadoEm": "2026-09-01T15:03:52.827Z",
       "grupo": "g99",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Metropolitano tem plano de recuperação judicial aprovado por credores",
@@ -4213,7 +4348,8 @@
       "tambemEm": [
         "ND Mais"
       ],
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Lavoro prepara pedido de recuperação judicial",
@@ -4228,7 +4364,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g100",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Votação do plano de recuperação judicial de dona da Backer é adiada; veja detalhamento da dívida",
@@ -4245,7 +4382,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g101",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Grupo Prime inicia recuperação judicial com passivo de R$ 790,2 milhões e mantém operações enquanto negocia com credores",
@@ -4260,7 +4398,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g102",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Credores contestam saída da Americanas da recuperação judicial",
@@ -4275,7 +4414,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g103",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "SAF: Administração Judicial apresenta novo relatório da recuperação judicial",
@@ -4290,7 +4430,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g104",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     },
     {
       "titulo": "Metalúrgica do Vale do Sinos pede suspensão da falência decretada pela Justiça",
@@ -4305,7 +4446,8 @@
       "coletadoEm": "2026-09-01T14:59:45.541Z",
       "grupo": "g105",
       "principal": true,
-      "resumoTentado": true
+      "resumoTentado": true,
+      "versaoResumo": 2
     }
   ]
 }
