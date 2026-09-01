@@ -459,6 +459,16 @@ main { padding-block: 22px 40px; }
 }
 
 .card-veiculo { color: var(--tinta-suave); font-weight: 500; }
+
+/* Cobertura ampla é sinal de notícia grande — merece destaque discreto. */
+.cobertura {
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--acento-fundo);
+  color: var(--acento);
+  font-weight: 500;
+  cursor: help;
+}
 .card-meta .sep { opacity: 0.5; }
 
 .etiquetas {

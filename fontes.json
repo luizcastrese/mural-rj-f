@@ -1,5 +1,5 @@
 {
-  "_comentario": "Fontes consultadas pelo coletor. Adicione ou remova à vontade: fontes que falharem são ignoradas e o erro aparece no rodapé da página.",
+  "_comentario": "Fontes consultadas pelo coletor. Adicione ou remova à vontade: fontes que falharem são ignoradas e o erro aparece no rodapé da página. Os feeds diretos de Migalhas e STJ foram removidos por retornarem 404 e 403; o conteúdo dos dois continua chegando pelas buscas do Google Notícias.",
   "buscasGoogleNews": [
     {
       "nome": "Novas RJs e pedidos",
@@ -31,9 +31,13 @@
     }
   ],
   "feedsDiretos": [
-    { "nome": "Conjur", "url": "https://www.conjur.com.br/rss.xml" },
-    { "nome": "JOTA", "url": "https://www.jota.info/feed" },
-    { "nome": "Migalhas", "url": "https://www.migalhas.com.br/rss" },
-    { "nome": "STJ", "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/rss.xml" }
+    {
+      "nome": "Conjur",
+      "url": "https://www.conjur.com.br/rss.xml"
+    },
+    {
+      "nome": "JOTA",
+      "url": "https://www.jota.info/feed"
+    }
   ]
 }

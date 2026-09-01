@@ -13,7 +13,13 @@ import { fileURLToPath } from 'node:url';
 
 import { lerFeed, limparTexto } from './lib/rss.mjs';
 import { classificar } from './lib/classificar.mjs';
-import { extrairResumo, resumoDeFeedServe } from './lib/resumo.mjs';
+import {
+  extrairResumo,
+  resumoDeFeedServe,
+  linkDoVeiculo,
+  urlEmbutidaDoGoogle,
+} from './lib/resumo.mjs';
+import { agrupar, empresas } from './lib/agrupar.mjs';
 
 const executar = promisify(execFile);
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -272,4 +278,119 @@ test('a coleta busca o resumo na página da matéria, literalmente', async (t) =
   assert.equal(beta.resumo, '');
   assert.equal(beta.resumoTentado, true);
   assert.equal(dados.comResumo, 1);
+});
+
+// ---------- agrupamento de uma notícia dada por vários veículos ----------
+
+test('agrupar junta a mesma notícia com manchetes diferentes', () => {
+  const agora = new Date().toISOString();
+  const entrada = [
+    { titulo: 'Refit tem a falência decretada', veiculo: 'Valor', data: agora, pontuacao: 20, resumo: 'Linha fina do Valor.' },
+    { titulo: 'Grupo Refit tem falência decretada pela Justiça do Rio', veiculo: 'Poder360', data: agora, pontuacao: 22, resumo: '' },
+    { titulo: 'Justiça do Rio decreta falência do Grupo Refit', veiculo: 'InfoMoney', data: agora, pontuacao: 18, resumo: '' },
+    { titulo: 'Marabraz pede recuperação judicial com dívidas de R$ 140 milhões', veiculo: 'G1', data: agora, pontuacao: 15, resumo: '' },
+  ];
+
+  const saida = agrupar(entrada);
+  const principais = saida.filter((n) => n.principal);
+
+  // Três manchetes do Refit viram um card; a Marabraz continua separada.
+  assert.equal(principais.length, 2);
+
+  const refit = principais.find((n) => /refit/i.test(n.titulo));
+  assert.equal(refit.cobertura, 3);
+  // Vence quem tem resumo, mesmo com pontuação menor.
+  assert.equal(refit.veiculo, 'Valor');
+  assert.deepEqual(refit.tambemEm.sort(), ['InfoMoney', 'Poder360']);
+
+  const marabraz = principais.find((n) => /marabraz/i.test(n.titulo));
+  assert.equal(marabraz.cobertura, undefined);
+});
+
+test('agrupar não junta notícias distintas da mesma empresa', () => {
+  const agora = new Date().toISOString();
+  const saida = agrupar([
+    { titulo: 'Casas Bahia pede recuperação judicial', veiculo: 'A', data: agora, pontuacao: 10, resumo: '' },
+    { titulo: 'Casas Bahia aprova plano e sai da recuperação judicial', veiculo: 'B', data: agora, pontuacao: 10, resumo: '' },
+  ]);
+  assert.equal(saida.filter((n) => n.principal).length, 2);
+});
+
+test('agrupar separa notícias afastadas no tempo', () => {
+  const hoje = new Date().toISOString();
+  const antigo = new Date(Date.now() - 30 * 24 * 3600e3).toISOString();
+  const saida = agrupar([
+    { titulo: 'Refit tem a falência decretada pela Justiça', veiculo: 'A', data: hoje, pontuacao: 10, resumo: '' },
+    { titulo: 'Refit tem a falência decretada pela Justiça', veiculo: 'B', data: antigo, pontuacao: 10, resumo: '' },
+  ]);
+  assert.equal(saida.filter((n) => n.principal).length, 2);
+});
+
+test('agrupar junta o mesmo fato narrado com verbos diferentes', () => {
+  const agora = new Date().toISOString();
+  // Manchetes reais da coleta: quase nenhuma palavra em comum além do nome.
+  const saida = agrupar([
+    { titulo: 'Justiça de São Paulo aceita recuperação extrajudicial da Braskem', veiculo: 'A', data: agora, pontuacao: 10, resumo: '' },
+    { titulo: 'Braskem recebe aval da Justiça para recuperação extrajudicial de dívida', veiculo: 'B', data: agora, pontuacao: 10, resumo: '' },
+    { titulo: 'Justiça autoriza recuperação extrajudicial da Braskem', veiculo: 'C', data: agora, pontuacao: 10, resumo: '' },
+    { titulo: 'Braskem tem recuperação extrajudicial aprovada para reestruturar dívida', veiculo: 'D', data: agora, pontuacao: 10, resumo: '' },
+  ]);
+
+  const principais = saida.filter((n) => n.principal);
+  assert.equal(principais.length, 1, 'as quatro narram o mesmo deferimento');
+  assert.equal(principais[0].cobertura, 4);
+});
+
+test('agrupar separa etapas diferentes do mesmo caso', () => {
+  const agora = new Date().toISOString();
+  const saida = agrupar([
+    { titulo: 'Braskem protocola pedido de recuperação extrajudicial', veiculo: 'A', data: agora, pontuacao: 10, resumo: '' },
+    { titulo: 'Justiça aprova a recuperação extrajudicial da Braskem', veiculo: 'B', data: agora, pontuacao: 10, resumo: '' },
+  ]);
+  // Pedir e ter o pedido deferido são fatos distintos: dois cards.
+  assert.equal(saida.filter((n) => n.principal).length, 2);
+});
+
+test('empresas ignora instituição e praça, e fica com o nome próprio', () => {
+  assert.deepEqual([...empresas('Justiça do Rio decreta falência do Grupo Refit')], ['refit']);
+  assert.deepEqual([...empresas('Justiça de São Paulo aceita pedido da Braskem')], ['braskem']);
+  assert.equal(empresas('Tribunal de Justiça do Rio de Janeiro decide').size, 0);
+});
+
+test('extrairResumo rejeita o texto institucional do Google Notícias', () => {
+  // O link do feed leva à página de redirecionamento do Google, cuja
+  // og:description é sempre esta — e não fala da matéria.
+  const html = `<html><head><meta property="og:description" content="Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."></head></html>`;
+  assert.equal(extrairResumo(html, 'Justiça defere RJ do Grupo Alfa'), null);
+});
+
+test('linkDoVeiculo acha a matéria por trás do redirecionamento', () => {
+  const html = `<html><body>
+    <a href="https://policies.google.com/privacy">Privacidade</a>
+    <a href="https://news.google.com/foo">Mais</a>
+    <a href="https://valor.globo.com/empresas/noticia/materia.ghtml">Leia a matéria</a>
+  </body></html>`;
+  assert.equal(linkDoVeiculo(html), 'https://valor.globo.com/empresas/noticia/materia.ghtml');
+});
+
+test('linkDoVeiculo devolve null quando só há links do próprio Google', () => {
+  const html = '<html><body><a href="https://support.google.com/news">Ajuda</a></body></html>';
+  assert.equal(linkDoVeiculo(html), null);
+});
+
+test('urlEmbutidaDoGoogle recupera a matéria codificada no link', () => {
+  // Mesmo formato do feed: base64url de bytes com a URL do veículo dentro.
+  const bruto = Buffer.concat([
+    Buffer.from([0x08, 0x13, 0x22, 0x4a]),
+    Buffer.from('https://valor.globo.com/empresas/noticia/braskem.ghtml', 'latin1'),
+    Buffer.from([0x00, 0x01]),
+  ]);
+  const identificador = bruto.toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+
+  assert.equal(
+    urlEmbutidaDoGoogle(`https://news.google.com/rss/articles/${identificador}`),
+    'https://valor.globo.com/empresas/noticia/braskem.ghtml',
+  );
+  assert.equal(urlEmbutidaDoGoogle('https://valor.globo.com/materia'), null);
+  assert.equal(urlEmbutidaDoGoogle('https://news.google.com/rss/articles/abc'), null);
 });

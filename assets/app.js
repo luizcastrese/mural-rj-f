@@ -289,6 +289,19 @@ function criarCard(noticia) {
   quando.textContent = dataRelativa(noticia.data);
   if (noticia.data) quando.title = new Date(noticia.data).toLocaleString('pt-BR');
   meta.append(veiculo, sep, quando);
+
+  // Quantos veículos deram a mesma notícia: em dez lugares é notícia grande.
+  if (noticia.cobertura > 1) {
+    const sep2 = document.createElement('span');
+    sep2.className = 'sep';
+    sep2.textContent = '·';
+    const cobertura = document.createElement('span');
+    cobertura.className = 'cobertura';
+    cobertura.textContent = `+${noticia.cobertura - 1} veículos`;
+    cobertura.title = `Também em: ${(noticia.tambemEm || []).join(', ')}`;
+    meta.append(sep2, cobertura);
+  }
+
   card.append(meta);
 
   return card;
@@ -434,7 +447,11 @@ async function iniciar() {
     return;
   }
 
-  estado.noticias = Array.isArray(dados.noticias) ? dados.noticias : [];
+  // Notícia repetida por vários veículos vira um card só: o coletor marca o
+  // representante do grupo. (principal ausente = base antiga, entra do mesmo jeito.)
+  estado.noticias = (Array.isArray(dados.noticias) ? dados.noticias : []).filter(
+    (n) => n.principal !== false,
+  );
   estado.categorias = Array.isArray(dados.categorias) ? dados.categorias : [];
   estado.fontes = Array.isArray(dados.fontes) ? dados.fontes : [];
   estado.jaColetou = Boolean(dados.atualizadoEm);

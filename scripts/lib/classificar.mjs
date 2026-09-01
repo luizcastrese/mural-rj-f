@@ -11,11 +11,19 @@ export function normalizar(texto = '') {
 
 // Termos com letra/dígito nas pontas ganham \b para não casar dentro de
 // outra palavra ("pl" em "plano", "stj" em "stjx").
+//
+// ' * ' no meio do termo é uma vaga de artigo opcional: 'decreta * falencia'
+// casa com "decreta falência", "decreta a falência" e "decreta da falência".
+// Sem isso, o termo teria de prever cada artigo — e foi assim que dezenas de
+// "Justiça decreta falência do Grupo X" acabaram fora da categoria certa.
+const ARTIGO = '\\s+(?:[ao]s?|d[aeo]s?|em|n[ao]s?)?\\s*';
+
 function comoRegex(termo) {
-  const escapado = termo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapar = (parte) => parte.replace(/[.+?^${}()|[\]\\]/g, '\\$&');
+  const corpo = termo.split(' * ').map(escapar).join(ARTIGO);
   const inicio = /[a-z0-9]/.test(termo[0]) ? '\\b' : '';
   const fim = /[a-z0-9]/.test(termo[termo.length - 1]) ? '\\b' : '';
-  return new RegExp(inicio + escapado + fim, 'i');
+  return new RegExp(inicio + corpo + fim, 'i');
 }
 
 function compilar(mapa) {
@@ -66,25 +74,27 @@ const NUCLEO_FORTE = compilar({
 export const CATEGORIAS = [
   {
     id: 'novas-rjs',
-    nome: 'Novas RJs',
-    descricao: 'Pedidos ajuizados e processamentos deferidos',
+    nome: 'Novos casos',
+    descricao: 'Pedidos, deferimentos e recuperações extrajudiciais',
     termos: compilar({
-      'deferimento do processamento': 9,
-      'defere o processamento': 9,
-      'deferiu o processamento': 9,
-      'processamento da recuperacao': 8,
+      'deferimento * processamento': 9,
+      'defere * processamento': 9,
+      'deferiu * processamento': 9,
+      'deferir * processamento': 8,
+      'processamento * recuperacao': 8,
       'recuperacao judicial deferida': 8,
       'tem recuperacao judicial deferida': 8,
-      'defere a recuperacao': 8,
-      'deferiu a recuperacao': 8,
+      'defere * recuperacao': 8,
+      'deferiu * recuperacao': 8,
       'pedido de recuperacao judicial': 7,
-      'pede recuperacao judicial': 7,
-      'pediu recuperacao judicial': 7,
+      'pede * recuperacao judicial': 7,
+      'pediu * recuperacao judicial': 7,
+      'pedir * recuperacao judicial': 6,
       'entra em recuperacao judicial': 7,
       'entrou em recuperacao judicial': 7,
       'entram em recuperacao judicial': 7,
-      'ajuizou recuperacao': 6,
-      'ajuiza recuperacao': 6,
+      'ajuizou * recuperacao': 6,
+      'ajuiza * recuperacao': 6,
       'ingressou com pedido': 5,
       'protocolou pedido': 5,
       'requereu recuperacao': 6,
@@ -93,6 +103,19 @@ export const CATEGORIAS = [
       'concede recuperacao judicial': 7,
       'concedida a recuperacao judicial': 7,
       'aceita pedido de recuperacao': 7,
+      // A extrajudicial é o mesmo tipo de evento: caso novo entrando.
+      'pedido de recuperacao extrajudicial': 8,
+      'protocola * recuperacao extrajudicial': 8,
+      'protocolou * recuperacao extrajudicial': 8,
+      'aceita * recuperacao extrajudicial': 8,
+      'aceitou * recuperacao extrajudicial': 8,
+      'aprova * recuperacao extrajudicial': 8,
+      'aprovou * recuperacao extrajudicial': 8,
+      'homologa * recuperacao extrajudicial': 8,
+      'homologou * recuperacao extrajudicial': 8,
+      'deferida * recuperacao extrajudicial': 8,
+      'aval * justica para recuperacao extrajudicial': 8,
+      'entra * recuperacao extrajudicial': 7,
       'em recuperacao judicial': 2,
     }),
   },
@@ -102,18 +125,21 @@ export const CATEGORIAS = [
     descricao: 'Quebras decretadas, convolações e massas falidas',
     termos: compilar({
       'falencia decretada': 9,
-      'decretou a falencia': 9,
-      'decreta a falencia': 9,
-      'decretacao de falencia': 9,
-      'decretacao da falencia': 9,
-      'convolacao em falencia': 9,
-      'convolada em falencia': 9,
-      'convolou em falencia': 9,
+      'decreta * falencia': 9,
+      'decretou * falencia': 9,
+      'decretar * falencia': 8,
+      'decretada * falencia': 8,
+      'decretacao * falencia': 9,
+      'convolacao * falencia': 9,
+      'convolada * falencia': 9,
+      'convolou * falencia': 9,
+      'convertida * falencia': 8,
+      'tem * falencia': 7,
+      'teve * falencia': 7,
       autofalencia: 8,
       'pedido de falencia': 6,
       'massa falida': 5,
       'quebra da empresa': 5,
-      'teve a falencia': 7,
       falimentar: 2,
     }),
   },

@@ -14,15 +14,24 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { lerFeed } from './lib/rss.mjs';
 import { classificar, normalizar, CATEGORIAS } from './lib/classificar.mjs';
-import { extrairResumo, resumoDeFeedServe } from './lib/resumo.mjs';
+import {
+  extrairResumo,
+  resumoDeFeedServe,
+  linkDoVeiculo,
+  urlEmbutidaDoGoogle,
+} from './lib/resumo.mjs';
+import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const LIMITE_ITENS = 300;
+// Dimensionado sobre a coleta real: a primeira rodada trouxe 289 notícias,
+// então o teto de 300 que eu havia estimado daria menos de dois dias de
+// acervo. O JSON é servido comprimido, o que mantém o peso baixo no celular.
+const LIMITE_ITENS = 900;
 const TEMPO_LIMITE_MS = 20000;
 // Busca do resumo na página da matéria: uma requisição por item novo.
 const TEMPO_LIMITE_PAGINA_MS = 12000;
 const RESUMOS_EM_PARALELO = 6;
-const MAX_RESUMOS_POR_COLETA = 80;
+const MAX_RESUMOS_POR_COLETA = 250;
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
@@ -67,6 +76,35 @@ async function baixar(url, tempoLimite = TEMPO_LIMITE_MS) {
     return await resposta.text();
   } finally {
     clearTimeout(relogio);
+  }
+}
+
+// Como baixar(), mas informa a URL em que a resposta parou, para saber se o
+// redirecionamento do Google já levou até o veículo.
+async function baixarPagina(url) {
+  const controle = new AbortController();
+  const relogio = setTimeout(() => controle.abort(), TEMPO_LIMITE_PAGINA_MS);
+  try {
+    const resposta = await fetch(url, {
+      signal: controle.signal,
+      redirect: 'follow',
+      headers: {
+        'user-agent': 'Mozilla/5.0 (compatible; MuralRJ/1.0; +https://github.com)',
+        accept: 'text/html,application/xhtml+xml',
+      },
+    });
+    if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
+    return { html: await resposta.text(), urlFinal: resposta.url || url };
+  } finally {
+    clearTimeout(relogio);
+  }
+}
+
+function ehGoogleNoticias(url) {
+  try {
+    return /(^|\.)news\.google\.com$/i.test(new URL(url).hostname);
+  } catch {
+    return false;
   }
 }
 
@@ -154,11 +192,30 @@ async function lerAcervo() {
 // Nada é redigido aqui: ou o texto é do veículo, ou o item fica sem resumo.
 async function buscarResumoNaPagina(noticia) {
   try {
-    const html = await baixar(noticia.link, TEMPO_LIMITE_PAGINA_MS);
+    // Primeira via: a URL da matéria costuma estar embutida no próprio link
+    // do Google. Sai de graça e poupa uma ida à rede.
+    const embutida = urlEmbutidaDoGoogle(noticia.link);
+    let { html, urlFinal } = await baixarPagina(embutida || noticia.link);
+    let link = noticia.link;
+
+    // O link do feed do Google para na página de redirecionamento dele, cuja
+    // descrição é institucional. Vale um segundo salto até o veículo — que de
+    // quebra dá ao card um link direto para a matéria.
+    if (ehGoogleNoticias(urlFinal)) {
+      const doVeiculo = linkDoVeiculo(html);
+      if (!doVeiculo) return { ...noticia, resumoTentado: true };
+      const segunda = await baixarPagina(doVeiculo);
+      html = segunda.html;
+      link = segunda.urlFinal;
+    } else {
+      link = urlFinal;
+    }
+
     const achado = extrairResumo(html, noticia.titulo);
-    if (!achado) return { ...noticia, resumoTentado: true };
+    if (!achado) return { ...noticia, link, resumoTentado: true };
     return {
       ...noticia,
+      link,
       resumo: achado.texto,
       resumoFonte: achado.origem,
       resumoTentado: true,
@@ -176,17 +233,19 @@ async function enriquecerResumos(noticias) {
   if (!alvo.length) return { noticias, buscados: 0, obtidos: 0 };
 
   console.log(`\nBuscando resumo de ${alvo.length} matéria(s) na fonte…`);
-  const porLink = new Map();
+  // Indexado pelo título: o link pode mudar quando o salto até o veículo
+  // resolve o redirecionamento do Google.
+  const porTitulo = new Map();
 
   for (let i = 0; i < alvo.length; i += RESUMOS_EM_PARALELO) {
     const lote = alvo.slice(i, i + RESUMOS_EM_PARALELO);
     const prontos = await Promise.all(lote.map(buscarResumoNaPagina));
-    for (const item of prontos) porLink.set(item.link, item);
+    for (const item of prontos) porTitulo.set(item.titulo, item);
   }
 
-  const obtidos = [...porLink.values()].filter((n) => n.resumo).length;
+  const obtidos = [...porTitulo.values()].filter((n) => n.resumo).length;
   return {
-    noticias: noticias.map((n) => porLink.get(n.link) || n),
+    noticias: noticias.map((n) => porTitulo.get(n.titulo) || n),
     buscados: alvo.length,
     obtidos,
   };
@@ -248,16 +307,20 @@ async function principal() {
   const enriquecido = semResumos
     ? { noticias, buscados: 0, obtidos: 0 }
     : await enriquecerResumos(noticias);
-  const publicadas = enriquecido.noticias;
+  // Agrupa depois dos resumos, para que o representante escolhido já seja
+  // o card com resumo quando houver um no grupo.
+  const publicadas = agrupar(enriquecido.noticias);
+  const cards = publicadas.filter((n) => n.principal);
 
   const porCategoria = Object.fromEntries(
-    CATEGORIAS.map((c) => [c.id, publicadas.filter((n) => n.categoria === c.id).length]),
+    CATEGORIAS.map((c) => [c.id, cards.filter((n) => n.categoria === c.id).length]),
   );
 
   const saida = {
     atualizadoEm: new Date().toISOString(),
-    total: publicadas.length,
-    comResumo: publicadas.filter((n) => n.resumo).length,
+    total: cards.length,
+    totalComRepetidas: publicadas.length,
+    comResumo: cards.filter((n) => n.resumo).length,
     categorias: CATEGORIAS.map(({ id, nome, descricao }) => ({ id, nome, descricao })),
     porCategoria,
     fontes: status,
@@ -272,7 +335,8 @@ async function principal() {
   if (enriquecido.buscados) {
     console.log(`resumo obtido na fonte em ${enriquecido.obtidos}/${enriquecido.buscados} matéria(s)`);
   }
-  console.log(`com resumo: ${saida.comResumo}/${publicadas.length}`);
+  console.log(`com resumo: ${saida.comResumo}/${cards.length}`);
+  console.log(`agrupamento: ${publicadas.length} notícias → ${cards.length} cards`);
   for (const [id, qtd] of Object.entries(porCategoria)) console.log(`  ${id.padEnd(15)} ${qtd}`);
   const falhas = status.filter((s) => !s.ok);
   if (falhas.length) console.log(`\n${falhas.length} fonte(s) indisponível(is): ${falhas.map((f) => f.nome).join(', ')}`);

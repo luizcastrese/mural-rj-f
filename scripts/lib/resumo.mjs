@@ -20,6 +20,13 @@ const ENTULHO = [
   /todos os direitos reservados/i,
   /^(home|not[íi]cias|[úu]ltimas not[íi]cias)$/i,
   /faça seu login|entre na sua conta/i,
+  // Texto institucional do próprio Google Notícias: o link do feed leva à
+  // página de redirecionamento dele, não à matéria. Copiar isso encheria o
+  // mural de "resumos" que não falam da notícia.
+  /aggregated from sources all over the world/i,
+  /comprehensive up-to-date news coverage/i,
+  /google (?:news|notícias)/i,
+  /read full articles|view full coverage/i,
 ];
 
 function conteudoDaMeta(html, atributo, valor) {
@@ -81,6 +88,53 @@ export function extrairResumo(html = '', titulo = '') {
     return { texto: aparar(texto), origem };
   }
 
+  return null;
+}
+
+/**
+ * A URL da matéria costuma vir embutida, em base64, no próprio identificador
+ * do link do Google Notícias. Tentar decodificar sai de graça e evita uma
+ * requisição; quando não dá certo, o coletor ainda tem o salto por HTTP.
+ * @returns {string|null}
+ */
+export function urlEmbutidaDoGoogle(link = '') {
+  try {
+    const { hostname, pathname } = new URL(link);
+    if (!/(^|\.)news\.google\.com$/i.test(hostname)) return null;
+
+    const identificador = pathname.split('/').filter(Boolean).pop();
+    if (!identificador || identificador.length < 16) return null;
+
+    const base64 = identificador.replace(/-/g, '+').replace(/_/g, '/');
+    const bytes = Buffer.from(base64, 'base64').toString('latin1');
+    const achado = bytes.match(/https?:\/\/[^\s\x00-\x1f"'<>\\]{12,}/);
+    if (!achado) return null;
+
+    const url = achado[0];
+    return /(^|\.)google\.[a-z.]+$/i.test(new URL(url).hostname) ? null : url;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * O link do feed do Google Notícias aponta para a página de redirecionamento
+ * dele. A matéria de verdade é o primeiro link externo dessa página — é dali
+ * que o resumo do veículo pode ser lido.
+ * @returns {string|null}
+ */
+export function linkDoVeiculo(html = '') {
+  for (const achado of html.matchAll(/href=["'](https?:\/\/[^"']+)["']/gi)) {
+    const url = achado[1];
+    try {
+      const { hostname } = new URL(url);
+      if (/(^|\.)(google|gstatic|googleapis|youtube|blogger)\.[a-z.]+$/i.test(hostname)) continue;
+      if (/(^|\.)policies\./i.test(hostname)) continue;
+      return url;
+    } catch {
+      /* href malformado: segue procurando */
+    }
+  }
   return null;
 }
 

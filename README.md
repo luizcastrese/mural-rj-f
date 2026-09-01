@@ -14,7 +14,7 @@ As matérias entram em cinco eixos, definidos em `scripts/lib/classificar.mjs`:
 
 | Eixo | O que cai aqui |
 | --- | --- |
-| **Novas RJs** | Pedidos ajuizados e processamentos deferidos |
+| **Novos casos** | Pedidos, deferimentos e recuperações extrajudiciais |
 | **Falências** | Quebras decretadas, convolações e massas falidas |
 | **Jurisprudência** | STJ, STF e tribunais — teses, repetitivos e acórdãos |
 | **Legislação** | Projetos, reformas e regulamentação |
@@ -23,6 +23,26 @@ As matérias entram em cinco eixos, definidos em `scripts/lib/classificar.mjs`:
 Na página dá para buscar por texto livre (empresa, tribunal, tema), filtrar por
 eixo e por período (24 h, 7 ou 30 dias) e salvar manchetes com a estrela — as
 salvas ficam guardadas no próprio navegador, sem cadastro.
+
+## Uma notícia, um card
+
+Um deferimento relevante sai em dez portais no mesmo dia, cada um com a
+manchete escrita de um jeito. Na primeira coleta real, o pedido de recuperação
+extrajudicial da Braskem apareceu 29 vezes e a falência do Grupo Refit, 13 —
+o mural repetiria a mesma notícia dezenas de vezes.
+
+`scripts/lib/agrupar.mjs` junta essas manchetes em um card só e mostra
+**"+28 veículos"** na linha de metadados, com a lista completa ao passar o
+mouse. A quantidade de veículos vira informação útil: notícia em trinta lugares
+é notícia grande.
+
+O agrupamento não compara palavras — manchetes do mesmo fato usam verbos
+diferentes ("Justiça *aceita*", "Braskem *recebe aval*", "Justiça *autoriza*")
+e quase não se sobrepõem. Ele compara **empresa + etapa do processo + janela de
+cinco dias**. Por isso "Braskem protocola pedido" e "Justiça aprova o pedido da
+Braskem" continuam sendo dois cards: são fatos distintos, e cada um é notícia
+por si. Na coleta real isso reduziu 289 notícias a 161 cards, 44% a menos para
+ler.
 
 ## De onde vem o resumo
 
@@ -38,6 +58,16 @@ artificial. A regra está em `scripts/lib/resumo.mjs` e vale sem exceção:
 - Se o veículo publica resumo, ele entra como está.
 - Se não publica, ou se a página está atrás de paywall, **o card diz "o veículo
   não publicou resumo — abra a matéria"**, e fica assim.
+
+Chegar até a matéria exige um desvio: o link do feed do Google Notícias aponta
+para a página de redirecionamento dele, não para o veículo. O coletor tenta,
+nesta ordem, decodificar a URL embutida no próprio link (sai de graça), depois
+seguir o primeiro link externo da página de redirecionamento. Só então lê o
+resumo. Sem isso, o que se copia é o texto institucional do Google
+(*"Comprehensive up-to-date news coverage…"*), que não fala da notícia — ele
+está na lista de entulho justamente por ter enchido o mural na primeira coleta.
+Quando o desvio falha, o card fica sem resumo, e o link continua levando à
+matéria pelo Google.
 
 O motivo é simples: um resumo gerado sobre deferimento de RJ, prazo de stay
 period ou tese do STJ pode errar um detalhe que muda a conclusão, e quem lê não
@@ -85,7 +115,11 @@ para servir os arquivos.
 - `buscasGoogleNews` — buscas no Google Notícias, que varrem a imprensa
   regional inteira. É de onde vem a maior parte das novas RJs, já que
   deferimento de comarca do interior raramente sai na imprensa nacional.
-- `feedsDiretos` — RSS de portais jurídicos (Conjur, JOTA, Migalhas, STJ).
+- `feedsDiretos` — RSS de portais jurídicos (Conjur e JOTA).
+
+Os feeds diretos de Migalhas e STJ foram removidos depois da primeira coleta
+real: retornavam 404 e 403. O conteúdo dos dois continua chegando pelas buscas
+do Google Notícias — Migalhas aparece entre os veículos coletados.
 
 Fonte que sair do ar não derruba a atualização: ela é pulada e o motivo
 aparece em **"Fontes desta coleta"**, no rodapé da página. Se um desses
@@ -127,6 +161,10 @@ node scripts/coletar.mjs --sem-resumos   # não abre as páginas das matérias
 ```
 
 ## Limites que vale conhecer
+
+O acervo guarda até 900 notícias, dimensionado sobre a coleta real (a primeira
+rodada trouxe 289 de uma vez). O JSON é servido comprimido, o que mantém o peso
+em torno de 260 KB no pior caso.
 
 Nem toda matéria vem com resumo. Veículos atrás de paywall costumam bloquear a
 leitura da página, e alguns não publicam linha fina — nesses casos o card
