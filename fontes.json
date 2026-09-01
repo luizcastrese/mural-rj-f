@@ -1,5 +1,5 @@
 {
-  "_comentario": "Fontes do coletor. As buscas do Google Notícias dão alcance (imprensa regional, comarcas do interior), mas seus links param num redirecionador criptografado: por elas não se chega ao texto da matéria. Os feeds diretos abaixo entregam link do próprio veículo e texto legível — é deles que sai o resumo. Como o agrupamento junta a mesma notícia vinda de vários veículos, basta um feed direto cobrir o fato para o card ganhar resumo. Fonte que falhar é ignorada, e o erro aparece no rodapé da página.",
+  "_comentario": "Fontes do coletor. Os feedsDiretos são a espinha dorsal: entregam link do próprio veículo e texto legível, de onde sai o resumo — e sem resumo a notícia não vira card. As buscasGoogleNews continuam porque alcançam a imprensa regional, mas seus links param num redirecionador criptografado: servem para medir a repercussão de um fato (o \"+N veículos\" do card) e para que o agrupamento encontre a versão publicada por um feed direto. Fonte que falhar é ignorada, e o erro aparece no rodapé da página. O relatório em dados/diagnostico-fontes.txt mostra o estado de cada candidata na última verificação.",
   "buscasGoogleNews": [
     {
       "nome": "Novas RJs e pedidos",
@@ -36,6 +36,30 @@
       "url": "https://pox.globo.com/rss/valor"
     },
     {
+      "nome": "G1 Economia",
+      "url": "https://g1.globo.com/rss/g1/economia/"
+    },
+    {
+      "nome": "Folha Mercado",
+      "url": "https://feeds.folha.uol.com.br/mercado/rss091.xml"
+    },
+    {
+      "nome": "JOTA",
+      "url": "https://www.jota.info/feed"
+    },
+    {
+      "nome": "Conjur",
+      "url": "https://www.conjur.com.br/rss.xml"
+    },
+    {
+      "nome": "Exame",
+      "url": "https://exame.com/feed/"
+    },
+    {
+      "nome": "UOL Economia",
+      "url": "https://rss.uol.com.br/feed/economia.xml"
+    },
+    {
       "nome": "InfoMoney",
       "url": "https://www.infomoney.com.br/feed/"
     },
@@ -44,12 +68,20 @@
       "url": "https://www.poder360.com.br/feed/"
     },
     {
-      "nome": "Conjur",
-      "url": "https://www.conjur.com.br/rss.xml"
+      "nome": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/rss/economia/feed.xml"
     },
     {
-      "nome": "JOTA",
-      "url": "https://www.jota.info/feed"
+      "nome": "Brazil Journal",
+      "url": "https://braziljournal.com/feed/"
+    },
+    {
+      "nome": "NeoFeed",
+      "url": "https://neofeed.com.br/feed/"
+    },
+    {
+      "nome": "Money Times",
+      "url": "https://www.moneytimes.com.br/feed/"
     }
   ]
 }
