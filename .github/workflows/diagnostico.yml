@@ -1,0 +1,16 @@
+# Só sob demanda: investiga por que a busca de resumo falha, usando a rede
+# do runner. Não altera nada no repositório.
+name: Diagnóstico de resumo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/diagnosticar.mjs
