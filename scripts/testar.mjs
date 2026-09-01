@@ -25,6 +25,10 @@ import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/re
 import { agrupar, empresas } from './lib/agrupar.mjs';
 
 const executar = promisify(execFile);
+
+// Os testes não esperam o intervalo entre chamadas ao modelo, que existe para
+// respeitar a cota da API em produção.
+process.env.MURAL_ESPACO_MS = '0';
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const COLETOR = path.join(RAIZ, 'scripts', 'coletar.mjs');
 
@@ -739,7 +743,7 @@ test('notícia resumida por recorte é retentada quando o modelo aparece', async
 
   const rodar = (env) =>
     executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida], {
-      env: { ...process.env, GEMINI_API_KEY: '', ANTHROPIC_API_KEY: '', ...env },
+      env: { ...process.env, MURAL_ESPACO_MS: '0', GEMINI_API_KEY: '', ANTHROPIC_API_KEY: '', ...env },
     });
 
   // Primeira coleta, sem modelo: o resumo vem do recorte.
@@ -810,6 +814,7 @@ test('falha temporária do modelo não queima a retentativa da notícia', async 
   await executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida], {
     env: {
       ...process.env,
+      MURAL_ESPACO_MS: '0',
       ANTHROPIC_API_KEY: '',
       GEMINI_API_KEY: 'chave-de-teste',
       MURAL_GEMINI_URL: `http://127.0.0.1:${modelo.address().port}/models`,

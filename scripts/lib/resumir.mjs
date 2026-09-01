@@ -27,12 +27,32 @@ const MAX_CARACTERES_RESUMO = 420;
 const TEMPO_LIMITE_MS = 30000;
 // 503 e 429 são fila cheia do outro lado, não erro do pedido: espera e tenta
 // de novo antes de desistir e cair no recorte.
-const ESPERAS_MS = [1500, 4000, 9000];
+const ESPERAS_MS = [5000, 15000, 30000];
+// A cota gratuita conta chamadas por minuto. O coletor busca vários grupos em
+// paralelo, então as chamadas ao modelo passam por uma fila de um de cada vez,
+// espaçadas — sem isso, seis pedidos simultâneos estouram o limite na hora.
+const ESPACO_ENTRE_CHAMADAS_MS = Number(process.env.MURAL_ESPACO_MS || 6500);
 const TRANSITORIOS = new Set([429, 500, 502, 503, 504]);
 
 export class FalhaTransitoria extends Error {}
 
 const dormir = (ms) => new Promise((pronto) => setTimeout(pronto, ms));
+
+// Fila de uma chamada por vez, com intervalo mínimo entre elas.
+let fila = Promise.resolve();
+let ultimaChamada = 0;
+
+function enfileirar(tarefa) {
+  const proxima = fila.then(async () => {
+    const desde = Date.now() - ultimaChamada;
+    if (desde < ESPACO_ENTRE_CHAMADAS_MS) await dormir(ESPACO_ENTRE_CHAMADAS_MS - desde);
+    ultimaChamada = Date.now();
+    return tarefa();
+  });
+  // A fila não pode parar por causa de uma falha na tarefa anterior.
+  fila = proxima.catch(() => {});
+  return proxima;
+}
 
 const INSTRUCAO = `Você prepara um mural de notícias para advogados que atuam com recuperação judicial e falência no Brasil. Recebe o texto de uma matéria e escreve o resumo dela.
 
@@ -142,6 +162,8 @@ async function chamarGemini(nomeDoModelo, titulo, corpo, cortada) {
         ? new FalhaTransitoria(`Gemini HTTP ${resposta.status}: ${detalhe}`)
         : new Error(`Gemini HTTP ${resposta.status}: ${detalhe}`);
       erro.status = resposta.status;
+      const esperaPedida = Number(resposta.headers.get('retry-after'));
+      if (Number.isFinite(esperaPedida) && esperaPedida > 0) erro.esperaMs = esperaPedida * 1000;
       throw erro;
     }
 
@@ -174,7 +196,7 @@ async function viaGemini(titulo, corpo, cortada) {
         ultimoErro = erro;
         // Fila cheia do outro lado: espera e insiste com o mesmo modelo.
         if (erro instanceof FalhaTransitoria && volta < ESPERAS_MS.length) {
-          await dormir(ESPERAS_MS[volta]);
+          await dormir(erro.esperaMs || ESPERAS_MS[volta]);
           continue;
         }
         // Nome de modelo inválido: vale tentar o próximo da lista. Qualquer
@@ -226,10 +248,11 @@ export async function resumirMateria({ titulo, texto }) {
   const corpo = cortada ? texto.slice(0, MAX_CARACTERES_MATERIA) : texto;
 
   const provedor = provedorDoResumo();
-  let escrito = '';
-  if (provedor === 'anthropic') escrito = await viaAnthropic(titulo, corpo, cortada);
-  else if (provedor === 'gemini') escrito = await viaGemini(titulo, corpo, cortada);
-  else escrito = await viaGitHub(titulo, corpo, cortada);
+  const escrito = await enfileirar(() => {
+    if (provedor === 'anthropic') return viaAnthropic(titulo, corpo, cortada);
+    if (provedor === 'gemini') return viaGemini(titulo, corpo, cortada);
+    return viaGitHub(titulo, corpo, cortada);
+  });
 
   if (escrito.length < 60) return null;
   return {
