@@ -95,14 +95,25 @@ explicar institutos jurídicos, e **omitir o dado que não estiver lá em vez de
 preenchê-lo**. Resumir uma matéria cujo texto se tem em mãos não é inventar;
 inventar seria completar lacuna, e é isso que a instrução proíbe.
 
-**Isso exige uma chave da API da Anthropic**, guardada como segredo do
-repositório em `ANTHROPIC_API_KEY` (Settings → Secrets and variables →
-Actions → New repository secret). Sem ela o coletor não chama nada, avisa no
-log e cai no recorte: escolhe as frases da própria matéria que mais informam.
-O mural continua funcionando, com resumo mais cru.
+### Quem escreve
 
-Para trocar o modelo, defina a variável `MURAL_MODELO` (o padrão é
-`claude-opus-5`).
+| Provedor | Credencial | Custo | Quando é usado |
+| --- | --- | --- | --- |
+| **GitHub Models** | `GITHUB_TOKEN`, que o workflow já tem | gratuito | padrão — nada a configurar |
+| **Claude** | segredo `ANTHROPIC_API_KEY` | pago | se a chave existir, tem precedência |
+| **Recorte** | nenhuma | gratuito | quando não há credencial alguma |
+
+O padrão não exige cadastro: dentro do Actions, o `GITHUB_TOKEN` já autentica
+no GitHub Models, e a permissão `models: read` está declarada no workflow.
+Para usar o Claude, basta cadastrar `ANTHROPIC_API_KEY` em Settings → Secrets
+and variables → Actions. Para trocar o modelo, defina `MURAL_MODELO`
+(padrão `openai/gpt-4o-mini` no GitHub Models, `claude-opus-5` no Claude); o
+provedor pode ser forçado com `MURAL_PROVEDOR`.
+
+Sem nenhuma credencial o coletor avisa no log e cai no **recorte**: escolhe as
+frases da própria matéria que mais informam. O mural continua funcionando,
+com resumo mais cru — é também a rede de segurança se a cota gratuita
+acabar no meio de uma coleta.
 
 ## Colocando no ar## Colocando no ar (uma vez só)
 
@@ -137,8 +148,9 @@ npm run servir       # abre em http://localhost:8000
 npm test             # roda a suíte de testes
 ```
 
-A única dependência é o SDK da Anthropic, usado para escrever os resumos
-(`npm ci`). Para servir a página basta o `python3` do sistema.
+A única dependência é o SDK da Anthropic, e ela só é carregada se você optar
+pelo Claude — o GitHub Models é chamado por HTTP puro. Para servir a página
+basta o `python3` do sistema.
 
 > A página precisa ser servida por HTTP. Abrir o `index.html` com dois cliques
 > (`file://`) faz o navegador bloquear a leitura do JSON — por isso o

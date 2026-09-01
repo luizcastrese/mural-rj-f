@@ -21,7 +21,7 @@ import {
   resumoDoCorpo,
   textoDaMateria,
 } from './lib/resumo.mjs';
-import { resumirMateria, podeResumirComModelo } from './lib/resumir.mjs';
+import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/resumir.mjs';
 import { agrupar, empresas } from './lib/agrupar.mjs';
 
 const executar = promisify(execFile);
@@ -537,26 +537,57 @@ test('resumoDoCorpo prefere a frase que informa, não a que vem antes', () => {
   assert.ok(texto.indexOf('falência do Grupo Refit') < texto.indexOf('5ª Vara'));
 });
 
-test('sem chave da API, o coletor recorta a matéria em vez de chamar o modelo', async () => {
-  const chaveOriginal = process.env.ANTHROPIC_API_KEY;
+// Guarda e restaura as credenciais do ambiente em volta de cada teste.
+function semCredenciais(corpo) {
+  const guardadas = {
+    ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+    MURAL_PROVEDOR: process.env.MURAL_PROVEDOR,
+  };
   delete process.env.ANTHROPIC_API_KEY;
-  try {
+  delete process.env.GITHUB_TOKEN;
+  delete process.env.MURAL_PROVEDOR;
+  return Promise.resolve()
+    .then(corpo)
+    .finally(() => {
+      for (const [chave, valor] of Object.entries(guardadas)) {
+        if (valor === undefined) delete process.env[chave];
+        else process.env[chave] = valor;
+      }
+    });
+}
+
+test('sem credencial nenhuma, o coletor recorta a matéria em vez de chamar o modelo', async () => {
+  await semCredenciais(async () => {
+    assert.equal(provedorDoResumo(), 'nenhum');
     assert.equal(podeResumirComModelo(), false);
     // Não chega a fazer requisição: devolve null e o coletor usa o recorte.
     assert.equal(await resumirMateria({ titulo: 'x', texto: 'y'.repeat(500) }), null);
-  } finally {
-    if (chaveOriginal !== undefined) process.env.ANTHROPIC_API_KEY = chaveOriginal;
-  }
+  });
+});
+
+test('o GITHUB_TOKEN do workflow basta para escrever os resumos', async () => {
+  await semCredenciais(async () => {
+    process.env.GITHUB_TOKEN = 'token-de-teste';
+    assert.equal(provedorDoResumo(), 'github');
+    assert.equal(podeResumirComModelo(), true);
+  });
+});
+
+test('havendo chave da Anthropic, ela tem precedência sobre o GitHub Models', async () => {
+  await semCredenciais(async () => {
+    process.env.GITHUB_TOKEN = 'token-de-teste';
+    process.env.ANTHROPIC_API_KEY = 'chave-de-teste';
+    assert.equal(provedorDoResumo(), 'anthropic');
+  });
 });
 
 test('resumirMateria não chama o modelo para texto curto demais', async () => {
-  process.env.ANTHROPIC_API_KEY = 'sk-ant-teste-nao-usada';
-  try {
+  await semCredenciais(async () => {
+    process.env.GITHUB_TOKEN = 'token-de-teste';
     // Abaixo do mínimo, nem tenta — não há matéria para resumir.
     assert.equal(await resumirMateria({ titulo: 'Manchete', texto: 'Curto.' }), null);
-  } finally {
-    delete process.env.ANTHROPIC_API_KEY;
-  }
+  });
 });
 
 test('textoDaMateria entrega o texto limpo para quem vai resumir', () => {

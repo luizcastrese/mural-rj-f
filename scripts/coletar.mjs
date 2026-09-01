@@ -22,7 +22,7 @@ import {
   pareceMateria,
   textoDaMateria,
 } from './lib/resumo.mjs';
-import { resumirMateria, podeResumirComModelo } from './lib/resumir.mjs';
+import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/resumir.mjs';
 import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -311,9 +311,11 @@ async function enriquecerResumos(noticias) {
 async function principal() {
   const config = JSON.parse(await readFile(path.join(RAIZ, 'fontes.json'), 'utf-8'));
   console.log(usarFixtures ? 'Lendo fixtures locais…' : 'Coletando feeds…');
-  if (!semResumos && !podeResumirComModelo()) {
-    console.warn(
-      'ANTHROPIC_API_KEY ausente: o resumo será recortado da matéria em vez de escrito.',
+  if (!semResumos) {
+    console.log(
+      podeResumirComModelo()
+        ? `Resumos escritos via ${provedorDoResumo()}.`
+        : 'Sem credencial de modelo: o resumo será recortado da matéria em vez de escrito.',
     );
   }
 
