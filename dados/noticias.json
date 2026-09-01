@@ -1,8 +1,8 @@
 {
-  "atualizadoEm": "2026-09-01T15:11:34.275Z",
-  "total": 103,
-  "totalComRepetidas": 238,
-  "comResumo": 1,
+  "atualizadoEm": "2026-09-01T15:13:31.967Z",
+  "total": 106,
+  "totalComRepetidas": 254,
+  "comResumo": 2,
   "categorias": [
     {
       "id": "novas-rjs",
@@ -33,9 +33,9 @@
   "porCategoria": {
     "novas-rjs": 21,
     "falencias": 37,
-    "jurisprudencia": 13,
+    "jurisprudencia": 14,
     "legislacao": 1,
-    "mercado": 31
+    "mercado": 33
   },
   "fontes": [
     {
@@ -74,6 +74,21 @@
       "itens": 100
     },
     {
+      "nome": "Valor Econômico",
+      "ok": true,
+      "itens": 100
+    },
+    {
+      "nome": "InfoMoney",
+      "ok": true,
+      "itens": 10
+    },
+    {
+      "nome": "Poder360",
+      "ok": true,
+      "itens": 10
+    },
+    {
       "nome": "Conjur",
       "ok": true,
       "itens": 10
@@ -86,6 +101,23 @@
   ],
   "noticias": [
     {
+      "titulo": "STJ acata recurso de debenturistas e suspende assembleia de credores da Ambipar",
+      "link": "https://valor.globo.com/empresas/noticia/2026/09/01/stj-acata-recurso-de-debenturistas-e-suspende-assembleia-de-credores-da-ambipar.ghtml",
+      "resumo": "O Superior Tribunal de Justiça (STJ) suspendeu a assembleia geral de credores da Ambipar marcada para a tarde desta terça-feira. A decisão atende a um pedido de tutela de urgência de debenturistas da companhia, que está em recuperação judicial. Matéria exclusiva para assinantes. Para ter acesso completo, acesse o link da matéria e faça o seu cadastro.",
+      "resumoFonte": "feed",
+      "veiculo": "Valor Econômico",
+      "data": "2026-09-01T15:08:40.000Z",
+      "categoria": "jurisprudencia",
+      "etiquetas": [
+        "STJ",
+        "AGC"
+      ],
+      "pontuacao": 30,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g0",
+      "principal": true
+    },
+    {
       "titulo": "Justiça do Rio decreta falência de Manguinhos, atual Refit",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTUE1dnpJNHp6SzdWZDB2N1I2RURlNEJ0aWRDeTdkR3puMjRscWhBTG9Ocm9lRkJKQnZ5eUp6eW0xRkllZVRNVmRndmJGTGNnZzJVdTFpX25nY3hSTDNtUUh4QVN6cnpoZ1ZUMjc1d1doellEOGRGQ0UxbXp6ajdzb2o3Rm94cGppT0dCcWRjdlVoRFhwNklEQzRiY0NJTVExRVBSVGlIMHNTeHdxZTlDWmdvRktMQdIBxAFBVV95cUxPYXlZU3FoLWp6Y3JGdjBhdXFQR1Ffc21nbkpLdU9OdTJvZVViMVVlajViNUFkdHlUOFN2YllLeFkyYnlDdXJDNENXM18xdi1ITkhHWDdrZVdMRFUwZW5OU0IyR3BoWkZWTVdSY2R0RXE1M3NJaUVQY01zUnZhaEhwa1BwMFE0ZVBKYS1Ub3ZXRDc5cEwxcGh5bWVnLTVNdENnUl9qWDdzalF1QUQ5RWZneWZ4YXJrNy04NU5JeWhURURhVkto?oc=5",
       "resumo": "",
@@ -96,7 +128,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -110,7 +142,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -124,7 +156,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -138,7 +170,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g1",
+      "grupo": "g2",
       "principal": true,
       "resumoTentado": true
     },
@@ -153,7 +185,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -167,7 +199,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -181,7 +213,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -195,7 +227,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -209,7 +241,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -223,7 +255,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g2",
+      "grupo": "g3",
       "principal": true,
       "resumoTentado": true
     },
@@ -238,7 +270,7 @@
       "etiquetas": [],
       "pontuacao": 25,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -252,7 +284,7 @@
       "etiquetas": [],
       "pontuacao": 4,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": true,
       "cobertura": 15,
       "tambemEm": [
@@ -282,7 +314,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -296,7 +328,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -310,7 +342,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -324,7 +356,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -338,7 +370,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g0",
+      "grupo": "g1",
       "principal": false
     },
     {
@@ -354,7 +386,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g3",
+      "grupo": "g4",
       "principal": true,
       "resumoTentado": true
     },
@@ -369,7 +401,7 @@
       "etiquetas": [],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g4",
+      "grupo": "g5",
       "principal": false,
       "cobertura": 2,
       "tambemEm": [
@@ -388,7 +420,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g5",
+      "grupo": "g6",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
@@ -408,7 +440,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g5",
+      "grupo": "g6",
       "principal": false,
       "resumoTentado": true
     },
@@ -425,7 +457,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g6",
+      "grupo": "g7",
       "principal": false,
       "resumoTentado": true
     },
@@ -442,7 +474,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
@@ -457,7 +489,7 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g8",
+      "grupo": "g9",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -478,7 +510,7 @@
       ],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g4",
+      "grupo": "g5",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
@@ -498,7 +530,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g4",
+      "grupo": "g5",
       "principal": false,
       "resumoTentado": true
     },
@@ -515,7 +547,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g9",
+      "grupo": "g10",
       "principal": false,
       "resumoTentado": true
     },
@@ -530,7 +562,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g10",
+      "grupo": "g11",
       "principal": true,
       "resumoTentado": true
     },
@@ -545,7 +577,7 @@
       "etiquetas": [],
       "pontuacao": 11,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g11",
+      "grupo": "g12",
       "principal": true,
       "resumoTentado": true
     },
@@ -562,7 +594,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
@@ -579,11 +611,12 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g6",
+      "grupo": "g7",
       "principal": true,
-      "cobertura": 3,
+      "cobertura": 4,
       "tambemEm": [
         "Cadaminuto",
+        "Jornal Exclusivo",
         "Vero Notícias"
       ],
       "resumoTentado": true
@@ -599,7 +632,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g12",
+      "grupo": "g13",
       "principal": true,
       "resumoTentado": true
     },
@@ -617,7 +650,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g13",
+      "grupo": "g14",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -638,7 +671,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
@@ -655,7 +688,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
@@ -672,7 +705,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
@@ -689,7 +722,7 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
@@ -706,7 +739,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
@@ -723,13 +756,13 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false,
       "resumoTentado": true
     },
     {
       "titulo": "Braskem tem recuperação extrajudicial aprovada para reestruturar dívida de US$ 10,9 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZk9UdnhsUjlrb053WWlBZTJhV2c5cTdyZ2dkek9DNXVFdlZWV3J4SjhrTjRkcVhrSjZFUWxnRlBhOG1sTUQ0SzhxVmZOOVpWRUROeV91bnlOT2swb1V1MmpYUmFSREplZkxmd085dDRZZXE2ZlpPNG1iQlo0eEktOWN6a08yOGdpUGpVc0FVRUZhOHdSbVFLRkptd1NmQXBKS3FmeEdBdlViSzNmdWhKQzBRaGVVY01Jc0hadFZYLVI1VVdk?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "ADVFN",
@@ -740,8 +773,9 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
-      "principal": false
+      "grupo": "g8",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Justiça de São Paulo aceita pedido de recuperação extrajudicial da Braskem",
@@ -756,7 +790,7 @@
       ],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": true,
       "cobertura": 19,
       "tambemEm": [
@@ -792,7 +826,7 @@
       "etiquetas": [],
       "pontuacao": 10,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g14",
+      "grupo": "g15",
       "principal": true,
       "resumoTentado": true
     },
@@ -809,13 +843,13 @@
       ],
       "pontuacao": 22,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g15",
+      "grupo": "g16",
       "principal": true,
       "resumoTentado": true
     },
     {
       "titulo": "Braskem diz que Justiça aprovou processamento da recuperação extrajudicial - 28/08/2026 - Economia",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGdzS0pscWlobVNWRDdPb1BFeW91dWlZb1ZnbnZZZ0gxV1pCUTJkZktvaDd0WmVUSVMzbnRoVEdlMUNzSXhjUUVFSlp5YXZkWHFnQzdjVVpPUjByQjhNX3MtNmFLOVJzTWtnOXp0SlZic1o1WU03enNxc01UNkU4MmVTZG9DN1FIZzlVZ1VqdVZBa0loSDR4WEFnWXAyNm9DSFBZbFRaLVdYV2pKUkkzQlJCUnRjSUdTeVl3TWtXOTRjeFla?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Folha de S.Paulo",
@@ -826,12 +860,13 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
-      "principal": false
+      "grupo": "g8",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Braskem avança em recuperação extrajudicial e ganha novo prazo contra cobranças",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTGhWQktoQUlrOHNlcjFkVTd5Yjc3NXA0NXJOaUEtcmo1Uk54NjVzeWZCMm84ZmdvTVhMZnp6N29LeWtGclpiU1ZuS1lLbVpqQXhHazRDLTNISGNqSjFFTzc1VGRmdVdtWFBxcC1fdUxSSHR6LUdrekFvVEFubllodUtBVGpNeFROMHFtOWQxa3owX3Q4a2c1VDNLakQ4dGdvcEdNNUlIZXlOSTNfeXlGOTdLU1Z4dGFScllZMElR?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Gazeta do Povo",
@@ -842,8 +877,9 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
-      "principal": false
+      "grupo": "g8",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Braskem diz que Justiça aprovou processamento da recuperação extrajudicial",
@@ -858,7 +894,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false
     },
     {
@@ -874,7 +910,7 @@
       ],
       "pontuacao": 9,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g16",
+      "grupo": "g17",
       "principal": false,
       "resumoTentado": true
     },
@@ -891,7 +927,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false
     },
     {
@@ -907,7 +943,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false
     },
     {
@@ -923,7 +959,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false
     },
     {
@@ -939,7 +975,7 @@
       ],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false
     },
     {
@@ -955,7 +991,7 @@
       ],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false
     },
     {
@@ -969,7 +1005,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g17",
+      "grupo": "g18",
       "principal": true,
       "resumoTentado": true
     },
@@ -986,7 +1022,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g18",
+      "grupo": "g19",
       "principal": true,
       "resumoTentado": true
     },
@@ -1003,7 +1039,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g7",
+      "grupo": "g8",
       "principal": false
     },
     {
@@ -1019,7 +1055,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g13",
+      "grupo": "g14",
       "principal": false,
       "resumoTentado": true
     },
@@ -1034,7 +1070,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
@@ -1049,7 +1085,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g5",
+      "grupo": "g6",
       "principal": false,
       "resumoTentado": true
     },
@@ -1064,7 +1100,7 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g8",
+      "grupo": "g9",
       "principal": false,
       "resumoTentado": true
     },
@@ -1079,7 +1115,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
@@ -1094,7 +1130,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
@@ -1109,7 +1145,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g20",
+      "grupo": "g21",
       "principal": true,
       "resumoTentado": true
     },
@@ -1127,7 +1163,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g21",
+      "grupo": "g22",
       "principal": true,
       "resumoTentado": true
     },
@@ -1144,7 +1180,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g22",
+      "grupo": "g23",
       "principal": true,
       "resumoTentado": true
     },
@@ -1162,7 +1198,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g23",
+      "grupo": "g24",
       "principal": true,
       "resumoTentado": true
     },
@@ -1177,7 +1213,7 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": true,
       "cobertura": 12,
       "tambemEm": [
@@ -1207,7 +1243,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g24",
+      "grupo": "g25",
       "principal": true,
       "resumoTentado": true
     },
@@ -1222,7 +1258,7 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
@@ -1237,7 +1273,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
@@ -1252,7 +1288,7 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
@@ -1267,7 +1303,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g25",
+      "grupo": "g26",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1286,7 +1322,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
@@ -1301,13 +1337,13 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
+      "grupo": "g20",
       "principal": false,
       "resumoTentado": true
     },
     {
       "titulo": "Habib's pede recuperação judicial, com passsivo de R$ 265 milhões, e amplia lista de empresas endividadas",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMHM1cWV2S3I3YlowWG1UeUhreHhIcm1oU1p0LVA4SHhUU2RrREJxRVBVVVNpS0t3c0dEcnhJd3dfZlp2Z3pRbEdHY2NNRlFJdHdPQVJRTmlDaVEtS3lCTUlwNkcwZFVzMjRZM0sxWnBlclZHT1RRQVNvUHlzdU1CYXAxb29aM25pWHUwYnVmckpzNHptbnA1MmgzNEVnMkw2ZC1kNzBWNFE4WXlpSzAxODRmckJYX1hmSk9FVnVnLS1LLVdNM18wdWlWR183dGVETUZNY3RpRC1IeGRf0gHrAUFVX3lxTFBQMU1EN042MEJpSHRjR241U2JTVF9wNzh1dGNNTzJSczl2Nk1UanExUDFwTUVUbGlLaE9ZeWt2M1BlSUlneXpiajJGRlc1M0h2SWNvcWhib3h1cHNHOFFDX0wzbDIxd1lvcUsyejRRQXpmSlY4RmhaZVV4ODNBMzAyZF8xS0ozWFBqaW1lYk1QMlpoVVdfOUlHSklqeWVURGVEVHQ1WVUyVWh6RkN6UnJycjFLVWNxSGZCRVpDcTRkUG1PWXZkMkVnYVJvTnVIcENnYlFiNE1yTFgtNzg2RmM1QmNueTltZkI2UXc?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "O GLOBO",
@@ -1316,12 +1352,13 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
-      "principal": false
+      "grupo": "g20",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Dona de Habib’s e Ragazzo entra em recuperação judicial com dívida de R$ 265,2 milhões",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUkNZMWFnYUtMeXlUMWRvTVlpU0tjOVpqLWlUTE8takg5cnQ3bGlJYlhkdnc2elFaYTBKRHZnM0E0UzdyVnpBYmJDRl8zc2FPRG5WVlJ3TGFBMGNfUFpkU0cyb1lUN0pCbFM3WmlKT28wMkVFd3p2WGFfQ3ZJSnRVX1NjX0Y5cWUzRHfSAZgBQVVfeXFMTl8zZkRaV3lDb2pkVUNsbUd4dVVib3ZmWFdNcGJrYWpJcTdORU9QSnJKMWhCdV94cjB5Ukx6U044OG54czc5N2UtUXNKNFVoWmYzXzM5Nnh6ZHJLWXJUdVJ3Qm9ma0tXdnZUQ21QNE9wOGpFRm9meUdFbjAtZEwwTnZ2OGZkTWpiMVJneko2VjRUOFdJaEZJNTM?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "G1",
@@ -1330,12 +1367,13 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
-      "principal": false
+      "grupo": "g20",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Habib's entra em recuperação judicial com dívida de R$ 265 milhões",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT2RZWUZOR1lmSWN2Rk1lcUVXVEJMMmU0clFvQjJQM2Z4dHJrRVBJNTNheTl2VU9udHYtWlpLeENqUV9yRTZvQzMxNWVXQ0J2cFhPQXpXR0Z5ajI2RjJQMVdfbFIzWnBPQVE3VVJwSHlnR3hieWVqZDBMRGdjSUNEOXdEZFpOcEpaSVZzam8xNXlCOFk5?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "CNN Brasil",
@@ -1344,8 +1382,26 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g19",
-      "principal": false
+      "grupo": "g20",
+      "principal": false,
+      "resumoTentado": true
+    },
+    {
+      "titulo": "Com quase US$ 11 bilhões em dívidas, Braskem pede recuperação extrajudicial",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Jornal Exclusivo",
+      "data": "2026-08-26T18:27:39.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g7",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Justiça decreta falência da Oi em decisão do Tribunal de Justiça do Rio de Janeiro",
@@ -1358,7 +1414,24 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g26",
+      "grupo": "g27",
+      "principal": true,
+      "resumoTentado": true
+    },
+    {
+      "titulo": "Pedidos de recuperação extrajudicial disparam 90,7% em dois anos no Brasil",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Times Brasil | CNBC",
+      "data": "2026-08-26T15:00:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g28",
       "principal": true,
       "resumoTentado": true
     },
@@ -1373,7 +1446,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g27",
+      "grupo": "g29",
       "principal": true,
       "resumoTentado": true
     },
@@ -1388,7 +1461,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g28",
+      "grupo": "g30",
       "principal": true,
       "resumoTentado": true
     },
@@ -1405,7 +1478,7 @@
       ],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g29",
+      "grupo": "g31",
       "principal": true,
       "resumoTentado": true
     },
@@ -1420,7 +1493,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g25",
+      "grupo": "g26",
       "principal": false,
       "resumoTentado": true
     },
@@ -1437,7 +1510,7 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g6",
+      "grupo": "g7",
       "principal": false,
       "resumoTentado": true
     },
@@ -1452,7 +1525,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g30",
+      "grupo": "g32",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1471,7 +1544,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g31",
+      "grupo": "g33",
       "principal": true,
       "resumoTentado": true
     },
@@ -1488,7 +1561,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g32",
+      "grupo": "g34",
       "principal": true,
       "resumoTentado": true
     },
@@ -1505,7 +1578,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g33",
+      "grupo": "g35",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1524,7 +1597,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g34",
+      "grupo": "g36",
       "principal": true,
       "resumoTentado": true
     },
@@ -1539,7 +1612,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g35",
+      "grupo": "g37",
       "principal": true,
       "resumoTentado": true
     },
@@ -1554,7 +1627,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g36",
+      "grupo": "g38",
       "principal": true,
       "resumoTentado": true
     },
@@ -1569,7 +1642,7 @@
       "etiquetas": [],
       "pontuacao": 25,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g37",
+      "grupo": "g39",
       "principal": true,
       "resumoTentado": true
     },
@@ -1584,7 +1657,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g38",
+      "grupo": "g40",
       "principal": false,
       "resumoTentado": true
     },
@@ -1599,7 +1672,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g39",
+      "grupo": "g41",
       "principal": true,
       "resumoTentado": true
     },
@@ -1617,7 +1690,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g40",
+      "grupo": "g42",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1636,7 +1709,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g41",
+      "grupo": "g43",
       "principal": true,
       "resumoTentado": true
     },
@@ -1653,30 +1726,34 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": true,
-      "cobertura": 30,
+      "cobertura": 39,
       "tambemEm": [
+        "Propmark",
         "Alma Preta Jornalismo",
         "ADVFN",
         "Migalhas",
         "Valor Econômico",
+        "CNN Brasil",
         "G1",
         "jota.info",
         "Folha de S.Paulo",
         "DComercio",
         "Notícias Agrícolas",
+        "UOL Economia",
         "Forbes Brasil",
         "InvestNews",
         "estadao.com.br",
         "capitalaberto.com.br",
-        "UOL Economia",
         "Movimento Econômico",
         "CartaCapital",
+        "Estadão",
+        "CBN",
         "neofeed.com.br",
         "Brazil Journal",
+        "O GLOBO",
         "InfoMoney",
-        "CNN Brasil",
         "Agência iNFRA",
         "Valor Investe"
       ],
@@ -1693,7 +1770,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g43",
+      "grupo": "g45",
       "principal": true,
       "resumoTentado": true
     },
@@ -1710,7 +1787,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g44",
+      "grupo": "g46",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1729,7 +1806,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g45",
+      "grupo": "g47",
       "principal": true,
       "resumoTentado": true
     },
@@ -1744,7 +1821,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g46",
+      "grupo": "g48",
       "principal": true,
       "resumoTentado": true
     },
@@ -1759,7 +1836,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g47",
+      "grupo": "g49",
       "principal": true,
       "resumoTentado": true
     },
@@ -1774,7 +1851,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g48",
+      "grupo": "g50",
       "principal": true,
       "resumoTentado": true
     },
@@ -1792,7 +1869,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g49",
+      "grupo": "g51",
       "principal": true,
       "resumoTentado": true
     },
@@ -1807,7 +1884,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g50",
+      "grupo": "g52",
       "principal": true,
       "resumoTentado": true
     },
@@ -1822,8 +1899,25 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g51",
+      "grupo": "g53",
       "principal": true,
+      "resumoTentado": true
+    },
+    {
+      "titulo": "Braskem abre pedido de recuperação extrajudicial para reestruturar dívida de U$ 10,9 bi",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Propmark",
+      "data": "2026-08-25T18:32:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
+      "principal": false,
       "resumoTentado": true
     },
     {
@@ -1837,7 +1931,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g52",
+      "grupo": "g54",
       "principal": true,
       "resumoTentado": true
     },
@@ -1852,7 +1946,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g53",
+      "grupo": "g55",
       "principal": true,
       "resumoTentado": true
     },
@@ -1867,7 +1961,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g38",
+      "grupo": "g40",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1886,7 +1980,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g54",
+      "grupo": "g56",
       "principal": true,
       "resumoTentado": true
     },
@@ -1901,7 +1995,7 @@
       "etiquetas": [],
       "pontuacao": 4,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g55",
+      "grupo": "g57",
       "principal": true,
       "resumoTentado": true
     },
@@ -1916,7 +2010,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g30",
+      "grupo": "g32",
       "principal": false,
       "resumoTentado": true
     },
@@ -1931,7 +2025,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g56",
+      "grupo": "g58",
       "principal": true,
       "resumoTentado": true
     },
@@ -1948,7 +2042,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -1966,7 +2060,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g40",
+      "grupo": "g42",
       "principal": false,
       "resumoTentado": true
     },
@@ -1983,7 +2077,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g16",
+      "grupo": "g17",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -2004,7 +2098,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -2021,7 +2115,7 @@
       ],
       "pontuacao": 10,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g57",
+      "grupo": "g59",
       "principal": true,
       "resumoTentado": true
     },
@@ -2038,7 +2132,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -2055,7 +2149,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g58",
+      "grupo": "g60",
       "principal": true,
       "resumoTentado": true
     },
@@ -2072,7 +2166,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -2087,7 +2181,41 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g59",
+      "grupo": "g61",
+      "principal": true,
+      "resumoTentado": true
+    },
+    {
+      "titulo": "Entenda pedido de recuperação extrajudicial da Braskem",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "CNN Brasil",
+      "data": "2026-08-25T06:34:03.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
+      "principal": false,
+      "resumoTentado": true
+    },
+    {
+      "titulo": "Náutico tem plano de Recuperação Judicial homologado e presidente celebra: \"Passo importantíssimo\"",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "nautico-pe.com.br",
+      "data": "2026-08-25T06:24:14.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano"
+      ],
+      "pontuacao": 14,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g62",
       "principal": true,
       "resumoTentado": true
     },
@@ -2102,7 +2230,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g60",
+      "grupo": "g63",
       "principal": true,
       "resumoTentado": true
     },
@@ -2119,7 +2247,7 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -2136,7 +2264,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -2153,7 +2281,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -2170,7 +2298,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false,
       "resumoTentado": true
     },
@@ -2188,7 +2316,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g9",
+      "grupo": "g10",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -2198,7 +2326,7 @@
     },
     {
       "titulo": "Braskem faz pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZkhfdy1RUjh6c1ZpOUlRb29KWUdSNzE0bHRRU3dYb2xZNHlsa0hmd25HNU15MERNalhIXzdxMzhqTEdPOTBFb1B3QktLNFJuUk5GaG04WVhIX3YtMzUwMk93dGllQmZjNUJBVFphRVdHaWNCanExZEpRc3VWc25JcUhKVjJGZnNaQXR1azRlWURiSVEyZ2hpQW5qdVdJcEVTSkdWXzR2SkJWWUVDN0dKWWRTcmk3cEti0gG-AUFVX3lxTE9MV214M0pISVpUc1VCVUtDeWNMaFA2M29uM2FteVNuaUxkOWthYjNfRGxTa3d1VXhHVjMzYWNVNUh5ZFRvUEs3NFNYUm5zUWIwMlJYcXZ6TmxwTGcxanE5ZjlOSWRJM2JyemtHYTBYb2FkeXpHaFRhLWJleHlfbUI2RVhHOU92b3dOTGQ5VnROMlJzSThsRkVTV25JVnRFNUdOTWRtOGI5bVhaZDlJZ0Viei0wUDBhYW9CLWMtbFE?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Notícias Agrícolas",
@@ -2209,7 +2337,24 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
+      "principal": false,
+      "resumoTentado": true
+    },
+    {
+      "titulo": "Braskem apresenta pedido de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQ1RZNzBXN3hSQ2FpdG0tNkpMekNxeVo5dFJGckJNWGVpbU5qeDFVVWFWMkp0R3YxQVVFNXR1NGRENlJFX2NTVzNiWGxUZzBkTWhPUlc3bld3MGVfamtLTzV4RWFEbkxqZVktVjhhQTBIdUYwSFo2YS1nSFdiVk9KeUpIWHZ4UnN2bWpzZzZOckdXZGJzeGNUQ04xR1RVeHVQSnAwaWh3UXZBNlE?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "UOL Economia",
+      "data": "2026-08-24T20:45:01.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2225,7 +2370,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2241,7 +2386,7 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2257,7 +2402,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2273,7 +2418,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2289,7 +2434,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2305,9 +2450,25 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g61",
+      "grupo": "g64",
       "principal": true,
       "resumoTentado": true
+    },
+    {
+      "titulo": "B3 exclui Braskem de índices após pedido de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa1prdW5TTzY4Z2VpRW0wTHVwdUNDSXR3OURVT3M3REgzYUVMOHduNTRvWFZQbk5HWXdxRHBsYktQbGE2bnVGbVh5dm5kZlowcVVmWjFicFUzN1A2ampGWEN1eVc1SzJPeTl6MUZZUTZ3SmljUk1Kem1xOEhMWG1vWENOV0NueDl0QnFPb1FRRGZQTTBfWmMzV0MxS3liRFhoYmFFcm9hd2pFVGt3RVlsLUxCaWhEdERhaXo3Rk1aSQ?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "CNN Brasil",
+      "data": "2026-08-24T18:27:16.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
+      "principal": false
     },
     {
       "titulo": "B3 vai excluir Braskem dos seus índices após acordo de pedido de recuperação extrajudicial",
@@ -2322,8 +2483,25 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
+    },
+    {
+      "titulo": "Ações da Braskem despencam após conselho aprovar recuperação extrajudicial",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "VEJA",
+      "data": "2026-08-24T18:12:51.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g65",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "STF valida proibição de devedor contumaz pedir recuperação judicial",
@@ -2338,7 +2516,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g44",
+      "grupo": "g46",
       "principal": false,
       "resumoTentado": true
     },
@@ -2355,15 +2533,35 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g62",
+      "grupo": "g65",
       "principal": true,
-      "cobertura": 5,
+      "cobertura": 8,
       "tambemEm": [
+        "VEJA",
+        "Brasil de Fato",
+        "InfoMoney",
         "Pequenas Empresas & Grandes Negócios",
         "O GLOBO",
         "Seu Dinheiro",
         "estadao.com.br"
       ],
+      "resumoTentado": true
+    },
+    {
+      "titulo": "Com reparação em andamento por colapso em Maceió, Braskem aprova pedido de recuperação extrajudicial",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Brasil de Fato",
+      "data": "2026-08-24T15:51:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g65",
+      "principal": false,
       "resumoTentado": true
     },
     {
@@ -2379,8 +2577,41 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
+    },
+    {
+      "titulo": "Ações da Braskem têm forte queda após pedido de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWTVIeEkxcllpbmE2OHJiVVkxelFzdmFGRFRtb0t4b0RYeTdPR0RjQWQzLTdlZmVDSGxaQktTVmFON2tCSXE3eWZCSmhPZWRLMThmd00zTXFiZU5mZ1ZneFF0M2l2ek5oVjBITXI5Y3lpZGxJZl9MRVEtZW9xOWc4TV91S2xvakdmQkhwZmZLNHVUeHIxVkhfRlpGS3I3T3lKdjV6NXlmMDU5SjZWbXpncXBkdlpFRkJmdkUtMFVmZXRhdk9K?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "CNN Brasil",
+      "data": "2026-08-24T14:43:46.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
+      "principal": false
+    },
+    {
+      "titulo": "Braskem diz que conselho aprovou ajuizamento de pedido de recuperação extrajudicial",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "InfoMoney",
+      "data": "2026-08-24T14:03:36.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g65",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Braskem pede recuperação extrajudicial para negociar dívida de US$ 10,9 bilhões",
@@ -2395,7 +2626,7 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2411,7 +2642,7 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2427,7 +2658,7 @@
       ],
       "pontuacao": 9,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g63",
+      "grupo": "g66",
       "principal": true,
       "resumoTentado": true
     },
@@ -2444,7 +2675,39 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
+      "principal": false
+    },
+    {
+      "titulo": "Braskem pede recuperação extrajudicial: quem pode perder dinheiro com dívida de US$ 10 bilhões?",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPQ0tESmxfMi01dWUzVnpOYjg1WGlqWEt4LTB4a1A5TUFfNjJnZmN6V0YyZjFNWUV2M3RWRncxNmNuZnpuUlRVVTgxWFRhczZkVFZxWlN1SDdlMmRQSFAyTG5Ja1dmN2VRdmEyVzhraFFaNWFmS1hCMVVIdFNIdl9UNmIzQ296QW9wQ0pndGlrSkpLemJWNDFwMVdVTzZEV2ZHbUpIMXdlQlEzUk9NY3hfTzFsMDNQZU44THMtRnBtMjIwWFJxM3RHRGlScldJXzZ2OVJVMkhrdUJtUHpXWUJkM0lvRmJIUdIB6wFBVV95cUxNQzcyRVk5TnFnOVU4TEVGMklkQklUcjJCWXpkYVpTajBlR2FEamljSm9CNjVLUjl2RmtNYVNwcHIzc1Z1RElKWnFCVkszc1lFTTJoc1NOcVl3LTNsS3VZYUNxNkpNRFZHUTVESFRtX25PNkl2RDJodEZTbHc0VUV2Y216ckw1WEtLTmp6d2k1YmQ5dDFsU1BQeWcxd3RJZ2pjWHk3bGJ3WE8yRjRuZ3VXbXRVZzlvVUlQYjFkYk5mdGs4RmRaZkJ3Vzg3c3NCbWRnRVBWU1N5MzIxQ3NVMTNWaVgzUmxnb3N0SWJR?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Estadão",
+      "data": "2026-08-24T13:34:25.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 7,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
+      "principal": false
+    },
+    {
+      "titulo": "Com dívida de R$ 54 bilhões, Braskem protocola pedido de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTE1HN2M3Nkx3c29idW5uNkZqVWI3RDBaeW1pWWliQnZDY19uMU9fcUZ2UzNxV29LWXB2ZGtmMEcteGlpMVJwbXZILURtMDFQYXc1M3dwVW1Ra1RLM1BXUUV3cEFNMC1TSmxQWlU2X0g3ckZmT2VHVlUtYmhLRXAwdEFvVGt1OWstYkJDSlZzakZkQkRPbkpPSjNOSldyLXNhdjJBMVRhX0pmeU9RM2ZjMVZGZVNIT1MtbUpwbjN1NmNRLWQxdDNseWxaSkpkU3pOaVHSAeABQVVfeXFMUFlXQVMzclMyc21ZNERWS3N0SGNselA2TnQxNFBoVXNIRlg5VGRlSHNUM3ltbjNCMFM4dGVmSVlJT3NBR3U2cTdwZGkwcmd4VnFXMEhpeFZZbWF1d0RzUkhCRThBenh4UEx0UEtKMjFlaC04T3RHdlhOTG52LXhhRms3SnlQZTFOWTVQTGo3cWNYRm1zUjRMYWI1cGdaUVQ4cUdhbk1iSGl0aFA4VFRKUi13NEVRVGFOZFdPbVFBcmt2NXhJbHl3YzA2MnhZQ2NDYThGYll5RnIzMmJOSmNkWm4?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "CBN",
+      "data": "2026-08-24T13:31:38.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2460,7 +2723,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g62",
+      "grupo": "g65",
       "principal": false,
       "resumoTentado": true
     },
@@ -2477,7 +2740,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2493,7 +2756,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2509,7 +2772,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g62",
+      "grupo": "g65",
       "principal": false,
       "resumoTentado": true
     },
@@ -2526,7 +2789,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2542,7 +2805,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2558,7 +2821,23 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
+      "principal": false
+    },
+    {
+      "titulo": "Braskem pede recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSUxjTGhoQUM3MjBLTm1PZTNlS1d4VGhoTGpiVnZ0N3Zsc1dvX2g4VG5KRU1hMmQwZXd5SEV3cnlHRW1IRmtoakI5YmdIcFE5Y0lEV0xzMnhSbGRINmxzUHFoR3NISFVVVlNQSG14VTdtYjZ6cnRBMlVHQWJ5R01xWjcteS1EVGVxM09ycjBJOEJFYjNVd0lsTDFFOUdFZnJoODFz0gGyAUFVX3lxTE9PYzNtVVFKQmtYZHNJUS1fYXpGMk01SGk1RnpwRzVYbHFZMGswNllQTHBLQkplUW1BOS1ZY2JGZ1A4X01na2V5MUlHNV9OVk1XU255MUpjQ2lnRzFSZ1l3WU13VFMtQ2d1NFpIUGh6dkpJbjFWNGZzX3huaDJBYzZ2N0JxTUpKQWtfS2xOeHVlMHl1a01qeFFCN01PdElJaWxwQnEyWjhHdlU3QWdSUFc2OFE?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "O GLOBO",
+      "data": "2026-08-24T10:37:12.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2574,7 +2853,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2590,7 +2869,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2606,7 +2885,7 @@
       ],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g62",
+      "grupo": "g65",
       "principal": false,
       "resumoTentado": true
     },
@@ -2623,7 +2902,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2639,7 +2918,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2655,7 +2934,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g42",
+      "grupo": "g44",
       "principal": false
     },
     {
@@ -2671,9 +2950,25 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g62",
+      "grupo": "g65",
       "principal": false,
       "resumoTentado": true
+    },
+    {
+      "titulo": "Veja próximos passos após pedido de recuperação extrajudicial da Braskem",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ3NNMDY3MnUtVEVBUko5Z0RTXzlUX2tLa1JSTlhrTHMxQ21IOXBQcjlxUE44MTF6ekxIdDFCVTBHYlhXbHlULTkzYTJQSjlJT0djLWFTRkkwanRheWY4WERabzh4VWkwYk94a0JnLVgzWnM4OXdZWHJ4VDhZUEpqX1VRVG03OFRCUUotRw?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "UOL Economia",
+      "data": "2026-08-24T07:00:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-09-01T15:13:30.918Z",
+      "grupo": "g44",
+      "principal": false
     },
     {
       "titulo": "STF valida restrições à recuperação judicial de devedor contumaz",
@@ -2688,7 +2983,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g33",
+      "grupo": "g35",
       "principal": false,
       "resumoTentado": true
     },
@@ -2703,7 +2998,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g64",
+      "grupo": "g67",
       "principal": true,
       "resumoTentado": true
     },
@@ -2720,7 +3015,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g65",
+      "grupo": "g68",
       "principal": true,
       "resumoTentado": true
     },
@@ -2735,7 +3030,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g66",
+      "grupo": "g69",
       "principal": true,
       "resumoTentado": true
     },
@@ -2752,7 +3047,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g67",
+      "grupo": "g70",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -2771,7 +3066,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": true,
       "cobertura": 26,
       "tambemEm": [
@@ -2808,7 +3103,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g69",
+      "grupo": "g72",
       "principal": true,
       "resumoTentado": true
     },
@@ -2823,7 +3118,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g70",
+      "grupo": "g73",
       "principal": true,
       "resumoTentado": true
     },
@@ -2840,7 +3135,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g67",
+      "grupo": "g70",
       "principal": false,
       "resumoTentado": true
     },
@@ -2857,7 +3152,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g71",
+      "grupo": "g74",
       "principal": true,
       "resumoTentado": true
     },
@@ -2874,7 +3169,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g72",
+      "grupo": "g75",
       "principal": true,
       "resumoTentado": true
     },
@@ -2889,7 +3184,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -2904,7 +3199,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -2919,7 +3214,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g73",
+      "grupo": "g76",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -2938,7 +3233,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g73",
+      "grupo": "g76",
       "principal": false,
       "resumoTentado": true
     },
@@ -2955,7 +3250,7 @@
       ],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g74",
+      "grupo": "g77",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -2974,7 +3269,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g75",
+      "grupo": "g78",
       "principal": true,
       "cobertura": 6,
       "tambemEm": [
@@ -2997,7 +3292,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -3012,7 +3307,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -3027,7 +3322,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -3042,7 +3337,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -3057,7 +3352,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -3072,7 +3367,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false,
       "resumoTentado": true
     },
@@ -3087,13 +3382,13 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g75",
+      "grupo": "g78",
       "principal": false,
       "resumoTentado": true
     },
     {
       "titulo": "Casas Bahia entra com pedido de recuperação judicial em São Paulo",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVHRiWTg2eGNxVUkzWEplelcwZkRsMkVOVVk0QzZ1MzlRMkR0eUJEbW41b0pKZlZDUTZKZmVmNlh3T2N0cmxlcnpTQ2tKUi1WdDVzbDIyOG5FQWtCb1dqWlZmV2xDYmdONWZSdE8tdF8xR05Da0hlUXMzX1VReFBtbEpTT2NzUQ?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "tmc.com.br",
@@ -3102,12 +3397,13 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
-      "principal": false
+      "grupo": "g71",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Casas Bahia pede recuperação judicial após confirmar fechamento de lojas",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbm1Wd0x2VXF0V010VEhHSTdrQ1dXR21lS3BLay1sU1ZCdVM5c2FKbUt0YldKSktjZWcyaUpsRDdIcUhQVHpIdS1YQWFJbEtCNERlS3l0X0pjNm9DcU1ycFZfMTdLMFE4MENMclJiSFY5dEJ6R2JpRFhTRXJXemFhTi1uUWdYWnNwcjJqRnc1YnF4MzhKel9XN3N5dlQzZHd1Q29Xb3VZTWFZRGdaSG5V?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Rádio Itatiaia",
@@ -3116,12 +3412,13 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
-      "principal": false
+      "grupo": "g71",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Casas Bahia pede recuperação judicial após prejuízo de bilhões e coloca lotes de eletrodomésticos em leilão",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYXl5eklpQUdneldNUWR1OGxXdTdwaDk0V0JWUTN4UXNvVUJBOWN0UzVMcnpqN1RydFZ5TU4ydjZsYjUxVmZTMHdYTVkta194SUpLX21HZjI5ZlozMWloLVVwTzdDRWppNTUzLV9mUEFtYnhLRWp3OTBHN1lDcGN1ZmRlbzh4c0paVzMyYUpZT1YtNUxQX183VS15ZHNGM01XYlNGRS1YXzlUQnI4N2JqNy1qMWVoUdIBuwFBVV95cUxNWVRNQXNLVE50MUxnT2wxbmF0bER4UUJLVkZsS1VhOVFKYlVKYUtBelhwa0tLbG4xc0xDeVdxN1haeVBZU0NKa1EzZzlNeUFQVnJFQXRNbzZWV3FxcU04TTE0Y2x4X2RGa3NhY2c0Q3RMRWZqU25CYURrSlBkUHZCU2VDV0t3U21sS2UtZk9vLTFFVHR4MmV3bHYwenBJVVZ0Nkt1aGxpVjhtaUlGdWRQc2U3dnd0cnhGWmQ0?oc=5",
+      "link": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w16",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Banda B",
@@ -3130,8 +3427,9 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
-      "principal": false
+      "grupo": "g71",
+      "principal": false,
+      "resumoTentado": true
     },
     {
       "titulo": "Casas Bahia protocola pedido de recuperação judicial",
@@ -3144,7 +3442,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3158,7 +3456,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3172,7 +3470,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3186,7 +3484,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3200,7 +3498,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3214,7 +3512,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3228,7 +3526,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3242,7 +3540,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3256,7 +3554,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3270,7 +3568,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3284,7 +3582,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3298,7 +3596,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3312,7 +3610,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3326,7 +3624,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g68",
+      "grupo": "g71",
       "principal": false
     },
     {
@@ -3340,7 +3638,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g75",
+      "grupo": "g78",
       "principal": false,
       "resumoTentado": true
     },
@@ -3355,7 +3653,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g75",
+      "grupo": "g78",
       "principal": false,
       "resumoTentado": true
     },
@@ -3370,7 +3668,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g75",
+      "grupo": "g78",
       "principal": false,
       "resumoTentado": true
     },
@@ -3385,7 +3683,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g75",
+      "grupo": "g78",
       "principal": false,
       "resumoTentado": true
     },
@@ -3402,7 +3700,7 @@
       ],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g74",
+      "grupo": "g77",
       "principal": false,
       "resumoTentado": true
     },
@@ -3417,7 +3715,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g76",
+      "grupo": "g79",
       "principal": true,
       "resumoTentado": true
     },
@@ -3432,7 +3730,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g77",
+      "grupo": "g80",
       "principal": true,
       "resumoTentado": true
     },
@@ -3447,7 +3745,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g78",
+      "grupo": "g81",
       "principal": true,
       "resumoTentado": true
     },
@@ -3465,7 +3763,7 @@
       ],
       "pontuacao": 18,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g79",
+      "grupo": "g82",
       "principal": true,
       "resumoTentado": true
     },
@@ -3482,7 +3780,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g80",
+      "grupo": "g83",
       "principal": true,
       "resumoTentado": true
     },
@@ -3497,7 +3795,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g81",
+      "grupo": "g84",
       "principal": true,
       "resumoTentado": true
     },
@@ -3514,7 +3812,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g82",
+      "grupo": "g85",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -3535,7 +3833,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g82",
+      "grupo": "g85",
       "principal": false,
       "resumoTentado": true
     },
@@ -3550,7 +3848,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g83",
+      "grupo": "g86",
       "principal": true,
       "cobertura": 5,
       "tambemEm": [
@@ -3572,7 +3870,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g83",
+      "grupo": "g86",
       "principal": false,
       "resumoTentado": true
     },
@@ -3587,7 +3885,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g83",
+      "grupo": "g86",
       "principal": false,
       "resumoTentado": true
     },
@@ -3602,7 +3900,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g84",
+      "grupo": "g87",
       "principal": true,
       "resumoTentado": true
     },
@@ -3617,7 +3915,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g85",
+      "grupo": "g88",
       "principal": true,
       "resumoTentado": true
     },
@@ -3632,7 +3930,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g83",
+      "grupo": "g86",
       "principal": false,
       "resumoTentado": true
     },
@@ -3647,7 +3945,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g86",
+      "grupo": "g89",
       "principal": true,
       "resumoTentado": true
     },
@@ -3662,7 +3960,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g83",
+      "grupo": "g86",
       "principal": false,
       "resumoTentado": true
     },
@@ -3677,7 +3975,7 @@
       "etiquetas": [],
       "pontuacao": 16,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g87",
+      "grupo": "g90",
       "principal": true,
       "resumoTentado": true
     },
@@ -3692,7 +3990,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g88",
+      "grupo": "g91",
       "principal": true,
       "resumoTentado": true
     },
@@ -3707,7 +4005,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g89",
+      "grupo": "g92",
       "principal": true,
       "cobertura": 4,
       "tambemEm": [
@@ -3728,7 +4026,7 @@
       "etiquetas": [],
       "pontuacao": 7,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g90",
+      "grupo": "g93",
       "principal": true,
       "resumoTentado": true
     },
@@ -3743,7 +4041,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g89",
+      "grupo": "g92",
       "principal": false,
       "resumoTentado": true
     },
@@ -3758,7 +4056,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g91",
+      "grupo": "g94",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -3779,7 +4077,7 @@
       ],
       "pontuacao": 22,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g92",
+      "grupo": "g95",
       "principal": true,
       "resumoTentado": true
     },
@@ -3794,7 +4092,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g89",
+      "grupo": "g92",
       "principal": false,
       "resumoTentado": true
     },
@@ -3809,7 +4107,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g91",
+      "grupo": "g94",
       "principal": false,
       "resumoTentado": true
     },
@@ -3824,7 +4122,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g89",
+      "grupo": "g92",
       "principal": false,
       "resumoTentado": true
     },
@@ -3841,7 +4139,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g93",
+      "grupo": "g96",
       "principal": true,
       "resumoTentado": true
     },
@@ -3858,7 +4156,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g94",
+      "grupo": "g97",
       "principal": true,
       "resumoTentado": true
     },
@@ -3875,7 +4173,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g95",
+      "grupo": "g98",
       "principal": false,
       "resumoTentado": true
     },
@@ -3892,7 +4190,7 @@
       ],
       "pontuacao": 20,
       "coletadoEm": "2026-09-01T15:03:52.827Z",
-      "grupo": "g96",
+      "grupo": "g99",
       "principal": true,
       "resumoTentado": true
     },
@@ -3909,7 +4207,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g95",
+      "grupo": "g98",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -3928,7 +4226,7 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g97",
+      "grupo": "g100",
       "principal": true,
       "resumoTentado": true
     },
@@ -3945,7 +4243,7 @@
       ],
       "pontuacao": 16,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g98",
+      "grupo": "g101",
       "principal": true,
       "resumoTentado": true
     },
@@ -3960,7 +4258,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g99",
+      "grupo": "g102",
       "principal": true,
       "resumoTentado": true
     },
@@ -3975,7 +4273,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g100",
+      "grupo": "g103",
       "principal": true,
       "resumoTentado": true
     },
@@ -3990,7 +4288,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g101",
+      "grupo": "g104",
       "principal": true,
       "resumoTentado": true
     },
@@ -4005,7 +4303,7 @@
       "etiquetas": [],
       "pontuacao": 13,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g102",
+      "grupo": "g105",
       "principal": true,
       "resumoTentado": true
     }
