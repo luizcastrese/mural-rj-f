@@ -22,7 +22,12 @@ import {
   pareceMateria,
   textoDaMateria,
 } from './lib/resumo.mjs';
-import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/resumir.mjs';
+import {
+  resumirMateria,
+  podeResumirComModelo,
+  provedorDoResumo,
+  FalhaTransitoria,
+} from './lib/resumir.mjs';
 import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -216,8 +221,15 @@ async function lerAcervo() {
 const falhasDoModelo = [];
 
 // O que se grava na notícia depois de uma tentativa de resumo.
-function marcaDaTentativa() {
-  return { versaoResumo: VERSAO_RESUMO, provedorTentado: provedorDoResumo() };
+//
+// Quando o modelo esteve fora do ar, a tentativa não conclui nada: o provedor
+// anterior é preservado para que a notícia volte à fila na próxima coleta.
+// Sem isso, um 503 passageiro deixaria a matéria no recorte para sempre.
+function marcaDaTentativa(noticia, conclusiva = true) {
+  return {
+    versaoResumo: VERSAO_RESUMO,
+    provedorTentado: conclusiva ? provedorDoResumo() : (noticia.provedorTentado ?? 'nenhum'),
+  };
 }
 
 async function buscarResumoNaPagina(noticia) {
@@ -233,7 +245,7 @@ async function buscarResumoNaPagina(noticia) {
     // quebra dá ao card um link direto para a matéria.
     if (ehGoogleNoticias(urlFinal)) {
       const doVeiculo = linkDoVeiculo(html);
-      if (!doVeiculo) return { ...noticia, ...marcaDaTentativa() };
+      if (!doVeiculo) return { ...noticia, ...marcaDaTentativa(noticia) };
       const segunda = await baixarPagina(doVeiculo);
       html = segunda.html;
       // Só adota o novo endereço se ele levar a uma matéria.
@@ -244,26 +256,31 @@ async function buscarResumoNaPagina(noticia) {
 
     // Com o texto da matéria em mãos, o resumo é escrito a partir dele.
     // Sem chave da API, cai no recorte de frases da própria matéria.
-    const achado =
-      (await resumirMateria({ titulo: noticia.titulo, texto: textoDaMateria(html, noticia.titulo) }).catch(
-        (erro) => {
-          if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
-          console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
-          return null;
-        },
-      )) || extrairResumo(html, noticia.titulo);
+    let modeloForaDoAr = false;
+    const escrito = await resumirMateria({
+      titulo: noticia.titulo,
+      texto: textoDaMateria(html, noticia.titulo),
+    }).catch((erro) => {
+      modeloForaDoAr = erro instanceof FalhaTransitoria;
+      if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
+      console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
+      return null;
+    });
 
-    if (!achado) return { ...noticia, link, ...marcaDaTentativa() };
+    const achado = escrito || extrairResumo(html, noticia.titulo);
+    const marca = marcaDaTentativa(noticia, !modeloForaDoAr);
+
+    if (!achado) return { ...noticia, link, ...marca };
     return {
       ...noticia,
       link,
       resumo: achado.texto,
       resumoFonte: achado.origem,
-      ...marcaDaTentativa(),
+      ...marca,
     };
   } catch {
     // Paywall, timeout, 403: segue sem resumo, e não sem a notícia.
-    return { ...noticia, ...marcaDaTentativa() };
+    return { ...noticia, ...marcaDaTentativa(noticia) };
   }
 }
 

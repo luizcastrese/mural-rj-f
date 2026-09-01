@@ -766,3 +766,63 @@ test('notícia resumida por recorte é retentada quando o modelo aparece', async
   });
   assert.equal(chamadas, 1, 'não deve rechamar o modelo para notícia já resumida');
 });
+
+test('falha temporária do modelo não queima a retentativa da notícia', async (t) => {
+  // O servidor responde 503 nas três primeiras vezes e depois nunca mais é
+  // chamado nesta coleta: a matéria precisa continuar pendente.
+  let chamadas = 0;
+  const modelo = createServer((req, res) => {
+    chamadas += 1;
+    req.resume();
+    req.on('end', () => {
+      res.writeHead(503, { 'content-type': 'application/json' }).end(
+        JSON.stringify({ error: { code: 503, status: 'UNAVAILABLE' } }),
+      );
+    });
+  });
+  await new Promise((ok) => modelo.listen(0, '127.0.0.1', ok));
+
+  const paginas = createServer((req, res) => {
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }).end(
+      `<html><body><article><p>${'A companhia teve a falência decretada pela 1ª Vara. '.repeat(8)}</p></article></body></html>`,
+    );
+  });
+  await new Promise((ok) => paginas.listen(0, '127.0.0.1', ok));
+
+  const dir = await mkdtemp(path.join(tmpdir(), 'mural-503-'));
+  const saida = path.join(dir, 'noticias.json');
+  t.after(async () => {
+    modelo.close();
+    paginas.close();
+    await rm(dir, { recursive: true, force: true });
+  });
+
+  await writeFile(
+    path.join(dir, 'busca.xml'),
+    `<rss><channel><item>
+      <title>Justiça decreta falência da Alfa Alimentos - Portal A</title>
+      <link>http://127.0.0.1:${paginas.address().port}/materia</link>
+      <pubDate>${new Date().toUTCString()}</pubDate>
+    </item></channel></rss>`,
+    'utf-8',
+  );
+
+  await executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida], {
+    env: {
+      ...process.env,
+      ANTHROPIC_API_KEY: '',
+      GEMINI_API_KEY: 'chave-de-teste',
+      MURAL_GEMINI_URL: `http://127.0.0.1:${modelo.address().port}/models`,
+    },
+  });
+
+  const dados = JSON.parse(await readFile(saida, 'utf-8'));
+  const alfa = dados.noticias[0];
+
+  // O card sai com o recorte, para o mural não ficar vazio…
+  assert.equal(alfa.resumoFonte, 'texto da matéria');
+  // …mas o provedor não é dado por tentado, então volta à fila na próxima.
+  assert.notEqual(alfa.provedorTentado, 'gemini');
+  // E houve insistência antes de desistir.
+  assert.ok(chamadas > 1, `esperava mais de uma tentativa, houve ${chamadas}`);
+});
