@@ -302,7 +302,7 @@ test('a coleta busca o resumo na página da matéria, literalmente', async (t) =
 
   // Sem resumo publicado, o item fica sem resumo — nada é inventado.
   assert.equal(beta.resumo, '');
-  assert.equal(beta.resumoTentado, true);
+  assert.equal(beta.versaoResumo, 2);
   assert.equal(dados.comResumo, 1);
 });
 

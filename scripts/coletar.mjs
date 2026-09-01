@@ -34,6 +34,10 @@ const RESUMOS_EM_PARALELO = 6;
 const MAX_RESUMOS_POR_COLETA = 250;
 // Quantos veículos do mesmo grupo tentar antes de desistir do resumo.
 const TENTATIVAS_POR_GRUPO = 3;
+// Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
+// com qual lógica congelava o acervo: itens tentados por uma versão quebrada
+// nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
+const VERSAO_RESUMO = 2;
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
@@ -205,7 +209,7 @@ async function buscarResumoNaPagina(noticia) {
     // quebra dá ao card um link direto para a matéria.
     if (ehGoogleNoticias(urlFinal)) {
       const doVeiculo = linkDoVeiculo(html);
-      if (!doVeiculo) return { ...noticia, resumoTentado: true };
+      if (!doVeiculo) return { ...noticia, versaoResumo: VERSAO_RESUMO };
       const segunda = await baixarPagina(doVeiculo);
       html = segunda.html;
       link = segunda.urlFinal;
@@ -214,17 +218,17 @@ async function buscarResumoNaPagina(noticia) {
     }
 
     const achado = extrairResumo(html, noticia.titulo);
-    if (!achado) return { ...noticia, link, resumoTentado: true };
+    if (!achado) return { ...noticia, link, versaoResumo: VERSAO_RESUMO };
     return {
       ...noticia,
       link,
       resumo: achado.texto,
       resumoFonte: achado.origem,
-      resumoTentado: true,
+      versaoResumo: VERSAO_RESUMO,
     };
   } catch {
     // Paywall, timeout, 403: segue sem resumo, e não sem a notícia.
-    return { ...noticia, resumoTentado: true };
+    return { ...noticia, versaoResumo: VERSAO_RESUMO };
   }
 }
 
@@ -243,7 +247,9 @@ async function enriquecerResumos(noticias) {
     if (itens.some((n) => n.resumo)) continue;
     // O representante primeiro; os outros veículos como reserva.
     const ordenados = [...itens].sort((a, b) => Number(b.principal) - Number(a.principal));
-    const fila = ordenados.filter((n) => n.link && !n.resumoTentado).slice(0, TENTATIVAS_POR_GRUPO);
+    const fila = ordenados
+      .filter((n) => n.link && n.versaoResumo !== VERSAO_RESUMO)
+      .slice(0, TENTATIVAS_POR_GRUPO);
     if (fila.length) filas.push(fila);
   }
 
