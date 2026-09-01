@@ -31,6 +31,12 @@ jobs:
       - name: Rodar os testes
         run: node --test scripts/testar.mjs
 
+      # Execução manual fora da main serve para investigar a coleta: mostra o
+      # que cada etapa da busca de resumo devolve, usando a rede do runner.
+      - name: Diagnóstico da busca de resumo
+        if: github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main'
+        run: node scripts/diagnosticar.mjs
+
       # Push só reconstrói e republica o site: coletar de novo a cada commit
       # gastaria minutos de Actions sem trazer notícia nova.
       - name: Coletar as notícias
