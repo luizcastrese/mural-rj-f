@@ -2,8 +2,12 @@ name: Atualizar mural
 
 on:
   schedule:
-    # 07h, 12h e 17h de Brasília (UTC-3), em dias úteis.
-    - cron: '0 10,15,20 * * 1-5'
+    # Todo dia às 7h de Brasília (UTC-3). Diário e não semanal porque metade
+    # dos feeds expõe só os 10 últimos itens — poucas horas de notícia —, e
+    # uma coleta por semana enxergaria o último dia e perderia os outros seis.
+    # Cada execução leva cerca de 40 segundos, e Actions em repositório
+    # público não é cobrado.
+    - cron: '0 10 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -27,22 +31,42 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
 
       - name: Rodar os testes
         run: node --test scripts/testar.mjs
 
+      # Execução manual fora da main serve para investigar a coleta: mostra o
+      # que cada etapa da busca de resumo devolve, usando a rede do runner.
+      - name: Diagnóstico da busca de resumo
+        if: github.event_name == 'workflow_dispatch' && github.ref != 'refs/heads/main'
+        run: node scripts/diagnosticar.mjs
+
+      # Push só reconstrói e republica o site: coletar de novo a cada commit
+      # gastaria minutos de Actions sem trazer notícia nova.
       - name: Coletar as notícias
+        if: github.event_name != 'push'
+        # GEMINI_API_KEY (Google AI Studio, gratuita) escreve os resumos.
+        # ANTHROPIC_API_KEY é opcional e tem precedência, se existir.
+        # Sem nenhuma das duas, o resumo é recortado da matéria.
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/coletar.mjs
 
       - name: Versionar o que mudou
+        if: github.event_name != 'push'
         run: |
-          if git diff --quiet -- dados/noticias.json; then
+          if git diff --quiet -- dados/; then
             echo "Nenhuma notícia nova nesta coleta."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dados/noticias.json
+          git add dados/
           git commit -m "Atualiza notícias ($(date -u '+%d/%m/%Y %H:%M UTC'))"
           git push
 
@@ -60,6 +84,9 @@ jobs:
 
   publicar:
     needs: coletar
+    # Só a branch padrão vai ao ar; execuções em outras branches servem para
+    # conferir a coleta sem mexer no site publicado.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

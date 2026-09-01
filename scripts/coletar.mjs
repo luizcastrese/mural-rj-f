@@ -14,15 +14,33 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { lerFeed } from './lib/rss.mjs';
 import { classificar, normalizar, CATEGORIAS } from './lib/classificar.mjs';
-import { extrairResumo, resumoDeFeedServe } from './lib/resumo.mjs';
+import {
+  extrairResumo,
+  resumoDeFeedServe,
+  linkDoVeiculo,
+  urlEmbutidaDoGoogle,
+  pareceMateria,
+  textoDaMateria,
+} from './lib/resumo.mjs';
+import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/resumir.mjs';
+import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const LIMITE_ITENS = 300;
+// Dimensionado sobre a coleta real: a primeira rodada trouxe 289 notícias,
+// então o teto de 300 que eu havia estimado daria menos de dois dias de
+// acervo. O JSON é servido comprimido, o que mantém o peso baixo no celular.
+const LIMITE_ITENS = 900;
 const TEMPO_LIMITE_MS = 20000;
 // Busca do resumo na página da matéria: uma requisição por item novo.
 const TEMPO_LIMITE_PAGINA_MS = 12000;
 const RESUMOS_EM_PARALELO = 6;
-const MAX_RESUMOS_POR_COLETA = 80;
+const MAX_RESUMOS_POR_COLETA = 250;
+// Quantos veículos do mesmo grupo tentar antes de desistir do resumo.
+const TENTATIVAS_POR_GRUPO = 3;
+// Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
+// com qual lógica congelava o acervo: itens tentados por uma versão quebrada
+// nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
+const VERSAO_RESUMO = 4;
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
@@ -67,6 +85,35 @@ async function baixar(url, tempoLimite = TEMPO_LIMITE_MS) {
     return await resposta.text();
   } finally {
     clearTimeout(relogio);
+  }
+}
+
+// Como baixar(), mas informa a URL em que a resposta parou, para saber se o
+// redirecionamento do Google já levou até o veículo.
+async function baixarPagina(url) {
+  const controle = new AbortController();
+  const relogio = setTimeout(() => controle.abort(), TEMPO_LIMITE_PAGINA_MS);
+  try {
+    const resposta = await fetch(url, {
+      signal: controle.signal,
+      redirect: 'follow',
+      headers: {
+        'user-agent': 'Mozilla/5.0 (compatible; MuralRJ/1.0; +https://github.com)',
+        accept: 'text/html,application/xhtml+xml',
+      },
+    });
+    if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
+    return { html: await resposta.text(), urlFinal: resposta.url || url };
+  } finally {
+    clearTimeout(relogio);
+  }
+}
+
+function ehGoogleNoticias(url) {
+  try {
+    return /(^|\.)news\.google\.com$/i.test(new URL(url).hostname);
+  } catch {
+    return false;
   }
 }
 
@@ -144,7 +191,9 @@ async function coletarRede(config) {
 async function lerAcervo() {
   try {
     const conteudo = JSON.parse(await readFile(SAIDA, 'utf-8'));
-    return Array.isArray(conteudo.noticias) ? conteudo.noticias : [];
+    if (!Array.isArray(conteudo.noticias)) return [];
+    // Descarta o que ficou com link inservível; o feed traz a notícia de volta.
+    return conteudo.noticias.filter((n) => pareceMateria(n.link));
   } catch {
     return [];
   }
@@ -152,49 +201,128 @@ async function lerAcervo() {
 
 // Abre a página da matéria e copia a linha fina publicada pelo veículo.
 // Nada é redigido aqui: ou o texto é do veículo, ou o item fica sem resumo.
+// Primeiro erro do modelo em cada coleta, gravado no diagnóstico: sem isso a
+// falha some no log e o mural volta ao recorte sem explicar por quê.
+const falhasDoModelo = [];
+
 async function buscarResumoNaPagina(noticia) {
   try {
-    const html = await baixar(noticia.link, TEMPO_LIMITE_PAGINA_MS);
-    const achado = extrairResumo(html, noticia.titulo);
-    if (!achado) return { ...noticia, resumoTentado: true };
+    // Primeira via: a URL da matéria costuma estar embutida no próprio link
+    // do Google. Sai de graça e poupa uma ida à rede.
+    const embutida = urlEmbutidaDoGoogle(noticia.link);
+    let { html, urlFinal } = await baixarPagina(embutida || noticia.link);
+    let link = noticia.link;
+
+    // O link do feed do Google para na página de redirecionamento dele, cuja
+    // descrição é institucional. Vale um segundo salto até o veículo — que de
+    // quebra dá ao card um link direto para a matéria.
+    if (ehGoogleNoticias(urlFinal)) {
+      const doVeiculo = linkDoVeiculo(html);
+      if (!doVeiculo) return { ...noticia, versaoResumo: VERSAO_RESUMO };
+      const segunda = await baixarPagina(doVeiculo);
+      html = segunda.html;
+      // Só adota o novo endereço se ele levar a uma matéria.
+      if (pareceMateria(segunda.urlFinal)) link = segunda.urlFinal;
+    } else if (pareceMateria(urlFinal)) {
+      link = urlFinal;
+    }
+
+    // Com o texto da matéria em mãos, o resumo é escrito a partir dele.
+    // Sem chave da API, cai no recorte de frases da própria matéria.
+    const achado =
+      (await resumirMateria({ titulo: noticia.titulo, texto: textoDaMateria(html, noticia.titulo) }).catch(
+        (erro) => {
+          if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
+          console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
+          return null;
+        },
+      )) || extrairResumo(html, noticia.titulo);
+
+    if (!achado) return { ...noticia, link, versaoResumo: VERSAO_RESUMO };
     return {
       ...noticia,
+      link,
       resumo: achado.texto,
       resumoFonte: achado.origem,
-      resumoTentado: true,
+      versaoResumo: VERSAO_RESUMO,
     };
   } catch {
     // Paywall, timeout, 403: segue sem resumo, e não sem a notícia.
-    return { ...noticia, resumoTentado: true };
+    return { ...noticia, versaoResumo: VERSAO_RESUMO };
   }
 }
 
-// Processa em lotes para não disparar dezenas de requisições de uma vez.
+// Busca o resumo por grupo, não por item: uma notícia dada por dez veículos
+// dá dez chances de encontrar quem publicou linha fina. Basta um acerto para
+// o card ficar informativo, e o reagrupamento promove justamente esse veículo.
 async function enriquecerResumos(noticias) {
-  const pendentes = noticias.filter((n) => !n.resumo && !n.resumoTentado && n.link);
-  const alvo = pendentes.slice(0, MAX_RESUMOS_POR_COLETA);
-  if (!alvo.length) return { noticias, buscados: 0, obtidos: 0 };
-
-  console.log(`\nBuscando resumo de ${alvo.length} matéria(s) na fonte…`);
-  const porLink = new Map();
-
-  for (let i = 0; i < alvo.length; i += RESUMOS_EM_PARALELO) {
-    const lote = alvo.slice(i, i + RESUMOS_EM_PARALELO);
-    const prontos = await Promise.all(lote.map(buscarResumoNaPagina));
-    for (const item of prontos) porLink.set(item.link, item);
+  const grupos = new Map();
+  for (const noticia of noticias) {
+    if (!grupos.has(noticia.grupo)) grupos.set(noticia.grupo, []);
+    grupos.get(noticia.grupo).push(noticia);
   }
 
-  const obtidos = [...porLink.values()].filter((n) => n.resumo).length;
+  const filas = [];
+  for (const itens of grupos.values()) {
+    // Mesmo com resumo vindo do feed vale abrir a matéria: a description de
+    // alguns portais começa com legenda de foto ("Reprodução/TV Globo") ou
+    // com chamada de outra reportagem. A página traz o texto limpo, e o
+    // resumo do feed fica como reserva se a busca não der em nada.
+    // O representante primeiro; os outros veículos como reserva.
+    const ordenados = [...itens].sort((a, b) => Number(b.principal) - Number(a.principal));
+    const fila = ordenados
+      .filter((n) => n.link && n.versaoResumo !== VERSAO_RESUMO)
+      .slice(0, TENTATIVAS_POR_GRUPO);
+    if (fila.length) filas.push(fila);
+  }
+
+  if (!filas.length) return { noticias, gruposTentados: 0, gruposComResumo: 0 };
+
+  console.log(`\nBuscando resumo para ${filas.length} notícia(s) na fonte...`);
+  const resolvidos = new Map();
+  let requisicoes = 0;
+  let gruposComResumo = 0;
+
+  for (let i = 0; i < filas.length; i += RESUMOS_EM_PARALELO) {
+    if (requisicoes >= MAX_RESUMOS_POR_COLETA) break;
+    const lote = filas.slice(i, i + RESUMOS_EM_PARALELO);
+
+    const prontos = await Promise.all(
+      lote.map(async (fila) => {
+        const tentados = [];
+        for (const candidato of fila) {
+          const item = await buscarResumoNaPagina(candidato);
+          tentados.push(item);
+          if (item.resumo) return { tentados, achou: true };
+        }
+        return { tentados, achou: false };
+      }),
+    );
+
+    for (const { tentados, achou } of prontos) {
+      requisicoes += tentados.length;
+      if (achou) gruposComResumo += 1;
+      for (const item of tentados) resolvidos.set(item.titulo, item);
+    }
+  }
+
   return {
-    noticias: noticias.map((n) => porLink.get(n.link) || n),
-    buscados: alvo.length,
-    obtidos,
+    noticias: noticias.map((n) => resolvidos.get(n.titulo) || n),
+    gruposTentados: filas.length,
+    gruposComResumo,
   };
 }
 
 async function principal() {
   const config = JSON.parse(await readFile(path.join(RAIZ, 'fontes.json'), 'utf-8'));
   console.log(usarFixtures ? 'Lendo fixtures locais…' : 'Coletando feeds…');
+  if (!semResumos) {
+    console.log(
+      podeResumirComModelo()
+        ? `Resumos escritos via ${provedorDoResumo()}.`
+        : 'Sem credencial de modelo: o resumo será recortado da matéria em vez de escrito.',
+    );
+  }
 
   const { itens: brutos, status } = usarFixtures
     ? await coletarFixtures()
@@ -245,19 +373,27 @@ async function principal() {
     .sort((a, b) => new Date(b.data || b.coletadoEm || 0) - new Date(a.data || a.coletadoEm || 0))
     .slice(0, LIMITE_ITENS);
 
+  // Agrupa primeiro para saber quais notícias são a mesma; busca um resumo por
+  // grupo; reagrupa, e aí o representante já é o veículo que tinha resumo.
+  const preliminar = agrupar(noticias);
   const enriquecido = semResumos
-    ? { noticias, buscados: 0, obtidos: 0 }
-    : await enriquecerResumos(noticias);
-  const publicadas = enriquecido.noticias;
+    ? { noticias: preliminar, gruposTentados: 0, gruposComResumo: 0 }
+    : await enriquecerResumos(preliminar);
+  const publicadas = agrupar(enriquecido.noticias);
+  // Só entra no mural a notícia que tem resumo: o propósito da página é
+  // informar sem obrigar a abrir a matéria. As demais ficam no acervo e
+  // voltam a ser tentadas na coleta seguinte.
+  const cards = publicadas.filter((n) => n.principal && n.resumo);
 
   const porCategoria = Object.fromEntries(
-    CATEGORIAS.map((c) => [c.id, publicadas.filter((n) => n.categoria === c.id).length]),
+    CATEGORIAS.map((c) => [c.id, cards.filter((n) => n.categoria === c.id).length]),
   );
 
   const saida = {
     atualizadoEm: new Date().toISOString(),
-    total: publicadas.length,
-    comResumo: publicadas.filter((n) => n.resumo).length,
+    total: cards.length,
+    totalComRepetidas: publicadas.length,
+    comResumo: cards.filter((n) => n.resumo).length,
     categorias: CATEGORIAS.map(({ id, nome, descricao }) => ({ id, nome, descricao })),
     porCategoria,
     fontes: status,
@@ -266,13 +402,35 @@ async function principal() {
 
   await writeFile(SAIDA, `${JSON.stringify(saida, null, 2)}\n`, 'utf-8');
 
+  // Relatório de quem escreveu os resumos, e do que falhou ao tentar.
+  const porOrigem = {};
+  for (const card of cards) porOrigem[card.resumoFonte] = (porOrigem[card.resumoFonte] || 0) + 1;
+  const relatorio = [
+    `Resumos — ${saida.atualizadoEm}`,
+    `provedor: ${provedorDoResumo()} (habilitado: ${podeResumirComModelo()})`,
+    `modelo: ${process.env.MURAL_MODELO || '(padrão do provedor)'}`,
+    `cards: ${cards.length}`,
+    `origem: ${JSON.stringify(porOrigem)}`,
+    falhasDoModelo.length ? `falhas do modelo:\n  ${falhasDoModelo.join('\n  ')}` : 'falhas do modelo: nenhuma',
+  ];
+  await writeFile(
+    path.join(path.dirname(SAIDA), 'diagnostico-resumo.txt'),
+    `${relatorio.join('\n')}\n`,
+    'utf-8',
+  );
+
   console.log(
     `\n${brutos.length} itens brutos → ${novasEntradas} novas · ${acervo.length} no acervo → ${publicadas.length} publicadas`,
   );
-  if (enriquecido.buscados) {
-    console.log(`resumo obtido na fonte em ${enriquecido.obtidos}/${enriquecido.buscados} matéria(s)`);
+  if (enriquecido.gruposTentados) {
+    console.log(
+      `resumo encontrado em ${enriquecido.gruposComResumo}/${enriquecido.gruposTentados} noticia(s)`,
+    );
   }
-  console.log(`com resumo: ${saida.comResumo}/${publicadas.length}`);
+  console.log(`com resumo: ${saida.comResumo}/${cards.length}`);
+  const semResumoAinda = publicadas.filter((n) => n.principal && !n.resumo).length;
+  console.log(`agrupamento: ${publicadas.length} notícias → ${cards.length} cards`);
+  console.log(`retidas por falta de resumo: ${semResumoAinda}`);
   for (const [id, qtd] of Object.entries(porCategoria)) console.log(`  ${id.padEnd(15)} ${qtd}`);
   const falhas = status.filter((s) => !s.ok);
   if (falhas.length) console.log(`\n${falhas.length} fonte(s) indisponível(is): ${falhas.map((f) => f.nome).join(', ')}`);

@@ -14,7 +14,7 @@ As matérias entram em cinco eixos, definidos em `scripts/lib/classificar.mjs`:
 
 | Eixo | O que cai aqui |
 | --- | --- |
-| **Novas RJs** | Pedidos ajuizados e processamentos deferidos |
+| **Novos casos** | Pedidos, deferimentos e recuperações extrajudiciais |
 | **Falências** | Quebras decretadas, convolações e massas falidas |
 | **Jurisprudência** | STJ, STF e tribunais — teses, repetitivos e acórdãos |
 | **Legislação** | Projetos, reformas e regulamentação |
@@ -24,29 +24,110 @@ Na página dá para buscar por texto livre (empresa, tribunal, tema), filtrar po
 eixo e por período (24 h, 7 ou 30 dias) e salvar manchetes com a estrela — as
 salvas ficam guardadas no próprio navegador, sem cadastro.
 
+## O que entra no mural
+
+Ser do tema não basta para ocupar espaço. Entra o que **noticia um fato**:
+
+- uma etapa do processo — pedido, deferimento, quebra decretada, blindagem
+  concedida, plano apresentado, aprovado ou contestado, encerramento;
+- uma **decisão com conteúdo** — tese do STJ, repetitivo, súmula, acórdão;
+- uma **mudança na lei** — projeto, reforma, sanção, entrada em vigor.
+
+Fica de fora o que cita insolvência sem informar nada novo: "entenda a
+diferença entre recuperação judicial e falência", coluna de opinião,
+comentário de analista, divulgação de curso e manchete-isca. Sobre a coleta
+real, a barra descartou 20% das notícias, e o balde genérico "Mercado & Casos"
+caiu de 55% para 30% do mural.
+
+A regra está em `classificar()`, em `scripts/lib/classificar.mjs`: a lista
+`EVENTOS` define os fatos reconhecidos e `RUIDO_EDITORIAL`, o que é isca. Se
+algum assunto seu estiver ficando de fora, é ali que se acrescenta.
+
+## Uma notícia, um card
+
+Um deferimento relevante sai em dez portais no mesmo dia, cada um com a
+manchete escrita de um jeito. Na primeira coleta real, o pedido de recuperação
+extrajudicial da Braskem apareceu 29 vezes e a falência do Grupo Refit, 13 —
+o mural repetiria a mesma notícia dezenas de vezes.
+
+`scripts/lib/agrupar.mjs` junta essas manchetes em um card só e mostra
+**"+28 veículos"** na linha de metadados, com a lista completa ao passar o
+mouse. A quantidade de veículos vira informação útil: notícia em trinta lugares
+é notícia grande.
+
+O agrupamento não compara palavras — manchetes do mesmo fato usam verbos
+diferentes ("Justiça *aceita*", "Braskem *recebe aval*", "Justiça *autoriza*")
+e quase não se sobrepõem. Ele compara **empresa + etapa do processo + janela de
+cinco dias**. Por isso "Braskem protocola pedido" e "Justiça aprova o pedido da
+Braskem" continuam sendo dois cards: são fatos distintos, e cada um é notícia
+por si. Na coleta real isso reduziu 289 notícias a 161 cards, 44% a menos para
+ler.
+
+## Sem resumo, não entra
+
+O mural existe para informar sem obrigar a abrir a matéria. Por isso a regra
+é dura: **notícia sem resumo não vira card**. Ela não é perdida — fica no
+acervo e é tentada de novo a cada coleta —, mas não ocupa espaço na página
+enquanto não tiver o que dizer.
+
+Isso tem uma consequência que vale entender. Pelas buscas do Google Notícias
+**não se alcança o texto da matéria**: o link para numa página de
+redirecionamento que não contém link algum para o veículo, e o identificador
+está em formato criptografado. Medido no runner, com 99 notícias buscadas: 0
+resumos. Elas continuam sendo coletadas porque medem a repercussão de um fato
+(o "+N veículos" do card) e porque o agrupamento pode encontrar a mesma
+notícia publicada por um feed direto — aí o card passa a ser o desse veículo.
+
+Quem sustenta o mural são os 13 **feeds diretos**, que entregam link do
+próprio veículo e texto legível. Estão em `fontes.json`, e o estado de cada
+um na última verificação fica em `dados/diagnostico-fontes.txt`.
+
 ## De onde vem o resumo
 
-Cada card traz o resumo da matéria para que dê para decidir se vale abrir, sem
-gastar tempo. **Esse resumo é sempre texto literal do veículo**: o coletor abre
-a página da matéria e copia a linha fina que o próprio jornal publica na
-`og:description` — a mesma que aparece quando alguém compartilha o link no
-WhatsApp. Ele é reproduzido sem alteração.
+O resumo é **escrito a partir do texto da matéria**. O coletor abre a página,
+extrai o texto que o veículo publicou e entrega esse texto ao modelo, que lê
+e escreve o resumo — duas ou três frases, priorizando empresa, etapa do
+processo, juízo, valores, prazos e o que foi decidido.
 
-Nada nesta base é redigido, condensado ou interpretado por inteligência
-artificial. A regra está em `scripts/lib/resumo.mjs` e vale sem exceção:
+A instrução do modelo (em `scripts/lib/resumir.mjs`) é restritiva de
+propósito: usar apenas o que está no texto, não inferir, não concluir, não
+explicar institutos jurídicos, e **omitir o dado que não estiver lá em vez de
+preenchê-lo**. Resumir uma matéria cujo texto se tem em mãos não é inventar;
+inventar seria completar lacuna, e é isso que a instrução proíbe.
 
-- Se o veículo publica resumo, ele entra como está.
-- Se não publica, ou se a página está atrás de paywall, **o card diz "o veículo
-  não publicou resumo — abra a matéria"**, e fica assim.
+### Quem escreve
 
-O motivo é simples: um resumo gerado sobre deferimento de RJ, prazo de stay
-period ou tese do STJ pode errar um detalhe que muda a conclusão, e quem lê não
-tem como saber que errou. Resumo nenhum é um problema menor do que resumo
-plausível e errado. O campo `resumoFonte`, em cada notícia, registra de onde o
-texto saiu (`og:description`, `meta description`, `primeiro parágrafo` ou
-`feed`), e o card mostra isso ao passar o mouse.
+| Provedor | Credencial | Custo | Quando é usado |
+| --- | --- | --- | --- |
+| **Gemini** | segredo `GEMINI_API_KEY` | gratuito | padrão |
+| **Claude** | segredo `ANTHROPIC_API_KEY` | pago | se a chave existir, tem precedência |
+| **Recorte** | nenhuma | gratuito | quando não há credencial alguma |
 
-## Colocando no ar (uma vez só)
+Para ligar o Gemini: pegue uma chave em
+[aistudio.google.com/apikey](https://aistudio.google.com/apikey) — é gratuita
+e não pede cartão — e cadastre em **Settings → Secrets and variables →
+Actions → New repository secret**, com o nome `GEMINI_API_KEY`. A cota
+gratuita cobre com folga os 10 a 40 resumos por dia que o mural precisa.
+
+O modelo é escolhido sozinho: o coletor tenta `gemini-2.5-flash`,
+`gemini-2.0-flash` e `gemini-flash-latest` nessa ordem, memoriza o que
+funcionou e mantém os outros como reserva — nomes de modelo são aposentados
+de tempos em tempos. Para fixar um, defina `MURAL_MODELO`; para forçar o
+provedor, `MURAL_PROVEDOR`.
+
+Sem nenhuma credencial o coletor avisa no log e cai no **recorte**: escolhe as
+frases da própria matéria que mais informam. O mural continua funcionando,
+com resumo mais cru — é também a rede de segurança se a cota gratuita acabar
+no meio de uma coleta.
+
+O arquivo `dados/diagnostico-resumo.txt` registra, a cada coleta, qual
+provedor escreveu, de onde veio cada resumo e as falhas que houver.
+
+> O **GitHub Models** foi tentado antes e não serve: entrou em desativação
+> programada e responde `HTTP 410 github_models_retirement_brownout`. O código
+> do provedor continua no arquivo, inerte, só como registro.
+
+## Colocando no ar## Colocando no ar (uma vez só)
 
 1. Suba este repositório para o GitHub.
 2. Em **Settings → Pages**, no campo *Source*, escolha **GitHub Actions**.
@@ -59,20 +140,29 @@ texto saiu (`og:description`, `meta description`, `primeiro parágrafo` ou
 Pronto: o endereço aparece ao fim do workflow, no formato
 `https://<seu-usuario>.github.io/mural-rj-f/`.
 
-Depois disso a coleta roda sozinha às **7h, 12h e 17h (horário de Brasília),
-em dias úteis**. Para mudar o horário, edite o `cron` em
-`.github/workflows/atualizar-mural.yml` — lembrando que o GitHub usa UTC.
+Depois disso a coleta roda sozinha **todo dia às 7h de Brasília**. Diária, e
+não semanal, por uma razão prática: metade dos feeds expõe só os dez últimos
+itens — poucas horas de notícia —, então uma coleta por semana enxergaria o
+último dia e perderia os outros seis. O custo é desprezível: cada execução
+leva cerca de 40 segundos, e Actions em repositório público não é cobrado.
+Você continua lendo o mural quando quiser; o acervo se acumula.
+
+Commits no repositório apenas republicam o site, sem coletar de novo. Para
+mudar o horário, edite o `cron` em `.github/workflows/atualizar-mural.yml` —
+lembrando que o GitHub usa UTC.
 
 ## Rodando na sua máquina
 
 ```bash
+npm ci               # instala o SDK da Anthropic
 npm run coletar      # busca as notícias e atualiza dados/noticias.json
 npm run servir       # abre em http://localhost:8000
 npm test             # roda a suíte de testes
 ```
 
-Não há dependências para instalar: usa só o Node 20+ e o `python3` do sistema
-para servir os arquivos.
+A única dependência é o SDK da Anthropic, e ela só é carregada se você optar
+pelo Claude — o GitHub Models é chamado por HTTP puro. Para servir a página
+basta o `python3` do sistema.
 
 > A página precisa ser servida por HTTP. Abrir o `index.html` com dois cliques
 > (`file://`) faz o navegador bloquear a leitura do JSON — por isso o
@@ -85,7 +175,11 @@ para servir os arquivos.
 - `buscasGoogleNews` — buscas no Google Notícias, que varrem a imprensa
   regional inteira. É de onde vem a maior parte das novas RJs, já que
   deferimento de comarca do interior raramente sai na imprensa nacional.
-- `feedsDiretos` — RSS de portais jurídicos (Conjur, JOTA, Migalhas, STJ).
+- `feedsDiretos` — RSS de portais jurídicos (Conjur e JOTA).
+
+Os feeds diretos de Migalhas e STJ foram removidos depois da primeira coleta
+real: retornavam 404 e 403. O conteúdo dos dois continua chegando pelas buscas
+do Google Notícias — Migalhas aparece entre os veículos coletados.
 
 Fonte que sair do ar não derruba a atualização: ela é pulada e o motivo
 aparece em **"Fontes desta coleta"**, no rodapé da página. Se um desses
@@ -127,6 +221,10 @@ node scripts/coletar.mjs --sem-resumos   # não abre as páginas das matérias
 ```
 
 ## Limites que vale conhecer
+
+O acervo guarda até 900 notícias, dimensionado sobre a coleta real (a primeira
+rodada trouxe 289 de uma vez). O JSON é servido comprimido, o que mantém o peso
+em torno de 260 KB no pior caso.
 
 Nem toda matéria vem com resumo. Veículos atrás de paywall costumam bloquear a
 leitura da página, e alguns não publicam linha fina — nesses casos o card
