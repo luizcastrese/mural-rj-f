@@ -1,4 +1,4 @@
-Resumos — 2026-09-01T19:36:55.691Z
+Resumos — 2026-09-01T19:40:12.930Z
 provedor: gemini (habilitado: true)
 modelo: (padrão do provedor)
 cards: 4
