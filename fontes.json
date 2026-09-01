@@ -1,5 +1,5 @@
 {
-  "_comentario": "Fontes consultadas pelo coletor. Adicione ou remova à vontade: fontes que falharem são ignoradas e o erro aparece no rodapé da página. Os feeds diretos de Migalhas e STJ foram removidos por retornarem 404 e 403; o conteúdo dos dois continua chegando pelas buscas do Google Notícias.",
+  "_comentario": "Fontes do coletor. As buscas do Google Notícias dão alcance (imprensa regional, comarcas do interior), mas seus links param num redirecionador criptografado: por elas não se chega ao texto da matéria. Os feeds diretos abaixo entregam link do próprio veículo e texto legível — é deles que sai o resumo. Como o agrupamento junta a mesma notícia vinda de vários veículos, basta um feed direto cobrir o fato para o card ganhar resumo. Fonte que falhar é ignorada, e o erro aparece no rodapé da página.",
   "buscasGoogleNews": [
     {
       "nome": "Novas RJs e pedidos",
@@ -31,6 +31,18 @@
     }
   ],
   "feedsDiretos": [
+    {
+      "nome": "Valor Econômico",
+      "url": "https://pox.globo.com/rss/valor"
+    },
+    {
+      "nome": "InfoMoney",
+      "url": "https://www.infomoney.com.br/feed/"
+    },
+    {
+      "nome": "Poder360",
+      "url": "https://www.poder360.com.br/feed/"
+    },
     {
       "nome": "Conjur",
       "url": "https://www.conjur.com.br/rss.xml"
