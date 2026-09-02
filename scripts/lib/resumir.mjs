@@ -291,7 +291,9 @@ export async function resumirMateria({ titulo, texto }) {
     return viaGitHub(titulo, corpo, cortada);
   });
 
-  if (escrito.length < 60) return null;
+  if (escrito.length < 60) {
+    throw new Error(`Resumo curto demais (${escrito.length} caracteres): ${escrito.slice(0, 80)}`);
+  }
 
   // Corte no limite só na fronteira de frase: resumo truncado no meio de uma
   // palavra informa menos do que o recorte da própria matéria.
@@ -299,10 +301,14 @@ export async function resumirMateria({ titulo, texto }) {
   if (resumo.length > MAX_CARACTERES_RESUMO) {
     const cortado = resumo.slice(0, MAX_CARACTERES_RESUMO);
     const ponto = cortado.lastIndexOf('.');
-    if (ponto < MAX_CARACTERES_RESUMO * 0.5) return null;
+    if (ponto < MAX_CARACTERES_RESUMO * 0.5) {
+      throw new Error('Resumo longo e sem fronteira de frase para cortar');
+    }
     resumo = cortado.slice(0, ponto + 1);
   }
-  if (!/[.!?…]$/.test(resumo)) return null;
+  if (!/[.!?…]$/.test(resumo)) {
+    throw new Error(`Resumo não terminou a frase: …${resumo.slice(-60)}`);
+  }
 
   return { texto: resumo, origem: 'resumo da matéria' };
 }
