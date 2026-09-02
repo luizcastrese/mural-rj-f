@@ -135,8 +135,9 @@ test('coleta deduplica, mescla com o acervo e sobrevive a fonte fora do ar', asy
   await rodar();
   const primeira = JSON.parse(await readFile(saida, 'utf-8'));
 
-  // As fixtures trazem 11 itens: 3 são ruído e 1 é manchete repetida.
-  assert.equal(primeira.total, 7);
+  // As fixtures trazem 11 itens: 3 são ruído e 1 é manchete repetida. O
+  // acervo guarda as 7 relevantes; virar card depende de resumo escrito.
+  assert.equal(primeira.noticias.length, 7);
   assert.equal(new Set(primeira.noticias.map((n) => n.titulo)).size, 7);
 
   // Na duplicata, vence a versão de maior pontuação (a do Valor).
@@ -146,7 +147,7 @@ test('coleta deduplica, mescla com o acervo e sobrevive a fonte fora do ar', asy
   // Rodar de novo não pode duplicar nada.
   await rodar();
   const segunda = JSON.parse(await readFile(saida, 'utf-8'));
-  assert.equal(segunda.total, 7);
+  assert.equal(segunda.noticias.length, 7);
 
   // Ordenação: mais recente primeiro.
   const datas = segunda.noticias.map((n) => new Date(n.data).getTime());
@@ -155,7 +156,7 @@ test('coleta deduplica, mescla com o acervo e sobrevive a fonte fora do ar', asy
   // --reconstruir descarta o acervo e recomeça do zero.
   const limpo = path.join(dir, 'limpo.json');
   await executar('node', [COLETOR, '--fixtures', '--dias', '999999', '--saida', limpo, '--reconstruir']);
-  assert.equal(JSON.parse(await readFile(limpo, 'utf-8')).total, 7);
+  assert.equal(JSON.parse(await readFile(limpo, 'utf-8')).noticias.length, 7);
 });
 
 test('a janela de retenção descarta o que envelheceu', async (t) => {
@@ -311,7 +312,8 @@ test('a coleta busca o resumo na página da matéria, literalmente', async (t) =
   assert.equal(beta.resumo, '');
   // Fica marcada como já tentada; o número da versão é detalhe interno.
   assert.equal(typeof beta.versaoResumo, 'number');
-  assert.equal(dados.comResumo, 1);
+  // comResumo conta cards publicados; sem resumo escrito, nenhum é.
+  assert.equal(dados.comResumo, 0);
 });
 
 // ---------- agrupamento de uma notícia dada por vários veículos ----------
@@ -477,15 +479,15 @@ test('quando um veículo não tem resumo, a coleta tenta outro do mesmo grupo', 
   await executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida]);
   const dados = JSON.parse(await readFile(saida, 'utf-8'));
 
-  // Um card só, e com o resumo que existia em apenas um dos dois veículos.
-  assert.equal(dados.total, 1);
-  const card = dados.noticias.find((n) => n.principal);
-  assert.equal(card.cobertura, 2);
-  assert.equal(card.resumo, LINHA_FINA);
-  assert.equal(card.veiculo, 'Portal B');
+  // Um grupo só, e o representante é o veículo que tinha linha fina.
+  const principais = dados.noticias.filter((n) => n.principal);
+  assert.equal(principais.length, 1);
+  assert.equal(principais[0].cobertura, 2);
+  assert.equal(principais[0].resumo, LINHA_FINA);
+  assert.equal(principais[0].veiculo, 'Portal B');
 });
 
-test('notícia sem resumo não entra no mural, mas fica no acervo', async (t) => {
+test('só entra no mural a notícia com resumo escrito da matéria', async (t) => {
   const dir = await mkdtemp(path.join(tmpdir(), 'mural-politica-'));
   const saida = path.join(dir, 'noticias.json');
   t.after(() => rm(dir, { recursive: true, force: true }));
@@ -514,13 +516,13 @@ test('notícia sem resumo não entra no mural, mas fica no acervo', async (t) =>
   await executar('node', [COLETOR, '--fixtures', dir, '--dias', '999999', '--saida', saida]);
   const dados = JSON.parse(await readFile(saida, 'utf-8'));
 
-  assert.equal(dados.total, 1, 'só a notícia com resumo vira card');
-  assert.ok(dados.noticias.find((n) => /Alfa/.test(n.titulo)).resumo);
+  // Nenhuma das duas tem resumo escrito da matéria: o mural fica vazio…
+  assert.equal(dados.total, 0);
 
-  // A outra continua no acervo, para ser tentada de novo na próxima coleta.
-  const beta = dados.noticias.find((n) => /Beta/.test(n.titulo));
-  assert.ok(beta, 'a notícia sem resumo permanece no acervo');
-  assert.equal(beta.resumo, '');
+  // …mas as duas continuam no acervo, para serem tentadas de novo.
+  assert.equal(dados.noticias.length, 2);
+  assert.ok(dados.noticias.find((n) => /Alfa/.test(n.titulo)).resumo, 'guarda o recorte do feed');
+  assert.equal(dados.noticias.find((n) => /Beta/.test(n.titulo)).resumo, '');
 });
 
 test('resumoDoCorpo prefere a frase que informa, não a que vem antes', () => {
@@ -765,7 +767,7 @@ test('notícia resumida por recorte é retentada quando o modelo aparece', async
   // Primeira coleta, sem modelo: o resumo vem do recorte.
   await rodar({});
   const semModelo = JSON.parse(await readFile(saida, 'utf-8'));
-  assert.equal(semModelo.total, 1);
+  assert.equal(semModelo.total, 0, 'sem modelo, nada é publicado');
   assert.notEqual(semModelo.noticias[0].resumoFonte, 'resumo da matéria');
   assert.equal(chamadas, 0);
 
@@ -775,6 +777,7 @@ test('notícia resumida por recorte é retentada quando o modelo aparece', async
     MURAL_GEMINI_URL: `http://127.0.0.1:${modelo.address().port}/models`,
   });
   const comModelo = JSON.parse(await readFile(saida, 'utf-8'));
+  assert.equal(comModelo.total, 1, 'com o resumo escrito, a notícia é publicada');
   assert.equal(comModelo.noticias[0].resumoFonte, 'resumo da matéria');
   assert.equal(comModelo.noticias[0].resumo, RESUMO_DO_MODELO);
   assert.equal(chamadas, 1);
