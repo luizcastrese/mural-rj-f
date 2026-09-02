@@ -23,7 +23,7 @@ const GEMINI = process.env.MURAL_GEMINI_URL || 'https://generativelanguage.googl
 const MODELOS_GEMINI = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-flash-latest'];
 const MAX_CARACTERES_MATERIA = 12000;
 const MIN_CARACTERES_MATERIA = 200;
-const MAX_CARACTERES_RESUMO = 420;
+const MAX_CARACTERES_RESUMO = 700;
 const TEMPO_LIMITE_MS = 30000;
 // 503 e 429 são fila cheia do outro lado, não erro do pedido: espera e tenta
 // de novo antes de desistir e cair no recorte.
@@ -58,14 +58,22 @@ function enfileirar(tarefa) {
 
 const INSTRUCAO = `Você prepara um mural de notícias para advogados que atuam com recuperação judicial e falência no Brasil. Recebe o texto de uma matéria e escreve o resumo dela.
 
-O resumo serve para o leitor decidir, em poucos segundos, se precisa abrir a matéria — e para que, se não abrir, saia sabendo o que aconteceu.
+O leitor é profissional da área e lê o mural entre compromissos. O resumo precisa deixá-lo efetivamente informado sobre o caso — não apenas ciente de que ele existe. Escreva para quem entende do assunto: use a terminologia própria (deferimento do processamento, stay period, convolação, quirografário, cram down, consolidação substancial) quando o texto a empregar, sem explicá-la.
+
+O que priorizar, quando o texto trouxer:
+- a empresa ou grupo, e o setor;
+- a etapa processual exata e o que foi decidido;
+- o juízo, a vara, a câmara ou o tribunal, e o relator;
+- valores: passivo, deságio, prazos, percentuais, quóruns;
+- o fundamento da decisão, o dispositivo aplicado ou a tese firmada;
+- o que a decisão significa para credores, e o próximo passo do processo.
 
 Regras, sem exceção:
-- Use apenas o que está no texto recebido. Não acrescente contexto, não infira, não conclua, não explique institutos jurídicos.
+- Use apenas o que está no texto recebido. Não acrescente contexto, não infira, não conclua, não explique institutos que o texto não explique.
 - Dado que não estiver no texto deve ser omitido, jamais preenchido ou estimado.
-- Priorize, quando o texto trouxer: a empresa ou grupo, a etapa do processo (pedido, deferimento, quebra decretada, plano, blindagem, encerramento), o juízo ou tribunal, os valores, os prazos e o que foi decidido.
 - Deixe de fora o que não informa: "procurada, a empresa não se manifestou", histórico da companhia, cotação de ações.
-- Duas a três frases, no máximo 400 caracteres, em português do Brasil.
+- Três a quatro frases, entre 350 e 600 caracteres, em português do Brasil.
+- Termine sempre a última frase. Nunca entregue texto cortado.
 - Não comece com "A notícia informa", "A matéria trata" ou variantes, e não repita a manchete.
 - Responda somente com o resumo, sem preâmbulo, aspas ou marcação.`;
 
@@ -154,7 +162,14 @@ async function chamarGemini(nomeDoModelo, titulo, corpo, cortada) {
       body: JSON.stringify({
         systemInstruction: { parts: [{ text: INSTRUCAO }] },
         contents: [{ role: 'user', parts: [{ text: pedido(titulo, corpo, cortada) }] }],
-        generationConfig: { temperature: 0.2, maxOutputTokens: 400 },
+        generationConfig: {
+          temperature: 0.2,
+          // Generoso de propósito: o flash gasta parte do orçamento com
+          // raciocínio interno, e com 400 o texto saía cortado no meio da
+          // primeira frase. thinkingBudget 0 devolve o orçamento ao resumo.
+          maxOutputTokens: 2048,
+          thinkingConfig: { thinkingBudget: 0 },
+        },
       }),
     });
 
@@ -178,12 +193,15 @@ async function chamarGemini(nomeDoModelo, titulo, corpo, cortada) {
     // Resposta sem texto é comum quando o filtro de conteúdo barra o pedido.
     // Sem dizer o motivo, a falha some e o mural volta ao recorte sem
     // explicação — foi o que aconteceu na primeira coleta com chave.
+    const motivoDoFim = dados?.candidates?.[0]?.finishReason;
     if (!escrito) {
-      const motivo =
-        dados?.candidates?.[0]?.finishReason ||
-        dados?.promptFeedback?.blockReason ||
-        'resposta sem texto';
-      throw new Error(`Gemini respondeu sem resumo (${motivo})`);
+      throw new Error(
+        `Gemini respondeu sem resumo (${motivoDoFim || dados?.promptFeedback?.blockReason || 'resposta sem texto'})`,
+      );
+    }
+    // Resumo cortado ao meio informa pior do que o recorte da matéria.
+    if (motivoDoFim && motivoDoFim !== 'STOP') {
+      throw new Error(`Gemini interrompeu o resumo (${motivoDoFim})`);
     }
     return escrito;
   } finally {
@@ -274,8 +292,17 @@ export async function resumirMateria({ titulo, texto }) {
   });
 
   if (escrito.length < 60) return null;
-  return {
-    texto: escrito.slice(0, MAX_CARACTERES_RESUMO).trim(),
-    origem: 'resumo da matéria',
-  };
+
+  // Corte no limite só na fronteira de frase: resumo truncado no meio de uma
+  // palavra informa menos do que o recorte da própria matéria.
+  let resumo = escrito.trim();
+  if (resumo.length > MAX_CARACTERES_RESUMO) {
+    const cortado = resumo.slice(0, MAX_CARACTERES_RESUMO);
+    const ponto = cortado.lastIndexOf('.');
+    if (ponto < MAX_CARACTERES_RESUMO * 0.5) return null;
+    resumo = cortado.slice(0, ponto + 1);
+  }
+  if (!/[.!?…]$/.test(resumo)) return null;
+
+  return { texto: resumo, origem: 'resumo da matéria' };
 }

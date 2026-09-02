@@ -45,7 +45,7 @@ const TENTATIVAS_POR_GRUPO = 3;
 // Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
 // com qual lógica congelava o acervo: itens tentados por uma versão quebrada
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
-const VERSAO_RESUMO = 7;
+const VERSAO_RESUMO = 9;
 
 // Quantas vezes insistir com o modelo numa mesma notícia, em coletas
 // diferentes, antes de aceitar que ela ficará com o recorte. Só conta a
@@ -60,11 +60,18 @@ const MAX_TENTATIVAS_MODELO = 3;
 // O contador é o único freio de propósito. Preservar o provedor anterior
 // quando o modelo estava fora do ar parecia mais justo, mas fazia a regra
 // "provedor mudou" disparar em toda coleta, e o teto nunca era alcançado.
+// Um resumo do modelo só está pronto se estiver inteiro. O primeiro que o
+// Gemini escreveu parou em "…e informou", e o grupo era pulado por já ter
+// resumo do modelo — ficaria assim para sempre.
+function resumoEstaPronto(noticia) {
+  return noticia.resumoFonte === 'resumo da matéria' && /[.!?…]$/.test(noticia.resumo || '');
+}
+
 function precisaDeResumo(noticia) {
   if (noticia.versaoResumo !== VERSAO_RESUMO) return true;
   if (noticia.provedorTentado !== provedorDoResumo()) return true;
   if (!podeResumirComModelo()) return false;
-  if (noticia.resumoFonte === 'resumo da matéria') return false;
+  if (resumoEstaPronto(noticia)) return false;
   return (noticia.tentativasModelo || 0) < MAX_TENTATIVAS_MODELO;
 }
 
@@ -308,7 +315,7 @@ async function enriquecerResumos(noticias) {
   const filas = [];
   for (const itens of grupos.values()) {
     // Grupo já resumido pelo modelo está pronto: não se gasta requisição nele.
-    if (itens.some((n) => n.resumoFonte === 'resumo da matéria')) continue;
+    if (itens.some(resumoEstaPronto)) continue;
     // Mesmo com resumo vindo do feed vale abrir a matéria: a description de
     // alguns portais começa com legenda de foto ("Reprodução/TV Globo") ou
     // com chamada de outra reportagem. A página traz o texto limpo, e o
