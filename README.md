@@ -66,7 +66,8 @@ ler.
 ## Sem resumo, não entra
 
 O mural existe para informar sem obrigar a abrir a matéria. Por isso a regra
-é dura: **notícia sem resumo não vira card**. Ela não é perdida — fica no
+é dura: **só vira card a notícia cujo resumo foi escrito a partir do texto da
+matéria**. Recorte de frases fica no acervo, mas não ocupa espaço na página. Ela não é perdida — fica no
 acervo e é tentada de novo a cada coleta —, mas não ocupa espaço na página
 enquanto não tiver o que dizer.
 

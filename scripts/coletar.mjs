@@ -45,7 +45,7 @@ const TENTATIVAS_POR_GRUPO = 3;
 // Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
 // com qual lógica congelava o acervo: itens tentados por uma versão quebrada
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
-const VERSAO_RESUMO = 9;
+const VERSAO_RESUMO = 10;
 
 // Quantas vezes insistir com o modelo numa mesma notícia, em coletas
 // diferentes, antes de aceitar que ela ficará com o recorte. Só conta a
@@ -432,10 +432,11 @@ async function principal() {
     ? { noticias: preliminar, gruposTentados: 0, gruposComResumo: 0 }
     : await enriquecerResumos(preliminar);
   const publicadas = agrupar(enriquecido.noticias);
-  // Só entra no mural a notícia que tem resumo: o propósito da página é
-  // informar sem obrigar a abrir a matéria. As demais ficam no acervo e
-  // voltam a ser tentadas na coleta seguinte.
-  const cards = publicadas.filter((n) => n.principal && n.resumo);
+  // Só entra no mural a notícia cujo resumo foi escrito a partir da matéria.
+  // Recorte de frases não basta: o propósito da página é informar sem obrigar
+  // a abrir o link. As demais ficam no acervo e voltam a ser tentadas nas
+  // coletas seguintes.
+  const cards = publicadas.filter((n) => n.principal && resumoEstaPronto(n));
 
   const porCategoria = Object.fromEntries(
     CATEGORIAS.map((c) => [c.id, cards.filter((n) => n.categoria === c.id).length]),
@@ -480,7 +481,7 @@ async function principal() {
     );
   }
   console.log(`com resumo: ${saida.comResumo}/${cards.length}`);
-  const semResumoAinda = publicadas.filter((n) => n.principal && !n.resumo).length;
+  const semResumoAinda = publicadas.filter((n) => n.principal && !resumoEstaPronto(n)).length;
   console.log(`agrupamento: ${publicadas.length} notícias → ${cards.length} cards`);
   console.log(`retidas por falta de resumo: ${semResumoAinda}`);
   for (const [id, qtd] of Object.entries(porCategoria)) console.log(`  ${id.padEnd(15)} ${qtd}`);
