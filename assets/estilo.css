@@ -434,7 +434,7 @@ main { padding-block: 22px 40px; }
   font-size: 0.87rem;
   line-height: 1.45;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

@@ -633,7 +633,9 @@ test('resumirMateria fala o protocolo do Gemini e devolve o texto escrito', asyn
     req.on('end', () => {
       recebido = { url: req.url, chave: req.headers['x-goog-api-key'], corpo: JSON.parse(corpo) };
       res.writeHead(200, { 'content-type': 'application/json' }).end(
-        JSON.stringify({ candidates: [{ content: { parts: [{ text: RESUMO }] } }] }),
+        JSON.stringify({
+          candidates: [{ finishReason: 'STOP', content: { parts: [{ text: RESUMO }] } }],
+        }),
       );
     });
   });
@@ -678,7 +680,18 @@ test('nome de modelo recusado faz o coletor tentar o próximo da lista', async (
       }
       res.writeHead(200, { 'content-type': 'application/json' }).end(
         JSON.stringify({
-          candidates: [{ content: { parts: [{ text: 'A'.repeat(120) }] } }],
+          candidates: [
+            {
+              finishReason: 'STOP',
+              content: {
+                parts: [
+                  {
+                    text: 'A 1ª Vara Empresarial decretou a falência da companhia e nomeou administrador judicial nesta terça-feira.',
+                  },
+                ],
+              },
+            },
+          ],
         }),
       );
     });
@@ -718,7 +731,9 @@ test('notícia resumida por recorte é retentada quando o modelo aparece', async
     req.resume();
     req.on('end', () => {
       res.writeHead(200, { 'content-type': 'application/json' }).end(
-        JSON.stringify({ candidates: [{ content: { parts: [{ text: RESUMO_DO_MODELO }] } }] }),
+        JSON.stringify({
+          candidates: [{ finishReason: 'STOP', content: { parts: [{ text: RESUMO_DO_MODELO }] } }],
+        }),
       );
     });
   });
@@ -897,4 +912,40 @@ test('insiste com o modelo em coletas seguintes, mas não para sempre', async (t
   // insistiu entre coletas e parou no teto, em vez de tentar para sempre.
   assert.equal(alfa.tentativasModelo, 3);
   assert.equal(chamadas, 3, `esperava três chamadas em cinco coletas, houve ${chamadas}`);
+});
+
+test('resumo cortado ao meio é recusado em favor do recorte da matéria', async (t) => {
+  const servidor = createServer((req, res) => {
+    req.resume();
+    req.on('end', () => {
+      // Foi isso que chegou ao mural: o modelo estourou o orçamento de saída
+      // e devolveu meia frase.
+      res.writeHead(200, { 'content-type': 'application/json' }).end(
+        JSON.stringify({
+          candidates: [
+            {
+              finishReason: 'MAX_TOKENS',
+              content: {
+                parts: [
+                  { text: 'A Chilli Beans negou qualquer discussão sobre pedido de recuperação judicial e informou' },
+                ],
+              },
+            },
+          ],
+        }),
+      );
+    });
+  });
+  await new Promise((ok) => servidor.listen(0, '127.0.0.1', ok));
+  t.after(() => servidor.close());
+
+  await semCredenciais(async () => {
+    process.env.GEMINI_API_KEY = 'chave-de-teste';
+    process.env.MURAL_GEMINI_URL = `http://127.0.0.1:${servidor.address().port}/models`;
+    await assert.rejects(
+      resumirMateria({ titulo: 'Chilli Beans nega RJ', texto: 'texto da matéria. '.repeat(30) }),
+      /interrompeu o resumo \(MAX_TOKENS\)/,
+    );
+    delete process.env.MURAL_GEMINI_URL;
+  });
 });
