@@ -1,4 +1,4 @@
-Diagnóstico de fontes — 2026-09-01T19:38:00.749Z
+Diagnóstico de fontes — 2026-09-02T17:12:14.168Z
 
 fonte                 http  itens  link do veículo             description útil
 ----------------------------------------------------------------------------------------
@@ -6,13 +6,13 @@ Valor                 200   100    valor.globo.com             99/100
 InfoMoney             200   10     www.infomoney.com.br        10/10
 Poder360              200   10     www.poder360.com.br         10/10
 Conjur                200   10     conjur.com.br               10/10
-JOTA                  200   25     www.jota.info               24/25
+JOTA                  200   25     www.jota.info               23/25
 Migalhas c            404   0
 Migalhas d            200   0
 STJ c                 403   0
-G1 Economia           200   100    g1.globo.com                96/100
-Folha Mercado         200   100    redir.folha.com.br          99/100
-UOL Economia          200   15     economia.uol.com.br         13/15
+G1 Economia           200   100    g1.globo.com                97/100
+Folha Mercado         200   100    redir.folha.com.br          100/100
+UOL Economia          200   15     economia.uol.com.br         14/15
 Agência Brasil        200   10     agenciabrasil.ebc.com.br    10/10
 CNN Economia          404   0
 Brazil Journal        200   10     braziljournal.com           10/10
