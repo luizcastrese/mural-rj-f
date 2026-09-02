@@ -22,7 +22,12 @@ import {
   pareceMateria,
   textoDaMateria,
 } from './lib/resumo.mjs';
-import { resumirMateria, podeResumirComModelo, provedorDoResumo } from './lib/resumir.mjs';
+import {
+  resumirMateria,
+  podeResumirComModelo,
+  provedorDoResumo,
+  FalhaTransitoria,
+} from './lib/resumir.mjs';
 import { agrupar } from './lib/agrupar.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -40,7 +45,28 @@ const TENTATIVAS_POR_GRUPO = 3;
 // Versão da extração de resumo. Marcar a notícia como "já tentada" sem dizer
 // com qual lógica congelava o acervo: itens tentados por uma versão quebrada
 // nunca mais seriam reprocessados. Ao mudar a extração, incremente aqui.
-const VERSAO_RESUMO = 4;
+const VERSAO_RESUMO = 7;
+
+// Quantas vezes insistir com o modelo numa mesma notícia, em coletas
+// diferentes, antes de aceitar que ela ficará com o recorte. Só conta a
+// tentativa em que o modelo se pronunciou: congestionamento não gasta cota.
+const MAX_TENTATIVAS_MODELO = 3;
+
+// Uma notícia volta para a fila quando a extração mudou de versão, quando o
+// provedor de resumo mudou, ou enquanto o resumo não tiver saído do modelo —
+// até o teto acima, que é o que impede a matéria inalcançável de custar
+// requisição para sempre.
+//
+// O contador é o único freio de propósito. Preservar o provedor anterior
+// quando o modelo estava fora do ar parecia mais justo, mas fazia a regra
+// "provedor mudou" disparar em toda coleta, e o teto nunca era alcançado.
+function precisaDeResumo(noticia) {
+  if (noticia.versaoResumo !== VERSAO_RESUMO) return true;
+  if (noticia.provedorTentado !== provedorDoResumo()) return true;
+  if (!podeResumirComModelo()) return false;
+  if (noticia.resumoFonte === 'resumo da matéria') return false;
+  return (noticia.tentativasModelo || 0) < MAX_TENTATIVAS_MODELO;
+}
 
 const args = process.argv.slice(2);
 const usarFixtures = args.includes('--fixtures');
@@ -205,6 +231,18 @@ async function lerAcervo() {
 // falha some no log e o mural volta ao recorte sem explicar por quê.
 const falhasDoModelo = [];
 
+// O que se grava na notícia depois de uma tentativa de resumo. Trocar de
+// provedor zera o contador: o modelo novo merece as suas próprias chances.
+function marcaDaTentativa(noticia, { chamouModelo = false } = {}) {
+  const trocouProvedor = noticia.provedorTentado !== provedorDoResumo();
+  const anteriores = trocouProvedor ? 0 : noticia.tentativasModelo || 0;
+  return {
+    versaoResumo: VERSAO_RESUMO,
+    provedorTentado: provedorDoResumo(),
+    tentativasModelo: anteriores + (chamouModelo ? 1 : 0),
+  };
+}
+
 async function buscarResumoNaPagina(noticia) {
   try {
     // Primeira via: a URL da matéria costuma estar embutida no próprio link
@@ -218,7 +256,7 @@ async function buscarResumoNaPagina(noticia) {
     // quebra dá ao card um link direto para a matéria.
     if (ehGoogleNoticias(urlFinal)) {
       const doVeiculo = linkDoVeiculo(html);
-      if (!doVeiculo) return { ...noticia, versaoResumo: VERSAO_RESUMO };
+      if (!doVeiculo) return { ...noticia, ...marcaDaTentativa(noticia) };
       const segunda = await baixarPagina(doVeiculo);
       html = segunda.html;
       // Só adota o novo endereço se ele levar a uma matéria.
@@ -229,26 +267,31 @@ async function buscarResumoNaPagina(noticia) {
 
     // Com o texto da matéria em mãos, o resumo é escrito a partir dele.
     // Sem chave da API, cai no recorte de frases da própria matéria.
-    const achado =
-      (await resumirMateria({ titulo: noticia.titulo, texto: textoDaMateria(html, noticia.titulo) }).catch(
-        (erro) => {
-          if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
-          console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
-          return null;
-        },
-      )) || extrairResumo(html, noticia.titulo);
+    const texto = textoDaMateria(html, noticia.titulo);
+    let modeloRespondeu = podeResumirComModelo() && texto.length >= 200;
+    const escrito = await resumirMateria({ titulo: noticia.titulo, texto }).catch((erro) => {
+      // Congestionamento não gasta a cota de tentativas: o modelo não chegou
+      // a se pronunciar sobre esta matéria, e amanhã pode estar livre.
+      if (erro instanceof FalhaTransitoria) modeloRespondeu = false;
+      if (falhasDoModelo.length < 3) falhasDoModelo.push(erro.message);
+      console.warn(`  ! resumo do modelo falhou: ${erro.message}`);
+      return null;
+    });
 
-    if (!achado) return { ...noticia, link, versaoResumo: VERSAO_RESUMO };
+    const achado = escrito || extrairResumo(html, noticia.titulo);
+    const marca = marcaDaTentativa(noticia, { chamouModelo: modeloRespondeu });
+
+    if (!achado) return { ...noticia, link, ...marca };
     return {
       ...noticia,
       link,
       resumo: achado.texto,
       resumoFonte: achado.origem,
-      versaoResumo: VERSAO_RESUMO,
+      ...marca,
     };
   } catch {
     // Paywall, timeout, 403: segue sem resumo, e não sem a notícia.
-    return { ...noticia, versaoResumo: VERSAO_RESUMO };
+    return { ...noticia, ...marcaDaTentativa(noticia) };
   }
 }
 
@@ -264,6 +307,8 @@ async function enriquecerResumos(noticias) {
 
   const filas = [];
   for (const itens of grupos.values()) {
+    // Grupo já resumido pelo modelo está pronto: não se gasta requisição nele.
+    if (itens.some((n) => n.resumoFonte === 'resumo da matéria')) continue;
     // Mesmo com resumo vindo do feed vale abrir a matéria: a description de
     // alguns portais começa com legenda de foto ("Reprodução/TV Globo") ou
     // com chamada de outra reportagem. A página traz o texto limpo, e o
@@ -271,7 +316,7 @@ async function enriquecerResumos(noticias) {
     // O representante primeiro; os outros veículos como reserva.
     const ordenados = [...itens].sort((a, b) => Number(b.principal) - Number(a.principal));
     const fila = ordenados
-      .filter((n) => n.link && n.versaoResumo !== VERSAO_RESUMO)
+      .filter((n) => n.link && precisaDeResumo(n))
       .slice(0, TENTATIVAS_POR_GRUPO);
     if (fila.length) filas.push(fila);
   }

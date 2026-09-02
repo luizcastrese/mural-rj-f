@@ -25,6 +25,36 @@ const MAX_CARACTERES_MATERIA = 12000;
 const MIN_CARACTERES_MATERIA = 200;
 const MAX_CARACTERES_RESUMO = 420;
 const TEMPO_LIMITE_MS = 30000;
+// 503 e 429 são fila cheia do outro lado, não erro do pedido: espera e tenta
+// de novo antes de desistir e cair no recorte.
+const ESPERAS_MS = (process.env.MURAL_ESPERAS_MS || '5000,15000,30000')
+  .split(',')
+  .map(Number);
+// A cota gratuita conta chamadas por minuto. O coletor busca vários grupos em
+// paralelo, então as chamadas ao modelo passam por uma fila de um de cada vez,
+// espaçadas — sem isso, seis pedidos simultâneos estouram o limite na hora.
+const ESPACO_ENTRE_CHAMADAS_MS = Number(process.env.MURAL_ESPACO_MS || 6500);
+const TRANSITORIOS = new Set([429, 500, 502, 503, 504]);
+
+export class FalhaTransitoria extends Error {}
+
+const dormir = (ms) => new Promise((pronto) => setTimeout(pronto, ms));
+
+// Fila de uma chamada por vez, com intervalo mínimo entre elas.
+let fila = Promise.resolve();
+let ultimaChamada = 0;
+
+function enfileirar(tarefa) {
+  const proxima = fila.then(async () => {
+    const desde = Date.now() - ultimaChamada;
+    if (desde < ESPACO_ENTRE_CHAMADAS_MS) await dormir(ESPACO_ENTRE_CHAMADAS_MS - desde);
+    ultimaChamada = Date.now();
+    return tarefa();
+  });
+  // A fila não pode parar por causa de uma falha na tarefa anterior.
+  fila = proxima.catch(() => {});
+  return proxima;
+}
 
 const INSTRUCAO = `Você prepara um mural de notícias para advogados que atuam com recuperação judicial e falência no Brasil. Recebe o texto de uma matéria e escreve o resumo dela.
 
@@ -48,7 +78,9 @@ export function provedorDoResumo() {
   if (escolhido) return escolhido;
   if (process.env.ANTHROPIC_API_KEY) return 'anthropic';
   if (chaveGemini()) return 'gemini';
-  if (process.env.GITHUB_TOKEN) return 'github';
+  // GitHub Models não entra por descoberta: está em desativação e responde
+  // HTTP 410. Auto-selecioná-lo fazia o coletor se declarar capaz de escrever
+  // resumo sem conseguir escrever nenhum. Só por MURAL_PROVEDOR=github.
   return 'nenhum';
 }
 
@@ -128,16 +160,32 @@ async function chamarGemini(nomeDoModelo, titulo, corpo, cortada) {
 
     if (!resposta.ok) {
       const detalhe = (await resposta.text()).slice(0, 300);
-      const erro = new Error(`Gemini HTTP ${resposta.status}: ${detalhe}`);
+      const erro = TRANSITORIOS.has(resposta.status)
+        ? new FalhaTransitoria(`Gemini HTTP ${resposta.status}: ${detalhe}`)
+        : new Error(`Gemini HTTP ${resposta.status}: ${detalhe}`);
       erro.status = resposta.status;
+      const esperaPedida = Number(resposta.headers.get('retry-after'));
+      if (Number.isFinite(esperaPedida) && esperaPedida > 0) erro.esperaMs = esperaPedida * 1000;
       throw erro;
     }
 
     const dados = await resposta.json();
-    return (dados?.candidates?.[0]?.content?.parts || [])
+    const escrito = (dados?.candidates?.[0]?.content?.parts || [])
       .map((parte) => parte.text || '')
       .join(' ')
       .trim();
+
+    // Resposta sem texto é comum quando o filtro de conteúdo barra o pedido.
+    // Sem dizer o motivo, a falha some e o mural volta ao recorte sem
+    // explicação — foi o que aconteceu na primeira coleta com chave.
+    if (!escrito) {
+      const motivo =
+        dados?.candidates?.[0]?.finishReason ||
+        dados?.promptFeedback?.blockReason ||
+        'resposta sem texto';
+      throw new Error(`Gemini respondeu sem resumo (${motivo})`);
+    }
+    return escrito;
   } finally {
     clearTimeout(relogio);
   }
@@ -153,15 +201,28 @@ async function viaGemini(titulo, corpo, cortada) {
 
   let ultimoErro = null;
   for (const nome of tentativas) {
-    try {
-      const escrito = await chamarGemini(nome, titulo, corpo, cortada);
-      modeloGeminiAtual = nome;
-      return escrito;
-    } catch (erro) {
-      ultimoErro = erro;
-      // Nome de modelo inválido: vale tentar o próximo da lista. Qualquer
-      // outra falha (cota, chave, rede) é do pedido, não do nome.
-      if (erro.status !== 404 && erro.status !== 400) throw erro;
+    for (let volta = 0; volta <= ESPERAS_MS.length; volta += 1) {
+      try {
+        const escrito = await chamarGemini(nome, titulo, corpo, cortada);
+        modeloGeminiAtual = nome;
+        return escrito;
+      } catch (erro) {
+        ultimoErro = erro;
+        // Fila cheia do outro lado: espera e insiste com o mesmo modelo.
+        if (erro instanceof FalhaTransitoria) {
+          if (volta < ESPERAS_MS.length) {
+            await dormir(erro.esperaMs || ESPERAS_MS[volta]);
+            continue;
+          }
+          // Esgotadas as esperas, um modelo irmão pode estar menos
+          // congestionado — vale mais tentar o próximo do que desistir.
+          break;
+        }
+        // Nome de modelo inválido: vale tentar o próximo da lista. Qualquer
+        // outra falha (cota, chave, rede) é do pedido, não do nome.
+        if (erro.status !== 404 && erro.status !== 400) throw erro;
+        break;
+      }
     }
   }
   throw ultimoErro;
@@ -206,10 +267,11 @@ export async function resumirMateria({ titulo, texto }) {
   const corpo = cortada ? texto.slice(0, MAX_CARACTERES_MATERIA) : texto;
 
   const provedor = provedorDoResumo();
-  let escrito = '';
-  if (provedor === 'anthropic') escrito = await viaAnthropic(titulo, corpo, cortada);
-  else if (provedor === 'gemini') escrito = await viaGemini(titulo, corpo, cortada);
-  else escrito = await viaGitHub(titulo, corpo, cortada);
+  const escrito = await enfileirar(() => {
+    if (provedor === 'anthropic') return viaAnthropic(titulo, corpo, cortada);
+    if (provedor === 'gemini') return viaGemini(titulo, corpo, cortada);
+    return viaGitHub(titulo, corpo, cortada);
+  });
 
   if (escrito.length < 60) return null;
   return {
