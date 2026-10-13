@@ -1,6 +1,14 @@
-Resumos — 2026-10-12T19:38:11.140Z
+Resumos — 2026-10-13T17:23:02.137Z
 provedor: gemini (habilitado: true)
 modelo: (padrão do provedor)
 cards: 6
 origem: {"resumo da matéria":6}
-falhas do modelo: nenhuma
+falhas do modelo:
+  Gemini HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
