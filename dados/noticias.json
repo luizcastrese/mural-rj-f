@@ -1,7 +1,7 @@
 {
-  "atualizadoEm": "2026-10-23T14:43:05.606Z",
+  "atualizadoEm": "2026-10-24T13:52:29.250Z",
   "total": 9,
-  "totalComRepetidas": 269,
+  "totalComRepetidas": 209,
   "comResumo": 9,
   "categorias": [
     {
@@ -46,7 +46,7 @@
     {
       "nome": "Pedidos de recuperação",
       "ok": true,
-      "itens": 102
+      "itens": 100
     },
     {
       "nome": "Falências decretadas",
@@ -56,7 +56,7 @@
     {
       "nome": "Planos e assembleias",
       "ok": true,
-      "itens": 100
+      "itens": 42
     },
     {
       "nome": "Jurisprudência",
@@ -66,7 +66,7 @@
     {
       "nome": "Legislação e regulação",
       "ok": true,
-      "itens": 100
+      "itens": 32
     },
     {
       "nome": "Recuperação extrajudicial",
@@ -141,25 +141,278 @@
   ],
   "noticias": [
     {
-      "titulo": "Justiça homologa plano de recuperação judicial da Tahto",
+      "titulo": "Hotel de 50 anos em Água Boa entra em recuperação judicial com dívida de R$ 5,1 milhões",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNakVqN0xNSFV5T25ZZHMtU1NaSVN2ZDhJQlpxV2FJdnpIV1VkRlFwbjdiR1ktblR5ODNZSEhoQXVwNFBoZFJPaUV1SjVodlZxYl9WZmtyMWFiTTE5aXo3aW5Fb0Rpc0Y2MC1rYWlSX2lLUkh4M3loRTllTnhCVjQ3RF92VmVqWDJwd1AxaXpQZUh6d3I1Z0pobHVKdGdfcWNxVmkyVHBKTWFQQ0ZaQ1JrWFZTOF9zbU1STHFBa1BsU1Q1dXg3MkRZb01yLXVtMGc?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Fatos de Mato Grosso",
+      "data": "2026-10-24T13:23:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 14,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g0",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Justiça autoriza recuperação extrajudicial de empresas do grupo Ri Happy",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSmJGMklyTUxRN2Q2d2tneng2WWFQWEttdzA3Q2F2U09Zc3FWQ0JiNm85Z0M1bU9XdkNiTmlXaTV3RnNiVndPNzhpS3U5dnhndzR4TjNibjlsbnZZcjhjbXZCN2lDWVBuOVhlTC1NdXJLN3dpQWRQNjg0bTJra2V5UUFqRlc1MWlVNjhxbFcxSHFPQ2h3VzR4QXN0c3R3UVVfb2d6aW9Uc3Q3SU45NFE?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Metrópoles",
+      "data": "2026-10-24T13:23:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g1",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Juiz autoriza recuperação extrajudicial da Ri Happy e mais 5 empresas",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMEVBMU1IbGdHa0Nma2dWVnhZZzByMDE1ZmhhV3pDcDVOOU5aQ0FEcndGS1QzX0p2dVVOYkdQN2hpc19vcmx0dUp4ZjJ3WUtwdUlXY1NUYm5mQVdwQnFXSW9RemRWMnVQOHlucEJBc3FjMzRvREhYaUxRYmZpVDNpdy01aWZ6V3FtdVBEa01oU3ZMWUJtU3Bybms1ZVhaZmx1WUJhc0x0N0N2blc2U2dndFFn?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Migalhas",
+      "data": "2026-10-24T12:29:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g1",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Justiça de SP aceita pedido de recuperação extrajudicial da Ri Happy",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYTB1Um5EMFdQQl8xR3kwU1l6VDRuRWRUOEVDNE1GVHYteWF6TGQtRUJvcHZoeXptZzNBZ2w1VXYzNHk1anpMRm1MZjV0ejMwbUlhSTk3RkM3Y2tBZTNEeWdzRThLVUp0bnA5amJ2YjUwbklacGdzeXBCLTJVRWFwd1V0LXhvT0xvNXNjTDhqb2hhZTltYWxaSXN4aFdtSzRNQmh2ZF9oMHgteDM4b0RBQWtWc19oTGZwYWx0bjBfbw?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "CNN Brasil",
+      "data": "2026-10-24T11:29:38.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 20,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g1",
+      "principal": true,
+      "cobertura": 5,
+      "tambemEm": [
+        "Metrópoles",
+        "Migalhas",
+        "TJSP",
+        "Expresso 360 |"
+      ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Justiça autoriza processamento de recuperação extrajudicial da Ri Happy",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE81bHdhQ01EQ1loQ2QzaXNVenRJQ0ZPU1JadlFhOEI3R2FMUEhEajJGTzY4YTlpRmhQMG83SlA1bWM5c1IyLVVwRWZCSk93S1g0NUUzcXc0VlV0T2Q4a1dhWmpFRFBRV2xGTzVpa2FUazBWNnZDdW5tOE1R?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "TJSP",
+      "data": "2026-10-24T09:02:17.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g1",
+      "principal": false
+    },
+    {
+      "titulo": "Oncoclínicas apresenta nova versão de plano de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMjZCMTNlMnJsVDBMSnpkb0lFYmtTRjFjNG9UQUtUUk5uOGVDZHZHWFZVVzF3blR1R1pzd2pvUVZIU3p0YThrc3locDFqc1lrSkQ3UVlncVdwbklBQ0NGME80YzVVNHF6U3h5bnZEZEhTdlJFZ21hT3NXRkJvaFEtT0tEdzhhZTdUOHlYWHBQdE9KcW9aMmFyNXliZjAwX0tOTXJKY01RbF8wc1RJ0gGyAUFVX3lxTFBwVlk0RGdCb3U2WUg3UU8xQVp2VGhqWG5SYmIzcmNpQXZjUjRHMlpqZ0s2alZNcGJ1andpVkgzX1B6UWJZMlpjdDVmd3BWU2FuWlpUUHhiQ0F1dVBOeFZFTC1ONUhKRXlMUWpydFYyenJLT2pTOHdkU1VZdzd5VzBQSkhjSVRyblFyQjNGc0pjR3pMRVBJUTNsZ0hPRlVLS1pYRTcwTzRjU3Q3TFd4N1VaQ3c?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "InvestNews",
+      "data": "2026-10-23T23:17:39.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 14,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g2",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Oncoclínicas apresenta novo plano de recuperação extrajudicial no valor de R$ 5,7 bilhões",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOd2VTX2Q2Vm5VbUhVWnEtNXEwT3pVeFBpVjhKaURzSTEwM1JMZWhDc0QxY01WT0FXaHFTdzVzcmZ1cE9ZazdodVBkcWZtLTdoVHB0Y292bzB5US1fUWFleG83cjFtRlE1dVNubnFxS2J5eU1IRkltUDFMUFFPZ3A3VWVEQnc0N3JEcms0WjE2czA1bDFnRW9UOTZjdUZzNlJfTnRyS2dQMkY3X2xUODZxY20xSWdqbHpnWjRkODZveHFEcnJUb3M0aVl6dkNJTHdRcTZxRGNCVWLSAecBQVVfeXFMTmNxZHA3UEV3UUVPR25vY2hOVXdic1J5RWhuRmlxWkhEZEZKRVprNXlhTFo0emVPeXhCcXFlVFNTN3RIMDdFd2p0X0J6UllPVG9RUmQ0a1lOWEdUR2RIU0hfYUJwem1pakxZMG1kdml6VW1VWVZBd3JPNy1XZFhmeVBxa1hjUF9NdFlnbXp2XzhLNV96aXZyYUdTV242TEc3b2tEU1hzT3JqM1BWZ2lZRHVpRmdjSnlMMjk4SWd2TmNyaER6d0FKVDktalowdThua1d1bU13TlR6WmVvRVNzdEVrZ2ZGaE53?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Valor Econômico",
+      "data": "2026-10-23T23:03:04.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 14,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g2",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Oncoclínicas submete nova versão de plano de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQakJTT3hqallNNDRENWd0eEVMR0Ezd21abmZTakpLOTV2aTJpZ25ScXI2eXB1UFJkcHpjZE1VN1FEaEQ0MVpKdTZHWGFmZ25HSmh6UVpqaVhobGtiVUplbjNBbGg3NnFSSzd4cXRuY0RNUVJTUFhZcUxlMk5veHdpRnl6Z3daYzR5ZDlTeHNKNEpzY1JJeTFKVXZqQnk4TzV1OW4zZWNVNzRhZDBoY2Q3VEJPZ2FwSXlFWTdEbE91TmhoRUZkOHdxbkI1R041Znl0T3JOX21tLUpBZw?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "UOL Economia",
+      "data": "2026-10-23T22:59:50.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 14,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g2",
+      "principal": false
+    },
+    {
+      "titulo": "Oncoclínicas apresenta novo plano de recuperação extrajudicial para reorganizar dívida de R$ 5,7 bilhões",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRE14cl85S1ZRMkZzLWlUUG1VeDB0OGEzUDdQM0hBcEhBam96cFpyVjR4TzlzNE9SQVA1U2VHWjhBQVZFTXdqalhEUDliT3VmdHEzdjV6SkUxWGtHbFdJczR4SHNlOFlDX3NTZTRRWnR3QWFqU3M1ckpyc3NxTkpoZmYwWDhPcEp1TmR2TFBIQmNmemJyY0xlVWNEOFF0RUFoYVhfMVlOMkt4aGJkOEZGd1B3Y3dOMFJhb05DVUZ1YXJhaWJtT0lyMnFlOG54aV9NeGtRWjVaVV9oUHBvZWRRTFdnRHk?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Times Brasil | CNBC",
+      "data": "2026-10-23T22:33:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 16,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g2",
+      "principal": true,
+      "cobertura": 4,
+      "tambemEm": [
+        "InvestNews",
+        "Valor Econômico",
+        "UOL Economia"
+      ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Após negociações com credores, Oncoclínicas (ONCO3) protocola novo plano de reestruturação; veja detalhes",
+      "link": "https://www.moneytimes.com.br/apos-negociacoes-com-credores-oncoclinicas-onco3-protocola-novo-plano-de-reestruturacao-rnda/",
+      "resumo": "Em meio a meses de negociações e idas e vindas com credores, a Oncoclínicas ( ONCO3 ) parece ter encontrado um caminho para avançar em sua reestruturação financeira. A companhia aprovou uma nova versão de seu plano de recuperação extrajudicial, em mais um passo para reorganizar seu endividamento.",
+      "resumoFonte": "texto da matéria",
+      "veiculo": "Money Times",
+      "data": "2026-10-23T22:25:04.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 21,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g3",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 1
+    },
+    {
+      "titulo": "Depois de avançar nas tratativas com credores, a Oncoclínicas acaba de protocolar uma nova versão do plano de recuperação extrajudicial, que substitui o plano apresentado em 28 de agosto. “Foi uma construção complexa, que envolve não só credores e",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBwQjYwLWxoNjdzUUY2MWlDR3E1YzZuMWhjWUVRb3RXYzlhdk5VcmlQZ25wdG10NmUzaVktOEI4ZE85T09vMVg2c29kQklxRGQ5a0E?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Instagram",
+      "data": "2026-10-23T21:51:59.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 17,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g4",
+      "principal": true,
+      "cobertura": 2,
+      "tambemEm": [
+        "Pipeline"
+      ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Oncoclínicas protocola novo plano de recuperação extrajudicial após avanço com credores",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPelZON0NsWkRKY2wwc1Q0OXpyUVlhMmdDYnFDUnNLVEE2UVl6Ny1wY2JoU1p3MkdmRGJwTnAxWlF2WE5OTHF1TWN3a0dDUm1XWDc4UFNDdlRBNHlxd3ZjZlZ2UWVNRFhqV3dPd0JIdTJCano2aGtNTVhGVVNvQjFXRjdtdFdsanFiNXI3Q2ZSaFlUYk1wSjItVFpxSnV3Z0NLcDlyQUIycHV6azVpUFVjUk0wR3hhekF5OU4yU001cFdsZVltcU5COGR6ejNDREs0ZGk5RC1Ec0FzQdIB6AFBVV95cUxNMTAzUVBNZTRzc3BpVXVnQ3BqWE1oczZHRGZoQWxnMFpEY2RIU2toY2ZYLU0yM1FWY1FxZGRBWWJGaEpfdW1maWZkRkZvSHRDZ3IybWlyRndyLW4xWmZDdkRCVFVOTFN1d3RUMGMzalJqY1pXUkZ6b1hXWXBvWXV3SWNWWkRpcFZBS0Jicl9YdzlScmlMaTctak1iVjA2c3Y1a1VWcjBNb0taYkt1SkhSRU9jWjktZ1pfX3paQzVudFNjNVUzVDRwUTFyaDRLcXhna1ZKaENMX3FvbXFFdFBIel95cVotMkI1?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Pipeline",
+      "data": "2026-10-23T21:41:08.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 17,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g4",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Ri Happy pede recuperação extrajudicial e expõe os desafios do varejo diante do avanço do comércio digital",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTVl4SnFOS1pSYTVYMHozakFfcVN1aXBsdjN4d0tKTEFKdXlXcHUyS2l0eU5jRGtxTjRtLUJiX2NCUmNKSlk2UUZ4bHZMN0pwbl95T0NrWC1BZW1JckRZZ1ItN3k1VVJtQ1NPOTFoVzhrN1VLanFmR2ZVVTlYX3BFYVBEUkhIU0lHSWNOZU1NemZjb0NmNlhrZjd6NWU0M3NKQmd5NEZsZnpUWkJMRUY2RGlLWkFoVDd1QjlvV0NVS0RRdVJPaG85Vk9wSXpmZ0E?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Expresso 360 |",
+      "data": "2026-10-23T20:02:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g1",
+      "principal": false
+    },
+    {
+      "titulo": "Justiça homologa recuperação judicial da Tahto, subsidiária da Oi",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5neEpaQVVlV0tfZGRSUHF2XzdGck9KNUhEbGI5Z3BWZU1TRExZY1dyLVdjQmM2LVdGc3Z5eXZsLUQ0NnpvczlkMVFXaThJYXpDYm0zeE45ZXdGU3A1RmEteUt6YUV5dGVXSC0zalBIbnVjRkNZT3JXVktOUm1PY2c?oc=5",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "TELETIME News",
       "data": "2026-10-23T14:22:00.000Z",
       "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g0",
+      "etiquetas": [],
+      "pontuacao": 5,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g5",
       "principal": true,
-      "cobertura": 3,
-      "tambemEm": [
-        "Estadão",
-        "InvestNews"
-      ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -176,8 +429,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g1",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g6",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -193,28 +446,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g2",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g7",
       "principal": false
-    },
-    {
-      "titulo": "Justiça homologa plano de recuperação judicial da Tahto, subsidiária da Oi",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWTUweVBKTnlQMVRrdnNIc1lIUV85Xy1uOXR2VXg1ZHlyQ3V2MllQdkpxRW9lMnlmbzNUZk1JZzNvRkhLdkoxZ3hqM0dWUGhfTUc4UVdteERRS0g3RkVSM205dkpMRHNGd1E2S0U5ZXh2d2xiUDRoMF92VFl0Q3BXUVd3bElac3ZORTEtTXVFbXhfeVJMaVQwc2lJUW0wdHVraldtNDlZQTlNdVRqRVVYejd2T1VJemdRM1Jr0gHAAUFVX3lxTE84bEdlekZ1R21yMUU4bmhkeVhLRkRSMkJ3NlNHMkE3bmRrdUtQLXZiUVhMd3IycVBDTTNVZHd2ZnBkX0EzbHhGTTBVTVJsVHpkYnNScHFNOUM4TW1OX0RpOVBITElWbF9BaV9ucXIxRGJRNi1MMzNRb3dXNHBMV1M2czZkVU1rNVc1YjB2VF9ZZ0lRNnN0SmhiZ3VCSTlITVhsWGFURFpWNmhoNXJ2STFyOWN4X1JRWFpzZGRKUlBFVA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Estadão",
-      "data": "2026-10-23T00:51:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g0",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "EXCLUSIVO: Com dívida de R$ 1,72 bilhão, Grupo Euro17 pede recuperação judicial",
@@ -227,7 +461,7 @@
       "etiquetas": [],
       "pontuacao": 28,
       "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g2",
+      "grupo": "g7",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -235,24 +469,7 @@
       ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Braskem (BRKM5) enfrenta pedido de recuperação judicial nos EUA por dívida de US$ 589 milhões",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMzB0ekcxZF8tSXlzZmhsa1pQT0owSEx6U1d0LTRJU2ZwaUlUY3B3ZWt3aUVab1l5Ry1SZWl3ZHFjSmZZMXMyWFF5ZHRTX0tRVjVneGVEb2lGS3ZaMkpKTjRNN0MxaHcxVW5Qb0VMT2RUVDVCR0VsYU56RlJaczVZaDN6OGk3OWF4XzVrLV9Dd0xjU0p2dklCWktjbkhIMnNlVktSYXotdlJ1cHAydmRSbl9ScmYwNXgyZ09QMUFZVTNaZFU0S3FDZXR4Zw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Guia do Investidor",
-      "data": "2026-10-22T16:32:03.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
-      "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
+      "tentativasModelo": 1
     },
     {
       "titulo": "Justiça aceita pedido de recuperação judicial do Hospital Beneficente Portuguesa em Manaus; dívida é de R$ 28,7 milhões",
@@ -264,8 +481,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 19,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g8",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -281,8 +498,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g5",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g9",
       "principal": false
     },
     {
@@ -295,8 +512,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g6",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g10",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -312,8 +529,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g11",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -329,9 +546,16 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
-      "principal": false
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g11",
+      "principal": true,
+      "cobertura": 2,
+      "tambemEm": [
+        "ADVFN"
+      ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Getty Images pede recuperação judicial nos EUA e planeja fechar capital com apoio da Koch",
@@ -343,8 +567,25 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Justiça aprova recuperação judicial da Casas Bahia, com dívida de R$ 17,3 bilhões",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQa20yTmoyZkEwMWk0RzB3SWNaaWFCSno3TDIwTVhMdW56YW5IN2JsUVRUU3ltNG9mVjlTaXRJMWtpM0FZeEdvV1JQQUl5Zk10UGtjal9oejlxM2l3MGpEYzdYMjBpX0RVR2dZc2dRVFZTVXhmcFY3bkgwVHM1cmZWMVE5VTNUcUZvaTVSRkdFSDRyU0dJWURDbmxENjQtV2Zxb29QQTYyeU93ZEQ0T3FGZExtd2dvS3gzS1BpT9IBxAFBVV95cUxOYjYxWlBfOWtTVjFPMVozbXFJZ19ZbXBvcGlEQk9PU0JuSjVuT2FJQnF2LVdzaFhWR2R6cV95NGxJRzRSTFBVbUZaV3BmR2VDWS1jWElmYTRTdE9DNE1YREQ2b2dnVmEtaE1pMW9zbEVxQklSbkFmOUg2dFhUY2Z4RUNJQmMtNktnOEE5MVQyZjNWd2l2Ti11WFFRVVFOR2tEci1XeVFYSXNBcFdIUDl2a3pEUDQ5QXRVaFVFZF9Cbl9fdDVO?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "DOL",
+      "data": "2026-10-21T21:38:51.000Z",
+      "categoria": "mercado",
+      "etiquetas": [],
+      "pontuacao": 7,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -357,8 +598,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g7",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g14",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -374,8 +615,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -388,16 +629,9 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g9",
-      "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "Diário de São Paulo"
-      ],
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
+      "principal": false
     },
     {
       "titulo": "Justiça dá novos prazos para Apex entregar documentos em pedido de recuperação judicial",
@@ -409,25 +643,25 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g10",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g15",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
     },
     {
-      "titulo": "Justiça aceita pedido de recuperação judicial do Grupo Casas Bahia",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUGZIOTlSdWVTb3FJRFNfeVlVZlJDYWtYLUpwNHZKaFFaZm5fN0NrQkNzMkdnT1ZUSThDTW9nR2RMeWJkVTlTTEUzN3NUNm02blVCQXhwZE85UkhMNWFRT2RCQTRENF9ZWkFmd3dVSTFqd2dvSDBhWDltdk5ic0tUdGhLMURDMEprMDZkQlhVc05tbW4tMjZFdndZX21wVlZUZ2hwSm1PVzhtQ2M?oc=5",
+      "titulo": "Justiça aprova recuperação judicial das Casas Bahia",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUE52VmJ3OEFzNlpkNFJfX3dmMmhsOWdlaEZxcWJPRUZYUEw5Y1p3dXlKYzd1VVZnRXk4cTJENWYxRTNzMExGQUxZSGxJdjkwSllEaUVpdll3Qnk0X0xpSHFtaWY2TTFfVk91WmFkMHdLMnVqeFVGcF9sbHZlbEJlU2F3TDVzT1huR05VQkNnTUcxU0Nod0NVaGFiTmJqSUsz0gGmAUFVX3lxTE1uVGx6YWpMQU81dERyLWpYQ05QNWswaHhuVlBpWF9VSjZ4eG1NUTFEbWQ5V1d3aElGQjBaUVhRM0JjZUJGVUtJSnFVS2NybjlEVjRXUUpObTlpS1BZRGtXczJ2TGpSMTM5SklJMGR4aUU5eU5VdzZQM1ltQm5EV2ZjdFlUVXJpc0FXNTJ3YXg2anRwRV9TMXFUWmF5a0JzUDVLTE1RcGc?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "AtaNews",
-      "data": "2026-10-21T20:13:31.000Z",
-      "categoria": "novas-rjs",
+      "veiculo": "Tribuna do Paraná",
+      "data": "2026-10-21T20:07:00.000Z",
+      "categoria": "mercado",
       "etiquetas": [],
-      "pontuacao": 19,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "pontuacao": 5,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -440,9 +674,9 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g9",
-      "principal": false,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g16",
+      "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -457,28 +691,13 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 19,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g11",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g17",
       "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Ri Happy pede recuperação extrajudicial: o que acontece com quem tem vale-presente ou troca pendente",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSkZVVGZoeDBiT0JMVVRtVWJuWmxCaVdhY2FsOFQxZVdNRE5obEcwZHR3ZU5pbjRrQzZoalJuaGtOYUxUWE9lQy1yeDFHOFBBSDZaT2ZCbFVtdlZuOUozX3diSkdDRW0tSWJQOEREaUtKRTR0ZWpMSWw0cmVMbGFJSmRCV3dQMGg5d3Jkb3BlRDVaUHBp0gGaAUFVX3lxTE9BVEdaZGJ3QVJQNDNoMFB5Nzc2SlVTVjdTSC1VeDhKR2tubU44blBfdjVjNVRkaVpNdzUyaXFxb1NWY1cyXy1nbGdMWmZ3cThkdGxtQzNIaDBYcVFxRGNYdTJ3dnJvbXZGRjhCY3dMVk5zTnNqa0RVeTI3ZzBmMkI1Ump2SU0xLV85TE9nSm9ram5fa2w2b24zZnc?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Banda B",
-      "data": "2026-10-21T18:22:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
+      "cobertura": 2,
+      "tambemEm": [
+        "G1"
       ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -495,8 +714,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -512,8 +731,25 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 19,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g17",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Justiça autoriza processo de recuperação judicial da Casas Bahia",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMW1uZFpLSVpYUnplMTFtQWlrVkVrMUNPN1RmbVpYMXo2WXRZOVgxU3k5bGl4T3d3UDFPT2dZWUJ3X1RGUEw2V0FCVUU3cVR2ZGFpYjJrX3hxNjE1TlN6VEcwRWJSMmFTR2M5aUhuQkhyRGNWTTNJRzZvTEFfa20tckhyazVaeTg1VjJHd3REeXZJLVBXc3o4Yk5HenJfbDE3YzNZUFBxLW1udDl00gGwAUFVX3lxTE1GcEhFR0Y1eFlOak53WnBvN3F1bjRIVnJMX1R0SHNwZEFYbkZVZ0QtUnNLNmNZbDlxZm1WelR2QjBJZWVCZUN6QVkwMGFoZElkRU8zdlowSlNoMEM3TlE4Vkc3dlpocnNPMDFYOTcxcHZva2xxai1WT1ZjamFMdHlsMTNqZWdoVVZLNU9VME1jcE91VGU3dndHRFNDQ3JoLTVjT2R6QXVrMmtQeExHSHct?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Folha PE",
+      "data": "2026-10-21T17:50:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [],
+      "pontuacao": 5,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g9",
       "principal": false
     },
     {
@@ -526,16 +762,16 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
       "principal": true,
-      "cobertura": 10,
+      "cobertura": 8,
       "tambemEm": [
-        "Guia do Investidor",
-        "ADVFN",
-        "Estadão",
         "Vero Notícias",
         "BPMoney",
+        "Estadão",
+        "ADVFN",
+        "O GLOBO",
         "TradingView",
         "G1"
       ],
@@ -553,9 +789,12 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
-      "principal": false
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Justiça aprova recuperação judicial do Grupo Casas Bahia, que tem dívidas de R$ 17,3 bilhões",
@@ -567,22 +806,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça autoriza processo de recuperação judicial da Casas Bahia",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQlFKelJhc3dQaUNhSUpycHJjWDlraldFRmU0YWJ2YTlYNnltWWNUUmFYYzE5eTdUdHliU0ZaNG01ZVYxM1F3aG5RWVA5XzBpNUt2a1pab2FwYXZSNkFCM01PSGNlZ3JFRlBDZC01M1R6MUlQWTZjaWFBWnRac25PNVpidUZsbzBFb3pLOGVNaVhib1BHWVFQVW81UkJKNWlGNkNMOXNmNmNhekRMaWc5TUJkZEdpcEc1OE1QM2tJZUlPLVZ0cjRwZlRweGbSAdsBQVVfeXFMTjA1YkZiSTgyb2w1MmMwMDBLbGdXelJ3clNyd0hoTC1MTDVxaEwxTlVNZm1INjd5dFFZUlFKU1pzTWhSWUlRSlk3bW90a3lsT3lnZzJySzBrSlU5MVdVbkxBMm4wLU43NFIwOFlRSW5KS1IxUkpuc3BpcTFGWHRTajNKaGtFSEktdUQ2bXZrV0hZejB0bHB5cGdUelRtNjlsZ1lBY3h5UXhpQVNlaEtIZ09LQU0yNU8xemx3aDdqRXprVGFCSDVMUGxOcXJFbTlzNUh0d0JoUzA5Q1Z3?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "O GLOBO",
-      "data": "2026-10-21T17:08:58.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g5",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -598,8 +823,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g13",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g19",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -615,8 +840,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -629,8 +854,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g5",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g9",
       "principal": false
     },
     {
@@ -643,8 +868,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -657,8 +882,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -671,8 +896,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -686,31 +911,37 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-10-22T14:52:48.120Z",
-      "grupo": "g5",
+      "grupo": "g9",
       "principal": true,
       "cobertura": 4,
       "tambemEm": [
         "Suno - Investimentos Inteligentes",
-        "O GLOBO",
+        "Folha PE",
         "Metrópoles"
       ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
-      "tentativasModelo": 1
+      "tentativasModelo": 2
     },
     {
-      "titulo": "Justiça aprova recuperação judicial do Grupo Casas Bahia",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbkhhSm1LVGtkNlUwLVoyblJ0NTZXVG5ZWjR6RDZNd2lRVV9yWWhTR3E0WjFPTk00YTVxbEJWaGtvNFpXakNLa3AyWENONEpldlo5VzNwVjFCR0R5QkhzZXBqcmhRcXBKU1k2UjM2MVBMYzdaTENqV01HVU5OMWszQkZuSXZEb3B4cG5ZaGZ4ZU5fR0o3RW9hMmVac0xSdmhTaFBBatIBqgFBVV95cUxQUlljMWxuUE1zME1jejJ4QnkxLTRSNVJwTzJiTzUwSXphUmJDallLeHNVNkdxZFVzZng0eFl6aGpOMzdwZGZYU1M0NDVjYjRKcWVBcmRvYXBJUG80VFlXaWpiVm5Hem1wSmdyckpWVFVkY3lsc1hPc1RIWWg4VzV5QkI4b2JpWTBHcUFPUU92OHhjZUZ0cmFxckZ6NDRxZXlqYjRkY3VaOEFKZw?oc=5",
+      "titulo": "Plano de recuperação extrajudicial do Grupo Pão de Açúcar entra em vigor com prazos para credores",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSk1UTGJDSkxqZFNjZFV1MXJMVnIyU1R3XzVOWnY3bEhWY1ZrRFFRTXhidXlqN3I3dmJIQ2JLRkN0UnJCanpMdlVtN0RUNzJRS2pjMzFCU0NZQ0h1MjNCVF90aVdkdC1FX1RaSmFJZGlsdl94NDZSaHE4QjA0bUY2SkpoTDZPZ3pSSEZTSHQ2Ym8xZmNYMEc3VWdZN25KT2MybnJqb3RVSWpTQkxzU0d3TmFpTUo4LVZPY2o0eTdPV3ppbFBfM0FwSDZ5NnNEc2FKV0FZRENHM0pjNlU?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
-      "data": "2026-10-21T15:07:00.000Z",
+      "veiculo": "O TEMPO",
+      "data": "2026-10-21T14:55:10.000Z",
       "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
-      "principal": false
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 17,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g20",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Justiça de São Paulo aprova recuperação judicial do grupo Casas Bahia",
@@ -722,8 +953,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -736,8 +967,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -752,8 +983,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g13",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g19",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -761,7 +992,7 @@
     },
     {
       "titulo": "Pão de Açúcar (PCAR3): Justiça homologa plano de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRXVzV2pKNGhad0pXSllfUHAyZDhJelo0NVVZRFJIRG9qWHk1eUVDajF0NlYyUDZIMFJteXJYQ1hXM3hlVF9zSktYYXpLbTMxdVhyVjVnS1dCTUdFYmNhbWU2b3U2X1lBY0cwZnBsOFozZnYxeVRpX0lxTkhMeXkxeFdVUFlVQXAtMHNnS0RiRXF6cENCLXNnVS1XaDJJWExpOFhzVGNEWktqY1R0VlBFQnkxWVZiejUzU1FDRNIBvAFBVV95cUxQRXVzV2pKNGhad0pXSllfUHAyZDhJelo0NVVZRFJIRG9qWHk1eUVDajF0NlYyUDZIMFJteXJYQ1hXM3hlVF9zSktYYXpLbTMxdVhyVjVnS1dCTUdFYmNhbWU2b3U2X1lBY0cwZnBsOFozZnYxeVRpX0lxTkhMeXkxeFdVUFlVQXAtMHNnS0RiRXF6cENCLXNnVS1XaDJJWExpOFhzVGNEWktqY1R0VlBFQnkxWVZiejUzU1FDRA?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOR2hwSllsSUVwN0s5NVFqUnEtZnQ4X2tfY3c0Vll3Unc2Y19sN3ZhM2VpMUdQWkE3bTdJZUd0WmJ6UGF2V3hPV2pBWDF6bk9xZ2VTWmRueXhfV2huUkdWeFJwMEF2TW5Qb1dIRXBLdjFSYV81LXBxQVk0T0hfNnJ4Z1dLZTBqS2VYbzR6bnl4VTBfSVJ5dE5jbmhFaFVuVFFjSmxzUnpXOWVQY1dWMmc4VG1mZERXUzjSAbwBQVVfeXFMUEV1c1dqSjRoWndKV0pZX1BwMmQ4SXpaNDVVWURSSERvalh5NXlFQ2oxdDZWMlA2SDBSbXlyWENYVzN4ZVRfc0pLWGF6S20zMXVYclY1Z0tXQk1HRWJjYW1lNm91Nl9ZQWNHMGZwbDhaM2Z2MXlUaV9JcU5ITHl5MXhXVVBZVUFwLTBzZ0tEYkVxenBDQi1zZ1UtV2gySVhMaThYc1RjRFpLamNUdFZQRUJ5MVlWYno1M1NRQ0Q?oc=5",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Investidor10",
@@ -772,8 +1003,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g14",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g21",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -790,13 +1021,14 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-10-21T14:51:57.536Z",
-      "grupo": "g8",
+      "grupo": "g13",
       "principal": true,
       "cobertura": 21,
       "tambemEm": [
+        "DOL",
         "TradingView",
-        "AtaNews",
-        "G1",
+        "Extra online",
+        "Tribuna do Paraná",
         "ADVFN",
         "iG Economia",
         "Estadão",
@@ -816,7 +1048,7 @@
       ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
-      "tentativasModelo": 1
+      "tentativasModelo": 2
     },
     {
       "titulo": "GPA: recuperação extrajudicial leva B3 a bloquear títulos por até 60 dias",
@@ -831,7 +1063,7 @@
       ],
       "pontuacao": 9,
       "coletadoEm": "2026-10-21T14:51:57.536Z",
-      "grupo": "g15",
+      "grupo": "g22",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -842,21 +1074,21 @@
       "tentativasModelo": 1
     },
     {
-      "titulo": "Grupo Canaã entra em recuperação judicial com dívida de R$ 15,7 milhões em MT",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaWpiaUt3NTNSb3RKVnJKY0tydkJJLWVSN1V3eTI3OGVwRkR2ejNZTXlFS042b25NbjRWanNITnZhRFUzNEVZNWFHWUt6U0txaDRCcGpjeFc2WkZuVjFlSlBBOFNFYUtOTVlKUnhsWDEwTW9lZWZxSmI4ZFN4clZiTjNfU2RDMWVzMkJkR21lUHZmcGpCMGpTUXNidFY3U0pfcENGWlZSOWNjVUJBUU9XZ2g4dXNDbnJvN1hib0U4WG5nOGw1?oc=5",
+      "titulo": "GPA tem plano de recuperação extrajudicial homologado pela Justiça",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMEUwOTExTUM1WkYwX1p3cjNpUGVhTkJVVWtyYWV5RElrRlJyOF8ta0hSR09BLVlrSXp1VUJ2Mjd4ejk3WUZFUDhuUWdUVGlwWm53d2xZTTF5WnFwbTA2QTRsUUZTNzZpLUFrekdwOVpoNFRhSTA2MWVGajNRcEVmSkgzbFdZeGZSaDRGTnR1VllsOUFZWkV1RV9kYjZNSEFoTm1R?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Fatos de Mato Grosso",
-      "data": "2026-10-21T12:44:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
+      "veiculo": "Giro News",
+      "data": "2026-10-21T13:23:36.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g16",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g19",
+      "principal": false
     },
     {
       "titulo": "Getty Images entra com pedido de falência pelo Chapter 11 nos EUA e planeja fechar capital",
@@ -868,8 +1100,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 10,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -884,9 +1116,29 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g13",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g19",
       "principal": false
+    },
+    {
+      "titulo": "Companhia Brasileira de Distribuição publica sentença de homologação do plano de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPdUxmOEw4UUxlQjJzeUpkQ3E2anVrbWh3ZEhDWFI1NmNWMVFFRkdkdnFUUW1MbGQweXU4V3A1MjBaN2h6U0E3bTBfaEFkMEFnZW9YeXdVQUJUOEdRNTRWY1hLZU5SakJtdEc2UVR0cXJ0Yk1zTjFFdU1SY2oycjNhNEh4a0paY1FmZm5mVXhxWVAxSnpWWHhraWgyLUluRVlrOU9VcENJeUM5dUp2TEVNdVMwYS1VWF9KZ0xONTYzRVNDZzFkM3VjSGJvekh4LWlxaU9aM1FVcWQtUVRR?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Clube FII News",
+      "data": "2026-10-21T12:40:14.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 20,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g23",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Sentença de homologação do plano de recuperação extrajudicial do GPA é publicada",
@@ -901,15 +1153,17 @@
         "Extrajudicial"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g13",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g19",
       "principal": true,
-      "cobertura": 5,
+      "cobertura": 7,
       "tambemEm": [
         "ADVFN",
         "UOL Economia",
+        "Giro News",
         "Money Times",
-        "Times Brasil | CNBC"
+        "Times Brasil | CNBC",
+        "InvestNews"
       ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -928,8 +1182,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g13",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g19",
       "principal": false
     },
     {
@@ -945,12 +1199,9 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g0",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g19",
+      "principal": false
     },
     {
       "titulo": "Getty Images, agência de fotografia americana, entra com pedido de recuperação judicial",
@@ -962,12 +1213,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g17",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
+      "principal": false
     },
     {
       "titulo": "Getty Images entra com pedido de recuperação judicial nos EUA e avança com plano de reestruturação",
@@ -979,22 +1227,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
-      "principal": false
-    },
-    {
-      "titulo": "Americanas conclui recuperação judicial após quase quatro anos",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdzJjSHN2VFplMVRTR3dPdkVpaE82cXZPcmNKYzR2OTZUeExTVU5yWjlBOEpSMmxQbGUyemRrTXpFbUR0TGowSlZYMGFHbXI4UkVLb3E3X205eEdBNkZRQVNCeDFuTUllUUZsUVNHV1RXZTJOZGw4Q0RrTGJCZ2R2Z3NiR0R4NUFTMlI4dDJUclg0M1YyNk5tMEQ0MzA5ZmVuaEtkeUI2LTVoaEczWXlCMkZ4TmtSazA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Correio do Povo Penedo",
-      "data": "2026-10-21T06:43:03.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
       "principal": false
     },
     {
@@ -1007,28 +1241,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g12",
       "principal": false
-    },
-    {
-      "titulo": "Goiás concentra quase 19% dos pedidos de recuperação judicial do agronegócio no Brasil",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNGZFclVYQUwzYXJyRHU0NU1XRmplbU5UOF9VT0xmSGhJYklFNFRTYks5RlNqZEp0LUcxSjFISWtYaFhKRHcwc3RKNjEzb3o0SGROemdsU2NMUlRQX01UZTlMcHJLblpKQjNnWHIxd0tpVklpYlhHTlluS3BLV1BxNEJpODc4dTB6WHZHRWRwU1pmUjdfSWZZdGJ3SG5HMEtnd0ItTzJnV2Yxb1hvTHhnNG8yUktob3d2T3kzOVlodjB0bWl1OWVXNWEwbUFJMVAxUFJZcldhODk?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Jornal Opção",
-      "data": "2026-10-20T23:01:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Agronegócio"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g19",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Americanas sai da recuperação judicial depois de quase quatro anos",
@@ -1040,8 +1255,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g24",
       "principal": false
     },
     {
@@ -1056,26 +1271,12 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
-    },
-    {
-      "titulo": "Americanas (AMER3) dispara até 25% após sair da recuperação judicial; o que esperar do 3T26?",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdHVDOEZaS241QWduNk9vaEExTGctWlVHbTlNdko0cHNRWmY3VDVLODZMR3dGbWZ5WnNUSWtuSU0ydVNhTGo2bXZ4Mjg5N1hWYkVDa0I0OGQ4OWNXZjVaNmlKazg5akFVRl9aN2FlMXphZ3BiSk1zSWVtbnZYOTlWT3ZaTUxMVFc0WTg3ZGhUYVZLdVcwaDNFWTNPMNIBoAFBVV95cUxQWVNCZnFaX2ZXZDFLMWoxWmprTGd4UVN1bEpaUUpYWmp2bml2Q3M4NzJrZTM3NzNFcGdkZS1nNGRBbXEyX1VBelZaWHcyajNGbDhCSkwtTmdCUGlOamZyRnVOdUpua08yMlVqMS1EbVhxUzI3ZVFmTG9BdndOS29pVnZQOGhSWlFMVFJEN1hqQ2twZkktNUhIeUdHYktadURO?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Suno - Investimentos Inteligentes",
-      "data": "2026-10-20T19:15:03.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
     },
     {
       "titulo": "CASAS BAHIA: ACIONISTAS APROVAM PEDIDO DE RECUPERAÇÃO JUDICIAL",
@@ -1087,8 +1288,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1101,22 +1302,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
-      "principal": false
-    },
-    {
-      "titulo": "Ações da Americanas sobem mais de 20% após Justiça encerrar recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcjh2dDlETGowNlMtRTl0azZCYTU3U2RJVGhUQ0RKdHFBa3VGUUxfMFRsbHdrbHFSTVRfRGNYRXNRWENNTDQ1b2ZQTlhpR25YNVhJZndhSDZQZFpSMXFNaDJXWklLb205M0lyVGFMcTNOQkJIZ3NZdUtQV2swNWtsYUtodGVGQzlocXZFLVFGQkpCY081SGMwUktRWmVlUW5m?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Mais FM Iguatu",
-      "data": "2026-10-20T18:51:58.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1129,22 +1316,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
-      "principal": false
-    },
-    {
-      "titulo": "Americanas encerra recuperação judicial e revisa marketing",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVmxtMzFrYjZIbzM4dWVmVG9xMGxqdVF0WlpCdkxsMmlxbHZ3VVpJRnBMMUx0NWNCQTRCaVhudUFnTTIzYTlybTFmeFRnWDY2U1BRWmFaZmRNdVEzU2VmejR2WXRndEtGMGpjZXZsRUp6S1lzNVBEeXh4Nnp6WUQwMVRJd2pLMDVPX3V5Nk9QUzRLZVlYTU9xV2JiWTVUeFI5VXc?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Meio e Mensagem",
-      "data": "2026-10-20T18:30:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1157,8 +1330,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1173,8 +1346,8 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g20",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g25",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1192,51 +1365,12 @@
         "Extrajudicial"
       ],
       "pontuacao": 10,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça encerra a Recuperação Judicial das Americanas",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOS3dGcUwzUXU0TzJ0bm5xa09jbllmXzEzX2dMclJCV0MzaElJcTNnWXZtTzJ6MEROSHZqOU9MMzV2anZPSlZGVEtxTTNERE11NVBJMXFNU1pKYUtBenY1OThCYlJ6UndWMW1MYUVFNUdFVXF1cTc2Qm5lMEZnNTlWRTZhbldkYV9uaU53RXJLajI?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "A Tribuna RJ",
-      "data": "2026-10-20T14:53:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
       "grupo": "g18",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça encerra recuperação judicial da Americanas após fraude de R$ 20 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUFpSeFF5N3NGSDdtYWRBU3RLVWNwMUFUSVpyYk5JZGZkZGFKeEprRXdIX3BjNlF2V3dmVzhyT1FzN0JMU0VqWGk3NGF4QUl1X0hJSjJ3QWJFal8yV1FsM1pSVFNUc1hwQUxsbVlBWVV1WVQtN2VJSGNRdy14OVAwUDQ1U3o5TTFZT3ZGWmRGZEZQd2N4anVTWVByR0huNE9oNVFfNDdJYjBCNWRTMUVobzBDSkk3dUxoV2M0?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "bra1.com.br",
-      "data": "2026-10-20T14:24:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
-    },
-    {
-      "titulo": "Americanas encerra recuperação judicial, mas ainda precisa cumprir acordo com credores",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa0RpWkFaNHN4TzQyb3pNQTdBS3BVSmY1ZDI3aXI0OGZhQ0kzN2NwZXVONnczb3J3V0duVlZmTjJsbUl3UFNBWjRNeXJ3RThIN2FrRUt6X0pycHRCN3l1UjVnU3lWaGI0VVlIbFk1M3U0RnBNNXliazJFMWxYWkdUNHhWcDFpcHF2ZkFBbTBXWXJQenNfcmRhN25LQnRFOVdTTml3RV9wbWdaWHBEU0gxV0lkUk8?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "tmc.com.br",
-      "data": "2026-10-20T14:12:49.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Ri Happy entra com recuperação extrajudicial para renegociar R$ 827 mi",
@@ -1250,8 +1384,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1266,8 +1400,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1282,21 +1416,7 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça encerra recuperação judicial do Grupo Americanas",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZUg1NFFOYzdScWZwZWNoanFETlp5dkhGWXJINjZacG1fOWFkbWF1eTJZUjBmVHVnX0Z6U3JlWkstQmpIejNUbktDMnhtMmdGczd3cmczeC1GNk5VTllzNVhFRFRlNk1QWG5oWGZuSDJ0aW1CRndPUVRvYjZaNVBNc1J5UEhlMnBpd0RsOU9qV1pfcVVz?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Opinião em Pauta",
-      "data": "2026-10-20T12:44:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
       "grupo": "g18",
       "principal": false
     },
@@ -1310,26 +1430,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
-    },
-    {
-      "titulo": "Justiça aprova fim da Recuperação Judicial da Americanas",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcUk4R2pFOC1BQnZzYWxIenBwNFp1YlBjb2FTQzRZR21TM1hEQUJHU2hkX085VU9QS29PZVR1c1p6N2pGNUVrWnducVpraU1CNkNMTy1VQkg0QzNsWUoxUWdWdTlXOW5TaHRFT2FTMGY5Y1BBQnYzNkIwVndZblFaUklxd1UtTGNMSWlEQ2YtV2l3dFhZTF9lOWln?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "SuperVarejo",
-      "data": "2026-10-20T11:55:13.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g21",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Americanas encerra recuperação judicial e inicia nova fase, mas decisão ainda cabe recurso",
@@ -1341,8 +1444,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g24",
       "principal": false
     },
     {
@@ -1355,38 +1458,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
-      "principal": false
-    },
-    {
-      "titulo": "Grupo Ri Happy pede recuperação extrajudicial para renegociar R$ 827 milhões em dívidas",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOE1NVkxTS2FkU0tMWVNveHR6M0NUdWVSZUxxZnRoQ1lITDRwckpfWVA2TFVWUHRLNUFCZmw4NEgtSVFIQmRRVGVlUTdYUUZOb0ZISnJOU0hWTWJDc1hGVUdEbzRmUFVXN1BVNnlkZUpnWF9aRmhUN1JocDZydVBNZW9TRWdrRU4wamhzazhDOWRyYVN3UUg2aElMYkZ0VkNUdXh4bndVTl9PUDVEeVoxWGp0N0p1bFFrRFBTRl93ZGJJZw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "BandNews",
-      "data": "2026-10-20T11:17:06.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false
-    },
-    {
-      "titulo": "Agenda de empresas: Americanas encerra recuperação judicial; Ânima assina acordo com Einstein",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNYlF6MmRLMUFhR2pmdld1TF84RXItSmtLeEV3MVd5M0F6Y285T3Q4d1daMDdUcjFkUkxUUVdWNjlLbWNoRnlOdHYyR3pXTDVXR2lfRkZjcjZJVktMMUJEbk1CVDVlSXpjNXdvb1FBNjI1NzFramlUalJGWEllYnFqOWxYcmF6Qlh4S0tYTndwTEZ5Z3JSc2E0Q2ljTGc2LWFwVkRvenhvcDUzOEE2ZVlNengxWFZfNUdVZnJ3azFEeWNNSjVxVjFacjhUTHBlVGdFUE9LMlBDZVlvSHhoSFZsS1prZ9IB8gFBVV95cUxQY1lSbkNMZnBQWUEzMnlnYWFLYy1fY0Z6VUZZVUFUX2FCTVZQVGlGc2ItRWhMWkNMTmwxa29WMTZDb2E3dXhEbzBCS3cySTVkelJxZG5IVk9GSnpnTlpCZER2Y1JmdHJRcHR6YVh6MW1qdlVmcTBMRlhwSjhlcDR0QlUtSlN0VnV4TWZ3QzVNSkZjQzhEaXZiTTdnNGUxdjVibVhSNGZKM1RoT0ZqdzlpRFpuSDdvMUNhR2Z4OXRySDE0Rlh6S0VnLXhVTkZBMjhIZXZPTV9faWhyQzlNazQ1c0tiSHU3QVRvMnBXNl9VS3cwZw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Econômico",
-      "data": "2026-10-20T11:15:13.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1399,22 +1472,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça encerra recuperação judicial da Americanas após escândalo de R$ 20 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaDFhdzlEb3lKXzA5aFhibjFzMkd0andyYUFMd2FlSkpXUGtIdVpTdjFkX2tlWmRVV3JLa1R0NEFxZHMwSnRPWG8tVEtvMGJwSHJRXzYtNmdPSGFWaFFlX0YyeHJYYk9sS2FaZjBtSWQwcC1pdGt2V3pmYU9tLTJEd29kMHc1QTY0VXR2MThTclB6dTJoRDRVOFBfWER1bWl1b0FRdzd3NlRoSjhMYl9tSW9HaklSWXRxY0lBUFpR?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Primeira Página",
-      "data": "2026-10-20T10:37:23.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g24",
       "principal": false
     },
     {
@@ -1428,7 +1487,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-10-20T14:40:47.300Z",
-      "grupo": "g18",
+      "grupo": "g24",
       "principal": false
     },
     {
@@ -1441,8 +1500,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g22",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g26",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1460,8 +1519,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1474,8 +1533,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1490,8 +1549,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1504,36 +1563,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça do Rio encerra recuperação judicial da Americanas",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSW5oSVMwcnFnb0wtTk9HZW1LdHVKYWUwRzVTWVlKeUJESVZGVTJNX3JDeUh3OC03SXBjOG1mcHlCN0xfQmV5NnVmUTRPdmJfZ3ZicE1zbzJ2Qjl0M1dDdXZKRkpPR3J6V01pODlJR2t4ak9nTU10ZC1jb3lWemFzSEFmaUFJVU8tNzEtTzQ5blNvTmhJ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Monitor Mercantil",
-      "data": "2026-10-20T00:33:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
-    },
-    {
-      "titulo": "Americanas anuncia o encerramento da recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdi1FR3BzOWxVMTg2RFpXbG9BazBXdFZTN3ZVU3UwS0xzS3U1LVB0UWs4N3pGNVFvRVQ5cnpodTZZYVlsU2hkTFR1bWpoNWxBU0hNUjBtZElNYzNnaXMyOUZkMlVNbFpqYlhCWXJLTnZJemc5Qk55U25GOWJHbUJqUXhrRXBsWDJaRk1NNlJSSk5odkhUejRtMA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Finance News",
-      "data": "2026-10-20T00:22:04.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g24",
       "principal": false
     },
     {
@@ -1547,69 +1578,20 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-10-20T14:40:47.300Z",
-      "grupo": "g18",
+      "grupo": "g24",
       "principal": true,
-      "cobertura": 22,
+      "cobertura": 7,
       "tambemEm": [
-        "Correio do Povo Penedo",
         "NSC Total",
-        "Suno - Investimentos Inteligentes",
-        "Mais FM Iguatu",
-        "Meio e Mensagem",
-        "A Tribuna RJ",
-        "bra1.com.br",
-        "tmc.com.br",
-        "Opinião em Pauta",
         "ADVFN",
-        "Valor Econômico",
         "Migalhas",
-        "Primeira Página",
+        "Valor Econômico",
         "Folha Vitória",
-        "Monitor Mercantil",
-        "Finance News",
-        "Paraíba Business",
-        "G1 Economia",
-        "Valor Investe",
-        "A Crítica de Campo Grande"
+        "G1 Economia"
       ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
-    },
-    {
-      "titulo": "Americanas encerra recuperação judicial após cumprir plano aprovado por credores",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOU0l3NkNaMUpuNGQtR2dJWU51UlZ6Y1d2UEswc0F0NDI2NTRNYUhVZGdJZVFTY2R6OXlFeVBKekpveG4wd0NoeHZEQkw1M1FTMnpVcjhueGxiTUtkTTJvMU96aWExeF83emVBaV9UNHVTSTVFV3ZPR3p5RTVZRzhsMk1wZlJEeXE4b0tWSHIxYS11MTNhWUxjbE1rdHJHWXVwZWlBUjRtV29jRGtqVkhoNV9uZzVxT1JFbVY1cmtCc2I2Yk9aVnNZMzFYNEk1MXo4czA1bU930gHbAUFVX3lxTE9weFNoV3kzQWtGMEo2ekpZQ0xQcXh2WUNnazhYLWVjWUtEZV9VLUlQZGVjOFpzX0I3eHBoRzh4SGpOSFI1czBpNXppcTFNV3J2Y0RUQ3JLZUdvcnJKdU5iUkxNaHBEUTJBOUNDU3d6U1hZUG1uX19DZlFMeEtFZEg1Wmp5a2RnalY1TGhKWlB4d0M1NDJYQVg5TzEtVEwtZlhuNVNXSXN3dXhOOTJmNTlYZk1Sd1FjeDFBbm1OaVNicnhiVjVoalFTcTZsZ2UwaXdfZXkzXzZTejl1OA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Mercado&Consumo",
-      "data": "2026-10-20T00:11:03.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g21",
-      "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "SuperVarejo"
-      ],
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Justiça encerra recuperação judicial da Americanas após quase quatro anos",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON2hqcVZMLTU2QUZTWF9iRTBndi1CMkZybHRhekMwQW5vYV9ESlJNaV8wZWtGSS1zMDdObDNnMThCWDQzakVwc3VVX1FmbFdGNThIN2Vma25EMnBxYzlIRklwOVRTNVpDdmZpWW9zcU5zeTFmbTRzZEs3UkNOekstQVU3Y3FidXlFQnNDajZiZmFwOXpwcUNNaE5ndFI4bnNLTl9HWm4yYWM?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Paraíba Business",
-      "data": "2026-10-20T00:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
     },
     {
       "titulo": "Casas Bahia ratifica pedido de recuperação judicial em assembleia",
@@ -1621,8 +1603,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1635,8 +1617,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1650,35 +1632,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-10-20T14:40:47.300Z",
-      "grupo": "g18",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça encerra recuperação judicial da Americanas (AMER3)",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVW5ab1A5TjBHVEU0TENPNkR3X3M3YjcxWldfOHBLV21kVFR2SjloYmdPRm5sbGpHaWl6OVFwQmRWSGpaNEo2QnlMYjV1c0tSUEdEcnNEaW82enBUSjZrRVlnWlM3Rm1MOGotZmtMOGg2OTNOTUVPNDc1SUVZeS1sRTlLMnNLLVFOS3V4cGQ5RHRUSmFVdWo4SjdZVEZ0VlZiel9uSHlXWGpSRTdHUTZ2NjNjWUdMaXRGaURhN3psQ0hOR2s3dnpKOGdqcnB0TzBlR2ptVnVOVmlTMVlDTlHSAewBQVVfeXFMTkxaZnc0SkdaYmloeUM5MGE5TGM0WUc0bVdENUI4Vk5iVngzRS1Cc0RxcHZlN1g1MkhwX1QzbFYteE9XM2tmOUtYZXNaeG5Bb29YNTBzY0I1eWdyZTBjNkQ4eWJsRnF2TGVjX2tkcnZyVnFpT0FKaHZGMTdnRWN3NGRPQzh5aDdzRjUzUXY4UVUyNmhhb0lMTzd6MjhDSDhKa3Yta0J6MVBIQU5rdmY1aHVLYUpHUVRoZkM2U1liclBteG5Lb0I1TEdGOEpWdUY2bUJ4eEJvSUh4akV3S2RQS2ZsMURLb3M2bWV0ZC0?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Investe",
-      "data": "2026-10-19T23:06:12.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
-      "principal": false
-    },
-    {
-      "titulo": "Justiça encerra recuperação judicial da Americanas após crise de R$ 43 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNS01vazkySEFFeHBuRFVDclFpSWhzVWs5MUFCQ2lpTThIS3l6NW03aEhnNlo0TmwyRTJRcFlOZGNhR09iMWh6ZkQzN2VEZ2tLNmdHU3RZLUlGTTlENVg5TlpZNGYzbGU1WThyYndxWndHRXdkclB2VWFDX1ZsQV9TMU1OQUxBc2ppMGNCT2tXQ0NUZW5zVkQyRFJCbFFWMDdNQzVjUVJCYTZ4QXFI?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "A Crítica de Campo Grande",
-      "data": "2026-10-19T22:50:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g18",
+      "grupo": "g24",
       "principal": false
     },
     {
@@ -1691,8 +1645,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1707,24 +1661,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false
-    },
-    {
-      "titulo": "Ri Happy entra com recuperação extrajudicial para reestruturar R$ 827,4 milhões em dívidas",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX1ZzOE4tQm5hZFp6SnkzTEV4UnZfZzAzSFU2bUZzZXpXOEczTTBzVmNqSVVYX3dJSVhNc1RpWmpLLWRKNlBVUGhCdnlkVGpqaUR1aVNVcHoteGk4NWZLMGtUZlVIbGs1bjFWclhOX1hrT0Ziakp3a2swTGJrVGk5ZUhZN0c3SEVBbTZQN05aZEJTTmJCVWZqNWV1VF8zc0ZBa0ZVVVBzc1p1dFBrRGlhSXRYY3FMYlhnaG1aaw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "expernews.com",
-      "data": "2026-10-19T22:03:33.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1739,8 +1677,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1755,8 +1693,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1771,8 +1709,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1787,8 +1725,8 @@
         "Agronegócio"
       ],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g23",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g27",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1806,28 +1744,9 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
-    },
-    {
-      "titulo": "RiHappy solicita recuperação extrajudicial para reestruturação",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaC1GRVNUU2lYeDBySVFOZ0ZiTUJ2eWlwUkU3YlVZY1lwSk5pYmpoSjJZcUFRMUYycEZfQ1JsUnJ4ZDRTeHczdG1hTmpNbEIxVUJJZWdvM2hmTEs1RFJfTDJVVzBxZVNpZzAyM1VvRkR1Yk5FOFl4N3g0UG9DVEJ3aFNXeTEwMjc3blpYMWFWYlZGdjJ1NEk2TGVqbWRLY01oZkdWdXZnOHoxVlNqVkRJY1ktblQ2ZTVfcnF1QnpkMlpqR0E?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Tribuna do Sertão",
-      "data": "2026-10-19T18:46:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 9,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g24",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Por que a Ri Happy pediu recuperação extrajudicial? Entenda a dívida de R$ 827 milhões",
@@ -1841,13 +1760,13 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
       "titulo": "Ri Happy pede recuperação extrajudicial e quer renegociar R$ 827 mi; entenda",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLVRNdldRZEJVNjk5WkY4QWtFVGZTUGtMekt3MW9mc0I1NUp5cDNPLUdIclV1VF9VWkxKSm1POWc2ODhRVi1oQS1ESXBNc2hnVTRCbXBGcUVwa1JtLVA5TUlyQ2VsUVFTbElfdnJsQTRKcHdEQS1VMi1hWkF5dk1wOWJ3SkdFMEtqNjZsNW5OVjFaS0VXMXlZeno3MU1nWHN2eVNGS25NcmNMa3NIMWptdmZKZV9MUU9KS0hUU1RFVUHSAcABQVVfeXFMTS1UTXZXUWRCVTY5OVpGOEFrRVRmU1BrTHpLdzFvZnNCNTVKeXAzTy1HSHJVdVRfVVpMSkptTzlnNjg4UVYtaEEtRElwTXNoZ1U0Qm1wRnFFcGtSbS1QOU1JckNlbFFRU2xJX3ZybEE0SnB3REEtVTItYVpBeXZNcDlid0pHRTBLajY2bDVuTlYxWktFVzF5WXp6NzFNZ1hzdnlTRktuTXJjTGtzSDFqbXZmSmVfTFFPSktIVFNURVVB?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOXzlGYzhqRVFOOENuTTNvMkE2U1dXczk5eG5YRTBUb0lLclo1RjlKWG4wMXRlXzJMT2RkUnFLQXJvZVJmNXpzNll0OVVBemxaQXk3c0FYYmNQeW5hLUM0cWtKRnBfazQzUmlhNVlNaW1SOE83ZE5Hdlk1Z1c1MS1XUnhYNlBXYU1ya0Y4QlctYjJsV2RZa0xhZi1hUnh1cjBwVzljZ1l5QmRtNVNyV3F0akpuNkNBamhTSno40gHAAUFVX3lxTE0tVE12V1FkQlU2OTlaRjhBa0VUZlNQa0x6S3cxb2ZzQjU1SnlwM08tR0hyVXVUX1VaTEpKbU85ZzY4OFFWLWhBLURJcE1zaGdVNEJtcEZxRXBrUm0tUDlNSXJDZWxRUVNsSV92cmxBNEpwd0RBLVUyLWFaQXl2TXA5YndKR0UwS2o2Nmw1bk5WMVpLRVcxeVl6ejcxTWdYc3Z5U0ZLbk1yY0xrc0gxam12ZkplX0xRT0pLSFRTVEVVQQ?oc=5",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Investidor10",
@@ -1857,8 +1776,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1873,8 +1792,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1889,8 +1808,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1905,8 +1824,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1921,40 +1840,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false
-    },
-    {
-      "titulo": "Ri Happy entra em recuperação extrajudicial e pede renegociação da divida de R$ 827 milhões",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUFpUZDZ3Q0VJS1BNZlhRLV9mOWc5cWx1Vjl1OWJYOU9fSE13aENxWHhQbFEtQWRZSUcycVhudmMxenZQX2ZIakRmOFl3STEyZkkxYXc0ckwxbExGSWxUZDBYMU51YXdYbHRXTHItcHlWN0VDXzBXbGJMX21xSGI0LU1ibXlOcFNwZW5zb3VNZ21DeUtoTEZKcHZLMVVTNGRuWGZNdkRraGc5LWZFWmxYcnBpeURsLTA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Jornal DR1",
-      "data": "2026-10-19T17:07:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false
-    },
-    {
-      "titulo": "Ri Happy pede recuperação extrajudicial para renegociar dívida",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdG5zaXhVQ0dVTVliUnI4N3pQQlI3NkI2cTlrdU81SHFrVjY4ODlDTklXdV9WOVRYdlZGbTRIdVBMUU9OSHVndTdpTU14WElfdXA1d0lsZkNzYl8wS01nT0FpSjJVUzNUaHI5U0pFcTVfNHctUzZkNzg3RXdnY0lYZVdXeGZMa0xvWXc?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "tmc.com.br",
-      "data": "2026-10-19T17:00:09.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -1967,8 +1854,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g25",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g28",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1986,8 +1873,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2002,43 +1889,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
-      "principal": false
-    },
-    {
-      "titulo": "Recuperação judicial no agro cai 21%, mas pedidos de pessoas físicas aumentam no 2º tri",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ1RJZjNmcWdUbmRpTXk0SjQtTUN1SW0yQXFxRDdiLUVfSUE1LXBkdHp0UV9oYW5VcGpCTURjMGZrVmRWOUlMZ0VBV2VPbXp0NmwxdVNYS3RWcXNERFJDUVdPTkFwMkVhTi1OaDBsUS1lV1g0NFRYMDlHbS1WRWlIQkhJZ1lxYi0wWFBUU3l5LVpjQ1ZObUFLV1BXQkpKdUE1cTBzWDBtbjdVVndzTlE?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Exame",
-      "data": "2026-10-19T16:28:07.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Agronegócio"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g26",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Ri Happy pede recuperação extrajudicial para renegociar R$ 827 mi",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM2N6d2IwdDF2YU8wbTV5eElDeVRxZmhLaERXTC1vRFFzWmJUaHlMZjd6MkFBR3ZPQkpEOG5ZVDhwLURUVXJtWl9kUVFFTDJRc2oxWEU2aEVUUDl6aERHSWtkNDFPbUlzcV93T1R2dkVDSHFJdUtOYmkySzY3cU9Xc2JpWFZ0dTRicHR6bVFuZTgxYzhVV2tEY2lpanJtNjgtWGtUV2xGVXk?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Money Report",
-      "data": "2026-10-19T16:13:14.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2053,8 +1905,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2069,8 +1921,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2085,8 +1937,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2101,8 +1953,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2117,8 +1969,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2133,8 +1985,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2149,8 +2001,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2165,8 +2017,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2181,8 +2033,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2197,8 +2049,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2213,8 +2065,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g27",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g29",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2232,8 +2084,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2248,8 +2100,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2264,8 +2116,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2281,21 +2133,18 @@
       ],
       "pontuacao": 10,
       "coletadoEm": "2026-10-19T16:48:17.477Z",
-      "grupo": "g12",
+      "grupo": "g18",
       "principal": true,
-      "cobertura": 45,
+      "cobertura": 39,
       "tambemEm": [
-        "Banda B",
         "Jornal Opção",
         "Monitor Mercantil",
         "BPMoney",
         "Propmark",
         "Portal Juristas",
-        "BandNews",
         "Valor Econômico",
         "Exame",
         "InfoMoney",
-        "expernews.com",
         "Giro News",
         "Broadcast | Financeiro",
         "Blog do Alberes Xavier",
@@ -2305,11 +2154,8 @@
         "iG Economia",
         "ADVFN",
         "SBT News",
-        "Jornal DR1",
-        "tmc.com.br",
         "VEJA",
         "Seu Dinheiro",
-        "Money Report",
         "CBN",
         "Suno - Investimentos Inteligentes",
         "Revista Oeste",
@@ -2342,8 +2188,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2356,8 +2202,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g28",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g30",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2375,8 +2221,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2391,8 +2237,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
     },
     {
@@ -2408,7 +2254,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-10-19T16:48:17.477Z",
-      "grupo": "g29",
+      "grupo": "g31",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2426,28 +2272,9 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g12",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g18",
       "principal": false
-    },
-    {
-      "titulo": "Raízen (RAIZ4): recuperação extrajudicial avançou, mas credores estão longe de saber quanto vão recuperar no fim do processo, diz BB Investimentos",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOQm4yODVlRzNmMklULWtfLUpqcEJYMWdELVdVQmRZcUl3d3Nfakk1dGdMWExXQmplYThaSHlKa0ZlcDNRV1BfNlFXQ1JrT09HLVdXUnRjX2MzLWIySFI1LVdJRmRYejVhc0FkUUd5dmlibFNGSS1DYVlqLVNYMmxhbWhIU1I4RjVaOXkzZ05jZFc5aXZLdXFydmxZeUZjU3MtNkIwNi1CcDdLYXQ1aUI5c0NYYnpleXBIY2laNjdWaDBGc3oyQ2hkdXZBVWQ5NktJangwRjJmX2FKdkVZeEV1elBUZUxjUDFaWVBtMjV2akhwUXV4NW8xb1V4UkVWQ2x4SkRKcXJB?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Seu Dinheiro",
-      "data": "2026-10-17T18:02:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g30",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Recuperação judicial não impede protestos e restrições de grupo",
@@ -2459,8 +2286,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g31",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g32",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2478,85 +2305,8 @@
         "STJ"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g32",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Câmara aprova ampliação de prazo para credores apresentarem plano de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOHFZOGJFTGNSTGdMcWNrb01jZ0pwcEFmVmRyZy1QTXVFTEFiTHZkT1l1cnp0YXdlblFWeDN4bkZjaVp0VzZxajB6TFZibUZNZkR2VkNacjdBZDlZc1pGOE9DZkV0YmtlU0ZYUl9vbW9wdkFSQWxXOGd4ZkRfOWxwUDdtREhMLWVVeUNiUHFxelJTMktVMzlCQXVBSmFqdFRzaFJwUlhLLXduSDZJSXV4ZmE1dw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "TAGD Advogados",
-      "data": "2026-10-16T18:55:01.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
       "grupo": "g33",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oncoclínicas ganha prazo extra para concluir recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSUt6Mk9qbGFZVEtLajgwbzl3aWNia09vUW5wMUhpMzJRUkVFVTRoeS1KQmF4RjhES2h6M1M5OWh2bkxJaHp4Q0Q2WWhCU2pCZWlfZnB5TlhqbFpQbzh4eUk2QTFXdmJ2R0lRR2dWanpPNV9qbmZtaDI3aFpxY2Zjb2xsUDNSdmU0OGIzeU5LOA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Safra",
-      "data": "2026-10-15T17:15:23.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g34",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oncoclínicas diz que prazo para adesão de credores ao plano de recuperação extrajudicial se encerrou",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNQkRtdUVxbHZDY3U2VXhISzM1TE42cGJucm81eHNRczlLVVBKMWpUeVhNMjdKc00tSHA3YTFiRDJtM0pFb0lWTmFvaXhYLXFFZUV5Zk9wbndRY29KM3I5RExWVzh1V2tZRGlBOWhXclNsMG5BY2ZjeHV4M2xqQVFJcXpNM2prdmVkMXhMU3F2em5xTElNYkRhZ004VjBoYzNfTnZOd0R6bVhNNFZlaUttbXhOOXRCaTZTX3pWZnhUMm4wdHRlSm45Yk9PalpXYUxQMzFLbUQ5QlNrTzhBUHlwaE5sa3pFVGNncFHSAfgBQVVfeXFMUExXSUM0ZTFSQ3k0ak5DS0FSWlRSaHhRM2hzbzgydUgzSVVfYkJHOWc3NWVmQloxUldNeWQyaGZmOWRGSnlZSTFqZlRhM2tIUzhNMEhEbW42TGFoWHRpYUhJMGhaSGJUT3R1U3ZMSXZiTmRVdGkydWJHblFNSXQ0dC1xZEVwWmVRWWpjVTViR0ZpdnFfWUt6aUZCZm5tRGZNZlhDRDNWcktycllnSFlBWnUtVE05Z05UVU9BeUtIbzhyem9jc3g1c2RFLUVEYUpZMkhpd3QyRmxKemljT3ZDdXhRRjM5X0lZVlktOTAxQl9LcldQYXJWX2U?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Econômico",
-      "data": "2026-10-15T12:18:01.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano",
-        "Extrajudicial"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g35",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oncoclínicas tem 15 dias para comprovar adesão de credores à recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNamRJeExoMHpudHdwdHJZQk1IUDlIUG0xLTA4UjQzYzhNY3VIOXJwUmM2cGJpSmx0VGRCbFBweVZJbGI0WW81a0I0X1lzbVJHeFZtbWZEc3d3UWZkLW5ScUxGbkJNMllhSEpScnpFR1VYcG1PRXo0bzR5UUozZHJYLXRNZ1d1X1NxX09rYkdydjFRNTBtbTdhN0xHYlBIbHlOTVMtM0R2ZjJYVWFNQ1NFSjZuWUYxVkcxaXZJZGVISdIBxAFBVV95cUxQSWNPOVVqSUtkVmZwNzZrZjh1QmpKZUdJQWpldTBBQ1ZabXRlTkZmcHBNMF9vX3VxLUF4ZjVQTWlQT2w2djg3cU1Gc0VVTmJ5bTJ0dWFHVzFaNjJ2SjFkVjJpZm1lWWtDVmUteGg5Um5oTGRtbGJKYWdyajY3anJiM3I2bDRwOVktWVhSd1I2YlMyYWFXenpsaElOQ09jT3FEMnZKbGpTYk1GNU1peTNmNHBVR0tJVkFmbk9zNFVzVnhfTVRE?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "InvestNews",
-      "data": "2026-10-15T12:17:33.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g36",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2572,27 +2322,27 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g37",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g34",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
     },
     {
-      "titulo": "Justiça prorroga prazo para Oncoclínicas apresentar adesão de credores à recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQVkVEMzdDU29TWkZYQWRpV2VXYV93ZlpPY3E4N1dIRWJ2QW9JX1lTS1p1WThMX3lkeTBHenJxMk0xN01leGI5M1hobzNsQzg1dHZvOXdUdkNKSktHS2tpUXUtdnNNT3FyWDBwUVBCOEYtWlo1em4xdXRscE9Ic0l5STNaSFVwYVNreENKLVR6XzV5MVRTMmtMNHp4NWhaRGNoZ3lyS0lEYkRvb0NOeC1MWW5ZM1VfdC1vM0UxeGo4VjRNZUNsaW5IWXA1Z05zRk5sOGp1UEkzNHRBVUd6Y3ZSMHUxalJ3dF9CanhRYWdR0gH8AUFVX3lxTFA0cjl6c3dNTWRuMFk4UWJHbHRteVRsNS02R2VfWVpQdkRKU25TMFJrc1hCaGpVLWxJRHlXU1NHb3l3TWNWV0RGZWpKRXFGblE2ckFRSS1tX3ZKQjgwWldQaEdqcjlsVHhOYkVCd0dfMGk1TkVITVRiNVBXZDY2dWlybFY2ODd0akk4cHpQTDlvTlNGZWIxa01pMmxQdC1jc041XzZ3SGNiTFdab0ZjWTduYXNYZnlSUWFjTlBCLTdfUFJQOXFNSlRMZUNScl9Zb21ncjNNSU9YX3NKNWVXQUhjd3NXVDZmcXhDM1lPT3N2cTFkd21zQUxXWjAzdQ?oc=5",
+      "titulo": "Oncoclínicas tem 15 dias para comprovar adesão de credores à recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNamRJeExoMHpudHdwdHJZQk1IUDlIUG0xLTA4UjQzYzhNY3VIOXJwUmM2cGJpSmx0VGRCbFBweVZJbGI0WW81a0I0X1lzbVJHeFZtbWZEc3d3UWZkLW5ScUxGbkJNMllhSEpScnpFR1VYcG1PRXo0bzR5UUozZHJYLXRNZ1d1X1NxX09rYkdydjFRNTBtbTdhN0xHYlBIbHlOTVMtM0R2ZjJYVWFNQ1NFSjZuWUYxVkcxaXZJZGVISdIBxAFBVV95cUxQSWNPOVVqSUtkVmZwNzZrZjh1QmpKZUdJQWpldTBBQ1ZabXRlTkZmcHBNMF9vX3VxLUF4ZjVQTWlQT2w2djg3cU1Gc0VVTmJ5bTJ0dWFHVzFaNjJ2SjFkVjJpZm1lWWtDVmUteGg5Um5oTGRtbGJKYWdyajY3anJiM3I2bDRwOVktWVhSd1I2YlMyYWFXenpsaElOQ09jT3FEMnZKbGpTYk1GNU1peTNmNHBVR0tJVkFmbk9zNFVzVnhfTVRE?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "O GLOBO",
-      "data": "2026-10-14T21:17:23.000Z",
+      "veiculo": "InvestNews",
+      "data": "2026-10-15T07:00:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g38",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g35",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2609,28 +2359,11 @@
       "etiquetas": [],
       "pontuacao": 22,
       "coletadoEm": "2026-10-15T14:40:35.441Z",
-      "grupo": "g39",
+      "grupo": "g36",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 1
-    },
-    {
-      "titulo": "Super Barão pode reunir 1.199 credores em assembleia de recuperação judicial em novembro",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVmZxdlJaajhZbE9rWTd5RGxZMmFmZWRnUTNaXzIwblB3UGMxWE90aVJNV05pM1lXdHB3dktueEk0ZjB3ZHFPdzhUdXNwenh4NUFKZ0RpLXl6Q3ZMTkV6TTRVbXVKRmJvZDAzYkFta3hOT0dnQjZRbnBXZmNQekVyR2o1MGVKTXh2UEZIT3VJZ3J4Y0VLQXFUTUtKemFWTVVydU5SMVlTTDMyVE93LTk3eGFlWTQwc2k1NEhrXzhsU3ZZaVhGVzNTQWlEMG4?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Poder Goiás",
-      "data": "2026-10-14T12:34:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g40",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Oi terá de renegociar rescisões de 900 ex-funcionários após decretação de falência; trabalhadores continuam sem previsão de pagamento",
@@ -2642,27 +2375,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g41",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Credores da Fictor começam a votar plano de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPS1RyNkFTai10QURJcHVKeHdTWF9hcHk0NGtyZnhGV01BanFiWlpxZTctNEZaSzFFWGFXT2RKSGdldzB1M1RYUC1lcG1fakpEMUlIUVFkbm9JY3VzNW5kc2h2ZGhJLWgxZk1mSzdudk13ZE1sMU1RTVR3eldjWXg2Qm9xcXZySjM2MXVuNF9TdlM1ODdva0NqS3lScUkyTkZPSXlRdlVMTFNVektlbWFtaVd4Qy1saXAzWmtWaVlZU2h6alhXQnBPUUxxY1o2VzdfajhacU1vMW4wRk9qbVloRtIB7wFBVV95cUxNcXBEUWZCWkxqeDdiSU95UWNCUEM1d1JsRkswbmtNMnd3ZXlGYlcxNnRqa050VWhXMTRWSVN3SE92a1B5TG9pLWF0RWpTdnI3U3BnQ1ZSb0k1aXJVa25QM1NuRnZ0NFdRVXh3amV0QUxFRDhNMHNBQlJLTUEzQlgyOE9vZHVyelRtSndiaThPeDZwcWpUNm94bTdzM0ZsempyU0thQURGQmt1N2NXcldqOHhHclg3VjhUNEVaM0tfM1FneE15RXotR3g5VzdFcG9odkNpeEtvYVl5YjB4RWlOQXl3cVZvaUZGdzJzbmRMOA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "CBN",
-      "data": "2026-10-14T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g42",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g37",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2679,7 +2393,7 @@
       "etiquetas": [],
       "pontuacao": 19,
       "coletadoEm": "2026-10-13T17:21:56.038Z",
-      "grupo": "g43",
+      "grupo": "g38",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -2700,7 +2414,7 @@
       "etiquetas": [],
       "pontuacao": 19,
       "coletadoEm": "2026-10-12T19:37:54.943Z",
-      "grupo": "g44",
+      "grupo": "g39",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2722,25 +2436,8 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g45",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Botafogo entra com pedido para extensão de 180 dias da Recuperação Judicial",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNXhtQnZ0bmJhaUp2b0lxaHNWLU0tTEhlOXY2bWdGcVh2aUg0VlFVTXdRODFrWTllcVdiNmU3aWk4eWhUYmdLLUZQMm93UDJ0WVR2d2ktQTV2NERDUERGbGlKYWdFZjhTRGpmSkNGUU4yTWQxdlNfTmtXTmZUNnVEaXVmQXAzSl9tcGJ2VnowMExYd0JVUno5d0pFWWhRdXJxRmJ2bDc5ZWhEOUhCMVhKNXBOS3Etdms?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "CartaCapital",
-      "data": "2026-10-09T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g46",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g40",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2758,8 +2455,8 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g47",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g41",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2779,7 +2476,7 @@
       ],
       "pontuacao": 19,
       "coletadoEm": "2026-10-08T17:12:13.389Z",
-      "grupo": "g48",
+      "grupo": "g42",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2788,6 +2485,27 @@
       "tambemEm": [
         "XP Investimentos"
       ]
+    },
+    {
+      "titulo": "Flybondi pede recuperação judicial na Argentina em meio à crise operacional",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPemZpZWprdVRFNWM2alpDYndsUnZKYTU1NXlNR19abXNGVzRLaUdZVDU2c2lOcVY2cDBDeDNDcjNEUDdSc1hENENYcXAyTTA3dnZ5ekNKR0dHQnBfOFBxcFFQQ0x4U2wzRW9YMVNRTGxSYzYwd0NkNGUtWFRyRnJDejJFYWhEdU45akJnZlZ4MlFEVGRPMmY5Mi1mczZaRDdiSzNVZEozWk9pYVExa1I0emZ3N0I?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Brasilturis",
+      "data": "2026-10-08T07:00:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g43",
+      "principal": true,
+      "cobertura": 2,
+      "tambemEm": [
+        "Panrotas"
+      ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Navarro confirma pedido de recuperação judicial",
@@ -2799,8 +2517,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g49",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g44",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2820,7 +2538,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g50",
+      "grupo": "g45",
       "principal": true,
       "cobertura": 4,
       "tambemEm": [
@@ -2846,7 +2564,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g50",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2863,7 +2581,7 @@
       ],
       "pontuacao": 23,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g51",
+      "grupo": "g46",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -2887,7 +2605,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g50",
+      "grupo": "g45",
       "principal": false
     },
     {
@@ -2900,27 +2618,27 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g52",
-      "principal": true,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g43",
+      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
     },
     {
-      "titulo": "Carbon entra com pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeDlfbWUyUm5CQTNTSzFXU2l4anFnSk5MLW9IR0pmSS04ZFFkNGpLYmUwa1p2ZFNPa2JtU283QlJIeHJheWRPWW9WY1V5UG9LTEFPd2dkRVJ2Vzk1VGRhS2U5MzJpSkVNUTlYZC1TMUJEYmlkR3ZYcjhEYXhpc213d3hxUVRBQk41elRZNDBvX2xGWUxtN0VuTk9uZGNEZ3c?oc=5",
+      "titulo": "STJ decide que falência do devedor não devolve ao patrimônio bem alienado",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ0c0THYwMjhidk1PRG84MnNYZnRMdnR6NzhPRmZqT3BCOUZYQzZXMFYyVTl1VE9pODh4U05MaV9Fb2xCUHl4Z0ZhbEdDTlg3WkNUOGZxeGNmbHFCQ3R3QnlhTy16UDZ5eVlUWnFVMlhMWEVuNnN5Wm44OVRnd3lDd2Q0VUE3cDRXR2lSLUQxazF5RFZYWC15ZmFBSzJld2NpTzFKMXpaX3hQb0hYVHNfNFIyVzhMYXZRbUE?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Capital Aberto",
+      "veiculo": "Ponto na Curva",
       "data": "2026-10-07T07:00:00.000Z",
-      "categoria": "novas-rjs",
+      "categoria": "jurisprudencia",
       "etiquetas": [
-        "Extrajudicial"
+        "STJ"
       ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g53",
+      "pontuacao": 12,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g47",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -2938,26 +2656,28 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g50",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g45",
       "principal": false
     },
     {
-      "titulo": "Justiça homologa plano de recuperação extrajudicial do Grupo Pão de Açúcar",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdDAxVm1JZFM4M0hILWlKMFFNMklYaGs5ZHZOdzhvQTNDR2dtYkpUQmQ2R3Uta1B3ZFc5NS1oemdYOVJ4WTlEV0k0RWxWTTZwR1FxVG5vNnMxcHFzSjFreWNmdmF6XzMyb004dVFMNE1XalU5cEhxNEIwaXVkNkJlMXloY1JJaFIwODFJdHZOaXBEZDY1WmZ2SlZIdUNEWTlmNWRMeS1kUFBYSmFjSWtlY0Z6TTLSAboBQVVfeXFMTlVlZFRyd0cxSDhISEJBWEo5MEk5d1UwZmdNRGF3Y1NGcnNZZkVFVjlaX0VNRUQ0VUdGS2dOMF9KamtmaHpGbWhVakllT1QyZW9WUUNjLXRoUXFsZDdmVlVFZl9EX3BmZ2p6Mm82MldFNVZNWWlTY2FxeDRfNWkyV1JMZmpLQkZGbF9scWttMUprcHREY1JMeElXRGcwYnppU2dqbjVuLU9FTkFNcER6Si1LMHdOemhhYTRn?oc=5",
+      "titulo": "Carbon entra com pedido de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeDlfbWUyUm5CQTNTSzFXU2l4anFnSk5MLW9IR0pmSS04ZFFkNGpLYmUwa1p2ZFNPa2JtU283QlJIeHJheWRPWW9WY1V5UG9LTEFPd2dkRVJ2Vzk1VGRhS2U5MzJpSkVNUTlYZC1TMUJEYmlkR3ZYcjhEYXhpc213d3hxUVRBQk41elRZNDBvX2xGWUxtN0VuTk9uZGNEZ3c?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Estadão",
+      "veiculo": "Capital Aberto",
       "data": "2026-10-07T07:00:00.000Z",
-      "categoria": "mercado",
+      "categoria": "novas-rjs",
       "etiquetas": [
-        "Plano",
         "Extrajudicial"
       ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g51",
-      "principal": false
+      "pontuacao": 13,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g48",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Primeira convocação de assembleia de credores da Fictor, que tentou comprar o Master, acontece nesta terça-feira",
@@ -2973,12 +2693,31 @@
       ],
       "pontuacao": 27,
       "coletadoEm": "2026-10-06T16:30:20.440Z",
-      "grupo": "g54",
+      "grupo": "g49",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
         "Times Brasil | CNBC"
       ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Falência não devolve bem vendido em fraude à execução, decide STJ",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTlA0UW0xenJ1b1Q2bnF2RlRRUVVqeUkzU1k5LVE2c2dBODZkZk5LZ1RKTDkwa2JDWExCbWxKVVd6dmlDVTRrMXZ3S2I2bllkYnpjMTV0M2hVX1k5aHV5UUpJTy1mVTdOOUQzR2wyb3BLMk9LZ2xnRnpaWWhKMFVsTHloWU4yZ00yUnJLV3dqdUZmZm13MEVzbDh4OXJYY0NKNEU0NWJuc0VvbW5lV1pSRDFXcEhrbk0?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Fatos de Mato Grosso",
+      "data": "2026-10-06T07:00:00.000Z",
+      "categoria": "jurisprudencia",
+      "etiquetas": [
+        "STJ"
+      ],
+      "pontuacao": 12,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g50",
+      "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -2995,8 +2734,8 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g55",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g51",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3014,28 +2753,9 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g56",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g52",
       "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Plano de Recuperação Judicial da Tahto é aprovado e abre caminho para venda da empresa",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWcxOWdvLVJjbFdtdURYVTJoNC1jTDVRNWN2NUJuUi02ajBXLXlRbzEyRXQzWWFDdURmNG5QakRXeXpKUTdvUTgteTNUUWJvWVpxMFdxblk4Ym5ESDUxZURjbHpWa3JzaGlSdllJQ0ZKWG02T0tyNkRhTTNKcWMxZVFROGNLQlA4RW5JOUJ6UFIzQWdkS1haY2VMMExPaFp4ZFk3TVNwZ3BEc1lacF9oSFV2OHoxQQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "A Voz da Cidade",
-      "data": "2026-10-01T17:54:30.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g57",
-      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -3050,33 +2770,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g58",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g53",
       "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Justiça do Rio aprova plano de recuperação judicial da OSX",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOS04TExBb1hMYTV6OUpGRVlZb0dsMzZmRWRyYzQtbjZkTi1mYWh3aXhpdmhQUzVDUDJuQ0oxYTRka3NRSEpMUWpPeEU3UWxJcC11aHJVREVRdUMydkJqelNXbWlZVHM5UzRVUFBvQTZpMnNrTmNYOFJBeWVPZG54QjRBN2VEbWVxMlpCQ2dzaWJQUWlJS3V1aTZuRHA5R2N4QTl6U1hjQkNOWVZVMjV6c1laUUJEX2tIdUFJ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "UOL Economia",
-      "data": "2026-10-01T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g59",
-      "principal": true,
-      "cobertura": 3,
-      "tambemEm": [
-        "InvestNews",
-        "Valor Econômico"
-      ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -3093,73 +2789,9 @@
         "Plano"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g59",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Justiça do Rio homologa plano de recuperação judicial da OSX",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVVRRlhjOVJ4VEJYS05CbW91V2RkQV9yd0s0LUd4ekNjR3FrUk1WTXVVekRvTlVBRkhwcnAtOVFyMEs1ZFhJWF9PWFVyODdiWlJxcWhZamFQM0ZKeXh2cWNOOEMtaFd4czU5WlJzbnoyMzE4TnpYVy1LSWI3Zm50el9PYk43WlNQLWlHNkFQa1JETXlZdm9oV1dnQnJ2UTNmUUFtMHVHZUxGZ0FBTVJPb0JyN2tBUdIBxAFBVV95cUxNV3p4bkZ5N2JLSGFUd0RKdlZXeWdHUHF0cVBPV1ltZmltbHVrM1pWNFlCaXN3bEw1SzRoQW9VWUptSlN4U2g4NHEycXRoNktQemJCNU9neWtmWmtRclpjU2NScmVWaUdaTjBQWHB2S1BUVy1YdF8tbWh5bklGcTRidFdZUnBqQ3BTcF93NTBJcm9sS3pLVzZKWnJaNGdMNlFnQ2o2WlpBcjBCWWdMWndsVWdadG9POTRjWE8wX1pwNHlXWlJv?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Econômico",
-      "data": "2026-10-01T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g59",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Plano de Recuperação Judicial da Tahto é aprovado",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1sclhRT3hZUVFZVnFSQjBQWWRRbHo2bF9LNEt6RHBpaGtLcEZ2UUxEWGtrSUN1OFNJYmxWaWNaMDJTQ2NveDVkSDlKNVk5bjBIYWp0cnYzVWdObFd1aWpwWlBSWk1QZmEzZENvMUp1bDJfdTlY?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Consumidor Moderno",
-      "data": "2026-10-01T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g57",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Crise da Oi: Credores da Tahto, de call center e BPO, aprovam plano de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNY051djQ2V2h1OWtfZnBac1QxdkRmU2RlcUJQVGxrMUNwWHgyZl9JZkVDOGc3Y05TZkZkYWFwQXNLTlQ4UFEyLVNJZC16LVF6Zi1sdlEwRHhOdUxCZ3RNV1dWUG9jcmFualc5QW4zbnVDOG1uMlFqc2ptTmlHYVNrSnpOcjNqQ1FlbTNaWkxGS212RGxBWHEtQ3FlSWxULV9NS3BVNEcxb1lNQVdZSXI4VWFnUzhWM1hETnhLeHVmQS1rSWktOGlwMHRsSDE?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "ConvergenciaDigital",
-      "data": "2026-09-30T22:19:44.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g57",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g54",
       "principal": true,
-      "cobertura": 5,
-      "tambemEm": [
-        "A Voz da Cidade",
-        "Consumidor Moderno",
-        "TELETIME News",
-        "Valor Econômico"
-      ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -3174,8 +2806,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g60",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g55",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3191,8 +2823,8 @@
       "categoria": "mercado",
       "etiquetas": [],
       "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g61",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g56",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3210,25 +2842,12 @@
         "Plano"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
       "grupo": "g57",
-      "principal": false
-    },
-    {
-      "titulo": "Credores da Tahto, controlada da Oi, aprovam plano de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQzdBbjVrRGVRemJyTzUxMTlPRFpHUDhqazN3X0RTSU51QldjUTNSYWcxUm92RVppdHNWbEYxSXZuRm5QTHloQUw5b1NvQ0c3a0lmbjFfaEFENkcxNGJ0U09Fc2tkdlFSakJ3NDZ6aVloV2NwclBLZkJmYUlIRk9keGllVlJ1VVFBMkdzSERrRURFeW9VQXE0Y1Bua0preVA4R3RSTEExaUo5OWd1YnY1U1ZmZkdrUVNnS2xDU3RpSFVtU0pSb28w0gHWAUFVX3lxTE1vWk0zUVpZQURsUGl6cEM2N2swZlFzUTRBLXllTTVUUnZob2luV0x3bFhNM0VuU0lPLTFaSTdFNWtrV1A5TGtXVGdTakpNRFJmeTZxd0wxaUpWa2VvYkFnTGp5NmcxdjF3dFhCb2F1dFFmbXZnR2xSaWM4VWg0SnMwb1NyN1hvdTlSU1BpcElBcFpnWlk4ckNEWFYxelN2ZEdlUi1XMi03SWZpZ19IRkozUWRPc2pBRFhzNndFMlh4TGpCc2NvejZaZm9RUzFQQ0J0VlZnTUE?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Econômico",
-      "data": "2026-09-30T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g57",
-      "principal": false
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Recuperação judicial da Ambipar vence etapa nos EUA, mas encontra bloqueio no STJ",
@@ -3242,46 +2861,8 @@
         "STJ"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g62",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Rede tem plano de recuperação judicial aprovado após acordo com credores e fechamento de farmácias com prejuízo",
-      "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPaTdJcThMc0xRb3hna0ZwTUVabUVTZGxpcW9YX094WUpwMmlpU2wwYlgybWZxbTR0S3FGWm9NanRwcXF4aml6dG1TYURJMnZnUHYzSnkwSXZndUQxZllVWWhoQlhLZTZTR0xHeG96dkFCeGVGUy10R0JiV2dsU0tOWWVKOGZWZlZTVGVyTHRxcFNETGxjSFMyS0VYWWlNMGZndjg0WGRVZDJvMS1HeHJHd1Y5d2I2cDZpZnpERUU5SnhnWF9uYTRiTFFxWjRwUTdCSTZjckR6VkszQTBubzNDMXU3NlBYVmc3bVJUc2M2eTZJMERzelBMUUJpMG1vc0ZPUFI1ZDNiaEtFMzJ5elBVX0R5emFkX0drazQxaWJSZ3RHaW5nMklfSkZBOXZjVENBQ0hqRW5yZFhzdw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "GZH",
-      "data": "2026-09-28T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g63",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Maxxi Econômica tem plano de recuperação judicial aprovado para dívida milionária",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNMkg5Wk85dV93cGIwYzNqRzNHdDlvUUpCVjI3VmN2VDFxaExJNGl4WFpDYTQ0NzB0YjhxdjI5OHR0WTVSaGxyRGFveDBuRy1Pd0QwM1MwOFRfNkUyaW55NC1ULV9nby1tem1Nd3NqbkNxYnVFM0ZCRVR0bkVrOFJHS1h4aFQyX2RrTkxxNjlySnVxS21Oa1BSS0g1SzV3dENYNktJZ0NrNUQxMlQ2ZEM4YkxpY2YwcU5vNTY1MkdpMnNUaHdGcFZKZ1Nwczh3emswQWZyS0VDNWNsWFVx?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Jornal do Comércio",
-      "data": "2026-09-28T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 16,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g64",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g58",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3299,8 +2880,8 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g65",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g59",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3319,7 +2900,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-26T10:11:16.520Z",
-      "grupo": "g66",
+      "grupo": "g60",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3338,8 +2919,8 @@
         "Crédito trabalhista"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g67",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g61",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3356,30 +2937,11 @@
       "etiquetas": [],
       "pontuacao": 9,
       "coletadoEm": "2026-09-25T10:12:02.675Z",
-      "grupo": "g68",
+      "grupo": "g62",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 1
-    },
-    {
-      "titulo": "Fasa (FASA3), antiga Fictor, convoca credores para votar plano de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOM1Q1Q3M2UU1GTVVqT2xrVmdMRmVTRFl6d0hyblN5bVBZVGF4NUc2ZTBfWDFUOThxUXg5blEtdm1sdWoyZlZWWmN0WFRMSWluMHpBVzJzbDJjMjBQREktNlFuOXAtWUZOcHNNUUNoUUZKRmZVRXBmcnZTLU5lN3hlSG1rUFBHSmdfX0dZc21OMG5IZVJVaUpPaWs3MU4wNWlXUXF2S3RNc2czYkV5NmhUSi1FWVY?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Money Times",
-      "data": "2026-09-24T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g69",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Ministério Público questiona estrutura da recuperação da Braskem e pede bloqueio de US$ 800 milhões",
@@ -3394,7 +2956,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-24T10:12:09.732Z",
-      "grupo": "g70",
+      "grupo": "g63",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -3414,8 +2976,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g71",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g64",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3435,7 +2997,7 @@
       ],
       "pontuacao": 26,
       "coletadoEm": "2026-09-19T10:10:12.572Z",
-      "grupo": "g72",
+      "grupo": "g65",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3455,7 +3017,7 @@
       ],
       "pontuacao": 18,
       "coletadoEm": "2026-09-19T10:10:12.572Z",
-      "grupo": "g73",
+      "grupo": "g66",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3475,8 +3037,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g74",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g67",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -3496,8 +3058,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g74",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g67",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3513,8 +3075,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g75",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g68",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3532,27 +3094,8 @@
         "STF"
       ],
       "pontuacao": 11,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g76",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Tributaristas temem que decisão do STJ banalize falência em estados e municípios",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWEdueWRNMnVscDVmS0QwQXZLa3R2OVlEQndVSjFQOTJMcHFQSUNsbG9XOHNhaVdndmhZYU5vdEViWFNDTlhubVFBcmdKZE5NaGpscy14anhmSmpjUnBvMmw2TTRsQ0FNV0MxTlQ0TVFSSVNSaEpvN2FSSkFzWHZrWjdvTVhvS3A5cks2Xzl4bWE4SUVBV1pPRXgyUk9ieVBCZzVaMlE5bENSbTg2c19WdFAzMnFRMzJJ0gG-AUFVX3lxTE85MEoxb2FfWlFEYl9ZVkdQMTljQ0FFaUhTZWhOM1JJenFYSWxSSHN1VnhaeHdNR1duSnBFV215Sm9SMEZEOWN0a2k4OXJmWWpVZ3JKT0puUGtmQzhYTjZWU09vUldNLUtiSlM1X05GLTY4U1FQWldjb3g4SVhUTjNwTEU0eE8zc1VLQVZIdUc0WU5wRXplVThDWGtGUzNBR3B3WVI1a05FNHBWZUFIU0M4UGxvYV9zOG9rdjVfamc?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Fenafisco",
-      "data": "2026-09-18T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STJ"
-      ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g77",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g69",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3568,8 +3111,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g71",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g64",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
@@ -3590,8 +3133,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g78",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g70",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3609,8 +3152,8 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g79",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g71",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3627,7 +3170,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-15T10:12:05.858Z",
-      "grupo": "g80",
+      "grupo": "g72",
       "principal": true,
       "cobertura": 4,
       "tambemEm": [
@@ -3649,8 +3192,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g71",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g64",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3668,8 +3211,8 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g81",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g73",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3685,8 +3228,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g82",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g74",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3703,7 +3246,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-11T10:11:41.248Z",
-      "grupo": "g83",
+      "grupo": "g75",
       "principal": false
     },
     {
@@ -3716,13 +3259,31 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 21,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g82",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g74",
       "principal": true,
-      "cobertura": 2,
+      "cobertura": 3,
       "tambemEm": [
-        "Rádio Guaíba"
+        "Rádio Guaíba",
+        "GZH"
       ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Sorvelândia, de Caxias, pede recuperação judicial",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOZmVwOUNuQnE1eFZSRmpmbXc0QVF3cVlkYzZNS2xSaDQtZ0VSZXZjc3FUZVdRc1JtczFaa0NsaDFoWjJOcFVKb0dOWVlDNDdMMUdHQXlrZ3RUeGlYTWx4ZVVUd1lTa01JNEgybGg3a0psYmd0aFF4UjQ2ZkZ2cGVPMU1IRHR0WlNLRjFoRDJSemNHMUN6VnZxdGxYRjRTNVRzaVE5d2lIUTI0REZEZ0EzQlhGdm9qQ2FQMUZDaWRZLUc5YXhESWxTNW1lazVMVzdRWEJzNUVzT1RtV0dtc1RVR2Nwam1WNUdTenppbGJMRUd4R0JHQzhr?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "GZH",
+      "data": "2026-09-11T07:00:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g74",
+      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -3737,8 +3298,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g84",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g76",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3754,26 +3315,12 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g85",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g77",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
-    },
-    {
-      "titulo": "Justiça encerra recuperação judicial da Light no Rio",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONDN0cE5sYS1PR1VlRVZOWTF4bDVhNXlxcHhtNHQ5RDFhTV9TNFZha1FlelR6eXZMRUNPNzlWamVyNDdXaXZGaE53LW51ZDFBVm12VmVBVVNKZ0FWY2VhRExCNDgxb0dvSklvRnNlcGNjMmI3QXhfUV9GUVNaS2paeU44LTdlaWx5UlBTQjl3THZVbDhkWnpwSk5lcDBSeEFrTnZ6SWhDSGJPdnBnTzZnemtMbDFjd9IBuwFBVV95cUxQcmlyQXZISjVmbFdXY2dpbE43bGd0NjQxM1VpM3JNalJoSERNZm94ellfS0tFN1dSNG9wRkRNVHNoZXBTUWNzanFXb1dkX2JnQlZGQjJiR29rT0RBa0lsdWM2Z3FsR3JnVWtCQlhlc09QTml5WXY4SEpWYnNFclJfMzI5enlaZUNpWUpRYmc4RXh4YVZhNmY2ejdpSEl1UE9TU3MwSk9OMnVBQ2ExSlZ0MmljYS00LUlvdHBV?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Jornal do Brasil",
-      "data": "2026-09-10T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g83",
-      "principal": false
     },
     {
       "titulo": "Light anuncia encerramento da recuperação judicial em decisão da Justiça",
@@ -3788,15 +3335,14 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-10T10:11:37.117Z",
-      "grupo": "g83",
+      "grupo": "g75",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0,
-      "cobertura": 3,
+      "cobertura": 2,
       "tambemEm": [
-        "Valor Econômico",
-        "Jornal do Brasil"
+        "Valor Econômico"
       ]
     },
     {
@@ -3805,14 +3351,14 @@
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "JOTA Info",
-      "data": "2026-09-09T07:00:00.000Z",
+      "data": "2026-09-09T11:40:06.000Z",
       "categoria": "jurisprudencia",
       "etiquetas": [
         "STJ"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g86",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g78",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3831,7 +3377,7 @@
       ],
       "pontuacao": 29,
       "coletadoEm": "2026-09-06T10:09:53.733Z",
-      "grupo": "g87",
+      "grupo": "g79",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3848,7 +3394,7 @@
       "etiquetas": [],
       "pontuacao": 18,
       "coletadoEm": "2026-09-05T10:09:48.603Z",
-      "grupo": "g88",
+      "grupo": "g80",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3866,8 +3412,8 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g89",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g81",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3883,8 +3429,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g90",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g82",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3902,8 +3448,8 @@
         "STJ"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g91",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g83",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3921,8 +3467,8 @@
         "STJ"
       ],
       "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g92",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g84",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3939,7 +3485,26 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-02T17:12:41.092Z",
-      "grupo": "g93",
+      "grupo": "g85",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "STJ suspende assembleia da Ambipar e vai analisar mudança da recuperação judicial do RJ para SP",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObXJ6aWhtRmYya0tCTlc3U1VuV3FoODNkTlBXYkhNaVAtZ25zUFptLVoyNGpBbnI3c2MxMUN0ZFl6VlBWa3N4UFZKVmc1Ty1aaExOTzlpQkhkMkZqOVVkTkg1Z3BNbjAxeHhqeVRIWVFfbUpsc3loblBtTUpnemwwNHV6Zy0yZk5KZGtoc3hWOGJ4NlpNOFlFdVNBaXpnbUVGeEFoN19aZm1ETnZfaHFvN080bVlHcFhveTNDRmMxbTV0d2x1aUFDRGx2RXl6dUJXTDNRd1hDZURDV1BIRFdMX1RDYw?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Estadão",
+      "data": "2026-09-01T23:14:41.000Z",
+      "categoria": "jurisprudencia",
+      "etiquetas": [
+        "STJ"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g86",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -3956,7 +3521,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T18:51:58.616Z",
-      "grupo": "g94",
+      "grupo": "g87",
       "principal": true,
       "versaoResumo": 9,
       "provedorTentado": "gemini",
@@ -3976,7 +3541,7 @@
       ],
       "pontuacao": 35,
       "coletadoEm": "2026-09-01T15:13:30.918Z",
-      "grupo": "g95",
+      "grupo": "g88",
       "principal": true,
       "versaoResumo": 11,
       "cobertura": 2,
@@ -3996,28 +3561,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g96",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g89",
       "principal": false
-    },
-    {
-      "titulo": "STJ suspende assembleia da Ambipar e vai analisar mudança da recuperação judicial do RJ para SP",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPcURtMlh4OWNUSGNraktKNnlzbTFYY2JTeVVwVEtMazctdnc5aGE1MmM1cWM0MnBPcUkwTVBTWEhoNlNpRlNJLUxsT1hWZEFicFpDdEJPZ2RCdE52cHNnQ1ktemQtN3ZKWkRVaWg4R19hQ2t6S21vbXZzZnhXT2o1NUcwcncyZjNzdDRwd1RJRjhEYzZSVVh0QnZ1bWYzTnlkdmFWMm5yMnBtVm1EOTIwNG9GZm1hZXhDWC1oSlhka3V6T1Nna002aWN3ZkQ1YlBIeFphWW9PRGZiWnZKVGFRaTAyaFdqZlRfTzVMUzBPLUhrMWxBRU1nR1ZlbDFRaEp6N3VLY2NR?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Terra",
-      "data": "2026-09-01T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STJ"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g97",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Juiz determina falência da Refit, investigada por sonegação fiscal",
@@ -4030,7 +3576,7 @@
       "etiquetas": [],
       "pontuacao": 4,
       "coletadoEm": "2026-09-01T14:59:45.541Z",
-      "grupo": "g96",
+      "grupo": "g89",
       "principal": false,
       "cobertura": 14,
       "tambemEm": [
@@ -4059,7 +3605,7 @@
       "etiquetas": [],
       "pontuacao": 18,
       "coletadoEm": "2026-09-01T15:30:43.593Z",
-      "grupo": "g96",
+      "grupo": "g89",
       "principal": true,
       "cobertura": 5,
       "tambemEm": [
@@ -4082,8 +3628,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g98",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g90",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4099,8 +3645,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g96",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g89",
       "principal": false
     },
     {
@@ -4113,8 +3659,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 25,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g96",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g89",
       "principal": false
     },
     {
@@ -4127,8 +3673,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g99",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g91",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4146,8 +3692,8 @@
         "STJ"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g100",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g92",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4164,7 +3710,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-09-01T15:30:43.593Z",
-      "grupo": "g101",
+      "grupo": "g93",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
@@ -4185,8 +3731,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g102",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g94",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4204,82 +3750,8 @@
         "Plano"
       ],
       "pontuacao": 9,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g103",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Um Único Voto Trava Plano de Recuperação da OSX, Que Agora Recorre À Justiça",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZ2w0cjB4dnYtMENuelNkRFRfMkZnZFBEM1JRaENyVk5GTUZhb1Z0N1d5Qk40YzRPR2tCd2otRVp2YllJZ1YwOWtuQlRuYUlEVDdnNmxkSkNyTDg3WTBCMUdNMUR0SUZfaTR0OW5GdGZuTTRVVUthUS1uOUJuWjdiTThDVWRkZDA1eXdSd2tSM1hZX3FHenc?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Forbes Brasil",
-      "data": "2026-08-28T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 9,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g104",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Plano de recuperação judicial com passivo superior a R$ 600 milhões é aprovado",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb05qbnBaa2lxM0JRTnhBTGVVTlpRdC0zdW1yaExBX004c3czcDkyQVB1MDUweW00b0lCVkhyMnN0SmhQem9EaktXNUNOeUZ3R3Uyc1pRNkdEWUVyRllNR0xNd2kzNlF3dVNKVzJzcFFiT29pUjJfYllqeG9vVjhGWW1kOUNPcEVVV21LVkI1OTNLOEF6M3Mwa0hEalo0enR5Y1BVY2JNZThGU3JFbHRfT2dFejF4UGxSMlZES181RjdjVEVZcmxJ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "O Bom da Notícia",
-      "data": "2026-08-28T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g104",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "OSX pede que Justiça do Rio conceda sua recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbS1KanNvVTBiSkQ3TzhIdGhUejZPTExueHk0d01QdmRNZVRMS25SQnB5ZFBWSW91cmNQNFVhZUp1NUpuejg0SDVyNVlEQTdsbVJPR0k3Z2JBY0t2NUNpT3lLMXhwLU5IWDJYUlRDZl9FbFJvQUFYaVRPUWd2dGQ0VmtScGZQZmpxaURmV0kzWFkzYXJ1WjBnYWNHYlZoTm5Tc2lPVTlUajdMamdYUWhSODlxNGtHUdIBxAFBVV95cUxOYjMtS1lrZFlBTlNGYWQ3YnBXU0RYLTNWMWFxYmlZV1lsLU5Yc2JBWHRIMm1YOUc3WlBBclpqNzkyZ3FiU1RPWmlUMWUxcXNkRjlIX19oMGFxRWkxaVlRRVRkMGp3SHQtb0lSN0VDMWFQYUpYUTl6Rm9jcW9KbFowdnpPLTZEWTMxR2FWSHVSbjgwSERaUGlBYmNYSXB1R3p3STF5bEZJQ0pZSzM2ZnJqQzROd0hDcy1nODRJNE1zV3FQM2o5?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Econômico",
-      "data": "2026-08-27T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g105",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "STJ evita que sucumbência afete credores na recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNzljNGVuOE94UTRZdGlmNTVaZWlPbGhfcTNuMy1GM0hzbnFfTmZSejJrWmVoNUtYQ1FLLUpJRFRvdy1YZGJXX0ZhQmNjM0Y5anpScUtXZGVUMTdiMV9Ub3hjVTRoTGJOU0xBbzd6NjFaNFZXbk5XbURvcmgySVJ2bXlNQlpuRmx0VzZlMGN1NGRTSmkyLTlvTEQwZjBKOTBmSFJmY05n?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Consultor Jurídico",
-      "data": "2026-08-27T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STJ"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g106",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g95",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4295,8 +3767,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g107",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g96",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4312,8 +3784,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g107",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g96",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
@@ -4334,8 +3806,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 14,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g107",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g96",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4351,13 +3823,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g108",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g97",
       "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "UOL Economia"
-      ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -4372,8 +3840,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g109",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g98",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4389,49 +3857,8 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g110",
-      "principal": true,
-      "cobertura": 3,
-      "tambemEm": [
-        "Diário do Rio",
-        "A TARDE"
-      ],
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Em fato relevante, Oi confirma falência decretada pela Justiça do Rio",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaGN5eGNNaEVSS2R4SXJKQmpjQ3lZNHVncnd1VGN3cWZPUEJqTVR1WWRtSWFxaHc3bE9DS2JxNjBGNTQyOXRyekdRblJBWHNzQ21XOHdXLU04bUtWMW1DVjAxLVQ1LVY3LXNicVQ1Vl9nTG5US2Q3R1dFcnRZLVlOZEhoNklIaWQ2b2l1Q0JFZDJtVEFOSTVYRUN2SUpoWWUzQjMySUVjVdIBrAFBVV95cUxOYmpxck5PYWJmU2NHb1R0UTFqQ2ZMaHpRXzlQLTJqV0U2czg1R0lTZGVrRDJSR2VsRE5ZSGExZS0zTklZUjNGQjJYeDFrOWplTEpQLVhSanpSTlhTX3QtRllTLThhem1aZ2hlMXNMTWVJWG1yaDVvUjJUUng2a09XUV9FcUJNR243R1BuWE81QXdFLXdXWmctdHJadTFxM2x6OF9VR3l0X2huQnRl?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Mercado&Consumo",
-      "data": "2026-08-26T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g111",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Ambipar terá nova assembleia de credores, após falta de quórum na recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX2I3am9BY2d4dm1oaHM5RGFYLTd0NGNMcVE1TDNKdktZNVVvYzlJNXpiYnE2SmVsYkZGbEdHVko2Sm9VWlZnczUxckVBd1VKMzJsMHlsZGYwSHhPVWlkZ2tlZTkxbF8tMkUwNTFuVV9lX2d0TVJCQzBrWnk3NUNfdzNHSGNsZl9fSFVuRnFvTlA2RWM1bFZHM3NocHpUZ3RuNC1HOGJSd0N4RWtXbEhZUnpDbGJXY1V3YmpsR3p3?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "ADVFN",
-      "data": "2026-08-26T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "AGC"
-      ],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g112",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g99",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -4447,9 +3874,9 @@
       "categoria": "falencias",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g113",
-      "principal": false,
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g100",
+      "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -4466,457 +3893,8 @@
         "STF"
       ],
       "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g114",
-      "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "Valor Econômico"
-      ],
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Arrastando-se há uma década, Oi tem falência decretada",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN002ZFR5SDdUN3NzRGJXTHNrSl9EYTZWMERyc1JTT1B6cmxMeVdRemM5djBWTWtYcFZfRmlXYXhVdUhUTEhJWWpmdExsNlBmYWdjUEdOamYyeTRXN29kWWFYSUVKWG4tM3FEbzZBUDNYd0lUWUFydE9KUHZtMTQ3WDhVVE1VSF9xU3pkV2lkdXJxMVRkTlZWTFpHSTNqa21Zd3lDVmlad1h0Q0J50gG7AUFVX3lxTE1scnpUbXg5bGtBNFdhU25LRDN0bE5nbUVXU2FPdVFCZFVsZGg2aGRyOHJydHplTmVYZFBZQnQzMlkxOW9NQlJqMFo0NkNmX20xRjlNZU5CSTR3RjNRamFLNEhVcTlpZWxtTVdKZHYzVUdPT2xJOEhLQmdSOWhnLXpMWGNqN2pSaXNXOEEyeDVUbEFVTFRHZm1IYkJvVmhPZ0tVb2VfNXlabFRqanBuZkNMWFdwRmVZN0JMdk0?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Pipeline",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g115",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada pela Justiça novamente",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZWoxcG1EZzBCU1lLYjJHaGJHU0dsNkxJQm9EeTVNQ0VncDhtYk5FZ0o1a1AtUGJHYXRnS3BQblg2SVhIZUZ4TFFxYUN3TVZwLTBfenRINkVwM09VOFhjRFdvbFo4d1JYNDRrd1p3LTc0X29yVHZVQlA0bmpJV01aU1hyenhwRlFtbmRndXhwRDVuSzJOTW9Idkd0bTdqRUhudkJxOVAtTEdIeU90Vnc?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "UOL Economia",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g108",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi confirma falência decretada pela Justiça do RJ",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRjA5WDBMdlN3ZWxHbjg0Y2syaVVmVUgwem43T1lLdmcxbGxON0ppUDZqOFN6U25KXzZDamVuaXZJTm0wOUdCdFVGYUFudGFLbmZSalhDTTl2ek9XREFpUFU0TnhBMzVrb3pTcTFlenZabjNONUFnUE1ydnI0dWs3UWJfY2xXbkU0em0tTkFCUjU3d9IBlwFBVV95cUxPdTYzNWdEUmZqb1JxZlpoM3J4cUlUZzlDaUlKLWhmWkVzcEdmQUp2T0JBeDJtbDl2cnVyN1JhR3dFWEM5LWxQelg4ZjlaTFpFS0RpWS1vUnAzdXgyNXpPT2k0UzVscUN5clotOU44RV85ZDAyS21yejQ5c0x0SlRyb2llRXlEVWsyS19RM01Hak9DS2Q4YkE4?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "InfoMoney",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g116",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada pela Justiça e B3 suspende negociação de ações da empresa",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVEtVaXk0RFY0WnU1SVFjUHlsenVZRGhXZVRYal9Wck53cmFlTERjeUxrN05ZOXVURFZ4T3FESDBvMzl4aEFIME5xOWt1LXdTaDlzeWlhblpJemo2d3dEZ0YwRW5DbzV3c19mbFV1YmlVbklqWVlQSVRvQS1oUWd3eTFqbHBCQXdDaUhpYlhDdGJ1eUVtdjdUcFhDcy1VeWRsbkx5U2JHa084ZGktdUx4c1loMEZDc2t0bWlMQzNzUllCUFXSAcgBQVVfeXFMTXZGQkFpaU0yVm54dzZzd2VjdzRfbVlpV004cExBRDI4dTdSXzlUWS1ydC1JQlotbnF3ZXg1WUdjS1NEcUVrNnk3cW9SODNrdmVLUFd6MFlEcUk5bXgxc2tGM2pGX29FdmdvSVRzV3NTdUhYeUVNU09kYXVHZW11SVlleFV6ZFRTUDBiQlhoMjBVeHpuMkszUkw3Y29JOGVBUkVIRjlhTG51cXpXME1ITGFDOVJtMlU2YWsxalRLR0FoNHJvN1d2eDM?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Estadão",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g117",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "De novo: Oi (OIBR3) tem falência decretada pela Justiça pela segunda vez",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZnFxNEdMZEJZaWQ4alVwaDRUOHE4Y3ltREw3YUoxSDl3dVppMDdGREtNaEpKRWMtcUw3U0xBWEJkdkRwd3ZQaGpHM29TWDlxLWROVmo5bC1Ud2xIcFdreGV1MU5nbzg1SzRTbFlQU3dObHRXR2laaU81UzBOeVoxLWowLWhvWHZPYWkzbE1xVDZxdVFIczNId2xiaUtWZVhSLTZ0MDRLcFpEaHVCSDF4Yg?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Seu Dinheiro",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g118",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada pela Justiça",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM29fOWtXSFVRY0NzQmx3ZUdWN3ZUYVZjeVNkbUR5VnlCaXVjbk0zWHdKYkZ3d25adno5U2dyMDRCeTRqOXVFVlBQTGpacm9UT3l3UTl5Y01iSmxjcmNMLXFMdHVDNm9tUl9idDJKYXJNRzNuWnVMZ0dodjhTT21PbWc1OEFDTEpwTFQ2T3dVRHhsc242QllSb0FqcUhpWFdfekZQclFGNy02azBXcDdWMUJPX3V2QTjSAcYBQVVfeXFMTVFwM242TmcxSExJVjhlMmwwbkd6SEVvWXJvYUp5NzY4dnVVYXdVazU2b2VtWVd2UFJwMVhHVVlDYjlWTURhemR4X0hYbzROeWZkdTVVOGRLaUw0TzJORVkzbVB4LVpPOUc3WHFRMkMtbU9yTmM1dG9jcXlJenNvWXdxQThNM2JvWWd0eHZTNU5JNDlueks3N1FUb2ZHSm9VdnF3LTNwVHo3QTB2MDBUR1psWFpXZDVfOUJtdjRjU2xYU1hLZFVn?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "O GLOBO",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g119",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Justiça do Rio confirma falência da Oi após rejeitar recursos de bancos",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYVU0X2thbmhIM1JUTEtxaDV5dV8yX3EyTGhIRXBPNklLWVpDZ1JlN1RvdF93ajhMdDVhMlNGdHJGVFpFUXkxMDZ6bVJJT1JVR09BWFhvN1ZveUxONUNwTFdRbGlPVHNxQnp5endNTzl0RW15eUdxVENkRnVJek1oZXhkN0tPd3pOVUE?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Folha de S.Paulo",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 4,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g120",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Com credores em Laguna, operadora Oi tem falência decretada novamente pela Justiça do Rio",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWnFDUk9fcFZidmtacWNLUlFZU1NmYjlMcWFJZnYwVERLUlhLdUQ4X0hQRGhrM0Z6QWxueTdNbWNSTjZHVUNwZTgtSDBKX0YyV2lyem12Q1FEelFZUGJ5TmVIUkhrcVZjOGhwS0ROYzdDX04ybkpQNkdYT1JZd0JSR1cxQ0JmRUFISDhVb1lTaVgySTBleVk2VTA5TWhpU2tzMy02elo4cmd0QWZvTTNiaTNVOFdhRWp6Q2ZIUVNsXzhmZw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Agora Laguna",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g121",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada após Justiça do Rio de Janeiro suspender recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTTR2cGg5bWU1MUtldGxLbG1TNG9yNzR3ZWc2b2V4SHJVZWs2YTBINzdnUmZlU3k1NGFJcE5pWGs5TlJSREZPbl9Bc3E2MXBNZkFSRm04YWpkc3Q5S2RDb3NOQzUzc2FHMFIxeWVJLU1oTlNMNjFVaDF5ekYxTHd0NWhOeVhkM2h4ZTdqTW5GOE5wS0lmN084NHJrem9qcXRQMF9abXpaeG16a3dxeUxtVi1NckpWMWxqMzN6bWhWYm9jYVJjM2ZpQjdfeXlIcEJOVDZhTg?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Rádio Metrópole",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 25,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g113",
-      "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "CNN Brasil"
-      ],
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada pela Justiça do Rio em meio a dívida de R$ 44 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSzYzOHJiTXE1Mk9WZlZXWEloemdRdlhLdkpJSXp0MXU4cG1CaVBpMGZjSmR1YUtUZVlna1ZobTBkVlpDTTNQcUNVbG9BaHkwSExyN3p1WlR0SERpLWhlQWxCdEFiLWkwSVZhMkhzN19TdmZ3MlRnWV9HRDZJeHFxcnVTTDBEVVFDcGQ3RUJCZm0tMUE0X1F2MGRpZUVRX0FCZU55cFNjUzBDdTlHbXZsbE85OUFKWnVLU05DLVdUaWdScXY4OTkyMDNzbnU?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Diário do Rio",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g110",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada com dívidas acima de R$ 44 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSnJjNU5JcW0yVkd6cGRrRTJmYnFvV1c0UXZlWmVmUDdoNzRBYXpROWpPOTJvUi15LVRPU0dYNjFxQUluYUdlSzFVUVhVTjViQUlHVUl6V0kyb0djTTVmNVlLTWRmcDJvcXg1bklIR2lial9rNUZpWER3SC1mR2NsNGhTZ3lNNlUwUmpNN1ZYdFdWbG9YU1c4a1Q5dzTSAaQBQVVfeXFMUDRYZEhtODNwazZLV0ljN1gxSUJLLV80YWRmOHRkcnNqcEFldzBRMUp6ak9uQWZSc2NBMDNRRkRYTGF6QWJPWlJ2QnpTVkRoQWx6TzNzVGRjZ3c4bjM1VTJ6NWh6cTJ2SE9waFhwa1cwalRfdVhMZTRYZDNOd1Z2Uzh3TWhaWVlBdVlqdmpPNEZnNnktY1FCeXhqS1J1SWlqSDdMRjQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "A TARDE",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g110",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada: entenda a queda da antiga supertele",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcWpGZDYxWU1BbkFweE1MZzdRUlkwM1J2cFNlcGFsM2xFOE9rRTI1dWZ2a044czlISHpwWnEyUlFwSVpBSWJrV1pEQ2VSaVhabmtfV2FGX1B5bXRpaHh3NkNqd0hUaVN5NXlvS3JETVZlZ0ZINTJOQmh0V2M4QkFXYXphTDFVZw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "BPMoney",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g122",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi perde batalha judicial e tem falência decretada pela segunda vez",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9RRkgzVGxPT2JKZmRYNmNhNzhaclBPOWRULUo5VHpLa3NBTXB1U3F1bkF1Z2NxakJBRlp2ZmNNc0VvU0pjZ3FiUFdHejY1T1hFS0MwUXNQMmZfVEw2RGIwVFZ3RHZUWEFoX2FyNEN2b3hYMFVjTllR?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "tmc.com.br",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g123",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Tradicional churrascaria 'Porcão' tem falência decretada pela Justiça",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUUpQLWhfbmRDNHc4RnF2RG5lYklrSm5Fay00cHJ6clZ0TDBBdkpTZ01qSTZMcnlkVDJwRlVCNWk4VnVCYUw2dUN2UDE0MHRjWWlyTGhrMDdVOW9DWU1TU19ybnRoR0lMd3dodGlEVDQzNW9LdmV4YUpVZGE4cnpnSWtUX0tXcXlrdy10by11RF9SQlRvVjNDc1cwd2tnTEZqRl9rUEpndTEyMXQ5UlN3WkdoampuMjVndkdCZjlYYXE?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Jornal do Tocantins",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g124",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Tribunal de Justiça do Rio decreta falência da Oi",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPaFFhQ1VvRkdQZF81SEFVU1FfcTFXS1ZVcHBUTk9fOW44YmhBM2w0Tm9hYS1HVEVSRWI5cVFkZnV3aGR6VUdIclBLcHZTVG9lUU1iYy1wR0x2MzZZQUxBU04yMmp3VzZDZXBlWlgxSWJNenY0aTV4OWxZaVVQeVRscmNJYzZnd2lsNFZsWXQ3ZHRyMkV2N0U0?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Poder360",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g125",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi tem falência decretada pela justiça do Rio; veja o que deve ocorrer agora",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSEcxN2FORmhLem1nNktZNTNCVVBoald3VWVLdzhUUVpyYUpiWWVaOTdJVUpPRTJoYmNwVTFJVnZ6VUFjMU44WGNub095dGs3YmxLZ1gxd0JlLUlRVGdkbFEzVHhGMHhGcDhBelo2cUhaUXZ1R1dpQ1c1b28wVHZKSDBCVy1tbVkyeGQzYW5HVU4zUmljLURXRU13?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "EuQueroInvestir",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g126",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Oi Tem Falência Decretada Após Ficar Sem Dinheiro; Dívida Supera R$ 44 Bilhões",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNZUZxTTZPUWdBV1Q4eHdheFZaSkgxbFZkZ1lEZHdCekpONEJ1RlJ6cllYTU1WeVM5Sy1FU1IxQUZDZmIxb3FjanhDRjIyV2VIRldpcVZxUmpLTWRRclRMSVhGNlF3Q2VtM0VfMWtuMzhGZldramNCMQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "RNews",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 20,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g127",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Maioria dos credores da OSX Brasil aprovam plano de recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcS1yTWVONEdCd3ZrZ0tycW9ibUVMdzJqWUtOeWtfd3o4enFsRWlPMk5OYUNsOGhrVENjNlBZMkpYWDI3elNfY1ZLUmIyQmNraFJLaHVqSkNuSklIZjU4aG1sRjZ1dGlZRUNCRE5qNlprOUN5ZzhqMFJQX0ViNUk4cHRnempOVHFZSDRBWEhHbWZHU2ZkUzYwY01rbjJFQTZPcjBYWUhfZ0JPd0w0dExCUmp0ak9CajdDd0U4aUFOMWZrZFhVcVBj0gHWAUFVX3lxTFByVHZ1VWQyYWNacWJVSVpPVnhJM1VRQlpHaEN5blk4V1dvVEdHdmloek5KZHhhSWtJRk1mT0tZb3c4Uzc3WEo0VUppLXpKX09kMi1mQjc0YS05aFF1YmpQVEU2UFJ3SjlFaDEwNG9kSFBBVHhmVDJzREVqUDJvT2xvN2VyNTBCQ3RhX3pLY0E1MnZSdWtUc0JRY2pMbk5sRWZpQW55MUVlSlo0anR2NXkwc0p6WDBmTmU1RmRaSW1yc1Y1QkhqcjZCd1dDMFdXTVlFdmlfMnc?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Econômico",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 17,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g104",
-      "principal": true,
-      "cobertura": 3,
-      "tambemEm": [
-        "Forbes Brasil",
-        "O Bom da Notícia"
-      ],
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "STF valida legislação que impede pedido de recuperação judicial por devedor contumaz",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYXp6Rlk0eVBkb05abXdOT3poVDZEdlVERXB6Q3pyUm15cU55LUNUVS1QWGZSdHVxRUFILTZKcWpiQl84VVBpeV9ReVJCd2otazdLUHYxZXo4STIyaktSN2RzaFhIazlkNFZMRzhYZmw3WnlFbklEekR0bFh4S2pWNS0xTFlCd0tLUWVsOTE2clkyZ2pHcGdjX2Q2cTRtYjVmUnZuWWdaRHUwSTdrcFk5dDZqUjhXTTRSWERZX1c2TkJjYjI0TWs2NnRjVExVOGJVSWVlVmtuRGlaRFFN0gHrAUFVX3lxTFBTSFFjNG1Lbk96LW04OGdJTXQ2RVpOZ280NmwzellIMXU3VFRDUGxtS1o0MW5Sdzk0OTNyR2hPS3JiSHhUZW90NGFid2JDUW9vT09lbnpxTVE0WGFfdzBRdC11MlZ0YmFvV2piRjRBRVU5ZkhJN3hyOWVWY3VpRm5HSEVaS2NjMmZvRWVJNlB2MmFCd0ZxX2J2WkZjeXBnVlFUZy1fQjBVb294dFd0aUFpSTl3bHYyNHlRcWxteGpNeU1DM3o1Q1pCdlowbmF1QUdQeTRRVE04UFZhN0U3LWZiX0hhSXdSRmtmU0E?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Valor Econômico",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "STF"
-      ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g114",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Justiça do Rio decreta falência da Oi pela segunda vez",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRGZ3T0xXX3ltLUJvQXRicndQXy1NMjNvNE1WMmNxX2tMWlNDV3AtMi16NDBkWTBLWVByWVFMNThrRExPWTJrM1NyUTY4U2FYbC10Zi1lUHNobnhrUG9FZkpUMklxa1o1bEgzbi1FRklsZWFDdmlIWm9Bc2J6ZGdCSXFEV241TDZxMFFWcVcwR2tKQ2huNmJ1VEpmSEpHa0tIY3RHQkZJQ3Q4Z2g0T2NMYQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Agência Brasil",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "falencias",
-      "etiquetas": [],
-      "pontuacao": 13,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g128",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "STF valida blindagem fiscal e barra devedor contumaz da recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdjBETVVWQ1hNUHV4dGNQeG1TTGhVeG9xdnNKcHpnQ1RzWkZPSmdIQjlBa3hnUm5MbWUxd2VkbkFKbFJqTXJpblFkYzVSelZfTUVjWGJPMHZHT01IMGxWOVpHZy1wd05IdzhCVVpGUnNsUDNEZWlYbmdjMDNtdkt2RWV3?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "ISTOÉ DINHEIRO",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STF",
-        "Stay period"
-      ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g129",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Tribunal de Justiça do Rio confirma falência da Oi",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOejRuam9POEF4ai04dEI4V3Ffb0dJbGlpbDlzc2RGcUp4czdsV0xRNUx2aFZUak4tWTZHZGxaNTc4MzdqZ21jUWhiNkJfcXRHVDEyUUhxVjZHY0JRTnpyQ0lYUlI5NnByX2lEV0FrWFlSNDVQRDhIbTVRWjZ3RFU2RjBsOFg4QzlVa240b2tR?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "broadcast.com.br",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g130",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Falência da Oi é confirmada pelo Tribunal de Justiça do Rio",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa0JmNktQQ2ZRUTgzdHdZaE1XSkhkVTBac1M0dkI0dkpaUkhGTFl6aHBTd2N4N3hRZkN3Tk9rblFBbUc0NFF0eEQtd2hFMzJTNnlRLWg2cUk0azRSVnFLajZ1RWZjTDdGNU1mbW56UzIyYXhqS2hYUFh4QktUcmxMZlBqUUpTbVlLcEZkZmlLNTREMHJ6a3JYZGlvNnA1cUU2YXk0?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "DComercio",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [],
-      "pontuacao": 8,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g131",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "STF confirma que devedor contumaz não pode pedir recuperação judicial; entenda a regra",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOUh6d1VHT2dWVHpSbkY1VnV4N3FYVHpLc01MTi1uekVDZ19TVlNVamE5VDZLd182bWVOQ1N0eDFUUUNSRGhvbjU2ZkliX2FFbWZ1bWlPSmF4SXlLdnpLdno2RkYzM0NBTHBhQkpMZHM4dVhOSXFTSnVzdEdDdEVJcWtBRFUyaDgyUXRtbFp3Rk1BQjlickQydlN4T3BINGxlMnM4dTRmSFY0V3RITXUxcA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Exame",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STF"
-      ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g132",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "STF confirma restrição a devedores contumazes na recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOR19pYUtLVnR3TF9LT2l2LVV6RzA0WWJORVh3dGhhRGxuVUxaU1N4WFdoWWZaQmpJVF9CdmRHZWc4N2w3RE5xb1l2SHd1WVhNREw2TUhTTlNkZWhvRHNTSVdFTXBYeS1aRDF5dUlfdnppRElXQ2VKRmpDb3VKNkxyUWp0SEhUTl9YalFlZlhzWWFlWGNzYmUyQWpVemlYZl9tb0ZJelFXUjRSSWNKZ1hna0h30gGyAUFVX3lxTFAteWNBMVpHcDE0eVoyenl3c3JyaXBPOXJMV3VpR2Rvd21veGlLLS1XT3lYR29NYmpFc3JtWngtWXEtOEIta2lZUU82NVphMkNsZmZzdHpJaWFXR2RQTXBtaFFuYk5FTDFwdk05UjJVUzh6cGVLeXVlS3IwSWtXQ2F2aFJ2VnZYTThFT0Q1aVRyNjRKWXFNNjB1NHZGTEg1ZmxxNmVRZ0RZNFloY0d2OUxHWEE?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Campo Grande News",
-      "data": "2026-08-25T07:00:00.000Z",
-      "categoria": "jurisprudencia",
-      "etiquetas": [
-        "STF"
-      ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g133",
+      "coletadoEm": "2026-10-24T13:50:20.596Z",
+      "grupo": "g101",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
