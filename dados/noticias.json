@@ -1,7 +1,7 @@
 {
-  "atualizadoEm": "2026-11-07T16:07:17.266Z",
+  "atualizadoEm": "2026-11-08T16:30:43.932Z",
   "total": 7,
-  "totalComRepetidas": 98,
+  "totalComRepetidas": 85,
   "comResumo": 7,
   "categorias": [
     {
@@ -46,7 +46,7 @@
     {
       "nome": "Pedidos de recuperação",
       "ok": true,
-      "itens": 75
+      "itens": 68
     },
     {
       "nome": "Falências decretadas",
@@ -56,12 +56,12 @@
     {
       "nome": "Planos e assembleias",
       "ok": true,
-      "itens": 27
+      "itens": 28
     },
     {
       "nome": "Jurisprudência",
       "ok": true,
-      "itens": 26
+      "itens": 25
     },
     {
       "nome": "Legislação e regulação",
@@ -141,20 +141,73 @@
   ],
   "noticias": [
     {
-      "titulo": "STJ define forma de pagamento na falência por trabalho prestado na RJ",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdkx3RE1qOFZKUkoyUUF3bXdReEM2STB6S3VDWG9JSXd4VWl5VGFDN084Nk9ERGZBWmVja1R4V3hSbkxRUzk3OHpxX2VCUnRrLTRRMmV0bThlYzREbVNIcC0wM291QklOZFNYWDZyZk5EVjI5bGZHMTJ2ajYzU0NJLXJBeUVDbDFvSXE3WXlDRGg1dUZJdXJ3UHZDUG14MkJEU0hkX3M4c29KZ3lUMXp5MnhwSnU?oc=5",
+      "titulo": "Franqueada do Outback pede recuperação judicial nos EUA",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa1JxN0kxczh4Rk9lLUVKUWV2ZFhYRjJhQXpLMmM0U0xJQm1zRUdLdnQwNnUxeEF6X3ZVWTdGT3lEc2ZxczhiYzFaOGU3aDZxb05pUXI4QVBzeF9ONm1ES2NHdEVBYXNNZ3U2SXA4Q2RtSzZ2bzJDVlJsOEZjbjJJbEJWa2s3UTZqaXZ0bW5jd1BLSDNMcU9qazI1R051N1QxcWhLVXNR0gGrAUFVX3lxTE81bHBqczNSdGVMUV84Y1RodWZGQnctOW5jblNUU2lDMXJ0dHBYdkhfVFg4cklWeXRfdzlPbzN5ZWV3R1VTSUFVa2otQ19vNDhxbnVvTS01VjdvMl84VWpvWE9nendsVWJ2RnZJeVJQam9CWTdfbld5R1JnNTdBcVdzNFl1aFh0eHRJaGZkb2xwU0pIZjVaTGZFZ3dtdVB6M21PeHVtanY4RzlMZw?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Ponto na Curva",
-      "data": "2026-11-07T12:38:00.000Z",
+      "veiculo": "iG Último Segundo",
+      "data": "2026-11-08T15:26:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g0",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "O STJ esclareceu que nem todos os valores devidos a trabalhadores por serviços prestados durante a recuperação judicial de uma empresa têm prioridade máxima de pagamento em caso de falência. Segundo a Terceira Turma, apenas os salários vencidos",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vQ2hnNEFXc0t2Zktjcm5SbWRDcmtxRzFkMkNXTkFlaFdYSGNXYnIwMGNqMG4tVnBHSy1TV1NiX3JYUkNVRGR3TFVEM1BwSWowYVE?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Instagram",
+      "data": "2026-11-08T11:00:30.000Z",
       "categoria": "jurisprudencia",
       "etiquetas": [
         "STJ"
       ],
-      "pontuacao": 12,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g0",
+      "pontuacao": 19,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g1",
       "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "STJ decide que salários devidos durante recuperação judicial não têm prioridade absoluta em caso de falência",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNWp4NFFzS0FNVTdsTm5HR2NQazhSa2cwUzJhdnBMeVlWSy1jMU5iR1RfMFd2ZGdpRVlhWU4tWGpwM21fTTZPanB3dkp0S2pjbFY2TlZRay1HYjJ1NHQ2TTYwRy1KMHFwM3dqWXhZUWVqdk1aSE1jejdQeDc3YUhrRDZKdWUxZE5mZk93aDhrNXVadDdNVndoMjAyUDZMREtRb2MxUjVIMHYyOHNlMUdZb1ZDRl93SWswY0dIcHRucFQ0Q08za253UDRqM29lV1hQY0RNVVA2TVY?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Rota Jurídica",
+      "data": "2026-11-08T10:34:34.000Z",
+      "categoria": "jurisprudencia",
+      "etiquetas": [
+        "STJ"
+      ],
+      "pontuacao": 17,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g2",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Rede de lojas do RJ pede arrego à Justiça e entra com pedido de recuperação judicial por dívida de R$ 164,1 milhões",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPd1Nwdzg1RnRhM0RpcFZlVHo0V3VQVWhsdTJSUm1aVUZkUE1EREVEbWM3X3RUa3hpZTJocFZNM2kzeHluekk3aHN6ZktxemtkMHZUZ3M4Z0JrZlZudUxmWExmNTNxRkRUdjJoM2tabnV1S0xIZ1RKaVBRMWVOWTBaYVlPSW1GU3AxaGt1RkxDLTZkbzI2RzJqaURXVkZFVzAwV1l5SEVYT2R4SzNzSFFpVDktWENPcVd4dGFranE3YktVT3ZLMUN0VTkxUkNlcUdXUjRqV0p5VU5qQllySFNOTlJoVjBQU1Nqd1FnQUpMUWE3c1FoakN5YkVIV0LSAYICQVVfeXFMTlQwcl9HeWdhWHN4MnR1S3ozdnQtVUptRmR5VEVpSVZiSVZldzVLdm1qSnNmdzNrQVA1c0V3T0o1dk5URGtYS0pBMGRSdHBPejVEMTRlRndiWk1IcmdjVmZlYlZENXBtN1l3WTFPQ3psblFNV0hKeVFiNXp3a0lHTXl1cU9YWndnLVQ0aXN5aVduS3p1ZERicDNzQl9HaFlWQ20yWlVSOWZlNmMzOTRNUUFzbW11S0liMXVJcXU2aThtTl9xVDBjYnlzNmFQdUhoU2ZQT3BFTlN3TmxTOXRDUTNjclQ5WXJpeFpjUE9vSzZWZE10Q1lDWnhwMjhkYm9ZaDdB?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Jornal da Cidade Online",
+      "data": "2026-11-07T20:20:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 12,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g3",
+      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -172,11 +225,12 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g1",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g4",
       "principal": true,
-      "cobertura": 2,
+      "cobertura": 3,
       "tambemEm": [
+        "atlaspublico.com.br",
         "ADVFN"
       ],
       "versaoResumo": 11,
@@ -184,20 +238,61 @@
       "tentativasModelo": 0
     },
     {
-      "titulo": "Kora Saúde: Homologa Planos de Recuperação Extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbHZEQ0hsVHVaczQ0QWVQZ3ljNC01ZEF3VGF5R0hIbkFnTmVhMFRmWGNGM0g5bE9WNTgwTXo4MmNmOXdBenBzcTVfNy1UdEd0cEozZmVCSTV0UVMwdjlRUkItTTB6TTZQaFYzMTRvYTdCT2dabG5hWHQ3WmRyM3ZvWm5WMUdQSFVs?oc=5",
+      "titulo": "Conselho da Raízen aprova aumento de capital de até R$ 39,8 bilhões ligado ao plano de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNXZSNmItLTJjVnJETG93OEc2b0dsLVBQYXY1TWU5ZGRqR2s3M1h6WDdZMEFFbVVRd0lWZUx1dkpzeDdVMFZwSTZuYWhaVFNRZWhUdlcxcFZMeVF1dVoyU1R4Qi13eXhoQzczN2xRUHFXZnlqQngxT2x3a2h5WmNza05vck1OQnNNcDhFTU81cUtpbk5aTUpzRy1xRnh2cXdzQ0prZTZFY2l3dw?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Acionista.com.br",
-      "data": "2026-11-06T17:59:13.000Z",
+      "veiculo": "atlaspublico.com.br",
+      "data": "2026-11-06T21:34:07.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 14,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g4",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Mais um gigante pede socorro e entra com recuperação extrajudicial por dívida bilionária",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVDdHMlRsQkF5Qkt0VDFTRjdDX3hkcGFTOTZiOGtfV3RfYktvWXZMUzB4U1RSbmVTTWpMSVVjbXhOdnN2TjVaa3E5MzFlYkUzM3Z5QWJka1F3TTEwVTQ4d1RLc3VXYlRrenRIU084V0RoTExyVmJTNFdIb01LbmFDTnhlcktXWXVzUW1ZTFl2VWRvUF8weUZKRmVjNWVlUGF0R09UUkt4UXBUeXEwZFVvdWVGRnRkSFI3RFp3MmllZ2NPMFdhaUpCbmxiclhLTHozT3ZReXczekZNTHfSAeABQVVfeXFMT1NHekRtRkFjVHJBUUZDbF9uUVIyLWtpQ3RyVHpMd0hfbDdyZVFPOXlRbGtvZnR0YUNpX0kxRks1VGtRT0tKUGlnQksySUQ4eklia0NmRHlsc3poU1dUSFhaSHRsWG9HQWhDeWNxa0ZBMzhWczdHbHRMWFpXTjdUR2xSMmFVbmNYTVE5OGptVkh0b0VBZmRIWFlfZURqQ3pJZmpqb2gweWxXdEZuUHVyR2ljSi1OVzhYdGhZeWVRWDRIVUV6dHdCblNnUDJvM2VrdUlkdnhLRjlYY095SlVPM1Q?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Jornal da Cidade Online",
+      "data": "2026-11-06T21:16:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Extrajudicial"
       ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g2",
-      "principal": false,
+      "pontuacao": 7,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g5",
+      "principal": true,
+      "cobertura": 2,
+      "tambemEm": [
+        "Investidor10"
+      ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Justiça decreta falência e manda lacrar fábrica de empresa da capital do “Papai Noel do mato”",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWXJkRTZ3cnFJVGJjZXphSjdmR29ydEpyREtlN0FFejlXM2lRbmQ2ZC1zV0JVOF9acUs1ejhqdW5qR2FiRWhYLV9SV180OFVGVXZhNU5ZTDAzdjFZczZSUFU0QTh0OHhxai0zc0FKZnlVQi1LZnBXbEdSVlJCdG5OUVJMbUNtV0RJdTk2SGxWOW9BdWF3c2FvejhMYWYyUFdSdlJlQmpNTF9mVXJQYy1KcGFrUjN3TkkxejdtRHFCd1NtWWN4bEZOTC1RcGMwekRvYlZMNzVoV2VCN1Bq?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "NSC Total",
+      "data": "2026-11-06T20:10:05.000Z",
+      "categoria": "falencias",
+      "etiquetas": [],
+      "pontuacao": 13,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g6",
+      "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -215,8 +310,27 @@
         "Crédito trabalhista"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g3",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g7",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "STJ define forma de pagamento de créditos na falência por trabalho prestado na recuperação judicial",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOY3NLOEE0ZFB5YzBtTmlPdU9uMDJOOVdLQkN0dFRwdEJiRGFRTjRBUkxPSVg3Z1NHVDlkUjM3cnpfWHYyY0EyM092MlNHOUZnZDBkS0ZfRnRjb1k4MVJfclpvYUlNT1diUWd2cFhzVk5naTdtRmNTZkdrQlhBc3Rwal9jbmNMYlVoTlBzYUVHcC1xSk0wU3RwSFU0S2JIQ2pnYy12elpVS2Z2QWxzSlJVTUwtcEVxSG1jQnNZZU85anVrN3JJcVBHZldpLVEwUmdSOHczWTkwTEU?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Jurinews",
+      "data": "2026-11-06T12:31:00.000Z",
+      "categoria": "jurisprudencia",
+      "etiquetas": [
+        "STJ"
+      ],
+      "pontuacao": 17,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g8",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -235,13 +349,9 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g2",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g9",
       "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "Acionista.com.br"
-      ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -258,9 +368,12 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Aeris Energy recorre a recuperação extrajudicial de R$ 1,5 bi",
@@ -274,25 +387,12 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Trabalhadores da fábrica de pás eólicas da Aeris no Pecém (CE) viram as vendas no Brasil caírem de 119 MW para 1 MW em um ano, e a empresa pede recuperação extrajudicial para renegociar R$ 1,52 bilhão",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObGFoZTR3THRRTXpBSGdxRk5KSkdPQ3FFMGw2QWd1NWpJX0pYWGNsWGlrNTQ4Q0g3LU9xdE1xVWtkWUdMSDhoMmduNzdVLUxlNDF4aEREY1JhRDlkYVFhMUdfSXJvNWRTSTg2aWY0RGtzNkN6SU02d0x3c0ZiaEpqbTFselhXVUFTbGdTRk1zQUpWM3dncHV0dzFDZlJpem10djQtOQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "CPG Click Petróleo e Gás",
-      "data": "2026-11-05T03:30:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Aeris pede recuperação extrajudicial para renegociar dívida de R$ 1,52 bilhão",
@@ -306,125 +406,32 @@
         "Extrajudicial"
       ],
       "pontuacao": 7,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris, fabricante de pás eólicas, entra com pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWGVQMjV2ZnhGMWhyRWRqNzU4aWhFRm9jYU1QY0hqYVlyQXVOclFyWjFFcW02eU9pRFZLQmFRX3RZVWVPQjdzekhEMUd4VzNpRk5mRTgtOTRRNWpJckFqX0Izdjh2N2cyeVQ3S2U1d0t4MkFKMzNZNmx2TFhSVDJfbVRBWjlTTGdURlZzQnFQUU5DSnd5MFlXSHJvYmhOYVB2dFpWQ1V0VzZvRzRaODVQdDZlNGJURlNvT0xGa1YwZk1NLWFBR0E?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "OpiniãoCE",
-      "data": "2026-11-04T19:03:38.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris Energy pede recuperação extrajudicial de R$ 1,52 bilhão",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQa25zS2g0MjJNTmpDTlpVLUV6UEk2SU1sSTl0RmI2Wkg1TGdsUUFGdndOd1pJSnFreFVUaGllYWEwcThyVHRjOFJwaGdpbnJPaHc4enRsNDFTakhUOS1taEtyLVJnNHRPbjJOQUY4SHRLWVNETGdlTkVXa2VMeEQzRWtMSWZEY2pDcUFFdjVmSzFpUWcwZW4xaEY4NVdlZzFTZi1YSDNmaVNhanPSAbABQVVfeXFMT1pVNXE1cjZySFduZ2tBakNOYms2b1Vjczg5emUwemxMOW9pZlh2NGxZT18xczlnTWdvSE5KR2lRUi1kZWVLWjVrOWFmQ0d2OW1MT3lFTzhGRzdjcXlQb0pVT2VDSWJlV24tcnNYMm53S3JMMVI2SFYyZF9FVW9DLWdyTlZxUUdQcFU4ajc5ekhVdzJvc245WGdiYnJ6UXNIQUlfcXNrLUhna0RGMmg0UkU?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Tribuna do Paraná",
-      "data": "2026-11-04T18:07:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Fábrica de pás eólicas do CE pede recuperação extrajudicial para dívida de R$ 1,52 bi",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTTk0cFBsSFdsdkRFRzdYWnBjbkctbk1nM3h5bkpxUDhia2lCNzlHMXdMLU41YlN0ekFwQUk0LUE3UEJhZ3FHNkN6SGxMUVN3TXBla1pOdWkyamwwcVlVSHZHRHhvSFhGWUp2TFE5SW1WLVJ5WDBZZlBNYUtfVlNLelF5M09zYXJ5Q1dvaEstUWx0TDFvOGRiT1JRODdMeExtLWstSUNrTTJvS2pPcnFJMUVhVXVuUVNDWjRsN1lCUl84UQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Gazeta do Povo",
-      "data": "2026-11-04T17:15:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 7,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g5",
-      "principal": true,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
+      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
     },
     {
-      "titulo": "Aeris vê venda de pás eólicas no Brasil cair 92% e pede recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSW9hdklCdmloOVFsMkctV1d6MElzaURLc2M5MUxTRXhTTzZmZkhnRnB4WHhBem9qMkVnN0ZheGNDd3ZReEtBaWNWU1lKcmNwZ0pvQWJ0d21mV3JrYW94WVVpbkJZUGVwWnJUbmdPOHZQRnNUQVZ5LWtHbXhIWldZRjRfQUFmOWE0NXk1Q0c5azVzS25PTWM1SWlvd0dSMHJxZmlmTE0wRjZVWUI4dGpYMkxYX0hKVlNUSURtRndhbjhtaG14bTlqakFXSTRQa0E1cHFQak5fSTZjSms?oc=5",
+      "titulo": "Oncoclínicas informa que plano de recuperação extrajudicial tem adesão de credores de mais de R$ 4,3 bilhões",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeDVYaFBuUU4wbUZLUW1vU3NQcWc2dC14MWQ4cnc4VU9UMUM0XzdPU2xyM044dXBSdEgxMFpCOFFHVWljbms4LWxWbEZzbkk2RUhOZEhQbGlwampNWVNMNGU1bU9kdVhnUVM1QXhRLUZ2LU5DM0dHbzNGcV9kenZCVUxoSlhGME1jVEh6OTdxaFJCY3lQQ18xQVlmQ1ZWT3FnQ2pkR3lJY0lTZw?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Movimento Econômico",
-      "data": "2026-11-04T16:50:15.000Z",
+      "veiculo": "atlaspublico.com.br",
+      "data": "2026-11-05T02:44:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
+        "Plano",
         "Extrajudicial"
       ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris pede recuperação extrajudicial para renegociar dívida de R$ 1,5 bilhão",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMERWZm5ZSHV3aG01ajItUjBrenFsakl0Qy10YWJXWEoyQk9sRnVQSVBTNXRQc1FIOHJuZ2hPMDdqVnVzM2ZsZjUxU3ZCSllaaEoxdGZoNFliRUtpZFhER0g3THFjUGpwTGJ3M04wQkQ5R0YxSXFpbEJOSWlpZHdyaVh0U0prLTlsZjd3TUlPRTBzMDVjZFVoeTVITXRIdERSaGFxWjFzU1dpSXg2S3c?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Revista Oeste",
-      "data": "2026-11-04T16:34:59.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 7,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Varejista entra em recuperação judicial com dívida de R$ 140 milhões - aRede",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdlFOb3ljZnJFS0RRNkFEaVZyaTFlZl9zOWpMaFNrSDlTekFuamZKNVBBVkc4cE4yRndRemVPVjJuTE5YSWpYelNtX3dLSUtaeTdWRzA4RldiVG1iNWhQWlpENHhCQUhNQmNKblpBeFJHelg2OEt5dGdCQTRGSWxiWWpTWGM4X0lOdzJKcnZXV19wNXNnY0dOamNSbXBsSmYxT21IRnFR0gGuAUFVX3lxTE5RemdkSk1KdlNGNGNoTTdEM3I2QzI5MTNSazBlQnNMOWhXM3pVelhCeU1lWlo4UURlNUF4YVBrOUdVSlYydVdkb183QnVGVld1SUNVSEZBMEZ2R2VyWUQ0RUlQNDRjZmRPWHlDM3VJMGJPbUtmYXEtUUhVUU9MQ3FQa0FRNWNqa1lIQ085WUthQkotejFDX2tnVXkwZjBjNk5ZVE1pS21qcDVoRFBiQQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "aRede",
-      "data": "2026-11-04T16:08:38.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
-      "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g6",
+      "pontuacao": 17,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g11",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
-    },
-    {
-      "titulo": "Aeris (AERI3) pede recuperação extrajudicial para renegociar dívidas e evitar crise maior",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOEZjSEl0bk5VNGdkaVRjaURSMHhqMENpUHQ5aGJJcUpnQThQekZ6VzVXQktCNktxaUYtb2JpamF3Ny1nTllSQXNZcHlfUE1VbUIteC02UU9lMlRSeHVhZTJkd2NLb013M24zdUJhN0VReXBMV21QYVRaS3R4MGpKYlNrVXpFS2xlOUhMdzNlVjJFeF9WZU1iMVNlSzFHZ0RMSkpIUnVhd051VUhHWXpnRC1sdE5UaWRwTGJQYjB3SHJZbk81ZkFr?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Guia do Investidor",
-      "data": "2026-11-04T15:51:15.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
     },
     {
       "titulo": "Aeris pede recuperação extrajudicial de R$ 1,52 bilhão",
@@ -438,136 +445,24 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris (AERI3) protocola recuperação extrajudicial para reestruturar dívida de R$ 1,52 bilhão",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbVlsX3dKbUhmV2pXOTVtRU5rTmoxOEZjenpkREJHcTk5QWVZaXJBa0JsNTg0b1pIUXFTeHVoZm04LXdoU3BqMjI2MlRZd29Sdk0zTjZ3U0QxbldvYnpEcE5ZOWY4QVhwR0VkMkJacFlfM2V2NXlVZ1ZpNXhZdk5jSkNxNzNNbUhyOEJXQXRKSFFZUGhHaF9YY2p1SjhLMmtERXRON1pacTJIUQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "BPMoney",
-      "data": "2026-11-04T15:01:28.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris entra com pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRXp0dUJVVkU5dTJWbkpId2VhUXFUSnd1VnloVkJwTWhsUnpBSklaSDhCYmgxcHBzbF9ZdThScmhDbDNMMkIwU0NEcVZUcjVrbmFZYVQxRjh5ZkFkaUtEV0drcFZEcWRyUWg1YkUzSjlDOTdOTS1aMlBWVzdGUnNRNTEzVkdQcC1sR2MtQlh1Z3p3bUxBSnRrMEtQeDVSQlFfMkRF?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "CanalEnergia",
-      "data": "2026-11-04T13:52:08.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Fabricante de pás eólicas Aeris pede recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQm12Q0hnbnV1YTZKUGkteHp3MTNJdTVRVHg1YXh6TDJCWDdJVDVXWm9CdHlTREJWSDcwY3JXUjFNbjhWaEpCZTBSNVN1RnV5THRvTUgxODJvMDQ4ak9WSFVucFlGdXZ0NmhkRXVaSzVsX1VkckJJNWpNQ3BiUExBc055UnRQMmo2RlBSWXQ2SFpHQWZwY2JRZw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Agência iNFRA",
-      "data": "2026-11-04T13:50:31.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris entra com pedido de recuperação extrajudicial e negocia dívida com credores",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV1gyM0RZTEllMDlGSkhhZXZlNjJhdXlWQXRyR3ctZ2lGTWJ0Smlnc1BTcFJqVGc4aWN2bXRzVWJfZlhNRmw5ZFpicVpGOTV3RENKSlVkQ0NVZ1UwYk9sNkN5bHlUTXlac0syX0hqTDZWaHlrWlVQdnhIVFdHSGNXMzJuNUl1b29zYmFUTUNHUzBnWHNyQXppMDJDVTZvUUlFdEc0MDhPQjA5Q00xa18yd0pHamlnMjNH?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "ADVFN",
-      "data": "2026-11-04T13:49:28.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Cearense Aeris pede recuperação extrajudicial para renegociar R$ 1,5 bilhão em dívidas",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQQlJmd25VcVR4bVl2LWlkSU9aSTFqdEtPLTJnY2VScUJIaTh3TlFSVVE5SnNtRU9GVUwwMUx4MklUalYyUEFZdFk5c0tyaTNVeGVYUThGcDRoNXdaQ3l5cmdxVW0tRzhCVjZmOUZibi1qUHZMc0FXby1wOVdNYmtLTktKYTRWZjJuTnFmbVQ1RzZMU0NZUEl2dXV5bjZZamRTR1pDVjNWTXhOdmpSSWs3N1pYNHE0bkJyV3poMFdPVGVhemxFNkFfNnZEYzdnVk53ZG1INEdWMlVRNVZ2X1l6c08za1I0d0U?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Diário do Nordeste",
-      "data": "2026-11-04T12:54:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
       "principal": false
     },
     {
       "titulo": "Aeris, fabricante de pás para geradores de energia eólica, pede recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPb3oweVNmU2RMaWZ6aW5XZjc4WFhJTldNS3BuZ3NXTXY4Yk0xYkZRd2prVkE3RkprUnlqR0wxUUVZakdCUmxnc1dGSmxWajhuRlFfTHh4QWxCTXlZN1NrSFNiVDlhNzk4SUFYUnVZeEpwTmh1TFNURU1ZUjZfRUZmZGlybk5nQV9kLTdqVUx0ZXF0VGYxWWxsUUtSRWdyeU9rc1Q3R3B2T3RacXBvX09CZmFkUGNmYlRlbS1BWHBMaFIzM0VoQ0x6SmNR?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZmRTRGR1TS12MFl3aEk1SGliS09XUzNBNDY4Rk9TMk9rZm9qVGxpQXM0RTIyX0lIMDNJclVKbmtQUDZla05RaUc0X2ppbUlYUDJBOUpraTdqbVhyZW5IMk1sT0xDcENWbU4xWU80MTJzRGZNcFJKQ1RnblMxbFRVUlk0TElSNWRHVE96VjdfWDZSSlVUbjRtcW94cW1ndTU3RkVWNkgzNHZ3TVA2NHRwek9uQXBOa3NCN01jekRRc9IBxAFBVV95cUxNRjc3dEl4bnhhbmd1Y3NJN1diMUlIbXI3RldJNWVmY0szUHhBczF4UVQzNVNDWEFHbnk1RDhDVE5MQ2VVQ2tram1ESnVYU2hESHI2MnBzRE1lemlHMW83UzdmQmRScF85X2ZKNHQ5Szg2amtXX05fQW5CTDlFeGVaV3V5WEZ3Tm96WkJKb0NXMk1QcFpObXQ2d19nSHpiR3djTFRRNllVOXN2UzI3aUduUTd4UDR0YW80Y2cybWpleGpyeUcy?oc=5",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Estadão",
-      "data": "2026-11-04T12:52:26.000Z",
+      "data": "2026-11-04T12:48:00.000Z",
       "categoria": "mercado",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris (AERI3) protocola recuperação extrajudicial em tentativa de reestruturar dívida de R$ 1,52 bilhão",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQkZjWXBWTi0tS0pZeUdFQnFiS2NJVWwzdnRmSV9wVURRSE9wWEp4NHFQdTRJd1dvc3poODJKWWRTbW1KOWF4RzJYOGRPazQzZmpqYmtTUDVXSFJhYm9PN1N5N0RWcEZzQVB5TUFrVnlOOHFRdWh5N01JUE42SFd6VXRSak5NX2M2S0hlRS1ZMThkVzl0TmtzZHU0WklONU5jV1JBU1pTX3Q1am1LWXkzQkl3NnZwdmdIWlBkdw?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Money Times",
-      "data": "2026-11-04T12:30:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Fabricante de pás eólicas Aeris pede recuperação extrajudicial com dívidas de R$ 1,5 bilhão",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOM001V2hLZWZGVTl0Sk4yWEJzd0ZfdktfeG5FQzRUVWJ1Z1o5eXFhLW82Sy1sRkw2aEtKQmtwdlQ5YVlqcUd3eFRmMDdJZnRHdFB6cFNuajRWVDFNZTNBZjUxeVpwd193THh6VXhKWUxWUGlNSlRIM0JuT1VhaFVWWUFyWDVDaGpYb3lpcA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Diário do Comércio",
-      "data": "2026-11-04T12:30:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
       "principal": false
     },
     {
@@ -583,33 +478,19 @@
       ],
       "pontuacao": 22,
       "coletadoEm": "2026-11-04T17:45:43.607Z",
-      "grupo": "g4",
+      "grupo": "g10",
       "principal": true,
-      "cobertura": 29,
+      "cobertura": 12,
       "tambemEm": [
         "Diário do Nordeste",
         "Valor Econômico",
-        "CPG Click Petróleo e Gás",
         "O Otimista",
-        "OpiniãoCE",
-        "Tribuna do Paraná",
-        "Movimento Econômico",
-        "Revista Oeste",
-        "Guia do Investidor",
         "UOL Economia",
-        "BPMoney",
-        "CanalEnergia",
-        "Agência iNFRA",
-        "ADVFN",
         "Estadão",
-        "Money Times",
-        "Diário do Comércio",
-        "TV Sim Brasil",
-        "Times Brasil | CNBC",
         "InvestNews",
         "Exame",
+        "TradingView",
         "CNN Brasil",
-        "InfoMoney",
         "NeoFeed"
       ],
       "versaoResumo": 11,
@@ -628,44 +509,12 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g7",
-      "principal": true,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g5",
+      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
-    },
-    {
-      "titulo": "Aeris pede recuperação extrajudicial para renegociar R$ 1,52 bi",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaUxGaUpaS0U1UjVXQVNBc25MNGF0WTJVN3h2WGNxcFRHNEgzSGhYVlRqSXNXUFdWZnF1bkhmOFM4LVF3WGtwX24wTDE5eDZaYU4zS3FhRFBsRUx1TFdYXzd4a2V1cGo3MXRjdEk4aVBnemo1RHd3MDk0dWtPMDJXVktHNkZuODhNczZBZF91c3ZnWWowQ2VlaDNyRlZCOXhPNW9VU3pyRWZ5TmhQTk0xSWJRcDdxdk0?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "TV Sim Brasil",
-      "data": "2026-11-04T12:02:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris entra com pedido de recuperação extrajudicial para renegociar R$ 1,52 bi em dívidas",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbTBkaURMU2NQNzRZX3ZwWlVDV2RPbTZGR3EyRVEwejhPMEFBMDNfb2pITEhlelhyamR1aGFoX04wbWxZc1ZwcnBsTklYRnNCelFWRVNmc2VTeTlhNUt2cXNERHBMclhEZzFFNmp1eWJ1bmdCT2tzYnZUMXBfYVJPNWJ6TFhUNUdXMUlLMGRkbDN0TklMSjIyOW5pMTVaZ1lRd291YWFCc01mekVpcHNOaUlVRmZycGZ5ZGY0dzdmVXFiUzVfeEhmeDZvUldMVFRx?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Times Brasil | CNBC",
-      "data": "2026-11-04T11:49:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
     },
     {
       "titulo": "Aeris entra com pedido de recuperação extrajudicial para renegociar dívida de R$ 1,5 bilhão",
@@ -679,8 +528,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
       "principal": false
     },
     {
@@ -695,29 +544,29 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
       "principal": false
     },
     {
       "titulo": "Fabricante de pás eólicas Aeris faz pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPX0ZzaXNxMDEzLVQtUl9FWUZXYU9Nek80MVRDeHJIbS00akNFOC1BWlMtamZEVW9PTHdOS3Q2cG5TaEZya3VXUWFjZEFCaEdyYU03X1ZqNmRFSGtjY0prVjhiZkdfWTg1UWt3U2pkTWhNQzl0NmVGX0xIMnpFZ0ozcnhnZU90RGswU1JEblpRX0FTVC1VdElYSVM2M3Fyd1pxdzRhRTVmZnhKNnc3Ml9YVzZKakVLMDNFVnRzS253N3k0bkZnS3hnUndUZw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5oQTNpeXJNdS1LQzV6b0pfMlBsU25IVzNSRHpDemNwQ0k1WGEwMExkalZvYU5nd1ItU0V1R182dkNwc2lBVUlsVXFhbEFyRVd2MGUyY2ZfbVY5Si1RQndLRXViWV9uaXp0OW83RkdPcEluS0RFQlVj?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "UOL Economia",
-      "data": "2026-11-04T11:31:02.000Z",
+      "veiculo": "TradingView",
+      "data": "2026-11-04T11:24:54.000Z",
       "categoria": "novas-rjs",
       "etiquetas": [
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
       "principal": false
     },
     {
       "titulo": "Aeris Energy entra com pedido de recuperação extrajudicial para reestruturar R$ 1,52 bi em dívidas",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdy1OcklLcjIwaFdLYnE0MWM5WEZ4T1U1YzNfLTVKWWVwU3Ixc3dTY1lRZExQNnJzdjhjVkNKbk9MaWtiTUFKbmt2Tl9xaWFTRHYwWm95M1Y5aDBJSzd4WHJyeDlzV3I0d1d0UlowSUxYemt6TmFXV1JkeVl1QzFTeDNOUFgwUF9ETW05R0dOcnJoQjl2a2UwTWlTS2NsUUZyNW9GNlRDUVRWdzEzQktZaW9KejNTMVVITzRoS2VDdkU2OEdoR2gzMVFoWTBjUzloQ0NNX1o2eFlTLXZhb3pfQV9Wa0htdw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdy1OcklLcjIwaFdLYnE0MWM5WEZ4T1U1YzNfLTVKWWVwU3Ixc3dTY1lRZExQNnJzdjhjVkNKbk9MaWtiTUFKbmt2Tl9xaWFTRHYwWm95M1Y5aDBJSzd4WHJyeDlzV3I0d1d0UlowSUxYemt6TmFXV1JkeVl1QzFTeDNOUFgwUF9ETW05R0dOcnJoQjl2a2UwTWlTS2NsUUZyNW9GNlRDUVRWdzEzQktZaW9KejNTMVVITzRoS2VDdkU2OEdoR2gzMVFoWTBjUzloQ0NNX1o2eFlTLXZhb3pfQV9Wa0htd9IB9AFBVV95cUxOMGxXeVhwSzNEQVQ4bFhGcXlUamtHbExIUlZmbXRNUUh6QjBJNkpxcDViWnZkOWc2WjdBdWZKYlR6M1BWdkhxS1lEYkRpaURVYzVwRE95TG5IMGotY0RqaVhaQWZnV3RBTXl6a2g4bzhKc2RIaG04d09BMXpabnBRYjBSUTRWQmZZTU9TQzVlMTZqbGFaUFdBX2lQT3JETWhZaWtLbHdpb01iQklKT1hyOE9ULXhzYWlFdEtZZjhiZGRPd1dqNTAxYjlkcXFvZHdDRWxfZW9DbDZrSUtkN1V2amhfX2RocTItS0hleEQ2UEo1amhT?oc=5",
       "resumo": "",
       "resumoFonte": null,
       "veiculo": "Valor Econômico",
@@ -727,24 +576,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris protocola pedido de recuperação extrajudicial na Justiça de São Paulo",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdnI2SjJXLW5iZEk3ZHVtZ3ZLcXhMRko5N3hHWXpqYU5oeldzS3VwUk5kWDB6alFGSXR0ejhKUENPdGVOc0FHWWlETUl1VmpYa3hTd3JWendxY01YRTJFejQzZzM1SHR6M1FLTV9jQ21zaDQtVlpYSzE0eXZUckx0T1VMQmpRSFpNWGVCVERHSEM5MUQyYmcta19rUnZjS285cWlSeDkxRWRVWHFxdjZleWRWV3h0MTNXOUUwMFhaUnhaWmhuU0pXR3l5dFV0bVNkVTZjeDBORTFuQ3pI?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "UOL Economia",
-      "data": "2026-11-04T11:05:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
       "principal": false
     },
     {
@@ -759,24 +592,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
-      "principal": false
-    },
-    {
-      "titulo": "Aeris (AERI3) protocola pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNa3c2YzBMNmlhVTRYWkR6blZhQjdLTG5va1BrWWZnbG85SXEtWEtTekpRd29XTFV2ejJvMXFkY0l4MEtZdjJqM1otYXIzUlBmUDhDUDZTNDRmX0U0THZQdlJEWHh2TU1LV3NRS3RhR29Hdi1zdDY3dlZIWEpWQ09rZnpwX1hnUm1SdUUwX3FhSWhQWmRKeGliYWgzMVTSAaIBQVVfeXFMTjVZQUZ3bGZlWDR6amhqZWs0Q015Zl9GcnJ3ejUtQ195ZTZWeHRvZnpDZE8tWlZjWmNENDNHMFFwZ2tUeVNvWWNVZ2VBWG5od01ubzBuMjlHZFZkVUptSXRLTHlDc0dNN29kVmRkcThKaEh0eDhWamQ5ZjZ3YlBSU1lGZXM4bjZ0OHpFV0h2S1RtRDNycWxuWkY3NlVTZmxvYzVn?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "InfoMoney",
-      "data": "2026-11-04T10:37:22.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g4",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g10",
       "principal": false
     },
     {
@@ -793,8 +610,48 @@
       ],
       "pontuacao": 22,
       "coletadoEm": "2026-11-04T17:45:43.607Z",
-      "grupo": "g4",
+      "grupo": "g10",
       "principal": false
+    },
+    {
+      "titulo": "Rede varejista entra em recuperação judicial com dívida de R$ 140 milhões",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObk55bFdSUUtnaHVOSkRKb3JMaGJNckVFWUtGdHR4Y3V2TDctdHI1TnprWXZ2dzNTT3dUY0tIVThKU3IzVUdvOUlEaEFoZFJ0eFJSMlFxZnAzajh3R29Scm1pZy1jMWllMTA2cjJzaUhqTng1Q1hRQmlJNkxrcUN5SmFvckd5SXhIUG5BalNKNjJFN1l0UnRBZVRBdHhFR3Nnd1ZFckkzMmduVU9ueEHSAbYBQVVfeXFMT21jbDZPQW1LUUIwblpkcWpxRjVqRDRQaFBfcm8wSUhEUW51cFNpXzYxSTdxT3hTMDF6WkN4TVk2bzdiTTFqeHh3SUV6emJ2cUJhVDg3Wkx2N1pUMmxkWGRYZUxEbUF3V0FBaEZVV1VvOGpKRXZkQm1KSUxVbDNpY1dMVDFpV0Z2SF9zWHRUUnBoRHhScC1TcDZpUDd2aDczRTI0VGYtNUJ1Z3hIdmNqVWpFOTNYTnc?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "A TARDE",
+      "data": "2026-11-03T22:59:29.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [],
+      "pontuacao": 14,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g3",
+      "principal": true,
+      "cobertura": 2,
+      "tambemEm": [
+        "Jornal da Cidade Online"
+      ],
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "STJ analisa venda de unidade industrial de abate antes da falência",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUWZRTGNMaHBkemtUSnFpV3dSZXdCR05nMHdCTjN0aUo0eDkydVRUWFpja1MtTmkyTVJucXN5VkY2aV8yeElqX0gzZWNPSjY5NFplSWR2UHk5OGRaQlRWVGZWOU13UlFFajBDcmJ6UjE3UjRWY3BLajFVV3BfWXN5NFFlbXdLSlpPY01Pd0gzY3lLRGtVNm5jQ1RTc1I1OXp0M180NFRsSjJtSzZIelE?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Migalhas",
+      "data": "2026-11-03T18:44:35.000Z",
+      "categoria": "jurisprudencia",
+      "etiquetas": [
+        "STJ"
+      ],
+      "pontuacao": 12,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g12",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Oncoclínicas (ONCO3): Avança em recuperação extrajudicial",
@@ -808,26 +665,9 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g13",
       "principal": false
-    },
-    {
-      "titulo": "TJ-SP decide que impugnação de crédito em recuperação judicial admite honorários por equidade",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVjUxeWs0MWNZUWF5OXVrZ0gyWWFOcWtjeG40OXJ1NTBGSUxPZzk0T3BLdXYyTEVkZGFqanBaYnRtM1dNVUxUVTc4VkdHbmxxemhLcWtWdE16eGxvWkd3MFFEX29CRWxpSGhla19Rb1Nta0xEbXh2WUUxRFZDSWRwLU1oVC1ZZkRLbmo3Q2k2clFDRDZ6akFRTldocXNhemNvVEhZWGF5c2J2QVE1SlBYWThOZXlIdUVBaFRSbg?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Jurinews",
-      "data": "2026-11-03T12:45:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [],
-      "pontuacao": 7,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g9",
-      "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Raízen aprova plano de recuperação extrajudicial e prepara aumento de capital de até R$ 39,8 bilhões",
@@ -842,8 +682,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g1",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g4",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -861,8 +701,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g10",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g14",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -881,39 +721,19 @@
       ],
       "pontuacao": 8,
       "coletadoEm": "2026-11-01T16:35:18.008Z",
-      "grupo": "g10",
+      "grupo": "g14",
       "principal": true,
-      "cobertura": 7,
+      "cobertura": 6,
       "tambemEm": [
         "Consultor Jurídico",
-        "CNN Brasil",
         "G1",
-        "O GLOBO",
+        "CNN Brasil",
         "NeoFeed",
         "Exame"
       ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 3
-    },
-    {
-      "titulo": "Chilli Beans pede recuperação extrajudicial para renegociar R$ 340 milhões",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQlJEY1V0dHd4dUl2X1JWeV9oN3YtUEVCMGRCSFZzQUdITWFWMldQQWx2Z016bVF2eXhGeE43cnBGT0pBVFhCdlpxTVdnS0E1OXZzcDRJNEczTTQ4TzltcjFOeEtEQThrbWpiWWRsdldGcUQzZDNjWG9HYjl3STRtLWptd1FPVkJJaTY3bjNDMzUteDBEc3o4TE95U3NGUEkyUTg5UFJ0S2dCZ25ZeTRCdXdsU2l2YV9ReWxnMFdRZDE2T2F3YnRhR3J2RFY?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "CNN Brasil",
-      "data": "2026-10-31T18:07:08.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g10",
-      "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
     },
     {
       "titulo": "Chilli Beans entra com pedido de recuperação extrajudicial para renegociar R$ 340 milhões em dívidas",
@@ -927,69 +747,9 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g10",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g14",
       "principal": false,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Raízen tem plano de recuperação extrajudicial aprovado por acionistas e aumento de capital de até R$ 39,8 bilhões",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPalY4TC0zNW1MSGpNQXdfNkRHMk1iTFdQRk80aXV4djVKRlRBbjdjWTFjX3liYUJCMDNlQ3NTMW9ocmdoQXQzSUszMVQwN1dudWhGU0w4cWt2X1VuUmgtQjdRNk5jMjI4aTB0TXZxM296RHBVTnFwbEJvV0ZuSnZpTy0ta2NHbjlrSFN4Y2FPVEFndEUyeVM1Szh2V1ZCWjJxUmJrRFZiMjM2TnpaUjJzMVUtVQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Times Brasil | CNBC",
-      "data": "2026-10-31T15:45:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano",
-        "Extrajudicial"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g11",
-      "principal": true,
-      "cobertura": 3,
-      "tambemEm": [
-        "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-        "TradingView"
-      ],
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Chilli Beans entra com pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVXBlazhtUkUxMmRKRzdoTS1kMUdJZy1Fc1dJTTVOV2EwcHQ3NHZWS0w5WWh0TWxOMU52Tjk4d2ROekllMHdpMzZoS2ZuWXRUaThBZlRrMkpoRWJTeEpNbm9IWkd3c1dnd1JvWDNyN0FVVDk4Um5fZkpXQlJ4NHY4dTBTdzhzdGYtOVZ5UDB2NkdGU1ZBeDJCWklxRmpreVVLby1Gc0ZIUmpuOTFMeW5UaHppNzFpWTVULU84NlFKbXM4aF9Z0gHTAUFVX3lxTE1YYkNJZ1VVaVBXc0FORW95TkZ5MEJadnluZzVPemhWMjNvVzRKOHloNlBBQjltUFJOYlRXWUlZeThsQlZoV25sOTZVdndTVFVCZGZ1NEpqU0dnMTdkM09fSWNhUUc2djZ3XzVuclpKTlY3VHI0eER0d2FqbVlfY1A5TTRrYlUtTjFRcWJhZ3hEM0lLZVhOMHl6WDZoZkxueFZGMkVoYU05dGV6SFpXMUJETWJxbWZGSXRWZTNYNE1nVDFna05jT0h2azBlSktSU2o4a3c?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "O GLOBO",
-      "data": "2026-10-31T15:43:05.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g10",
-      "principal": false
-    },
-    {
-      "titulo": "Oncoclínicas (ONCO3) alcança quórum mínimo e leva plano de recuperação à homologação",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ0JVLWZxanp5R1dZaUhMeG9QSWxvQ1loMjlmczZIYVJrNzJJQUpQdGJ6dTFwakxRRE9RSURhMDNVWVRQcXp1TWVVbGRCSWZBZEJWVUlTOFJNbWpqZmdJeVh6a3V3ZDRoSXozZDRrU0xuXzNPdWZTd25YY3dHS19YRzBCc2tXZFhweDNNbGtmWC1XMy12aXVVdEZjVHl3V0FwN2hXSnBHeXRZQQ?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "BPMoney",
-      "data": "2026-10-31T14:30:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano"
-      ],
-      "pontuacao": 9,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g12",
-      "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -1007,9 +767,47 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g13",
       "principal": false
+    },
+    {
+      "titulo": "Chilli Beans pede recuperação extrajudicial para renegociar R$ 340 milhões",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQlJEY1V0dHd4dUl2X1JWeV9oN3YtUEVCMGRCSFZzQUdITWFWMldQQWx2Z016bVF2eXhGeE43cnBGT0pBVFhCdlpxTVdnS0E1OXZzcDRJNEczTTQ4TzltcjFOeEtEQThrbWpiWWRsdldGcUQzZDNjWG9HYjl3STRtLWptd1FPVkJJaTY3bjNDMzUteDBEc3o4TE95U3NGUEkyUTg5UFJ0S2dCZ25ZeTRCdXdsU2l2YV9ReWxnMFdRZDE2T2F3YnRhR3J2RFY?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "CNN Brasil",
+      "data": "2026-10-31T07:00:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g14",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Gigante do varejo de óculos pede recuperação extrajudicial após acumular dívida de R$ 340 milhões",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWk1sRDhFRW4zNUZ1aEhLRHk5S1F1cW5xZmxHLUtZeVpzRkp6aE95cE94bnVhNHJPekh6MDFSWXJ4NFp0N0NGVGtvTEdlaVgxaFFZVEVIeW5Obm1qWjJLWmRKelF6dnVKOWt6TVI3YWRpcW5WTENfTXlQSjlLZmx2WTdSYW9nTFFobW1qS0tGdHVqWVJkMXlqamZ4MVJfN24xRzhYajA2aWsycEk1c1JMU2ZURXo2ZnFfVFRaWExxU2RvcDhNTWhSSkowYzhuOFZZeHZIdWYwNElLQQ?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Jornal Correio",
+      "data": "2026-10-31T07:00:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 7,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g15",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "Oncoclínicas obtém apoio de credores para aprovar recuperação extrajudicial",
@@ -1023,8 +821,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g8",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g13",
       "principal": false
     },
     {
@@ -1040,7 +838,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-10-31T15:36:49.593Z",
-      "grupo": "g8",
+      "grupo": "g13",
       "principal": true,
       "cobertura": 4,
       "tambemEm": [
@@ -1064,8 +862,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g13",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g16",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1074,22 +872,6 @@
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
-    },
-    {
-      "titulo": "Com dívidas de R$ 340 milhões, Chilli Beans entra com pedido de recuperação extrajudicial",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUXJLYzdEVGdPZGU0dEhGaUJfbzl2ZFR4SG42Tkg2MXh4dVczd1VLWEREXzEtQ1ZRR29xdzZ0Qk1ub241MWRqemJCcDBxaUpnRE1ZbkxPYTlkOFUtQkNjNS1tNzNFUU80UGRlVHJobjE4Z2ZjbUV1S2NTQjhpUFZWamp4UElWanVhVzFwSUtCa1ZmNUdWcEtDdUVnRHhPb2xFS1Z1cS1HQW1yenlVQnVaRjNfWHdLOUxhMFA3OA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "NeoFeed",
-      "data": "2026-10-30T23:16:00.000Z",
-      "categoria": "novas-rjs",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g10",
-      "principal": false
     },
     {
       "titulo": "Oncoclínicas diz que obteve adesão necessária de credores para recuperação extrajudicial",
@@ -1103,8 +885,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 8,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g13",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g16",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1123,28 +905,12 @@
         "Extrajudicial"
       ],
       "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g11",
-      "principal": false,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g17",
+      "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
-    },
-    {
-      "titulo": "Chilli Beans pede recuperação extrajudicial para renegociar dívida de R$ 340 milhões",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNR0pLU0F1Q3djUzk3bDlxckFrMjZQbGtVV0tuZG1TeUdlNEQzaGRRQVU3OUtBU0diMEpyNlVTOW8zbWE0T2Z1X3NzMmxyRU5mck0zeHR4bWs2SFA5cGJwRkdONndNc0lPeTB1Uy1TeGZTam9WQ0djalhfNkx4Q2RBWHZiSld0bXE2WmJGazBoSEEwTllyMmZha0tRZ0pWclZhQ09vVGVsM2ZMbzNzbHdVVA?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Exame",
-      "data": "2026-10-30T21:53:32.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Extrajudicial"
-      ],
-      "pontuacao": 7,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g10",
-      "principal": false
     },
     {
       "titulo": "Raízen aprova plano para sair de crise de R$ 65 bilhões e será dividida em duas empresas",
@@ -1160,28 +926,8 @@
       ],
       "pontuacao": 18,
       "coletadoEm": "2026-10-31T15:36:49.593Z",
-      "grupo": "g14",
+      "grupo": "g18",
       "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Acionistas da Raízen aprovam plano de recuperação extrajudicial, dizem fontes",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1sTFNBZVZSM1Z5VFU1NmhRY1BhTndNbDF1NXBhNzQyZ0lYd3p0WGlubTdUZjJ3UE1nd19keWdFc21WZjVHMzk5T3V4cVpXWFlEWl9UcEhiNW83RVlOU1BiXzcyaG1EcEdwQ08zWjN3YlR6VXl2Y3dj?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "TradingView",
-      "data": "2026-10-30T20:03:27.000Z",
-      "categoria": "mercado",
-      "etiquetas": [
-        "Plano",
-        "Extrajudicial"
-      ],
-      "pontuacao": 14,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g11",
-      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -1197,7 +943,7 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-10-30T16:32:17.380Z",
-      "grupo": "g15",
+      "grupo": "g19",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1208,25 +954,53 @@
       "tentativasModelo": 0
     },
     {
-      "titulo": "Com atrasos em entregas e centenas de ações, Kitchens pede recuperação judicial",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPX0gzZlhVVkVfUHdZQnpKMVducExncjVCM2ZHaVlycWl2c2Y2UUR6aHlPNnI3NHdsbFlrUFFmNjN0MWtMRFkwd1RlRFJrd2RSdHJQX0NqOUFReEJfTzBsRF9OUm8yczdubTNtb0ZIejBRbG1jRVRWZUFjb293cXJYa2xCcjBobnMwOFVlNEJnTFdrbU5rNFYxTGNrR0I0UXlsSmRsTmtGMkdfTDE5Uk5zOFhB?oc=5",
+      "titulo": "Apex pede exclusão de mais de 50 empresas em processo de recuperação judicial",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSmt1bWtmeDk2TnJLRzdLdXR1R0FYVExDYWIydEU4Y0FDeTBvbll4NzdiU0tMektRaDJoRzhjWmVNY0xuejV1cUNXdVp6NWtCQ2N6NU1FdUpTWW1HaGwyOUhWY1lCVVZjbG5uLVVGbVVBcFloUVQzdjU0enROTzFFUWN5ZUtrNmtkR1c0cWJ4cVktQnR0NUZaSzZtZThfZzJMVFY2bU51eVlNR3hnbHFBZkxqVm5BWTEySlpMT2lB?oc=5",
       "resumo": "",
       "resumoFonte": null,
-      "veiculo": "Migalhas",
-      "data": "2026-10-29T07:00:00.000Z",
-      "categoria": "novas-rjs",
+      "veiculo": "A Gazeta",
+      "data": "2026-10-30T07:00:00.000Z",
+      "categoria": "mercado",
       "etiquetas": [],
-      "pontuacao": 12,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g16",
+      "pontuacao": 5,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g20",
       "principal": true,
-      "cobertura": 2,
-      "tambemEm": [
-        "InfoMoney"
-      ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
+    },
+    {
+      "titulo": "Com dívidas de R$ 340 milhões, Chilli Beans entra com pedido de recuperação extrajudicial",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUXJLYzdEVGdPZGU0dEhGaUJfbzl2ZFR4SG42Tkg2MXh4dVczd1VLWEREXzEtQ1ZRR29xdzZ0Qk1ub241MWRqemJCcDBxaUpnRE1ZbkxPYTlkOFUtQkNjNS1tNzNFUU80UGRlVHJobjE4Z2ZjbUV1S2NTQjhpUFZWamp4UElWanVhVzFwSUtCa1ZmNUdWcEtDdUVnRHhPb2xFS1Z1cS1HQW1yenlVQnVaRjNfWHdLOUxhMFA3OA?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "NeoFeed",
+      "data": "2026-10-30T07:00:00.000Z",
+      "categoria": "novas-rjs",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 13,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g14",
+      "principal": false
+    },
+    {
+      "titulo": "Chilli Beans pede recuperação extrajudicial para renegociar dívida de R$ 340 milhões",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNR0pLU0F1Q3djUzk3bDlxckFrMjZQbGtVV0tuZG1TeUdlNEQzaGRRQVU3OUtBU0diMEpyNlVTOW8zbWE0T2Z1X3NzMmxyRU5mck0zeHR4bWs2SFA5cGJwRkdONndNc0lPeTB1Uy1TeGZTam9WQ0djalhfNkx4Q2RBWHZiSld0bXE2WmJGazBoSEEwTllyMmZha0tRZ0pWclZhQ09vVGVsM2ZMbzNzbHdVVA?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Exame",
+      "data": "2026-10-30T07:00:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 7,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g14",
+      "principal": false
     },
     {
       "titulo": "Kitchens, de móveis planejados, pede recuperação judicial, diz site",
@@ -1238,9 +1012,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g16",
-      "principal": false,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g21",
+      "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -1258,7 +1032,7 @@
       ],
       "pontuacao": 21,
       "coletadoEm": "2026-10-28T16:26:29.105Z",
-      "grupo": "g17",
+      "grupo": "g22",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1278,8 +1052,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 19,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g18",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g23",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1297,8 +1071,8 @@
         "STJ"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g19",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g24",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1317,7 +1091,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-10-25T14:06:31.771Z",
-      "grupo": "g17",
+      "grupo": "g22",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1335,8 +1109,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g20",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g25",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1358,8 +1132,8 @@
         "Extrajudicial"
       ],
       "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g20",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g25",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1379,11 +1153,31 @@
       ],
       "pontuacao": 21,
       "coletadoEm": "2026-10-24T13:50:20.596Z",
-      "grupo": "g21",
+      "grupo": "g26",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 3
+    },
+    {
+      "titulo": "Oncoclínicas apresenta novo plano de recuperação extrajudicial no valor de R$ 5,7 bilhões",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOd2VTX2Q2Vm5VbUhVWnEtNXEwT3pVeFBpVjhKaURzSTEwM1JMZWhDc0QxY01WT0FXaHFTdzVzcmZ1cE9ZazdodVBkcWZtLTdoVHB0Y292bzB5US1fUWFleG83cjFtRlE1dVNubnFxS2J5eU1IRkltUDFMUFFPZ3A3VWVEQnc0N3JEcms0WjE2czA1bDFnRW9UOTZjdUZzNlJfTnRyS2dQMkY3X2xUODZxY20xSWdqbHpnWjRkODZveHFEcnJUb3M0aVl6dkNJTHdRcTZxRGNCVWLSAecBQVVfeXFMTmNxZHA3UEV3UUVPR25vY2hOVXdic1J5RWhuRmlxWkhEZEZKRVprNXlhTFo0emVPeXhCcXFlVFNTN3RIMDdFd2p0X0J6UllPVG9RUmQ0a1lOWEdUR2RIU0hfYUJwem1pakxZMG1kdml6VW1VWVZBd3JPNy1XZFhmeVBxa1hjUF9NdFlnbXp2XzhLNV96aXZyYUdTV242TEc3b2tEU1hzT3JqM1BWZ2lZRHVpRmdjSnlMMjk4SWd2TmNyaER6d0FKVDktalowdThua1d1bU13TlR6WmVvRVNzdEVrZ2ZGaE53?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "Valor Econômico",
+      "data": "2026-10-23T07:00:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Plano",
+        "Extrajudicial"
+      ],
+      "pontuacao": 14,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g27",
+      "principal": true,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
     },
     {
       "titulo": "EXCLUSIVO: Com dívida de R$ 1,72 bilhão, Grupo Euro17 pede recuperação judicial",
@@ -1396,7 +1190,7 @@
       "etiquetas": [],
       "pontuacao": 28,
       "coletadoEm": "2026-10-23T14:40:32.491Z",
-      "grupo": "g22",
+      "grupo": "g28",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1417,7 +1211,7 @@
       "etiquetas": [],
       "pontuacao": 14,
       "coletadoEm": "2026-10-22T14:52:48.120Z",
-      "grupo": "g23",
+      "grupo": "g29",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1438,11 +1232,10 @@
       "etiquetas": [],
       "pontuacao": 12,
       "coletadoEm": "2026-10-21T14:51:57.536Z",
-      "grupo": "g24",
+      "grupo": "g30",
       "principal": true,
-      "cobertura": 3,
+      "cobertura": 2,
       "tambemEm": [
-        "Pleno.News",
         "Estadão"
       ],
       "versaoResumo": 11,
@@ -1462,7 +1255,7 @@
       ],
       "pontuacao": 9,
       "coletadoEm": "2026-10-21T14:51:57.536Z",
-      "grupo": "g25",
+      "grupo": "g31",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1482,8 +1275,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 13,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g23",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g29",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1499,26 +1292,9 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g26",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g32",
       "principal": true,
-      "versaoResumo": 11,
-      "provedorTentado": "gemini",
-      "tentativasModelo": 0
-    },
-    {
-      "titulo": "Justiça de SP aprova recuperação judicial do Grupo Casas Bahia",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdEtTVXZIZnRnci1rUVR6Ym9DcUk2QlNMczJLTWJ5c014NUVpVy1hcE5FUGVIbjFJQ2tEa2dBejFxSXkxLUxSLW1tUmI1THNjeWN3UEhKWm9ZZjdmb2NLT0hIQWpZT0wzd0FleDFoVHVWVWVPUnBfNFJReDV4YmlpRDhMcEw1OVZpZDRSOWxkSi1TcmgzV3R6ekhvSdIBowFBVV95cUxPRXIyNFZHcGZ5d3JXb0pwTWl2YzhNVWlhM2otM0Z3OW9pcWJhOTFsWEhhNHpxdzVyV18xUDdON090T1NkRndLcDB5U0J6NXY4aUdlZm04TDlnS1JLRGNSeERlZTA2UlhaR0Nmd2xSWVZrWVhBOGUxVDFkU0tJbDhDV3kzZ2tBLTNkUmZBRUhDWW8ydC02bzJXSjBFNm8wMlBRQlQ4?oc=5",
-      "resumo": "",
-      "resumoFonte": null,
-      "veiculo": "Pleno.News",
-      "data": "2026-10-21T07:00:00.000Z",
-      "categoria": "mercado",
-      "etiquetas": [],
-      "pontuacao": 5,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g24",
-      "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
       "tentativasModelo": 0
@@ -1534,7 +1310,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-10-20T14:40:47.300Z",
-      "grupo": "g27",
+      "grupo": "g33",
       "principal": false
     },
     {
@@ -1548,7 +1324,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-10-20T14:40:47.300Z",
-      "grupo": "g27",
+      "grupo": "g33",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
@@ -1570,7 +1346,7 @@
       "etiquetas": [],
       "pontuacao": 8,
       "coletadoEm": "2026-10-20T14:40:47.300Z",
-      "grupo": "g27",
+      "grupo": "g33",
       "principal": false
     },
     {
@@ -1586,11 +1362,11 @@
       ],
       "pontuacao": 10,
       "coletadoEm": "2026-10-19T16:48:17.477Z",
-      "grupo": "g28",
+      "grupo": "g34",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
-        "Correio Braziliense"
+        "InfoMoney"
       ],
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1609,7 +1385,7 @@
       ],
       "pontuacao": 5,
       "coletadoEm": "2026-10-19T16:48:17.477Z",
-      "grupo": "g29",
+      "grupo": "g35",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1625,8 +1401,27 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g24",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g30",
+      "principal": false,
+      "versaoResumo": 11,
+      "provedorTentado": "gemini",
+      "tentativasModelo": 0
+    },
+    {
+      "titulo": "Ri Happy pede recuperação extrajudicial para renegociar dívidas de mais de R$ 800 mi",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaFF6cllOYURtUFZJS3R1Zm5mVURLVDNsRjk5b21fWW1KNWdWcGV4NVM1MEhzQXA0WnBtbHBwTVluYXhTMWM2UlI1eWl6RFFEZlpHSFBqX2M0d0pZNXloN2Etd25iakYweUpPYkFfaDY2VmVYVGh2T3NuYWIwNE5uVGc0UmlBc1Y5UXhSVHJONC05Zmx1SHoxWEN2VjJHeGlfRWtrZmFvX2p2N2tzWFpJb01JazktdFVoQWxBODJqWdIBxAFBVV95cUxNMklGYU5MQ2JJRlhoWXluSjA0R3pOQnljR3ZCbG0wWU85MndkZDlPdGNpVlB5X280d2pQbTJDNFVhZS1pZFM0ZEZtRXU5MVZVbG1PQXFEc29VR3B2YWNrdUlVR00tOFVuV2w2RWdDcmRnYkZ0TjRvWkZnUThueVk2Sm9GbVdQQ25BZV8wYTB5UVZiNnlFY0hRNVlTNTRrYk5pWHk0a0lwalVrS3h3b0ZISlhwU0ZUTlpDQjZJNzRtcng0alox?oc=5",
+      "resumo": "",
+      "resumoFonte": null,
+      "veiculo": "InfoMoney",
+      "data": "2026-10-19T07:00:00.000Z",
+      "categoria": "mercado",
+      "etiquetas": [
+        "Extrajudicial"
+      ],
+      "pontuacao": 5,
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g34",
       "principal": false,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1643,7 +1438,7 @@
       "etiquetas": [],
       "pontuacao": 22,
       "coletadoEm": "2026-10-15T14:40:35.441Z",
-      "grupo": "g30",
+      "grupo": "g36",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1660,7 +1455,7 @@
       "etiquetas": [],
       "pontuacao": 19,
       "coletadoEm": "2026-10-13T17:21:56.038Z",
-      "grupo": "g31",
+      "grupo": "g37",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1681,7 +1476,7 @@
       "etiquetas": [],
       "pontuacao": 19,
       "coletadoEm": "2026-10-12T19:37:54.943Z",
-      "grupo": "g32",
+      "grupo": "g38",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1705,7 +1500,7 @@
       ],
       "pontuacao": 19,
       "coletadoEm": "2026-10-08T17:12:13.389Z",
-      "grupo": "g33",
+      "grupo": "g39",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1729,7 +1524,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g34",
+      "grupo": "g40",
       "principal": true,
       "cobertura": 3,
       "tambemEm": [
@@ -1754,7 +1549,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g34",
+      "grupo": "g40",
       "principal": false
     },
     {
@@ -1771,7 +1566,7 @@
       ],
       "pontuacao": 23,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g35",
+      "grupo": "g41",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1795,7 +1590,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-10-07T17:16:25.628Z",
-      "grupo": "g34",
+      "grupo": "g40",
       "principal": false
     },
     {
@@ -1812,7 +1607,7 @@
       ],
       "pontuacao": 27,
       "coletadoEm": "2026-10-06T16:30:20.440Z",
-      "grupo": "g36",
+      "grupo": "g42",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1835,7 +1630,7 @@
       ],
       "pontuacao": 17,
       "coletadoEm": "2026-09-26T10:11:16.520Z",
-      "grupo": "g37",
+      "grupo": "g43",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1852,7 +1647,7 @@
       "etiquetas": [],
       "pontuacao": 9,
       "coletadoEm": "2026-09-25T10:12:02.675Z",
-      "grupo": "g38",
+      "grupo": "g44",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1871,7 +1666,7 @@
       ],
       "pontuacao": 12,
       "coletadoEm": "2026-09-24T10:12:09.732Z",
-      "grupo": "g39",
+      "grupo": "g45",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1895,7 +1690,7 @@
       ],
       "pontuacao": 26,
       "coletadoEm": "2026-09-19T10:10:12.572Z",
-      "grupo": "g40",
+      "grupo": "g46",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1915,7 +1710,7 @@
       ],
       "pontuacao": 18,
       "coletadoEm": "2026-09-19T10:10:12.572Z",
-      "grupo": "g41",
+      "grupo": "g47",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1935,8 +1730,8 @@
       "categoria": "novas-rjs",
       "etiquetas": [],
       "pontuacao": 12,
-      "coletadoEm": "2026-11-07T16:06:38.928Z",
-      "grupo": "g42",
+      "coletadoEm": "2026-11-08T16:30:33.425Z",
+      "grupo": "g48",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
@@ -1953,7 +1748,7 @@
       "etiquetas": [],
       "pontuacao": 20,
       "coletadoEm": "2026-09-15T10:12:05.858Z",
-      "grupo": "g43",
+      "grupo": "g49",
       "principal": true,
       "cobertura": 2,
       "tambemEm": [
@@ -1974,7 +1769,7 @@
       "etiquetas": [],
       "pontuacao": 5,
       "coletadoEm": "2026-09-11T10:11:41.248Z",
-      "grupo": "g44",
+      "grupo": "g50",
       "principal": false
     },
     {
@@ -1990,7 +1785,7 @@
       ],
       "pontuacao": 14,
       "coletadoEm": "2026-09-10T10:11:37.117Z",
-      "grupo": "g44",
+      "grupo": "g50",
       "principal": true,
       "versaoResumo": 11,
       "provedorTentado": "gemini",
