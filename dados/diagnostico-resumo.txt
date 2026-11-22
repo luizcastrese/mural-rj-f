@@ -1,8 +1,6 @@
-Resumos — 2026-11-21T17:07:49.326Z
+Resumos — 2026-11-22T17:37:41.120Z
 provedor: gemini (habilitado: true)
 modelo: (padrão do provedor)
-cards: 6
-origem: {"resumo da matéria":6}
-falhas do modelo:
-  This operation was aborted
-  This operation was aborted
+cards: 5
+origem: {"resumo da matéria":5}
+falhas do modelo: nenhuma
